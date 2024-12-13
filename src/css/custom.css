@@ -39,14 +39,125 @@ nav .DocSearch-Button-Placeholder {
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: transparent;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
 }
-th, td {
-    width: 50%;
-    background: #29292994;
-    text-align: left;
-    padding: 8px;
-    border: 1px solid #ddd;
+th,
+td {
+  width: 50%;
+  background: #29292994;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.docs_heading {
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.docs_card_image_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.docs_card_without_image {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #535353;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.docs_card_without_image:hover {
+  text-decoration: none;
+  background-color: #29292949;
+}
+
+.docs_card_with_image {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #535353;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  /* margin-bottom: 20px; */
+}
+
+@media screen and (max-width: 568px) {
+  .docs_card_image_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 768px) {
+  .docs_card_image_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1300px) {
+  .docs_card_image_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.docs_card_with_image:hover {
+  text-decoration: none;
+  background-color: #29292949;
+}
+
+.docs_card_heading_title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-bottom: 8px;
+}
+
+.docs_card_description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.build_a_chains_logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+  margin-bottom: 10px;
+}
+
+.version_chip_container {
+  margin-bottom: 8px;
+}
+
+.version_chip {
+  background-color: #292929;
+  margin-bottom: 8px;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.intro_image {
+  width: 100%;
+  height: auto;
+  min-height: 120px;
+  margin-bottom: 20px;
 }
