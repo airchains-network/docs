@@ -2,6 +2,7 @@
 id: prove-schemes-and-curves
 title: Prove Schemes and Curves
 description: Prove Schemes and Curves in Airchains Framework
+slug: /concepts/prove-schemes-and-curves
 sidebar_position: 4
 ---
 

@@ -2,6 +2,7 @@
 id: fully-homomorphic-encryption
 title: Fully Homomorphic Encryption
 description: Zero-Knowledge Proofs in Airchains Framework
+slug: /concepts/intro-to-zkfhe/fully-homomorphic-encryption
 sidebar_position: 3
 ---
 
