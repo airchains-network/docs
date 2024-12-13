@@ -2,6 +2,7 @@
 id: sequencers
 title: Sequencers
 description: Sequencers are used to sequence transactions in a deterministic order.
+slug: /concepts/sequencers
 sidebar_position: 5
 ---
 

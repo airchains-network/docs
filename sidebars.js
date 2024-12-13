@@ -26,7 +26,7 @@ const sidebars = {
     },
     {
       type: "html",
-      value: '<div class="sidebar-heading">Concepts</div>', // Custom heading
+      value: '<div class="sidebar-heading">Concepts</div>',
     },
     {
       type: "doc",
@@ -57,11 +57,15 @@ const sidebars = {
       type: "category",
       label: "Data Availability",
       className: "custom-sidebar-item",
+      link: {
+        type: "doc",
+        id: "data-availability/data-availability",
+      },
       items: ["data-availability/monolithic-vs-modular"],
     },
     {
       type: "html",
-      value: '<div class="sidebar-heading">Releases</div>', // Custom heading
+      value: '<div class="sidebar-heading">Releases</div>',
     },
     {
       type: "doc",
@@ -71,7 +75,7 @@ const sidebars = {
 
     {
       type: "html",
-      value: '<div class="sidebar-heading">Junction</div>', // Custom heading
+      value: '<div class="sidebar-heading">Junction</div>',
     },
     {
       type: "category",
@@ -99,7 +103,7 @@ const sidebars = {
     },
     {
       type: "html",
-      value: '<div class="sidebar-heading">Rollups</div>', // Custom heading
+      value: '<div class="sidebar-heading">Rollups</div>',
     },
     {
       type: "doc",

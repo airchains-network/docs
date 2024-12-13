@@ -2,6 +2,7 @@
 id: monolithic-vs-modular
 title: Monolithic vs Modular
 description: Monolithic vs Modular approach in Airchains Framework
+slug: /concepts/data-availability/monolithic-vs-modular
 sidebar_position: 1
 ---
 

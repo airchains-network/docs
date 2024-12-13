@@ -3,6 +3,7 @@ id: zk-proofs
 title: ZK Proofs
 description: Zero-Knowledge Proofs in Airchains Framework
 sidebar_position: 2
+slug: /concepts/intro-to-zkfhe/zk-proofs
 ---
 
 # ZK Proofs
@@ -65,9 +66,9 @@ Next, the prover `P`, utilizing the proving key `pk`, public input `x`, and a se
 Finally, the verifier `V` checks the validity of the proof by executing `V(vk, w.pub(), prf)`, which confirms the truth of the claim if the proof prf is valid.
 
 <img src="/img/proof.png" alt="Overview" style={{
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+display: 'flex',
+justifyContent: 'center',
+alignItems: 'center',
 
 }}/>
 
