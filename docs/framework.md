@@ -3,7 +3,7 @@ id: framework
 title: Framework
 description: A description of my new page.
 sidebar_position: 2
-slug: /concepts/framework,
+slug: /concepts/framework
 ---
 
 # Framework
