@@ -21,7 +21,7 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: "doc",
-      id: "overview",
+      id: "introduction",
       className: "custom-sidebar-item",
     },
     {
