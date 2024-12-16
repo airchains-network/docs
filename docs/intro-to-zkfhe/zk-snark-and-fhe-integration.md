@@ -2,6 +2,7 @@
 id: zk-snark-and-fhe-integration
 title: ZK Snark and FHE Integration
 description: Zero-Knowledge Proofs in Airchains Framework
+slug: /concepts/intro-to-zkfhe/zk-snark-and-fhe-integration
 sidebar_position: 3
 ---
 
