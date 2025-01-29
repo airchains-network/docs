@@ -140,6 +140,19 @@ td {
   margin-bottom: 10px;
 }
 
+.junction_logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 4px;
+  margin-bottom: 6px;
+}
+.kms_logo {
+  width: 80px;
+  height: 50px;
+  margin-left: 0px;
+  margin-bottom: 6px;
+}
+
 .version_chip_container {
   margin-bottom: 8px;
 }
@@ -161,3 +174,4 @@ td {
   min-height: 120px;
   margin-bottom: 20px;
 }
+

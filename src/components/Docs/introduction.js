@@ -20,7 +20,10 @@ const IntroductionComponent = () => {
             components and design principles.
           </div>
         </Link>
-        <Link to={`/concept/framework`} className="docs_card_without_image">
+        <Link
+          to={`/concepts/intro-to-zkfhe`}
+          className="docs_card_without_image"
+        >
           <div className="docs_card_heading_title">Intro to zkFHE</div>
           <div className="docs_card_description">
             Understand Zero-Knowledge Fully Homomorphic Encryption for
@@ -42,11 +45,14 @@ const IntroductionComponent = () => {
       </div>
       <div className="docs_heading">Releases</div>
       <div className="docs_card_image_wrapper">
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link
+          to={`/releases/switchyard-testnet`}
+          className="docs_card_with_image"
+        >
           <div className="version_chip_container">
             <span className="version_chip">1.0.0</span>
           </div>
-          <div className="docs_card_heading_title">API Reference</div>
+          <div className="docs_card_heading_title">Switchyard Testnet</div>
           <div className="docs_card_description">
             Airchains Framework: Simplifying blockchain innovation with a
           </div>
@@ -57,9 +63,9 @@ const IntroductionComponent = () => {
         <Link to={`/junction`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/junction.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">Junction</div>
@@ -67,12 +73,12 @@ const IntroductionComponent = () => {
             Explore building on AIrchains Junction and running its nodes.
           </div>
         </Link>
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/rollups`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/execution.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">Execution Environment</div>
@@ -83,12 +89,12 @@ const IntroductionComponent = () => {
       </div>
       <div className="docs_heading">Develop</div>
       <div className="docs_card_image_wrapper">
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/rollups/quicklaunch`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/quicklaunch.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">Quicklaunch</div>
@@ -96,12 +102,12 @@ const IntroductionComponent = () => {
             Easily launch and initiate an AIrchains Rollup in no time
           </div>
         </Link>
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/develop/tx-struct`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/transaction2.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">Tx Struct</div>
@@ -109,12 +115,12 @@ const IntroductionComponent = () => {
             Airchains Framework: Simplifying blockchain innovation with a
           </div>
         </Link>
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/develop/exercise`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/exercise.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">Exercise</div>
@@ -122,25 +128,21 @@ const IntroductionComponent = () => {
             Strengthen your understanding with some practical exercises.
           </div>
         </Link>
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/develop/kms`} className="docs_card_with_image">
           <div>
-            <img
-              src="/img/air-mono.png"
-              alt="airchains"
-              className="build_a_chains_logo"
-            />
+            <img src="/img/kms2.png" alt="airchains" className="kms_logo" />
           </div>
           <div className="docs_card_heading_title">KMS</div>
           <div className="docs_card_description">
             KMS securely manages, stores, and handles cryptographic keys
           </div>
         </Link>
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/develop/relayers`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/relayer.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">Relayers</div>
@@ -148,12 +150,12 @@ const IntroductionComponent = () => {
             Facilitates secure and seamless data transfer between chains.
           </div>
         </Link>
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/develop/contribute`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/contributing.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">Contributing</div>
@@ -164,12 +166,12 @@ const IntroductionComponent = () => {
       </div>
       <div className="docs_heading">Tools</div>
       <div className="docs_card_image_wrapper">
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/rollups/quicklaunch`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/quicklaunch.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">Quicklaunch</div>
@@ -177,12 +179,12 @@ const IntroductionComponent = () => {
             Easily launch and initiate an AIrchains Rollup in no time
           </div>
         </Link>
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/tools/airvisor`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/upgrade.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">Airvisor</div>
@@ -193,12 +195,12 @@ const IntroductionComponent = () => {
       </div>
       <div className="docs_heading">API Reference</div>
       <div className="docs_card_image_wrapper">
-        <Link to={`/junction`} className="docs_card_with_image">
+        <Link to={`/api-reference`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/air-mono.png"
+              src="/img/exercises.png"
               alt="airchains"
-              className="build_a_chains_logo"
+              className="junction_logo"
             />
           </div>
           <div className="docs_card_heading_title">API Reference</div>
