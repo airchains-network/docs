@@ -130,7 +130,11 @@ const IntroductionComponent = () => {
         </Link>
         <Link to={`/develop/kms`} className="docs_card_with_image">
           <div>
-            <img src="/img/kms2.png" alt="airchains" className="kms_logo" />
+            <img
+              src="/img/kms3.png"
+              alt="airchains"
+              className="junction_logo"
+            />
           </div>
           <div className="docs_card_heading_title">KMS</div>
           <div className="docs_card_description">
