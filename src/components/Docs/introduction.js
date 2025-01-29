@@ -118,7 +118,7 @@ const IntroductionComponent = () => {
         <Link to={`/develop/exercise`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/exercise.png"
+              src="/img/exercise2.png"
               alt="airchains"
               className="junction_logo"
             />
