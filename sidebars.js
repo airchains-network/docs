@@ -37,6 +37,10 @@ const sidebars = {
       type: "category",
       label: "Intro to zkFHE",
       className: "custom-sidebar-item",
+      link: {
+        type: "doc",
+        id: "intro-to-zkfhe/intro-to-zkfhe",
+      },
       items: [
         "intro-to-zkfhe/zk-proofs",
         "intro-to-zkfhe/fully-homomorphic-encryption",
