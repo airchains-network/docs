@@ -21,7 +21,7 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: "doc",
-      id: "overview",
+      id: "introduction",
       className: "custom-sidebar-item",
     },
     {
@@ -37,6 +37,10 @@ const sidebars = {
       type: "category",
       label: "Intro to zkFHE",
       className: "custom-sidebar-item",
+      link: {
+        type: "doc",
+        id: "intro-to-zkfhe/intro-to-zkfhe",
+      },
       items: [
         "intro-to-zkfhe/zk-proofs",
         "intro-to-zkfhe/fully-homomorphic-encryption",
@@ -131,6 +135,10 @@ const sidebars = {
         "rollups/cosmwasm-zk-rollup/run-a-full-node",
         "rollups/cosmwasm-zk-rollup/become-a-validator",
       ],
+    },
+    {
+      type: "html",
+      value: '<div class="sidebar-heading">Develop</div>',
     },
   ],
 };
