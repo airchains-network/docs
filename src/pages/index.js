@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <Layout>
       <div className={styles.container}>
-        <Redirect to="/overview" />
+        <Redirect to="/introduction" />
       </div>
     </Layout>
   );
