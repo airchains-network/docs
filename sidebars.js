@@ -136,6 +136,10 @@ const sidebars = {
         "rollups/cosmwasm-zk-rollup/become-a-validator",
       ],
     },
+    {
+      type: "html",
+      value: '<div class="sidebar-heading">Develop</div>',
+    },
   ],
 };
 
