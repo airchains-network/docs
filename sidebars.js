@@ -140,6 +140,11 @@ const sidebars = {
       type: "html",
       value: '<div class="sidebar-heading">Develop</div>',
     },
+    {
+      type: "doc",
+      id: "develop/tx-struct",
+      className: "custom-sidebar-item",
+    },
   ],
 };
 
