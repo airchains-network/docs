@@ -76,7 +76,7 @@ const IntroductionComponent = () => {
         <Link to={`/rollups`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/execution.png"
+              src="/img/execution2.png"
               alt="airchains"
               className="junction_logo"
             />
@@ -92,7 +92,7 @@ const IntroductionComponent = () => {
         <Link to={`/rollups/quicklaunch`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/quicklaunch.png"
+              src="/img/quicklaunch2.png"
               alt="airchains"
               className="junction_logo"
             />
@@ -144,7 +144,7 @@ const IntroductionComponent = () => {
         <Link to={`/develop/relayers`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/relayer.png"
+              src="/img/relayer2.png"
               alt="airchains"
               className="junction_logo"
             />
@@ -173,7 +173,7 @@ const IntroductionComponent = () => {
         <Link to={`/rollups/quicklaunch`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/quicklaunch.png"
+              src="/img/quicklaunch2.png"
               alt="airchains"
               className="junction_logo"
             />
@@ -186,7 +186,7 @@ const IntroductionComponent = () => {
         <Link to={`/tools/airvisor`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/upgrade.png"
+              src="/img/upgrade2.png"
               alt="airchains"
               className="junction_logo"
             />
@@ -202,7 +202,7 @@ const IntroductionComponent = () => {
         <Link to={`/api-reference`} className="docs_card_with_image">
           <div>
             <img
-              src="/img/exercises.png"
+              src="/img/api2.png"
               alt="airchains"
               className="junction_logo"
             />
