@@ -1,27 +1,19 @@
-/* Target the search button more specifically */
-nav .DocSearch-Button {
-  background-color: #f5f5f5;
-  border-radius: 50px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  color: #333;
+[data-theme="dark"] {
+  --ifm-color-primary: #584ff9;
+  --ifm-color-primary-dark: #4a44d6;
+  --ifm-color-primary-darker: #3f3abf;
+  --ifm-color-primary-light: #6b63ff;
+  --ifm-color-primary-lighter: #7f77ff;
+  --ifm-background-color: #121212;
+  --ifm-navbar-background-color: #1a1a1a;
+  --ifm-footer-background-color: #1a1a1a;
+  --ifm-link-color: #584ff9;
+  --ifm-heading-color: #ffffff;
+  --ifm-font-color-base: #e0e0e0;
 }
 
-nav .DocSearch-Button:hover {
-  background-color: #e0e0e0;
-}
-
-nav .DocSearch-Button-Placeholder {
-  font-style: italic;
-  color: #888;
-}
-
-.DocSearch-Modal {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.DocSearch-Modal a {
-  color: #00bfa5;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 .sidebar-heading {
@@ -146,11 +138,38 @@ td {
   margin-left: 4px;
   margin-bottom: 6px;
 }
-.kms_logo {
-  width: 80px;
-  height: 50px;
-  margin-left: 0px;
-  margin-bottom: 6px;
+
+.under_maintenance_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 30px 0px;
+}
+
+.under_maintenance_content_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4px;
+  padding: 20px 0px;
+}
+
+.under_maintenance_heading {
+  font-size: 36px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.under_maintenance_subheading {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  color: #b1b1b9;
+  max-width: 600px;
 }
 
 .version_chip_container {
@@ -174,4 +193,3 @@ td {
   min-height: 120px;
   margin-bottom: 20px;
 }
-
