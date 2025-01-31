@@ -145,6 +145,54 @@ const sidebars = {
       id: "develop/tx-struct",
       className: "custom-sidebar-item",
     },
+    // {
+    //   type: "doc",
+    //   id: "develop/exercise",
+    //   className: "custom-sidebar-item",
+    // },
+    {
+      type: "category",
+      label: "Exercise",
+      className: "custom-sidebar-item",
+      link: {
+        type: "doc",
+        id: "develop/exercise/exercise",
+      },
+      items: ["develop/exercise/hands-on-fhevm"],
+    },
+    {
+      type: "doc",
+      id: "develop/kms",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "doc",
+      id: "develop/relayers",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "doc",
+      id: "develop/contribute",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "html",
+      value: '<div class="sidebar-heading">Tools</div>',
+    },
+    {
+      type: "doc",
+      id: "tools/airvisor",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "html",
+      value: '<div class="sidebar-heading">API Reference</div>',
+    },
+    {
+      type: "doc",
+      id: "api-reference/api-reference",
+      className: "custom-sidebar-item",
+    },
   ],
 };
 
