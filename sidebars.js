@@ -145,6 +145,71 @@ const sidebars = {
       id: "develop/tx-struct",
       className: "custom-sidebar-item",
     },
+    // {
+    //   type: "doc",
+    //   id: "develop/exercise",
+    //   className: "custom-sidebar-item",
+    // },
+    {
+      type: "category",
+      label: "Exercise",
+      className: "custom-sidebar-item",
+      link: {
+        type: "doc",
+        id: "develop/exercise/exercise",
+      },
+      items: [
+        {
+          type: "category",
+          label: "Hands-on FHEVM",
+          className: "custom-sidebar-item",
+          link: {
+            type: "doc",
+            id: "develop/exercise/hands-on-fhevm/hands-on-fhevm", // This points to index.md inside hands-on-fhevm
+          },
+          items: [
+            "develop/exercise/hands-on-fhevm/prerequisites",
+            "develop/exercise/hands-on-fhevm/setting-up-network",
+            "develop/exercise/hands-on-fhevm/compiling-and-deploying",
+            "develop/exercise/hands-on-fhevm/writing-smart-contract",
+            "develop/exercise/hands-on-fhevm/writing-contract-test",
+          ],
+        },
+      ],
+    },
+    {
+      type: "doc",
+      id: "develop/kms",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "doc",
+      id: "develop/relayers",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "doc",
+      id: "develop/contribute",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "html",
+      value: '<div class="sidebar-heading">Tools</div>',
+    },
+    {
+      type: "doc",
+      id: "tools/airvisor",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "html",
+      value: '<div class="sidebar-heading">API Reference</div>',
+    },
+    {
+      type: "doc",
+      id: "api-reference/api-reference",
+      className: "custom-sidebar-item",
+    },
   ],
 };
 

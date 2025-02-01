@@ -13,7 +13,7 @@ const IntroductionComponent = () => {
       </p>
       <div className="docs_heading">Learn Basics</div>
       <div className="docs_card_image_wrapper">
-        <Link to={`/concept/framework`} className="docs_card_without_image">
+        <Link to={`/concepts/framework`} className="docs_card_without_image">
           <div className="docs_card_heading_title">Framework</div>
           <div className="docs_card_description">
             Explore the core architecture and framework of Airchains, its
