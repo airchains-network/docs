@@ -158,7 +158,24 @@ const sidebars = {
         type: "doc",
         id: "develop/exercise/exercise",
       },
-      items: ["develop/exercise/hands-on-fhevm"],
+      items: [
+        {
+          type: "category",
+          label: "Hands-on FHEVM",
+          className: "custom-sidebar-item",
+          link: {
+            type: "doc",
+            id: "develop/exercise/hands-on-fhevm/hands-on-fhevm", // This points to index.md inside hands-on-fhevm
+          },
+          items: [
+            "develop/exercise/hands-on-fhevm/prerequisites",
+            "develop/exercise/hands-on-fhevm/setting-up-network",
+            "develop/exercise/hands-on-fhevm/compiling-and-deploying",
+            "develop/exercise/hands-on-fhevm/writing-smart-contract",
+            "develop/exercise/hands-on-fhevm/writing-contract-test",
+          ],
+        },
+      ],
     },
     {
       type: "doc",
