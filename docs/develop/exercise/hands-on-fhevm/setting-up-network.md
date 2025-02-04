@@ -43,12 +43,6 @@ Once Go and Docker are installed, clone the **hands-on-fhevm** repository from G
    cp .env.example .env
    ```
 
-6. Deploy essential contracts on network setup:
-
-   ```bash
-   npm start
-   ```
-
 ---
 
 ## Setting Up the FHEVM Network using Docker
