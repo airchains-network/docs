@@ -4,13 +4,72 @@ import React from "react";
 const IntroductionComponent = () => {
   return (
     <div>
+      <h2>What is Airchains?</h2>
+
       <p>
-        Welcome to the documentation for the Starport SDK. Starport is a tool
-        for building blockchains using the Cosmos SDK. It is designed to be
-        simple, fast, and developer-friendly. Starport is the fastest way to
-        build a blockchain, and it is the best way to build a blockchain for the
-        Cosmos ecosystem.
+        Airchains is a cutting-edge, modular framework designed to simplify the
+        creation and deployment of customized, privacy-preserving blockchain
+        solutions. Built for a multi-chain world, Airchains empowers developers
+        to build innovative applications with unparalleled data security and
+        seamless interoperability across diverse blockchain ecosystems,
+        leveraging the power of both Zero-Knowledge Proofs (ZKPs) and Fully
+        Homomorphic Encryption (FHE).
       </p>
+
+      <p>Here's what makes Airchains unique:</p>
+
+      <ul>
+        <li>
+          <strong>Modular Design:</strong> Airchains allows you to select and
+          configure the key components of your blockchain, including the
+          execution layer (EVM, CosmWasm, SVM), data availability layer
+          (Celestia, Avail, EigenLayer).
+        </li>
+        <li>
+          <strong>zkFHE Powered:</strong> Airchains leverages
+          zero-knowledge proofs (ZKPs) and fully homomorphic encryption (FHE) to
+          provide robust privacy features, allowing you to build applications
+          where sensitive data remains protected.
+        </li>
+        <li>
+          <strong>Cross-Chain Compatibility:</strong> Airchains is designed to
+          work seamlessly with leading blockchain networks like Ethereum,
+          Solana, and Cosmos, enabling cross-chain asset transfers and
+          interoperable applications.
+        </li>
+        <li>
+          <strong>Developer-Friendly:</strong> Airchains provides a
+          comprehensive set of tools and resources to simplify the development
+          process, including SDKs, APIs, and detailed documentation.
+        </li>
+      </ul>
+
+      <h2>Key Features and Benefits</h2>
+
+      <ul>
+        <li>
+          <strong>Enhanced Privacy:</strong> Protect sensitive data with
+          zero-knowledge proofs (ZKPs) and fully homomorphic encryption (FHE).
+        </li>
+        <li>
+          <strong>Scalability:</strong> Leverage zk-rollups to achieve high
+          transaction throughput and reduced gas fees.
+        </li>
+        <li>
+          <strong>Interoperability:</strong> Seamlessly connect with other
+          blockchain networks and access a wider range of assets and users.
+        </li>
+        <li>
+          <strong>Customization:</strong> Tailor your blockchain to your
+          specific application requirements with a modular architecture.
+        </li>
+        <li>
+          <strong>Simplified Development:</strong> Build and deploy your
+          blockchain quickly and easily with our developer-friendly tools and
+          documentation.
+        </li>
+      </ul>
+
       <div className="docs_heading">Learn Basics</div>
       <div className="docs_card_image_wrapper">
         <Link to={`/concepts/framework`} className="docs_card_without_image">
@@ -89,7 +148,7 @@ const IntroductionComponent = () => {
       </div>
       <div className="docs_heading">Develop</div>
       <div className="docs_card_image_wrapper">
-        <Link to={`/rollups/quicklaunch`} className="docs_card_with_image">
+        {/* <Link to={`/rollups/quicklaunch`} className="docs_card_with_image">
           <div>
             <img
               src="/img/quicklaunch2.png"
@@ -101,7 +160,7 @@ const IntroductionComponent = () => {
           <div className="docs_card_description">
             Easily launch and initiate an AIrchains Rollup in no time
           </div>
-        </Link>
+        </Link> */}
         <Link to={`/develop/tx-struct`} className="docs_card_with_image">
           <div>
             <img
@@ -170,7 +229,7 @@ const IntroductionComponent = () => {
       </div>
       <div className="docs_heading">Tools</div>
       <div className="docs_card_image_wrapper">
-        <Link to={`/rollups/quicklaunch`} className="docs_card_with_image">
+        {/* <Link to={`/rollups/quicklaunch`} className="docs_card_with_image">
           <div>
             <img
               src="/img/quicklaunch2.png"
@@ -182,7 +241,7 @@ const IntroductionComponent = () => {
           <div className="docs_card_description">
             Easily launch and initiate an AIrchains Rollup in no time
           </div>
-        </Link>
+        </Link> */}
         <Link to={`/tools/airvisor`} className="docs_card_with_image">
           <div>
             <img

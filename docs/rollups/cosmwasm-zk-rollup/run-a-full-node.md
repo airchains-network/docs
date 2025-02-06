@@ -12,7 +12,7 @@ Clone the WASM Station repository from the provided GitHub URL and navigate into
 
 ```bash
 git clone https://github.com/airchains-network/wasm-station
-cd wasm-station;
+cd wasm-station
 ```
 
 ### Step 2: Set Variables and Clean Environment

@@ -18,7 +18,7 @@ git clone https://github.com/airchains-network/evm-station.git
 git clone https://github.com/airchains-network/tracks.git
 ```
 
-If you're utilizing EigenDA,there's no necessity to clone any repository. Otherwise, clone the respective repositories for the DA client you're using.
+If you're utilizing EigenDA, there's no necessity to clone any repository. Otherwise, clone the respective repositories for the DA client you're using.
 
 <Tabs>
 <TabItem value="avail" label="Avail">
@@ -283,10 +283,10 @@ Da Key for Mock-Da is Mock-Key
 For Avail and Celestia, you have to run their nodes locally.
 :::
 
-- `Eigen`:- disperser-holesky.eigenda.xyz
-- `Avail`:- http://127.0.0.1:7000
-- `Celestia`:- http://127.0.0.1:26658
-- `MockDA`:- mock-rpc
+- `Eigen`: disperser-holesky.eigenda.xyz
+- `Avail`: http://127.0.0.1:7000
+- `Celestia`: http://127.0.0.1:26658
+- `MockDA`: mock-rpc
 
 Create Keys for Junction
 

@@ -1,21 +1,21 @@
 ---
-id: hands-on-fhevm
-title: Hands-on FHEVM
+id: index
+title: Hands-on fhEVM
 description: --
-slug: /develop/exercise/hands-on-fhevm/hands-on-fhevm
+slug: /develop/exercise/hands-on-fhevm
 hide_table_of_contents: false
 sidebar_position: 1
 ---
 
-# Hands-on FHEVM
+# Hands-on fhEVM
 
-**fhEVM** enables **privacy-preserving smart contracts** on **EVM-compatible blockchains**. This hands-on guide will walk you through **understanding, setting up, and working with fhEVM** to develop encrypted smart contracts.
+This hands-on guide will walk you through **understanding, setting up, and working with fhEVM** to develop encrypted smart contracts and test them on fhEVM network.
 
 ### What You’ll Learn
 
-- Basics of **fhEVM and its architecture**.
-- Setting up a **local fhEVM development environment**.
-- Writing, compiling, and deploying **FHE-enabled Solidity contracts**.
+- Basics of fhEVM and its architecture.
+- Setting up a local fhEVM development environment.
+- Writing, compiling, and deploying FHE-enabled Solidity contracts.
 - Testing encrypted contract interactions.
 
 ---
@@ -92,19 +92,19 @@ For more detailed insights, you can refer to the **[official documentation by Za
 
 ### **What's Next?**
 
-Now that you understand the **fhEVM architecture**, let's set up an **fhEVM network**.  
+Now that you understand the **fhEVM architecture**, let's set up an **fhEVM network**.
 ➡ Move on to **[Network Setup](./setting-up-network.md)** to learn how to proceed.
 
 
-<!-- 
+<!--
 ## **3. Setting Up Your Development Environment**
 
 Before writing encrypted contracts, install the necessary tools.
 
 ### **Prerequisites**
 
-✔ **Go** (`v1.23.x` or later)  
-✔ **Docker** (`v26.x.x` or later)  
+✔ **Go** (`v1.23.x` or later)
+✔ **Docker** (`v26.x.x` or later)
 ✔ **Node.js** (`v20.x` or later)
 
 📖 **[Full Setup Guide](./preparation.md)**
@@ -143,11 +143,11 @@ fhEVM supports **Fully Homomorphic Encryption (FHE)** within Solidity contracts.
 
 ### **Key Contract Operations**
 
-✔ **EncryptedERC20**: Secure token minting, transfer, and approvals.  
-✔ **Homomorphic Computation**: Arithmetic on encrypted balances.  
+✔ **EncryptedERC20**: Secure token minting, transfer, and approvals.
+✔ **Homomorphic Computation**: Arithmetic on encrypted balances.
 ✔ **Decryption via Gateway**: Interact with KMS securely.
 
-📖 **[Writing Smart Contracts](./writing-smart-contract.md)**  
+📖 **[Writing Smart Contracts](./writing-smart-contract.md)**
 📖 **[Deploying Smart Contracts](./compiling-and-deploying.md)**
 
 ---
@@ -158,9 +158,9 @@ To validate your contracts, write **JavaScript-based tests** using `ethers.js`.
 
 ### **Example Test Cases**
 
-✔ **Minting Tokens**  
-✔ **Encrypted Transfers**  
-✔ **Encrypted Approvals**  
+✔ **Minting Tokens**
+✔ **Encrypted Transfers**
+✔ **Encrypted Approvals**
 ✔ **Balance Decryption**
 
 📖 **[Writing Test Files](./writing-contract-test-files.md)**
@@ -177,8 +177,8 @@ By completing this hands-on guide, you now understand:
 
 ### **Next Steps**
 
-🔹 Explore **advanced encrypted contract interactions**.  
-🔹 Contribute to **fhEVM projects and research**.  
+🔹 Explore **advanced encrypted contract interactions**.
+🔹 Contribute to **fhEVM projects and research**.
 🔹 Learn more from **[Zama’s Official Documentation](https://docs.zama.ai/fhevm)**.
 
 📖 **[Final Thoughts & Summary](./08-conclusion.md)**

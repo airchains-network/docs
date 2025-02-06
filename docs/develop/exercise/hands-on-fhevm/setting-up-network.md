@@ -1,7 +1,7 @@
 ---
 id: setting-up-network
 title: Setting Up Network
-description: This guide walks you through configuring your development setup, ensuring seamless interaction with the FHEVM network for encrypted smart contract execution
+description: This guide walks you through configuring your development setup, ensuring seamless interaction with the fhEVM network for encrypted smart contract execution
 slug: /develop/exercise/hands-on-fhevm/setting-up-network
 hide_table_of_contents: false
 sidebar_position: 3
@@ -10,7 +10,7 @@ sidebar_position: 3
 # Setting Up Network
 
 :::note Preparation
-Before you start, ensure you have the necessary tools and dependencies installed on your system. 
+Before you start, ensure you have the necessary tools and dependencies installed on your system.
 Follow the steps mentioned in the prerequisites section [here](./prerequisites.md).
 :::
 
@@ -45,7 +45,7 @@ Once Go and Docker are installed, clone the **hands-on-fhevm** repository from G
 
 ---
 
-## Setting Up the FHEVM Network using Docker
+## Setting Up the fhEVM Network using Docker
 
 This section will guide you through setting up your **fhevm network** using Docker.
 
@@ -85,7 +85,7 @@ make stop-full
 
 Your fhevm-network is now ready to use. Proceed to [Compiling and Deploying](./compiling-and-deploying.md) your smart contracts.
 
-<!-- 
+<!--
 
 ## Step 5: Clone the Project Repository and Setup
 
