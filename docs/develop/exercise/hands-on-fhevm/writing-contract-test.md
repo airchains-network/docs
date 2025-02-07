@@ -1,7 +1,7 @@
 ---
 id: writing-contract-test
-title: Writing Smart Contract Tests
-description: This guide provides instructions on writing tests for Fully Homomorphic Encryption Virtual Machine (fhEVM) smart contracts.
+title: Writing Smart Contract Test
+description: This guide provides instructions on writing test for fhEVM  smart contracts.
 slug: /develop/exercise/hands-on-fhevm/writing-contract-test
 hide_table_of_contents: false
 sidebar_position: 6
@@ -19,18 +19,18 @@ The tutorial uses several key libraries and utilities:
 
 ```javascript
 import { JsonRpcProvider, Wallet, Contract } from "ethers"; // Core ethers.js components
-import { createInstance } from "../utils/create-instance.js"; // FHEVM instance creation
+import { createInstance } from "../utils/create-instance.js"; // fhEVM instance creation
 import { loadABI } from "../utils/load-abi.js"; // ABI loading utility
 import logger from "../utils/logger.js"; // Logging utility
 ```
 
 ### Understanding Key Components
 
-#### FHEVM Instance Creation
+#### fhEVM Instance Creation
 
 The `createInstance` function is crucial for our cryptographic operations:
 
-- Creates an instance of the FHEVM (Fully Homomorphic Encryption Virtual Machine)
+- Creates an instance of the fhEVM (Fully Homomorphic Encryption Virtual Machine)
 - Enables secure operations on encrypted data
 - Is required for privacy-preserving transactions
 
@@ -138,7 +138,7 @@ export async function transferTokens(
       contractAddress
     );
 
-    // Create FHEVM instance for encryption
+    // Create fhEVM instance for encryption
     const fhevmInstance = await createInstance();
 
     // Prepare encrypted input

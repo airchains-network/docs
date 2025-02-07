@@ -7,9 +7,11 @@ hide_table_of_contents: false
 sidebar_position: 5
 ---
 
-# Writing Smart Contracts for the FHEVM
+# Writing Smart Contracts for the fhEVM
 
-The FHEVM environment enables Fully Homomorphic Encryption (FHE) computations directly on encrypted data within Ethereum-like smart contracts. This means that the contract can store, process, and manipulate data in ciphertext form without ever exposing the underlying cleartext values. As a result, developers can build decentralized applications that protect user privacy on a public blockchain.
+The fhEVM environment enables Fully Homomorphic Encryption (FHE) computations directly on encrypted data within Ethereum-like smart contracts. This means that the contract can store, process, and manipulate data in ciphertext form without ever exposing the underlying cleartext values. As a result, developers can build decentralized applications that protect user privacy on a public blockchain.
+
+This is a simple example of an ERC20 token smart contract. For writing more complex contracts, please refer to the [fhEVM documentation](https://docs.zama.ai/fhevm/0.5-4/guides) for more details.
 
 ---
 
@@ -31,8 +33,8 @@ The contract uses the following dependencies:
 
 ```solidity
 import "./core/lib/TFHE.sol";
-import "@openzeppelin/contracts/access/Ownable2Step.sol";
 import "./core/gateway/GatewayCaller.sol";
+import "@openzeppelin/contracts/access/Ownable2Step.sol";
 ```
 
 ---

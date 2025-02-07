@@ -1,4 +1,4 @@
-/**
+/*
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
@@ -24,8 +24,6 @@
 
 .container {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

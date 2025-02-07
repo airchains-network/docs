@@ -84,6 +84,6 @@ To See if you were accepted as a validator,
 airwasmicd query tendermint-validator-set
 ```
 
-:::info
+:::success
 If your address is visible, it indicates successful inclusion in the validator set. Please note that this process may take some time.
 :::

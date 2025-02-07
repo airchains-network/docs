@@ -9,6 +9,6 @@ sidebar_position: 3
 
 # Key Management Service
 
-import UnderProgress from '@site/src/components/Docs/under-progress.js';
+import UnderProgress from '@site/src/components/docs/under-progress.js';
 
 <UnderProgress />

@@ -6,6 +6,7 @@ slug: /concepts/prove-schemes-and-curves
 sidebar_position: 4
 ---
 
+<!-- TODO: UPDATE CODE -->
 # Prove schemes and curves
 
 Proof schemes, also known as proof systems or proof protocols, are cryptographic techniques that allow one party (the prover) to convince another party (the verifier) that a certain statement or claim is true without revealing any additional information beyond the truth of the statement. There are several types of proof schemes, each with its own characteristics and use cases.
