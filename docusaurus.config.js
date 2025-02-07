@@ -43,6 +43,7 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+
       }),
     ],
   ],
@@ -75,7 +76,14 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-    }),
+      docs: {
+        sidebar: {
+          // hideable: true,
+        },
+      },
+    }
+  ),
+
 
   plugins: [],
 };

@@ -1,48 +1,49 @@
 ---
 id: system-requirement
-title: System Requirement
+title: System Requirements
 sidebar_position: 1
 ---
 
-# System Requirement
+# System Requirements
 
-To ensure a smooth experience, considering the following:
+To ensure a smooth experience, consider the following:
 
-1. **Hardware Requirements** : Verify that your hardware meets the Airsettle node's requirements.
-2. **Prerequisites & Installation** : Ensure you have the necessary prerequisites and packages installed on your machine.
-3. **Port Configuration** : Pay attention to system Port details.
+1. **Hardware Requirements**: Verify that your hardware meets the Junction node requirements.
+2. **Prerequisites & Installation**: Ensure you have the necessary prerequisites and packages installed on your machine.
+3. **Port Configuration**: Configure the required system ports.
 
 ### Hardware Requirements
 
-This outlines the necessary hardware specifications for establishing an Airsettle node
+These are the necessary hardware specifications for running a Junction node:
 
 | Component                    | Minimum   | Recommended |
 | ---------------------------- | --------- | ----------- |
 | RAM                          | 4GB       | 8GB         |
 | CPU (amd64/x86 architecture) | 2 core    | 4 core      |
-| Storage (SSD)                | 50-100 GB | 50-100 GB   |
+| Storage (SSD)                | 100 GB    | 100+ GB     |
 
 <br/>
 
 :::note
-While there's no specific preference for an operating system, it's advisable to opt for more secure and stable Linux server distributions, such as Ubuntu, rather than desktop operating systems like macOS or Windows. Furthermore, as the network expands, the minimum storage needs will evolve. To ensure a stable operation of a full node, it's recommended to exceed these minimum requirements.
+While there's no specific operating system requirement, we recommend using secure and stable Linux server distributions like Ubuntu rather than desktop operating systems like macOS or Windows. As the network grows, storage requirements may increase. For stable operation of a full node, we recommend exceeding these minimum specifications.
 :::
 
 ### Prerequisites & Installation
 
-Our node setup manuals are crafted specifically for Linux distributions with apt compatibility, such as Debian. Moreover, deploying nodes on cloud servers has become a standard approach in the industry.
+Our node setup guides are designed for Linux distributions with apt package management, such as Debian. Running nodes on cloud servers is an industry standard approach.
 
-- [Ignite CLI](https://docs.airchains.io/junction/operate-a-node/system-requirements) v0.27.1
-- [Go](https://docs.airchains.io/junction/operate-a-node/system-requirements) v.
+Required software:
+<!-- - [Ignite CLI](https://docs.airchains.io/junction/operate-a-node/system-requirements) v0.27.1 -->
+- [Go](https://docs.airchains.io/junction/operate-a-node/system-requirements) v1.20+
 
-### Installation Guide for Ignite CLI
+<!-- ### Installation Guide for Ignite CLI -->
 
 **Step 1: Download the Source Files**
 
-Begin by downloading the appropriate Ignite CLI source files from GitHub. Since we are using an AMD processor on a Linux system, use the following wget command:
+Download the Ignite CLI source files from GitHub.
 
-:::warning
-To correctly set up Ignite for your system, it's important to select the appropriate binary file tailored to your system's specifications. Please use this link Ignite CLI v0.27.1 for the download. We strongly recommend using [Ignite version v0.27.1](https://github.com/ignite/cli/releases/tag/v0.27.1), as other versions might not be compatible with Airsettle.
+:::info
+To correctly set up Ignite for your system, it's important to select the appropriate binary file tailored to your system's specifications. Please use this link Ignite CLI v0.27.1 for the download. We strongly recommend using [Ignite version v0.27.1](https://github.com/ignite/cli/releases/tag/v0.27.1), as other versions might not be compatible with Junction.
 :::
 
 ```bash
