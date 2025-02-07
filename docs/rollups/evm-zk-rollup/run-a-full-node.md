@@ -12,7 +12,7 @@ Clone the EVM Station repository from the GitHub URL provided and navigate into 
 
 ```bash
 git clone https://github.com/airchains-network/evm-station
-cd evm-station;
+cd evm-station
 ```
 
 ## Step 2: Declare and Initialize Variables
@@ -75,13 +75,11 @@ jq '.app_state["mint"]["params"]["mint_denom"]="abera"' "$GENESIS" >"$TMP_GENESI
 
 jq '.consensus["params"]["block"]["max_gas"]="30000000"' "$GENESIS" >"$TMP_GENESIS" && mv "$TMP_GENESIS" "$GENESIS"
 
-
 sed -i "/\[polaris\.polar\.chain\]/!b;n;c chain-id = \"$EVMCHAINID\"" $HOMEDIR/config/app.toml
 
 
-//Note this is a test wallet address
+// Note this is a test wallet address
 ./build/bin/evmstationd genesis add-genesis-account cosmos1yrene6g2zwjttemf0c65fscg8w8c55w58yh8rl 69000000000000000000000000abera --keyring-backend $KEYRING --home "$HOMEDIR"
-
 
 
 for KEY in "${KEYS[@]}"; do

@@ -6,6 +6,6 @@ sidebar_position: 3
 slug: /concepts/intro-to-zkfhe
 ---
 
-import IntroToZKFHE from '@site/src/components/Docs/intro-to-zkfhe.js';
+import IntroToZKFHE from '@site/src/components/docs/intro-to-zkfhe.js';
 
 <IntroToZKFHE />

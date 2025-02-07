@@ -1,7 +1,7 @@
 ---
 id: prerequisites
 title: Prerequisites
-description: This guide walks you through configuring your development setup, ensuring seamless interaction with the FHEVM network for encrypted smart contract execution
+description: This guide walks you through configuring your development setup, ensuring seamless interaction with the fhEVM network for encrypted smart contract execution
 slug: /develop/exercise/hands-on-fhevm/prerequisites
 hide_table_of_contents: false
 sidebar_position: 2
