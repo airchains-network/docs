@@ -5,16 +5,16 @@ const IntroToZKFHE = () => {
   return (
     <div>
       <p>
-        Airchains leverages advanced Zero-Knowledge (ZK) and Fully Homomorphic
-        Encryption (FHE) technologies to address critical challenges in
-        scalability, privacy, and security.
+        Airchains combines Zero-Knowledge (ZK) proofs and Fully Homomorphic
+        Encryption (FHE) technologies to create innovative solutions for scalability,
+        privacy, and security challenges in blockchain systems.
       </p>
       <p>
-        By integrating the two technologies together, Airchains ensures that
-        computations can be performed on encrypted data, maintaining privacy,
-        while zk-SNARKs provide robust mechanisms for verifying computations
-        without exposing the underlying data, ensuring confidentiality and
-        security. This is the essence of zkFHE.
+        Through the careful integration of these complementary technologies,
+        Airchains enables secure computation on encrypted data while maintaining
+        privacy. The zk-SNARKs provide efficient verification of state
+        without compromising sensitive information. Together, these form the
+        foundation of zkFHE - a powerful approach to blockchain privacy and security.
       </p>
       <div className="docs_heading">Useful Links</div>
       <div className="docs_card_image_wrapper">
@@ -24,8 +24,8 @@ const IntroToZKFHE = () => {
         >
           <div className="docs_card_heading_title">ZK Proofs</div>
           <div className="docs_card_description">
-            Explore how ZK Proofs enable privacy-preserving computations and how
-            they are used in Airchains.
+            Discover how ZK Proofs enable privacy-preserving computations and their
+            implementation in Airchains.
           </div>
         </Link>
         <Link
@@ -36,8 +36,8 @@ const IntroToZKFHE = () => {
             Fully Homomorphic Encryption
           </div>
           <div className="docs_card_description">
-            Learn how FHE enables computations on encrypted data without the
-            need to decrypt it.
+            Understand how FHE creates opportunities for secure computation while
+            maintaining data privacy through encryption.
           </div>
         </Link>
         <Link
@@ -48,8 +48,9 @@ const IntroToZKFHE = () => {
             zk-SNARK and FHE Integration
           </div>
           <div className="docs_card_description">
-            Learn how Provers and Sequencers maintain trust, integrity, and
-            order in decentralized networks.
+            {/* TODO: Orchestrator??? */}
+            Explore how Provers and Sequencers collaborate to ensure trust,
+            integrity, and reliable ordering in decentralized networks.
           </div>
         </Link>
       </div>

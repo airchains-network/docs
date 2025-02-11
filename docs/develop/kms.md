@@ -7,8 +7,8 @@ hide_table_of_contents: true
 sidebar_position: 3
 ---
 
-# Exercise
+# Key Management Service
 
-import UnderProgress from '@site/src/components/Docs/under-progress.js';
+import UnderProgress from '@site/src/components/docs/under-progress.js';
 
 <UnderProgress />

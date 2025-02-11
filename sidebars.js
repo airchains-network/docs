@@ -76,6 +76,11 @@ const sidebars = {
       id: "releases/switchyard-testnet",
       className: "custom-sidebar-item",
     },
+    {
+      type: "doc",
+      id: "releases/varanasi-testnet",
+      className: "custom-sidebar-item",
+    },
 
     {
       type: "html",
@@ -109,11 +114,11 @@ const sidebars = {
       type: "html",
       value: '<div class="sidebar-heading">Rollups</div>',
     },
-    {
-      type: "doc",
-      id: "rollups/quicklaunch",
-      className: "custom-sidebar-item",
-    },
+    // {
+    //   type: "doc",
+    //   id: "rollups/quicklaunch",
+    //   className: "custom-sidebar-item",
+    // },
     {
       type: "category",
       label: "EVM ZK Rollup",
@@ -158,7 +163,24 @@ const sidebars = {
         type: "doc",
         id: "develop/exercise/exercise",
       },
-      items: ["develop/exercise/hands-on-fhevm"],
+      items: [
+        {
+          type: "category",
+          label: "Hands-on EVM",
+          className: "custom-sidebar-item",
+          link: {
+            type: "doc",
+            id: "develop/exercise/hands-on-fhevm/index", // This points to index.md inside hands-on-fhevm
+          },
+          items: [
+            "develop/exercise/hands-on-fhevm/prerequisites",
+            "develop/exercise/hands-on-fhevm/setting-up-network",
+            "develop/exercise/hands-on-fhevm/compiling-and-deploying",
+            "develop/exercise/hands-on-fhevm/writing-smart-contract",
+            "develop/exercise/hands-on-fhevm/writing-contract-test",
+          ],
+        },
+      ],
     },
     {
       type: "doc",

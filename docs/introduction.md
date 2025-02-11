@@ -12,6 +12,6 @@ slug: /introduction
     className="intro_image"
 />
 
-import IntroductionComponent from '@site/src/components/Docs/introduction.js';
+import IntroductionComponent from '@site/src/components/docs/introduction.js';
 
 <IntroductionComponent />
