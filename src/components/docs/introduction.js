@@ -116,6 +116,19 @@ const IntroductionComponent = () => {
             Airchains Framework: Simplifying blockchain innovation with a
           </div>
         </Link>
+        <Link
+          to={`/releases/varanasi-testnet`}
+          className="docs_card_with_image_disabled"
+        >
+          <div className="version_chip_container">
+            <span className="version_chip">0.3.0 (Coming Soon)</span>
+          </div>
+          <div className="docs_card_heading_title_disabled">Varanasi Testnet</div>
+          <div className="docs_card_description_disabled">
+            The Varanasi Testnet supports <b> FHE-powered smart contracts </b>{" "}
+            and essential modules for enhanced privacy and security.
+          </div>
+        </Link>
       </div>
       <div className="docs_heading">Build a Chain</div>
       <div className="docs_card_image_wrapper">

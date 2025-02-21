@@ -106,6 +106,43 @@ const sidebars = {
       ],
     },
     {
+      type: "category",
+      label: "Modules",
+      className: "custom-sidebar-item",
+      link: {
+        type: "doc",
+        id: "junction/modules/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "VRF",
+          className: "custom-sidebar-item",
+          link: {
+            type: "doc",
+            id: "junction/modules/vrf/index", // This points to index.md inside hands-on-fhevm
+          },
+          items: [
+            // "junction/modules/vrf/definition",
+            // "junction/modules/vrf/implementation",
+          ],
+        },
+        // {
+        //   type: "category",
+        //   label: "Espresso",
+        //   className: "custom-sidebar-item",
+        //   link: {
+        //     type: "doc",
+        //     id: "junction/modules/espresso/index", // This points to index.md inside hands-on-fhevm
+        //   },
+        //   items: [
+        //     "junction/modules/espresso/definition",
+        //     "junction/modules/espresso/implementation",
+        //   ],
+        // },
+      ],
+    },
+    {
       type: "doc",
       id: "junction/endpoints",
       className: "custom-sidebar-item",

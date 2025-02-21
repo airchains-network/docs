@@ -88,6 +88,36 @@ td {
   background-color: rgba(41, 41, 41, 0.29);
 }
 
+/* disable hover effect for docs_card_without_image */
+.docs_card_without_image_disabled {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #535353;
+  color: #4b4848;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: not-allowed;
+}
+
+.docs_card_without_image_disabled:hover {
+  text-decoration: none;
+  background-color: rgba(41, 41, 41, 0.29);
+}
+
+.docs_card_heading_title_disabled {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8a8a8a;
+  padding-bottom: 8px;
+}
+
+.docs_card_description_disabled {
+  font-size: 14px;
+  font-weight: 400;
+  color: #696969;
+}
+
 .docs_card_with_image {
   background-color: transparent;
   border-radius: 10px;
@@ -96,6 +126,21 @@ td {
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+.docs_card_with_image_disabled {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #535353;
+  color: #4b4848;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.docs_card_with_image_disabled:hover {
+  text-decoration: none;
+  background-color: rgba(41, 41, 41, 0.29);
 }
 
 @media screen and (max-width: 568px) {
