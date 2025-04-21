@@ -2,6 +2,7 @@
 sidebar_position: 1
 # id : introduction
 slug: /introduction
+id : introduction
 ---
 
 # Introduction

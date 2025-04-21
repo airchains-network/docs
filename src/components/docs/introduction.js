@@ -70,7 +70,7 @@ const IntroductionComponent = () => {
         </li>
       </ul>
 
-      <div className="docs_heading">Learn Basics</div>
+      {/* <div className="docs_heading">Learn Basics</div>
       <div className="docs_card_image_wrapper">
         <Link to={`/concepts/framework`} className="docs_card_without_image">
           <div className="docs_card_heading_title">Framework</div>
@@ -101,7 +101,7 @@ const IntroductionComponent = () => {
             order in decentralized networks.
           </div>
         </Link>
-      </div>
+      </div> */}
       <div className="docs_heading">Releases</div>
       <div className="docs_card_image_wrapper">
         <Link
