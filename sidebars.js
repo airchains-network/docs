@@ -64,34 +64,34 @@ const sidebars = {
             label: "Varanasi Testnet",
             className: "custom-sidebar-item",
         },
-        // {
-        //     type: "html",
-        //     value: '<div class="sidebar-heading">Validate and Run your Node</div>',
-        // },
-        // {
-        //     type: "doc",
-        //     id: "introduction",
-        //     label: "Overview",
-        //     className: "custom-sidebar-item",
-        // },
-        // {
-        //     type: "doc",
-        //     id: "introduction",
-        //     label: "Pre-requisites",
-        //     className: "custom-sidebar-item",
-        // },
-        // {
-        //     type: "doc",
-        //     id: "introduction",
-        //     label: "Running a Node on Testnet",
-        //     className: "custom-sidebar-item",
-        // },
-        // {
-        //     type: "doc",
-        //     id: "introduction",
-        //     label: "Validating on Testnet",
-        //     className: "custom-sidebar-item",
-        // },
+        {
+            type: "html",
+            value: '<div class="sidebar-heading">Validate and Run your Node</div>',
+        },
+        {
+            type: "doc",
+            id: "validate-and-run-your-node/varyn-overview",
+            label: "Overview",
+            className: "custom-sidebar-item",
+        },
+        {
+            type: "doc",
+            id: "introduction",
+            label: "Pre-requisites",
+            className: "custom-sidebar-item",
+        },
+        {
+            type: "doc",
+            id: "introduction",
+            label: "Running a Node on Testnet",
+            className: "custom-sidebar-item",
+        },
+        {
+            type: "doc",
+            id: "introduction",
+            label: "Validating on Testnet",
+            className: "custom-sidebar-item",
+        },
 
         // {
         //     type: "html",
