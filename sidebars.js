@@ -26,175 +26,80 @@ const sidebars = {
     },
     {
       type: "html",
-      value: '<div class="sidebar-heading">Concepts</div>',
+      value: '<div class="sidebar-heading">Core Concepts</div>',
     },
     {
       type: "doc",
       id: "framework",
-      className: "custom-sidebar-item",
-    },
-    {
-      type: "category",
-      label: "Intro to zkFHE",
-      className: "custom-sidebar-item",
-      link: {
-        type: "doc",
-        id: "intro-to-zkfhe/intro-to-zkfhe",
-      },
-      items: [
-        "intro-to-zkfhe/zk-proofs",
-        "intro-to-zkfhe/fully-homomorphic-encryption",
-        "intro-to-zkfhe/zk-snark-and-fhe-integration",
-      ],
-    },
-    {
-      type: "doc",
-      id: "prove-schemes-and-curves",
+      label: "Architecture Overview",
       className: "custom-sidebar-item",
     },
     {
       type: "doc",
-      id: "sequencers",
+      id: "framework",
+      label: "Workflow",
       className: "custom-sidebar-item",
     },
     {
-      type: "category",
-      label: "Data Availability",
+      type: "doc",
+      id: "framework",
+      label: "Components",
       className: "custom-sidebar-item",
-      link: {
-        type: "doc",
-        id: "data-availability/data-availability",
-      },
-      items: ["data-availability/monolithic-vs-modular"],
+    },
+    {
+      type: "doc",
+      id: "framework",
+      label: "Glossary",
+      className: "custom-sidebar-item",
     },
     {
       type: "html",
-      value: '<div class="sidebar-heading">Releases</div>',
+      value: '<div class="sidebar-heading">Validate and Run your Node</div>',
     },
     {
       type: "doc",
-      id: "releases/switchyard-testnet",
+      id: "framework",
+      label: "Overview",
       className: "custom-sidebar-item",
     },
     {
       type: "doc",
-      id: "releases/varanasi-testnet",
+      id: "framework",
+      label: "Pre-requisites",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "doc",
+      id: "framework",
+      label: "Running a Node on Testnet",
+      className: "custom-sidebar-item",
+    },
+    {
+      type: "doc",
+      id: "framework",
+      label: "Validating on Testnet",
       className: "custom-sidebar-item",
     },
 
     {
       type: "html",
-      value: '<div class="sidebar-heading">Junction</div>',
-    },
-    {
-      type: "category",
-      label: "Operate a Node",
-      className: "custom-sidebar-item",
-      items: [
-        "junction/operate-a-node/system-requirement",
-        "junction/operate-a-node/running-a-full-node",
-        "junction/operate-a-node/running-a-light-node",
-      ],
-    },
-    {
-      type: "category",
-      label: "Become a Validator",
-      className: "custom-sidebar-item",
-      items: [
-        "junction/become-a-validator/already-running-a-full-node",
-        "junction/become-a-validator/run-a-validator-node",
-      ],
-    },
-    {
-      type: "category",
-      label: "Modules",
-      className: "custom-sidebar-item",
-      link: {
-        type: "doc",
-        id: "junction/modules/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "VRF",
-          className: "custom-sidebar-item",
-          link: {
-            type: "doc",
-            id: "junction/modules/vrf/index", // This points to index.md inside hands-on-fhevm
-          },
-          items: [
-            // "junction/modules/vrf/definition",
-            // "junction/modules/vrf/implementation",
-          ],
-        },
-        // {
-        //   type: "category",
-        //   label: "Espresso",
-        //   className: "custom-sidebar-item",
-        //   link: {
-        //     type: "doc",
-        //     id: "junction/modules/espresso/index", // This points to index.md inside hands-on-fhevm
-        //   },
-        //   items: [
-        //     "junction/modules/espresso/definition",
-        //     "junction/modules/espresso/implementation",
-        //   ],
-        // },
-      ],
+      value: '<div class="sidebar-heading">User Guides</div>',
     },
     {
       type: "doc",
-      id: "junction/endpoints",
+      id: "framework",
+      label: "Quick Start",
       className: "custom-sidebar-item",
-    },
-    {
-      type: "html",
-      value: '<div class="sidebar-heading">Rollups</div>',
-    },
-    // {
-    //   type: "doc",
-    //   id: "rollups/quicklaunch",
-    //   className: "custom-sidebar-item",
-    // },
-    {
-      type: "category",
-      label: "EVM ZK Rollup",
-      className: "custom-sidebar-item",
-      items: [
-        "rollups/evm-zk-rollup/system-requirements",
-        "rollups/evm-zk-rollup/create-an-evm-zk-rollup",
-        "rollups/evm-zk-rollup/run-a-full-node",
-        "rollups/evm-zk-rollup/become-a-validator",
-      ],
-    },
-    {
-      type: "category",
-      label: "CosmWasm ZK Rollup",
-      className: "custom-sidebar-item",
-      items: [
-        "rollups/cosmwasm-zk-rollup/system-requirements",
-        "rollups/cosmwasm-zk-rollup/create-a-cosmwasm-rollup",
-        "rollups/cosmwasm-zk-rollup/run-a-full-node",
-        "rollups/cosmwasm-zk-rollup/become-a-validator",
-      ],
-    },
-    {
-      type: "html",
-      value: '<div class="sidebar-heading">Develop</div>',
     },
     {
       type: "doc",
-      id: "develop/tx-struct",
+      id: "framework",
+      label: "Tutorials",
       className: "custom-sidebar-item",
     },
-    // {
-    //   type: "doc",
-    //   id: "develop/exercise",
-    //   className: "custom-sidebar-item",
-    // },
     {
       type: "category",
-      label: "Exercise",
+      label: "Deploy Your Rollup",
       className: "custom-sidebar-item",
       link: {
         type: "doc",
@@ -202,54 +107,61 @@ const sidebars = {
       },
       items: [
         {
-          type: "category",
-          label: "Hands-on EVM",
+          type: "doc",
+          id: "framework",
+          label: "Environment Setup",
           className: "custom-sidebar-item",
-          link: {
-            type: "doc",
-            id: "develop/exercise/hands-on-fhevm/index", // This points to index.md inside hands-on-fhevm
-          },
-          items: [
-            "develop/exercise/hands-on-fhevm/prerequisites",
-            "develop/exercise/hands-on-fhevm/setting-up-network",
-            "develop/exercise/hands-on-fhevm/compiling-and-deploying",
-            "develop/exercise/hands-on-fhevm/writing-smart-contract",
-            "develop/exercise/hands-on-fhevm/writing-contract-test",
-          ],
+        },
+        {
+          type: "doc",
+          id: "framework",
+          label: "Quick Rollup Deployment",
+          className: "custom-sidebar-item",
+        },
+        {
+          type: "doc",
+          id: "framework",
+          label: "Advanced Rollup Deployment Guide",
+          className: "custom-sidebar-item",
         },
       ],
     },
     {
+      type: "html",
+      value: '<div class="sidebar-heading">JDev Documentation</div>',
+    },
+    {
       type: "doc",
-      id: "develop/kms",
+      id: "framework",
+      label: "API Reference",
       className: "custom-sidebar-item",
     },
     {
       type: "doc",
-      id: "develop/relayers",
-      className: "custom-sidebar-item",
-    },
-    {
-      type: "doc",
-      id: "develop/contribute",
+      id: "framework",
+      label: "SDK Documentation",
       className: "custom-sidebar-item",
     },
     {
       type: "html",
-      value: '<div class="sidebar-heading">Tools</div>',
+      value: '<div class="sidebar-heading">RDev Documentation</div>',
     },
     {
       type: "doc",
-      id: "tools/airvisor",
+      id: "framework",
+      label: "API Reference",
       className: "custom-sidebar-item",
     },
     {
-      type: "html",
-      value: '<div class="sidebar-heading">API Reference</div>',
+      type: "doc",
+      id: "framework",
+      label: "Integration Guides",
+      className: "custom-sidebar-item",
     },
     {
       type: "doc",
-      id: "api-reference/api-reference",
+      id: "framework",
+      label: "Environment Setup",
       className: "custom-sidebar-item",
     },
   ],
