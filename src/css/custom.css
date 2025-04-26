@@ -260,7 +260,7 @@ td {
 
 .docs_card_overview_wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(var(--docs_card_overview_wrapper_cols_value), 1fr);
   gap: 20px;
 }
 
@@ -272,11 +272,12 @@ td {
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .docs_overview_card:nth-child(1) {
   background-color: #292929;
-  grid-column: 1 / span 3;
+  grid-column: span var(--docs_card_overview_wrapper_cols_value);
 }
 
 .docs_overview_card:hover {

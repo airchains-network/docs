@@ -76,20 +76,20 @@ const sidebars = {
         },
         {
             type: "doc",
-            id: "introduction",
+            id: "validate-and-run-your-node/varyn-pre-requisites",
             label: "Pre-requisites",
             className: "custom-sidebar-item",
         },
         {
             type: "doc",
-            id: "introduction",
-            label: "Running a Node on Testnet",
+            id: "validate-and-run-your-node/varyn-run-a-node-on-testnet",
+            label: "Run a Node on Testnet",
             className: "custom-sidebar-item",
         },
         {
             type: "doc",
-            id: "introduction",
-            label: "Validating on Testnet",
+            id: "validate-and-run-your-node/varyn-become-a-validator",
+            label: "Become a Validator",
             className: "custom-sidebar-item",
         },
 
