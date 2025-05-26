@@ -81,9 +81,7 @@ const config = {
           // hideable: true,
         },
       },
-    }
-  ),
-
+    }),
 
   plugins: [],
 };
