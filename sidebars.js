@@ -77,16 +77,16 @@ const sidebars = {
 
     {
       type: "html",
-      value: '<div class="sidebar-heading">User Guides</div>',
+      value: '<div class="sidebar-heading">Rollups</div>',
     },
     {
       type: "doc",
-      id: "user-guides/quick-start",
+      id: "rollups/quick-start",
       className: "custom-sidebar-item",
     },
     {
       type: "doc",
-      id: "user-guides/tutorials",
+      id: "rollups/tutorials",
       className: "custom-sidebar-item",
     },
     {
@@ -96,17 +96,17 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          id: "user-guides/deploy-your-rollup/environment-setup",
+          id: "rollups/deploy-your-rollup/environment-setup",
           className: "custom-sidebar-item",
         },
         {
           type: "doc",
-          id: "user-guides/deploy-your-rollup/quick-rollup-deployment",
+          id: "rollups/deploy-your-rollup/quick-rollup-deployment",
           className: "custom-sidebar-item",
         },
         {
           type: "doc",
-          id: "user-guides/deploy-your-rollup/advanced-rollup-deployment-guide",
+          id: "rollups/deploy-your-rollup/advanced-rollup-deployment-guide",
           className: "custom-sidebar-item",
         },
       ],
