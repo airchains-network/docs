@@ -1,0 +1,71 @@
+---
+id: msg-vote
+title: "Vote defines a method to add a vote on a specific proposal."
+description: "Vote defines a method to add a vote on a specific proposal."
+sidebar_label: "Vote defines a method to add a vote on a specific proposal."
+hide_title: true
+hide_table_of_contents: true
+api: eJylVU1v4jAQ/SvWnLPQj9UeclraZbWsVEAt7WqFEDL2JLib2Knt0CKU/74ah49AUA8tF6zn8RvP85vJBkyBlntl9EBCDHcunT8ZjxCBxZcSnb8xcg3xBoTRHrWnJS+KTIlwqPvsjCbMiSXmnFYSnbCqoN2akPiYxERpdIyzHJ3jKTJvmODOM85WxmMHIigsXcYrdMRjthSnjDW+J/RLDASsxolHYsLLzEMMT6NJfz4aTwaj4fxx+DDu3w5+Dvo/IALUZQ7x9J2I5s7f/sMJ0rt5mPQGwxN0OGoB8z+Dya/5U38yglkEfl0gxOC8VTqFqq7ZOJ7NlWyX2tg8qrfU6qVEpiQzSQB2gVR9YmzOqfhSaf/tK5xJSnrZdroAM3XQ1DIupUXnWGJsK9EJbbVHzOIZhYeKoI+7gfynLEqIvS2xIsAVRrvaHVcXF+0CesyVQqBzSZmxXThxfc6891umoze4c2k31LLLw6j6hi4HFaqGJVtX1qzU+Fag8CgZWmvsx25+3DzCSKT/vRmU9tdXh8sp7TFFC+FqnqssnFIe87A4LiECLqWivDwbN9NUpz37vT64aXnjYA5uLV9T3u3Ln4s+pyGBPHXUs3cupV46FrLlK780kmzFpdy6ihnNOHMFCpUoceTlOpxazjgquOB+CTF0hXG5cZ3UrDqrywV6ftnZPTxEQK9wfxiT/TeeFxk2h9c78+Wo83e173uz0a1KJyaopDyRw+9SizACRwXq3nhAh9C6bQ9fdK47V2GyGOdzHlyieY6fluhI7v2beXzz3SLjSlPO0mbBi0G9KZxXj0Yk6TeLYElqx1PYbBbc4aPNqorglxLtGuLpLIIVt4ovqO7prIpgiVySPNMN/MM1xHBb98eXCV2HwrMyuOy0V6pod6InBBb+3dhZwxDj0cMEIlhsP4N5aCyw/JVGFH+FGCDaPndogYBtIOM6LYO9oeak338y+Yyb
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Vote defines a method to add a vote on a specific proposal."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.gov.v1beta1.Msg/Vote"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Vote defines a method to add a vote on a specific proposal.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgVote defines a message to cast a vote.","properties":{"option":{"description":"option defines the vote option.","default":"VOTE_OPTION_UNSPECIFIED","enum":["VOTE_OPTION_UNSPECIFIED","VOTE_OPTION_YES","VOTE_OPTION_ABSTAIN","VOTE_OPTION_NO","VOTE_OPTION_NO_WITH_VETO"],"type":"string"},"proposal_id":{"description":"proposal_id defines the unique id of the proposal.","format":"uint64","type":"string"},"voter":{"description":"voter is the voter address for the proposal.","type":"string"}},"type":"object"}}},"description":"MsgVote defines a message to cast a vote.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgVoteResponse defines the Msg/Vote response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

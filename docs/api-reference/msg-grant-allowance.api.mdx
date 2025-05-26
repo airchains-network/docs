@@ -1,0 +1,74 @@
+---
+id: msg-grant-allowance
+title: "GrantAllowance grants fee allowance to the grantee on the granter's
+account with the provided expiration time."
+description: "GrantAllowance grants fee allowance to the grantee on the granter's"
+sidebar_label: "GrantAllowance grants fee allowance to the grantee on the granter's
+account with the provided expiration time."
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVk1v20gM/SsDXnpRnTS96dTsoii6QNGg7Z7cYEHPUNJ0pZkpOXJiGPrvC47ij9iboOguUF88okgO+fge7S3ERIzZx/DeQQ0fpP3rHWPI130f7zBYggqYvo8k+bfoNlBvwcaQKWQ9Ykq9tyX84pvEoDaxHQ2oJ0di2Sd9O6d+nNmgc2IS8eBFfAymiWyKC5HJ0Uii4MyY9LwP+hpiYxoiMQ3HweSODFobx5BNbB6ieQEVJNbOsicphe7b0QfnvBaF/c2x03Qa9CZvUgmYv0Ey+9DCNFU7S1x9I5uhOml1f5uxGMyKDIaNlrdC8bbSln10eiqO5LQhsw9awFRBO+NwDuPDC+Nlbt45JhHNro+jEJsV+dCa2dEZDIfU6oYh5o64uL4Q04zBiQJ20uSuBH6qBH6uhOKiVZzenjvy/OSlZ8hOavqlPFLyeyYHdeaRJjVIikFmilxdXp7jc21ktJZEmrE3O3fN9X8p59NDTuOo8YHmMXyQ9uIJt10NRsE9gv0AckG5wbHP/9JOMGOg+0RW6UTMkX+uq8fqstEVejeRB8xQgw/59dWhOB8ytcRQSsvo+xLlMw1ypMm9Av+zqA/cQ2bc6L0DiWD7QytgmkHM2ArUSx0Z3J4y94S2RSPyWPvKUR3mTuUxHD3yC/kadiy987kr7xLHtXc6mfvk51Vush/KaAbKXdS9nqIoSAlzBzVc2ChDlEVDVDIv1q9WlPHV4pxDUIEO8tPhJ+DtPQ6pp7Ot+uaJBXJkO9opR24+NLFA7LOmhT/GYEsXHxOF65v3UMGaWGYM15eL14srDdOWBiwUCzjQL8H30Xz3JMl0ny9Sjz5onSP3hfwF+iU8Az1UJy0ohTqdXL2E7XaFQn9yP01q/j4Sb6Be3lawRva4UuiWt1MFHaFThJdb+Js2UMPvsz5fftHq1L0fC8tPtTpVu4hraynlZ31vj8h18/HzF6hg9fD/YCjCBsY7XZ94BzVABbGgVCRYbFvoMbRjkRfMOfXzD4m6CU0=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"GrantAllowance grants fee allowance to the grantee on the granter's\naccount with the provided expiration time."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.feegrant.v1beta1.Msg/GrantAllowance"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+GrantAllowance grants fee allowance to the grantee on the granter's
+account with the provided expiration time.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgGrantAllowance adds permission for Grantee to spend up to Allowance\nof fees from the account of Granter.","properties":{"allowance":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","description":"allowance can be any of basic, periodic, allowed fee allowance."},"grantee":{"description":"grantee is the address of the user being granted an allowance of another user's funds.","type":"string"},"granter":{"description":"granter is the address of the user granting an allowance of their funds.","type":"string"}},"type":"object"}}},"description":"MsgGrantAllowance adds permission for Grantee to spend up to Allowance\nof fees from the account of Granter.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgGrantAllowanceResponse defines the Msg/GrantAllowanceResponse response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

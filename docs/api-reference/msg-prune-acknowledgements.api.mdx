@@ -1,0 +1,71 @@
+---
+id: msg-prune-acknowledgements
+title: "PruneAcknowledgements defines a rpc handler method for MsgPruneAcknowledgements."
+description: "PruneAcknowledgements defines a rpc handler method for MsgPruneAcknowledgements."
+sidebar_label: "PruneAcknowledgements defines a rpc handler method for MsgPruneAcknowledgements."
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VUtv1DAQ/ivWnEAK21IQh5woiANIQMXjtKqqWXuSmDq2sSdtV6v8dzTOPtrtFgECckrG8/I33zdZQYiUkG3wbw3U8D63F2dp8HSqL324dmRa6slzhgoSfR8o86tgllCvQAfP5FleMUZndcly9C0HL7asO+pR3gxlnWyU06nCwQLKUGM9ZcUdqXUpxctIqgmpGA+HpahnUEFMchG2lEtvHXpP7sIa+ZIsUEPmZH0LYwXO9rY03oTUI0MNg/X84jlU931jSPxQnmxbT+nA0bhNFBbfSDOMYvovQEiETWSg5jTQKIYcg88TMCfHx/dHcqryoDXl3AxObdwl118e8ad16r0bro1/OmsOjO4iSoC5yIKX19PJ3a4+DP2CkgqN2jqpKUo9sl67wVBWi8CdiqgviRXul0dvNmeJNNnIWV13lEhhlJ6SRabH0uEv8GpqO1GP1lvf/m7njhpW2DClcgnr21+qe4iYhZkNDo4PUMOrwdNNJM1kFKUU0p8xZE+fwdAd/VnPz0527VrP1FKC0hqjdSXKMvX5ltrWV6gAjbFSF93Z7TLjPlVeToH35bqDBVPCpdTtKWdsD3ofwlCM2Gao50J/ON9X+8+ljkJt1aE3jpLqibtgihYekpJgP7lBDTFkQSEid1DDkV3omQ6JZustOLt6Onuf26OH9roM69Nut7+5wT462l+jm+tvt+fOsF2RO9NmM94ivPVNKGhaluzwbvBawFEfI/nTs7dQwRWlPMF1dTx7NjuZ9m/mHgubPPb0b6C8M6vtwJlu+Cg6tF4aGZIrRC4oz+EBlKE63J8wopM51XNYrRaY6Wty4yjm7wOlJdTz8wquMFlcCDzz87GCjtAIivMVXNISang9ye3JF2lQ3N1QSLsvvbHaRJxqTZF/6nt+i0pnHz9/gQoW6398X3QKCa/lz4LXUANUEApQRVHFtgKHvh2KWmDKKc8PLbX5Nw==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"PruneAcknowledgements defines a rpc handler method for MsgPruneAcknowledgements."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.channel.v1.Msg/PruneAcknowledgements"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+PruneAcknowledgements defines a rpc handler method for MsgPruneAcknowledgements.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgPruneAcknowledgements defines the request type for the PruneAcknowledgements rpc.","properties":{"channel_id":{"type":"string"},"limit":{"format":"uint64","type":"string"},"port_id":{"type":"string"},"signer":{"type":"string"}},"type":"object"}}},"description":"MsgPruneAcknowledgements defines the request type for the PruneAcknowledgements rpc.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgPruneAcknowledgementsResponse defines the response type for the PruneAcknowledgements rpc.","properties":{"total_pruned_sequences":{"description":"Number of sequences pruned (includes both packet acknowledgements and packet receipts where appropriate).","format":"uint64","type":"string"},"total_remaining_sequences":{"description":"Number of sequences left after pruning.","format":"uint64","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

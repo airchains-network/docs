@@ -1,0 +1,71 @@
+---
+id: msg-channel-open-confirm
+title: "ChannelOpenConfirm defines a rpc handler method for MsgChannelOpenConfirm."
+description: "ChannelOpenConfirm defines a rpc handler method for MsgChannelOpenConfirm."
+sidebar_label: "ChannelOpenConfirm defines a rpc handler method for MsgChannelOpenConfirm."
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVk1v20YQ/SuDPTN06hQ96FTHCBAXiG246UkyjNFyRG5EzjI7S8mqoP9ezJKyZIlOgSKH6kQt5/O9N7PcGt9SwOg83xRmYr5I+XRdITPVdy3xteeFC43JTKDvHUn86IuNmWyN9RyJoz5i29bOphAX38SznomtqEF9KkhscK2+7cOfR4eCFo5JAKGREoQ4wnwDCA9U44YCRA/XFTqGjxD9jNEu2a9rKkqCWBHYCrkk8Iv0xFSDRIykbnf3n27B8+B+lZvMtEE7jo4k9dF7PLlC/8VNS2ZiJAbHpdllpvUhvvkueL94QrvUtwsfGoxmYuabSCZ7y7oiV1bxHJdbda/rTerngVZOnOfPyRicgGMbqCGOVABGILQV9KFgXbmaYEnUOi5nvPe97Zq5IlcRCDaUw2e/phUFEN8QWM9CLJ0A1qUPLlaNQIMbsJX3QgnlQEIxBRgyOQZLISqQ1nPhtHQBysscKgwFLHxYStZj/65BWzmmGc8D4dJxObAkcMMaVAgsCkn2quOh6pOOxUOsMM54KES157gjUYbnBI1nFz07mxBMniiaklbEgDIC6oxLigKpxzNNhMH0iK0XejvH8bdflWAXa2X4CKC1i5VL3UHpNPU+0JgeXpJw6vnfk+wdEha97muno+IEbBcCcaw3MJZsdwh0kBQqbH4UtgIjgsaYccplkRVm65sWgyqwRMcSAdnHigIMQRe+11vbhdYLiQ5k1xYYNSZyMeNFIPo7aSFVLodS/fwb2ai4iCu5h2Oki9fGevS/Wy+6J12gwkxi6CgRLa2OW5LW5fv358N/BdJZSyKLroa9ucb6mUv2YYj7goa29kXKixHA9jXMWBHPz2kaoF9gV48ssyuGjum5JavTSyH48N/aOlnVvqBXY+I4frg8FOc4UknBpNIiujp5uUiNHMlpaCEzWPQrDOv74zS7023we+94rseDIDEE3GjehkSwHLUew1APsRQzmSpn5vFUzj/UcmgtVMhFTQEaipVPGxhGyVfUexszMa2XtPMwVmZiLtzc5tYHygd156tf8nFdmMwoRw+HL4FPz9i0NZ1epPuuj+7Po6PDtXl6eNi3Zyv4YHq2OI+W6n55HB05XvjEx7AB/+jYKrygjV3d35jMrChID/jqff4hv+wvfokNJj0yNvSzyXjF84tYIj3Hi7ZGx1pCF+o0BImnqXmDJ5ONVKZSqpTmydRst3MU+ivUu50ef+8obMxk+piZFQaHc0Vl+rjLTEVYKHjTrVnSRjvu5/TdV61Ozesuqf10ZnfZ3uPKWmrjD20fj5R4f/fnV5OZ+fBN2aQBNwHXSjOuzcSYzPiEUn8x69nW1Mhll8bM9DH19w/Gq9TC
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ChannelOpenConfirm defines a rpc handler method for MsgChannelOpenConfirm."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.channel.v1.Msg/ChannelOpenConfirm"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ChannelOpenConfirm defines a rpc handler method for MsgChannelOpenConfirm.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgChannelOpenConfirm defines a msg sent by a Relayer to Chain B to\nacknowledge the change of channel state to OPEN on Chain A.","properties":{"channel_id":{"type":"string"},"port_id":{"type":"string"},"proof_ack":{"format":"byte","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"},"signer":{"type":"string"}},"type":"object"}}},"description":"MsgChannelOpenConfirm defines a msg sent by a Relayer to Chain B to\nacknowledge the change of channel state to OPEN on Chain A.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgChannelOpenConfirmResponse defines the Msg/ChannelOpenConfirm response\ntype.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

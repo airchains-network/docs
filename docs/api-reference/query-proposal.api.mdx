@@ -1,0 +1,71 @@
+---
+id: query-proposal
+title: "Proposal queries proposal details based on ProposalID."
+description: "Proposal queries proposal details based on ProposalID."
+sidebar_label: "Proposal queries proposal details based on ProposalID."
+hide_title: true
+hide_table_of_contents: true
+api: eJylV19v20YM/yoHvmwDNDtNhz3oaUbiFi6K2rOd7SEJjLNES9dKPPWOcmsY+u7DnSRHtpQtzZ5s8z9/5JH0EXSBRrLSNIshhD9LNIfNwuhCW5lBAIU0MkdGYyG8P0KMNjKqcPIQQtHIbVQsYtwpQis4RVGS+lqiULHQO09oBUcQgPKaklMIgGSO53YgAINfS2UwhpBNiQHYKMVcQngEPhRO3LJRlEAAO21yyRBCqYh//w2q6tGp20KTRes0rq+u3Md52BNhyyhCa3dlJlpxF1qkiZHYaciiyFTkgRl/tk7t2Ank3J4HrcVs2dgTqsaitS9c8GKnjad6lXGrI5aLG5Ejpzp2YTg40LCqU2jB6fs9qXexj7RBsVOYxSLHfIvGuiJIkeg9GpIUnVfj3FcXgDhWzo/MFl2R6lLlj7ool8WpqqCl6O1njBiCi+gbXy1ObVA/WdFwRlA5nUJbxRukeMMqxz4KlxKtQaRY+N8O80ZIaRp1+yaWjL96s8Fl/AHsFMlswzLLDhuDtsy477wv07r3HOE5ouFcPgbxd4r0QF9dLyhKhDyxxF5JkSwXN4HgVNmmnsoK0iwKXZSZZIxFSawyZ/OBOvDtNTtrBRqlY5FK66DAgc6SW8tSUT+rhtGmQqXrI99GDWOvGa3Q1Al5NAQh6b5x0n27pH/A5Oab4nSzRx40/sQddOO4wnNf6vBQg3Xu54C2b94RX2a19ziaZ9UOwZ6/V03ay/E4kJxlyeVAfjX9zNWpN2veyD/onfTPAhbL+WK+mnzcrNaT9d1qc/dptZjezN7NprcQAFKZQ3j/H1KX3NvpYr6arTeL6XI2HxL4a76efXr/PH8xWa0GLS+nH6Y360HWu8ns4/QWHoewKre54memUIfZNob/rncd4JyMtT80hFizzDbN+Oq7PWOfHDtiO/JcL/ZWMGM+UPQbrehUcilYf0GqH4wUMZLOFfmFKCTFQpKQuS6JRw/0QJ/m62ko1ik2xKeJJUnMiMW3VEWpUHmRYY7Eza4qLeu82XwPZFVCkkuDVrQ3gNgeRKITXRjNemCCeWcD28f1Jun8JXvpiSCNkQf3u56g/7JzLgR6K0fv2incmwQvK3vjwLI0z3VcT6SNwlOcb09sJt3rAumDNUCpqs4k6N1aJErC7wVGbmGhMdq87uS6PFRiD8kpCUX89vopAUWMCZq6EViqzGud+v7yMvnfx85AE+VorUxedBpVNYgsE3dl1/ekG0HPnHvuYFBonwZLk6LYSouxq3QrOrt1GNfvC0JIkP1JzymEMI60zbUdJ3o/3r/ZIss349aiHR87G6fyV/vOr1tWnLnIP5QU+VkwL5AmixkEsEdjm9a8Gr0dXfulpi3n0peyufVfncUZGCdMGb/zuMjcGVMFUBp/JtcZ3kOdIQSQ6L0LsM4Snnat44XdxfsYQKotO+Xj0QVyZ7KqcmR/pUF4/xjAXholtw4G949IWfc9hnAnM4u9OE8NDj8vm6H2i3jVOh/MuO06OrgEZVa6XxDAFzxc/LGqHqsAUpQxGh94LTGJIiy4o9t7he4/1amD3k/XUFX/AAJ0/TI=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Proposal queries proposal details based on ProposalID."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/gov/v1beta1/proposals/{proposal_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Proposal queries proposal details based on ProposalID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"proposal_id defines the unique id of the proposal.","in":"path","name":"proposal_id","required":true,"schema":{"type":"string","format":"uint64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryProposalResponse is the response type for the Query/Proposal RPC method.","properties":{"proposal":{"description":"Proposal defines the core field members of a governance proposal.","properties":{"content":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","description":"content is the proposal's content."},"deposit_end_time":{"description":"deposit_end_time is the end time for deposition.","format":"date-time","type":"string"},"final_tally_result":{"description":"final_tally_result is the final tally result of the proposal. When\nquerying a proposal via gRPC, this field is not populated until the\nproposal's voting period has ended.","properties":{"abstain":{"description":"abstain is the number of abstain votes on a proposal.","type":"string"},"no":{"description":"no is the number of no votes on a proposal.","type":"string"},"no_with_veto":{"description":"no_with_veto is the number of no with veto votes on a proposal.","type":"string"},"yes":{"description":"yes is the number of yes votes on a proposal.","type":"string"}},"type":"object"},"proposal_id":{"description":"proposal_id defines the unique id of the proposal.","format":"uint64","type":"string"},"status":{"description":"status defines the proposal status.","default":"PROPOSAL_STATUS_UNSPECIFIED","enum":["PROPOSAL_STATUS_UNSPECIFIED","PROPOSAL_STATUS_DEPOSIT_PERIOD","PROPOSAL_STATUS_VOTING_PERIOD","PROPOSAL_STATUS_PASSED","PROPOSAL_STATUS_REJECTED","PROPOSAL_STATUS_FAILED"],"type":"string"},"submit_time":{"description":"submit_time is the time of proposal submission.","format":"date-time","type":"string"},"total_deposit":{"description":"total_deposit is the total deposit on the proposal.","items":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object"},"type":"array"},"voting_end_time":{"description":"voting_end_time is the end time of voting on a proposal.","format":"date-time","type":"string"},"voting_start_time":{"description":"voting_start_time is the starting time to vote on a proposal.","format":"date-time","type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

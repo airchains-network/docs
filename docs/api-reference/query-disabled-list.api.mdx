@@ -1,0 +1,63 @@
+---
+id: query-disabled-list
+title: "DisabledList returns a list of disabled message urls"
+description: "DisabledList returns a list of disabled message urls"
+sidebar_label: "DisabledList returns a list of disabled message urls"
+hide_title: true
+hide_table_of_contents: true
+api: eJydUsFu2zAM/RWBZyNO25tPK7Zh6DBgWbGdgqBQZCZWJ0uaSAcNDP37QDnJ0ibYoSfBNPn43uMbIURMmm3wDy008GPAtH/6ZEmvHbbfLDFUkJBi8IQEzQi387k8LZJJNsogNHCvaDAGiTaDU8f2GVRggmf0LBM6RmdNWVU/k4yNQKbDXl/inRN4PMApS4o7PMEr3kdUm5BKtRCvz+fU4+Kj6pG70AqTmEQp20lFe2h8ciKxGcEy9uWPoEIDxMn6LeTqWNAp6T3kf4WwfkbDkLPUWtzowfEVZ7waPL5ENIytwpRCep9Br/mb0KK8m5B6zdCA9Xx3Cydy1jNuMUGhxto6uibyIKEC3bZW9mq3OF+T39r2YRq8cClf+FRBj0R6e7X7modS1FuCZjmFEFbVf0KhEvKQPCmt5IIqbNTxpOqwWA3JEQgPiQA0sEWRGjV30EBtAvWBamOTGSzXu5v6ADBFogLrN6GQt+yE69fBG2Givkf094sHqGCHiSZuu/nsbnYrsmMg7nU5ntc9vp/3K/EnDxlfuI5OWy/LhuRKNoqmJUyaJFWTKqF4I1DnylYVdEFCv4RxXGvCX8nlLOU/xfdmuapgp5OVEfnKFXSoW0zQLEf4jXuJtTEYC752Qzn72/Dm1Zn1Xz7/hJz/AlM+i7I=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"DisabledList returns a list of disabled message urls"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/circuit/v1/disable_list"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+DisabledList returns a list of disabled message urls
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"DisabledListResponse is the response type for the Query/DisabledList RPC method.","properties":{"disabled_list":{"items":{"type":"string"},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

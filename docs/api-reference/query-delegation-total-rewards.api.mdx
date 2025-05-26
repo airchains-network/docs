@@ -1,0 +1,74 @@
+---
+id: query-delegation-total-rewards
+title: "DelegationTotalRewards queries the total rewards accrued by each
+validator."
+description: "DelegationTotalRewards queries the total rewards accrued by each"
+sidebar_label: "DelegationTotalRewards queries the total rewards accrued by each
+validator."
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVsFu2zgQ/RViLu0CQpymN502aIqie9hmg+wpNooxObLYSqRKjpIahv69GFKW7Votst297cnykDPz3pvhkDvwHQVk6917AyX81VPYfryhhjbJeO8Zmzt6wmAiFNBhwJaYQoTyYQeGog62k41QgslePnxEYwLFqAxV1lFUXJOaVtV+lb36IulU5cMFFGAlSIdcQwEOW5oLCQUE+tLbQAZKDj0VEHVNLUK5A9524hQ5WLeBYVjJ5th5FynK+tXlpfycor5WsdeaYqz6Ru23CxztHZNj8cCua6xOgiw+RXHbHaU9jZcUnBfwboyubJZkn00JcFFBrEuXIizmQ6i72zeqJa69EYxdkPKxzfzCWKczTOPCVA9smhFAtqPWoSej1luFh0KlmjC18Uhbv/5EmqH4LsEB7M3eOwNWgbpAkRxnygfAS+er42wv4v7bejci+xFF+Xo2Mv3GW3egrth/JqeeLNcpvfOtdTkpOpNM2rbYKGx97/hi6Zbuzw/3b0t1X9NoVJWlxkgZ0akb0uqptrpWtu0aaieuuo/s27FaSxftxiH3gaLat7AIvvEb3wXP/pxsTjbT2ULS+Xau54dib8IQcCt7H7Gx5uQQPc+Ppe/OmymZT4527FslxTztqn/UPv/zIh0Mo0JD2mSowr7hmaHlVO/oa0eaySgKwYdfm12nXLQ3JL+VDy0ylGAdv76CCZx1TBsKmRujbeJPTyIaYyUvNrfHaYbvJfw9Oz6rKVuKETezu+c0FCNu5LbKgxlWPx5dJ3NWbiY79nfu+JlhSajrpZvOlyifGwlK2BCnC5NrKGGhfWx9XBgraNd9qsbjqzUxvlpMIzAudmcX3rAI0+1rXeUTccuN8PyjdzqdiQ8duevb91DAI4WYeT1eXry+uBLJOh+5xVT48Vr9jzmfCDrVhekrL7oGrRMQfUijJOvxAFkP8T1SRPBnTVLQvSpQQDn/EMjCrAqofWQJu9utMdLfoRkGMafnBZQPKxmCweJaZJN3i43ybaCssIl0xmA6PvDybpwCv6l/+7yZlWXf3m4LaVD38g8K+Ezb2efPsBoKqAkNhcQk77vWmjo+inB26OUtNLXmu7f3MAzfAOQ8jk8=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"DelegationTotalRewards queries the total rewards accrued by each\nvalidator."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/distribution/v1beta1/delegators/{delegator_address}/rewards"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+DelegationTotalRewards queries the total rewards accrued by each
+validator.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"delegator_address defines the delegator address to query for.","in":"path","name":"delegator_address","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryDelegationTotalRewardsResponse is the response type for the\nQuery/DelegationTotalRewards RPC method.","properties":{"rewards":{"description":"rewards defines all the rewards accrued by a delegator.","items":{"type":"object","description":"DelegationDelegatorReward represents the properties\nof a delegator's delegation reward.","properties":{"reward":{"items":{"type":"object","description":"DecCoin defines a token with a denomination and a decimal amount.\n\nNOTE: The amount field is an Dec which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}}},"type":"array"},"validator_address":{"type":"string"}}},"type":"array"},"total":{"description":"total defines the sum of all the rewards.","items":{"type":"object","description":"DecCoin defines a token with a denomination and a decimal amount.\n\nNOTE: The amount field is an Dec which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}}},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

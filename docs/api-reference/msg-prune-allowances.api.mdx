@@ -1,0 +1,71 @@
+---
+id: msg-prune-allowances
+title: "PruneAllowances prunes expired fee allowances, currently up to 75 at a time."
+description: "Since cosmos-sdk 0.50"
+sidebar_label: "PruneAllowances prunes expired fee allowances, currently up to 75 at a time."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1v2zAM/SsCz66TtigG+LRs2KEDigZtd8qKgZFpR60tqfpIExj+7wPlNs1XC2zYcrHMkOJ7j09yByV56ZQNymgo4FZpSUIa3xp/4stHMc4vxpCBseSQcy5LKODK17+mLmqaNI15Ri3JQwaOniL58MWUayg6kEYH0oGXaG2jZKofPXhu1IGXC2qRV7sIrny9t7Ww/O4FraxyVIqKSODm3/yn/qnfg20dAw+KPDdK+7jDlkNcKC/CggSWpSPvhanSa/TkEgKl6w2ErfaQQVhbggJ8cErX0PebiJk/kAzQc+g/smThuQaK4CL1HPDWaD+wPhuPDylPhI9SkvdVbMRrOnP5Z1O7edlUlFQpJsZiXvl69F7eKwrB4n3I90DdJG+FsQlHmGoRNa0syUClIOeM+zvCu16SpiR+Vsa1GKAApcP52Rs4pQPV5CBBC6iaVKUCtWmxSyEDLEvFfbGZbrfp9y38eSjsDjz3Zjp0DtfctyXvsT6afUxDDmLtoZjxNOGeNwgLw+fdGs8gLYYFFDAaJpJXRLVDHfLl6ZwCnuZHpgsZsJI3b1fDtxW2tqHt87jBlYHSlUmAVeAc+B61ZF3EtSU9mV5CBktyfhjtcpyf52dcxgBbTAPT2HLhH52uTMjoHOnQrEW0Ihjx6UJgECiCapNLdjy1dbe9e2G+6BtoFUa2QaUZZnRN4p10nMEHOkK2z4AHsuA5FDPoujl6+uGavufwUyS3hmJ2n8ESncI5Sze77zNYEJas8KyDR1pDAV8H4Cd3DI/Tm5g8s+/8PnutmEhJNnyYu22V6fXtHWQwf/kItOmYgMNnvqfwGQpIXxOuToZOsQ4a1HVMZoVhT/79BpqTUrQ=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"PruneAllowances prunes expired fee allowances, currently up to 75 at a time."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.feegrant.v1beta1.Msg/PruneAllowances"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since cosmos-sdk 0.50
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgPruneAllowances prunes expired fee allowances.\n\nSince cosmos-sdk 0.50","properties":{"pruner":{"description":"pruner is the address of the user pruning expired allowances.","type":"string"}},"type":"object"}}},"description":"MsgPruneAllowances prunes expired fee allowances.\n\nSince cosmos-sdk 0.50","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgPruneAllowancesResponse defines the Msg/PruneAllowancesResponse response type.\n\nSince cosmos-sdk 0.50","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

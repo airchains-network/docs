@@ -1,0 +1,71 @@
+---
+id: query-get-rollup-info
+title: "Queries a list of GetRollupInfo items."
+description: "Queries a list of GetRollupInfo items."
+sidebar_label: "Queries a list of GetRollupInfo items."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVktv3DYQ/ivEnFqA9RpO0YNO3QSO47ZI0zTtZbEwxuRoRVsiGXJkW13ovxektG/ZcICcVjsvzjf8ZoZrcJ4CsnH2WkMBf7UUupsr4s+urlt/bUsHEjwGbIgpRCgWazAWCvDIFUiw2BAUEAZzDRICfW1NIA0Fh5YkRFVRg1CsgTufbCMHY1fQ98tkHL2zkWLSX5yfpx9NUQXjU05QwFzEVimKsWxrsTE/AwnKWSbLyQO9r43KKGZ3Mbmt9471IWFkMxwSdsBOdKjqd85yQMVzrQPFLGXDdcr7/YdLoZFRlC4IFEMgkMewJGBUL4S5a61KmYpHjI1Qo6HA0XIinqrQ5Os5KaEEFQiZ9NtuUqvxD2SK/AFj9YzBlyzapafxdSA1Wdd8zLc/EXeFTI/YTZXh2PSeuqwwTM20xSjAELDLHk38l4IpDYWXAjfOmnsK++AGOGJFlqKJGegUNh/cA4VLq70zA8OeMTku3iB9XQEH2wHIwN3fKd9i6UKDDAXcdkxTnoFq7CjM/373EvzR6mqCgqPqWfzbbp6Mm5UDr94iq+qjO8i6NZZ/+fn5sIPne2OxNv+R/rYQsfW+7g7o8gqvYwJxWdHlE6mW3QsM2jm62ztSPCnpcyuU2NY8MbusaC09eVJMWlAILnyPEaacpgPkxvKbix1wY5lWFIYuZTT1ZH+NECSg1iadi/Wn/WMGiu4d+ytv2H5Up4kKNxQjriatp2qYhLhK22XYQLCUR6VMYkNRoKhNZOFKcbCkREaXatoQVy6tshVxXl1cQQEzNCGP0fiTJX504X62mcOzgZazFfHN8HljbOlm600X9CDBjPti00G/bYb4n57s/NM1SHigEIdcH87P3pxd5B53kRvMlzkuylfjOIC/rSLTE898jcam8G2oMzsyxgWcYAS53TawaT+QcIQUJBTbjl9KqFzkFG69vsVI/4S675P4a76YYrGU8IDB4G0qxGIN2sT0raEosY50kvmW5PDD5/Fp8KPYkfUQ0YZHtksVxbpN/yAvif1XRr/sJVSEOo33xXpUz5Uiz3uOJ02VnhxbglxdfoG+/x/nQyNL
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Queries a list of GetRollupInfo items."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/airchains-network/junction/rollup/get_rollup_info/{rollupId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Queries a list of GetRollupInfo items.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"rollupId","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"rollupInfo":{"properties":{"aclContractAddress":{"title":"FHE data for a rollup","type":"string"},"ascContractAddress":{"title":"junction wasm contract address","type":"string"},"chainId":{"type":"string"},"createdBy":{"type":"string"},"daLatestHash":{"type":"string"},"daType":{"title":"da data for a rollup","type":"string"},"denomName":{"type":"string"},"gatewayContractAddress":{"type":"string"},"keys":{"items":{"type":"string"},"type":"array"},"kmsVerifierAddress":{"type":"string"},"moniker":{"title":"rollup genesis data","type":"string"},"proverEndpoint":{"type":"string"},"proverType":{"title":"prover data for a rollup","type":"string"},"proverVerificationKey":{"format":"byte","type":"string"},"relayerASCAddress":{"type":"string"},"relayerGAddress":{"title":"relayer data","type":"string"},"rollupId":{"type":"string"},"rollupLatestBatchNo":{"format":"uint64","type":"string"},"rollupLatestFinalizedBatchNo":{"format":"uint64","type":"string"},"supply":{"items":{"format":"uint64","type":"string"},"type":"array"},"tfheExecutorAddress":{"type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

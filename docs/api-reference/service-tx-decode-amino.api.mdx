@@ -1,0 +1,71 @@
+---
+id: service-tx-decode-amino
+title: "TxDecodeAmino decodes an Amino transaction from encoded bytes to JSON."
+description: "Since: cosmos-sdk 0.47"
+sidebar_label: "TxDecodeAmino decodes an Amino transaction from encoded bytes to JSON."
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVctu2zAQ/BViz4rlJAUK6FQ37SE5NEaSnpwgWFFrm4lEMiTl2hD078WScmznURRFi/okL/YxMztadVCRl07ZoIyGAq6VllQIaXxj/JGvHsV49OEjZGAsOeSk84rTyK2UpPub9ReSpqJJo7SBDBw9teTDZ1NtoOhAGh1IB35Ea2slY4f8wfOsDrxcUoP8dAjioOtVaimUF2FJYpggwsaSmBsXgwOc0UHhrb6anomGwtJUo1t9q9/lZh2zC4p8RMrF96XS6CKJuXENBiig3ASCDHgyFOCDU3oBff8cMeUDyQA9h/4vIe6pHFVQBNdSzwFvjfaJ4Ml4/FrzifCtlOT9vK3FNn0E2V/aYeq34zz8/9db3KL8jZ3Fpc2xrcMb4mjRalpbkoEqQc4Z92caHWJkkgcOUzqcnuwspnSgBTmI0AKqOlapQI3fIzVQyACrSvFcrKf7Y/qX0nxKha9V2cmCzuGG5zbkPS7ezH5LQw7iwkMx254IuOMmvD0owBrPQC2GJRSQpx3mYZ2vjksKeJxXcfE5DueEBbzanZSva2xsTa9f0mdQGSg9NxGtCpwJF62WLIq4tKQn03PIYEXOp72uxqPT0QmXMbIG47Y0NvTSwCIB8wK1SIHgUHtMrefONII0Z1SCr4QXwYiL68tvbI4DK+3dxPdv7aBroHXIbY1KM8LW1dFBUbsZpCpOXjOlpF+cFl2VJYVY/SWLXsyg60r09N3Vfc/hp5ZYutldBit0CkuWa3bXZ7AkrMhBMevgkVjdswT56IZxcXrdRpO8tHqfbSsmUpINv8zd98X08voGMiiHz0YT3wtw+INvGf6AAuIXiKujg2Osgxr1oo3uhNSTfz8BGydgjQ==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TxDecodeAmino decodes an Amino transaction from encoded bytes to JSON."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos/tx/v1beta1/decode/amino"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: cosmos-sdk 0.47
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"TxDecodeAminoRequest is the request type for the Service.TxDecodeAmino\nRPC method.\n\nSince: cosmos-sdk 0.47","properties":{"amino_binary":{"format":"byte","type":"string"}},"type":"object"}}},"description":"TxDecodeAminoRequest is the request type for the Service.TxDecodeAmino\nRPC method.\n\nSince: cosmos-sdk 0.47","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"TxDecodeAminoResponse is the response type for the Service.TxDecodeAmino\nRPC method.\n\nSince: cosmos-sdk 0.47","properties":{"amino_json":{"type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

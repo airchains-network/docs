@@ -1,0 +1,71 @@
+---
+id: query-vote
+title: "Vote queries voted information based on proposalID, voterAddr."
+description: "Vote queries voted information based on proposalID, voterAddr."
+sidebar_label: "Vote queries voted information based on proposalID, voterAddr."
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVktv20YQ/iuDOSUAK9lO0AOBAFVjtVUPlmorDgrbkNfcobgJtUvvLuUIAv97MEvqQUoOWvXUk6jZeX7zXKMpyAqvjB5JjPGvkuxqdms8YYSFsGJBnqzD+G6NklxiVcG8GGNhTWGcyGdKgqRUaXLgM4JSq+eSQEkwaSBsGHsYoQqSwmcYoRYLauvBCC09l8qSxNjbkiJ0SUYLgfEa/apgduet0nOMMDV2ITzGWCrtf36PVRV1XVwaT7blXE0RUlpyDlJjWx66V1wMUv/Cuap6YGZXGO3I8fvF2Rn/tN0bgCuThJxLyxw27OxCYrQn7VlCFEWukpCf/hfHYus9s219IXecuutGF6g66o1uYDe3UQf2PvPD9eQjLMhnRrJ5hoOsV7XrHPyhLaa2kH0uySqSAeFDJaaR66q5pMJSIjzJGCaWUrLgDZSO4LEWcY+gtPMkZA+mmXKQKsolB+bIg9KNXXevVQpCSzA6X4FK4TEn/abR8RY+fIDzx/DuM+GhpkMmHLyQmmceznsw0iDy/F4bn5GFRDhyEfidzReV5xyyKHPPXt6Op8PZeDIdja9mn65uJsOPo99Gw0sOvuHCGF9hwghJlwuM737Asf/y9/CmQxn8ejMdjK461KvxAWH2eTT9Y3Y7nI7xIepWatSkxh3mpnnYFFENVJPhBkHXu9f3+kbphGJIjFsY95OTX+Gs9/4dt5KnhdtrD/P0hRIf8Nk39LnRzKU4rjOzqSzB48TzJAlWuXTDhyty5X9s/J8VoGnbCzNC5KodZQTKw6J0HrTxwN0plAZZ1q1JbUT+Z+mv03oITNMXajc3N60inDOJ4p6FF+Wz3XuNAAPQHYfVliSsFSu2uz/2D4yftFu6C+FIsPUgPzrM7H6ouxVxxE43uKhT3scoTNtWxcEe0FBq+lZQwpiStcaetg7aJZ8YGQb3Fhel/buLXQBKe5qTxeCaFyoPUq/2rJBSsV2RT/bNVN1O+6UWPNyJR4pgQc6J+VHuYxgyUcz5GKl3HRd0G8qwzZqVEDIpQekaAG7zJ+GIV8Q2n6PLqE74QErLWNdbEGOckw8XkM8wxn49Xvpzs+wvz5/Ii/P+9mjor/fKteqzOtdfB61VuCdSEwJUPud4/ix1EpwZF6QHkxFGuCTrmko8673rXYT+MM4vREhwc4X859haUG0R9/TN94tcKM1mS5uHSgpx32EdN0Y4N0t2tI4dd+3Lb3H7hAsAMLnutocIM+M8a1uv2clPNq8qJj+HHMZ3DxEuhVXiifHhO1M5/pYYpyJ3dOD4th/wzXVzkb2Fk0bGUQg2RapXHIzIS/6HEX6lVedcDRfnKc6edJie4GydgeqhijAjIXn23a2bt0GSUOH3pA5mC1+x2374fTjFqvoOhYI0aA==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Vote queries voted information based on proposalID, voterAddr."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/gov/v1beta1/proposals/{proposal_id}/votes/{voter}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Vote queries voted information based on proposalID, voterAddr.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"proposal_id defines the unique id of the proposal.","in":"path","name":"proposal_id","required":true,"schema":{"type":"string","format":"uint64"}},{"description":"voter defines the voter address for the proposals.","in":"path","name":"voter","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryVoteResponse is the response type for the Query/Vote RPC method.","properties":{"vote":{"description":"vote defines the queried vote.","properties":{"option":{"description":"Deprecated: Prefer to use `options` instead. This field is set in queries\nif and only if `len(options) == 1` and that option has weight 1. In all\nother cases, this field will default to VOTE_OPTION_UNSPECIFIED.","default":"VOTE_OPTION_UNSPECIFIED","enum":["VOTE_OPTION_UNSPECIFIED","VOTE_OPTION_YES","VOTE_OPTION_ABSTAIN","VOTE_OPTION_NO","VOTE_OPTION_NO_WITH_VETO"],"type":"string"},"options":{"description":"options is the weighted vote options.\n\nSince: cosmos-sdk 0.43","items":{"type":"object","description":"WeightedVoteOption defines a unit of vote for vote split.\n\nSince: cosmos-sdk 0.43","properties":{"option":{"description":"option defines the valid vote options, it must not contain duplicate vote options.","default":"VOTE_OPTION_UNSPECIFIED","enum":["VOTE_OPTION_UNSPECIFIED","VOTE_OPTION_YES","VOTE_OPTION_ABSTAIN","VOTE_OPTION_NO","VOTE_OPTION_NO_WITH_VETO"],"type":"string"},"weight":{"description":"weight is the vote weight associated with the vote option.","type":"string"}}},"type":"array"},"proposal_id":{"description":"proposal_id defines the unique id of the proposal.","format":"uint64","type":"string"},"voter":{"description":"voter is the voter address of the proposal.","type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

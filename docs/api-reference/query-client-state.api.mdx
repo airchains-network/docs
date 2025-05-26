@@ -1,0 +1,71 @@
+---
+id: query-client-state
+title: "ClientState queries an IBC light client."
+description: "ClientState queries an IBC light client."
+sidebar_label: "ClientState queries an IBC light client."
+hide_title: true
+hide_table_of_contents: true
+api: eJylVktv40YM/iuDObWAau+j6MGnZhdFNz1st2l7ioOAHtESNxJHGVLOuob+e8GR7MhJgO3jJGnE58eP5Bx87DCBUuTL0q/8bz2m/e37hpD1dwVFX/gOErSomMSvrg++RAmJOlPxKx+yqBOTdT3TfY+OSmSlLWHyhSeT6kBrX3iGFk86t1T6wie87ylh6Veaeiy8hBpb8KuD131nwqKJuPLDcGPC0kUWFPv/5tUre5yHc+GkDwFFtn3jjuILX/gQWZHVNKDrGgo55+VnMbXDzO25vYzHDI6ryaQjcVrjyYWzaN02pnyatZYzNXf16f2aW9Q6lgv3DoVKHA3M8SscqSMOTW9/wXUpxq0DLrNkjVTV6rYptmt+qCnU+XgUegBxCTUR7rC0fLtkhVUasZoQz14yBGVJliE0n+Zyw1O9H8ciPC9GcTyJm88Y1BdeSRt8SggQiYFAsXQPpPUE2X2PonOWjH7j1jxtY2pB/cpv9pl9R7stprvmmG7cOvxCosghy5xHN1m7HRF7XtSP5qJp9jmcK9yRUOQPI7wkVoGELbJFDeoQQn0E/6GmBt0dYkdcrfmo+7FvNziWXqDFhfsQH3CHyUls0QUjCEsvDpoqJtK6FdfC3oU6RqNOXHNCQZ2XmdgFTAr2jDxWSxwuqoWrIZVGtTspRpi/ayHUxLjmTUK4I65cqIErFHfJZlTQBRCU4izjKeonGUt0WoOueQrEGoe4N7pGt0HXRiaNTCEjmDVBzCXukB3IC6CuuUI1fgrqM2qmSXRWrRMFemL94fsZCWYAGZ8oZ+cqMtdHQy/x4eSEc85fd3JUyFjMG5XEhT4lZG327iVnw6OhR0qBwRZfhK0EhTw91px9BWCDOcS2g2QMrIBY1AFHrTG5yehx1HR96qKgWEv0XQlqNoHLNW8T4l+ZCzly8U979nkXD4OdlbiFvnmhby7Y9YxfOgxGFEwppv82Y58Mp1jiWUWI9e2bx3CJFatxSpSoQE3WIsVWZqPpNIj+92x7hAVSgr35bVEEqn80CYcRRIXK1uW4QPxN8QTK+W647zGRDXx2l+/eu2ZsuyxgqI5bw698NXaPrdKVX9ImLENMuBwll7vXy/mUl+XhtGaHvIa3MYc/cfOXnoPF4n7tkC8+XfrC7zDJGN3u1eLt4k0epFG0hVy+aXn/i8jPUj4hp/hFl10DxOagT01mRM7q2tMmZCIlG+ujJYvs9elrys4XfvV4jbgpfB1FzcDhsAHBP1MzDHZ8n+FfXd8UfgeJYGPJ2yWGxN5Lv9pCI/gs1hOV/TdX0w3lW/fVu86LGR65xHvLBJrevnzh73B/dhcabobC1wilzafrw/T/IgTsdKb5rLPsYnTiyM8//eGH4W/Dw35a
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ClientState queries an IBC light client."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/client/v1/client_states/{client_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ClientState queries an IBC light client.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"client state unique identifier","in":"path","name":"client_id","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryClientStateResponse is the response type for the Query/ClientState RPC\nmethod. Besides the client state, it includes a proof and the height from\nwhich the proof was retrieved.","properties":{"client_state":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","title":"client state associated with the request identifier"},"proof":{"format":"byte","title":"merkle proof of existence","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

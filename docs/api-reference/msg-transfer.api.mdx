@@ -1,0 +1,71 @@
+---
+id: msg-transfer
+title: "Transfer defines a rpc handler method for MsgTransfer."
+description: "Transfer defines a rpc handler method for MsgTransfer."
+sidebar_label: "Transfer defines a rpc handler method for MsgTransfer."
+hide_title: true
+hide_table_of_contents: true
+api: eJylV0tv20YQ/iuD7aUFaEl1ih54qhsEqAukCWL3ZAXBcjkiNyZnNztDyaqh/x7skpSoR92m9UXW7O68vm8eelbOY9BiHd2WKldvufp0HzTxCoPKVMAvHbL86sqtyp+VcSRIEv/V3jfWpIfzz+woytjU2Or4nw9RrVjk+K3F1sVPsdKgypXz8ZluIB1kSrY+ilmCpUrtolmDdo1h+khqhIDGeoskoMsyIDM4gnhQIoul5A2YWlu6pJWRynOdvXRUePGd64LBT6bWRNicvh/EUGxhU1tTJ3+8No8osLFNA0WyIS9o9i7Iqdooi9F9s06xLbpOPtVoqzqpLZFNsCnnKlf3/Tn05xCw0WLXCOKSFdOFEBNcNM48DpdmS7qvEQbNYBlKy7posIRNjQSMEp8vZio7QT7g2rJ1NPFm5UKrReWqsyQ//xRDmIQ9eLWxUtse2squkWBUdJktgxHq2qIH+GUj4wOQWksfdZNYZXmMv9nCJWO7g6Lfek8tg4bWkRNH1uim2YIlE1CzpQpKLRqijiUlW0ZTxM641uuAJehKW2IBTU5qDDAoXbnQQ94F7xgZ3Ao6X2qJOjWVS1oFxL/it97zCW9d8RmNTJkQP1l06/+eDPsrYAl0wa7pBIE0OUbjqGRgSwahI/sE6J2pv4UTF9A4Y617RDr377WzBCWuLGHMc7qVyAEaSiTXjkWvqQRNoFvXUeTrkv54d/8mh+hjL4SVxaZMeBHckgyVZVvfYBtTONCfxbXQotSuXBLbirR0ARliK7QRs2ILlaucD07cOeN7Y6maT2NMDl842Z1id8zWFDTHZBYIMvTmgOURG99yNbbtSb5arlJdjyerjipbNHud39sZQswx/wAFygaRlnT7+u56AUg9mKmb8gzuEOH29R3ceTRQY8B8SbWI53w+r6zUXTEzrp0bx63juS3MXALivNUsGObs0cy193Nr+GpxvbgaPblKnlyNHn4XC+aKJXQmZf2c1rtdP5UiFCqX0GESsHfEPQLXi8U5kW6AO2OQedU1MF6P6P3rkXasb5LvD4O2fd4jaG+5mu8BGe2lTnBOGY5Dlgy+3LjGW9B3udgSEjtGI8N4uDwWzii2S4kscaW75sKQuCHoCJ88GsESMAQX/lvWjiM1rjyO0pK8uj64a0mwwtAXi2jbpFdWsOVJ3eyrRJel7TeJ91Mzu9ME/9I/PC+8Q1p0CHob7bbIrKuLty/lMAp1xSp/iJRQH7PTBntelMEbqDWVDYahz6R+P2FUzHB/onLlHcdYvZZa5SpW1myScp6NBJitf5xNWacyFeH4cNjg3jzp2OwOG9kY2nThOsjGdWkiOVmEzk76ReYgPt9FzhaCqQ8nY/zCUjMZZRMr4+wYe+/haGi5UwwtrY6W0d87MmmEvPNIN+9vVabWGLiHb72YvZpdRw8iDK1OZki3+H+gPWLInmaCTzL3Tdxdd5nqQlo0e9Qf1D+hrrK9O5GDdeRM/qCenwvN+Gdodrso/tJh2Kr84WOm1jrY2ODjt12matQJ64dn9YjbNHhTgV/dR+fi9aZLZXJa7LtsfHFjDHp58e7HCa3fv7u7V5kqhl8WbeoMKuhNZILeqFypbPih0G+SUfasGk1Vl+pT9Trj31fgMIPc
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Transfer defines a rpc handler method for MsgTransfer."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.applications.transfer.v1.Msg/Transfer"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Transfer defines a rpc handler method for MsgTransfer.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"memo":{"title":"optional memo","type":"string"},"receiver":{"title":"the recipient address on the destination chain","type":"string"},"sender":{"title":"the sender address","type":"string"},"source_channel":{"title":"the channel by which the packet will be sent","type":"string"},"source_port":{"title":"the port on which the packet will be sent","type":"string"},"timeout_height":{"description":"Timeout height relative to the current block height.\nThe timeout is disabled when set to 0.","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"},"timeout_timestamp":{"description":"Timeout timestamp in absolute nanoseconds since unix epoch.\nThe timeout is disabled when set to 0.","format":"uint64","type":"string"},"token":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object","title":"the tokens to be transferred"}},"title":"MsgTransfer defines a msg to transfer fungible tokens (i.e Coins) between\nICS20 enabled chains. See ICS Spec here:\nhttps://github.com/cosmos/ibc/tree/master/spec/app/ics-020-fungible-token-transfer#data-structures","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgTransferResponse defines the Msg/Transfer response type.","properties":{"sequence":{"format":"uint64","title":"sequence number of the transfer packet sent","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

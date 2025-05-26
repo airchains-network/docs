@@ -1,0 +1,71 @@
+---
+id: msg-channel-upgrade-cancel
+title: "ChannelUpgradeCancel defines a rpc handler method for MsgChannelUpgradeCancel."
+description: "ChannelUpgradeCancel defines a rpc handler method for MsgChannelUpgradeCancel."
+sidebar_label: "ChannelUpgradeCancel defines a rpc handler method for MsgChannelUpgradeCancel."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vt9vGzcM/lcIPV+dLB324KelRYFmQNoga7GHOAhoHX2n5o66ijonXuD/faDksx37kgwD5hfbEn9+/EjqyfiOAkbn+aI0U3Mp1d3HGpmp+d5VAUv6iGypMYUJ9LMniR98uTLTJ2M9R+KoP7HrGmeTkZMf4lnPxNbUov7qgrqIjiSpZeN3rtR/cdWRmRqJwXFl1oWhEHy4C2TJdcl2SWKD69S2mZpPen2db6GkhWMSQFAz8FA7WwOxxU76BiMJxJqgz2mAaPhsCZBLSG4ARbx1GKmEBxdrFZ/xIF8jl1LjPcECXdMHmsBfNTEgbFKAY0kngHMf1ODcx1olHQtgIKDHjqxeRA+ObaCWOOqf5JTpMW4jnJjiALSWRLCihJiLjUKmqeUsNpdQUkTXOK5S2hZ7IfCLIXpTHIM9OFS7Cx9ajGZqesfxt19VfM/TYcpbzSOr6+2Jn/8gG9VP50N8qeBd8H5xd1T2bTjzVRyNPevV5Kp6hCdfVL1pVgmKa1o6cZ4/J2Et0rYAVAJGILQ1ZFPKoobgnqhzXM140P3St3MKyZxgSxP47B9oSQHEtwTWsxBLL4BN5YOLdSvQ4gps7b0QRD/jQEIxGdh4cgyWQkT99lw6DV2AJtUEagwlLHy4lwIkYqR3LdraMc14HgjvtchakooELliNilZcSIpnGW+iPshYlHQYZ7wJRDvZca/94mFO0Hp20bOzCcGkiaIuaan8lxFQZ1xRFEg5HrE3bET3qvU624ZSuFi7lB1UTl0Phsb4sHXCKee3nQwKCYvcMo3TnnQCtg+BODYrGHO23hnaUQoVNj8KW4kxj6gZJ18WWWG2vu0wKAMrnRIRkH2sKcDG6MJnvnV96LyQaDP3XYlRbSKXM14Eor8TF1LkYkZ6T1zFGY6Xs7iUamzmbwdshitN/zxqh9BGtUJnjwNZr/MCcYFKM42hp3QgnXZOYsnZ6elxH5+D9NaSyKJvYBDX+fivt88bOV5vbD7L9SU8hgASCGM5rgtT0gL7ZmQknTP0vN0CeXT/p4wO9qkvn89vx/H92S44x5EqCiaFpgsiablIreyRYpNCYbDMgwibq30368Oe/j0rHrNqN/8xBFyp3/3t9dayyCBGrMRMb7Ro5rY4APJVqqLSL23khnQ1xtqnSfpSTRX5LGWmpvOSphfG2kzNiZvbifWBJpvtN1n+MrmU6uSF95FW6nr3Rvr0iG3X0OGbZ8h95KmzxWkns9vQ+6tvWKc7udEteni9G79HE3knejRH998Lm1myd+R44ffb7I+erdYJvnbE51cXpjBLCpIrtzydvJ+c5RQktpiIzdjS/1HVZ6TZMi/SYzzpGnSsYfShSR2VCn5jXii4KUajU2bWypjpjXl6mqPQ99Cs13r8s6ewMtOb28IsMTicKzY3t+vC1ISlQnjzZO5ppXnntn/3LY+UJTZ9ap7DEbAuBo1za6mLr8re7pH66uuf30xh5ptne5vmhQn4oMXGBzM1pjA+4ZS3tZ49mQa56jMbs039/APP8lmg
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ChannelUpgradeCancel defines a rpc handler method for MsgChannelUpgradeCancel."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.channel.v1.Msg/ChannelUpgradeCancel"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ChannelUpgradeCancel defines a rpc handler method for MsgChannelUpgradeCancel.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"channel_id":{"type":"string"},"error_receipt":{"description":"ErrorReceipt defines a type which encapsulates the upgrade sequence and error associated with the\nupgrade handshake failure. When a channel upgrade handshake is aborted both chains are expected to increment to the\nnext sequence.","properties":{"message":{"title":"the error message detailing the cause of failure","type":"string"},"sequence":{"format":"uint64","title":"the channel upgrade sequence","type":"string"}},"type":"object"},"port_id":{"type":"string"},"proof_error_receipt":{"format":"byte","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"},"signer":{"type":"string"}},"title":"MsgChannelUpgradeCancel defines the request type for the ChannelUpgradeCancel rpc","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"title":"MsgChannelUpgradeCancelResponse defines the MsgChannelUpgradeCancel response type","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

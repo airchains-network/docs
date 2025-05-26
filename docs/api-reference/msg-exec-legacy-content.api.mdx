@@ -1,0 +1,74 @@
+---
+id: msg-exec-legacy-content
+title: "ExecLegacyContent defines a Msg to be in included in a MsgSubmitProposal
+to execute a legacy content-based proposal."
+description: "ExecLegacyContent defines a Msg to be in included in a MsgSubmitProposal"
+sidebar_label: "ExecLegacyContent defines a Msg to be in included in a MsgSubmitProposal
+to execute a legacy content-based proposal."
+hide_title: true
+hide_table_of_contents: true
+api: eJzVlU2P1DgQhv+KVZe9hJ5huOXELOIA2hEjmD01I1RxqhODYxu73B9q5b+jcndPf2S0WsFKK3KKbOd1+X2fcrbgA0Vk4927Fmq4S92Xt2vSf1GHevPGOybHUEGk75kS/+nbDdRb0PuJegsYgjW6KFx9Td7JWNI9DShvLSUdTZDZnfpEXJmkcqJWsVeriEFxT8qWFWq/jVoYsq0yjr1CNVBK2NHss3voTVLkUo6UVIP62wpjm5T2Q0A2jbGGN2pluFfLlw0xvpzdpe5TbgbD99EHn9DOoIIQxQM2lMp5Mvc+Gt5My3+aUkNOrBoqtXZ+qQbfZksK2zZSSiLKm0BQQ+JoXAdjdWZZ2xqRRHt/uvV4Wcrrncj2Umx8kvfNV9KSz3mh+mitVBj2h/0jHRydPSMyytDvkJewaCK1UHPMNMpACt6lnWk319fT5G5VylpTSots1WG5aP2HIH/cy6qWFsbRzvq71F1NLTxUoCSBE1qOSZQoFpgtP3MYp7KjdSDN1CqK0cefO9M5bdq3BbaFjwMy1GAcv7o5FmccU0cRSmmMxpavDNOQThh9IvKXIT8CijHiRvbdo/RvWmLcmcjYJajnEhg8XuI9DeYQHUpwQnhDyjhlnLa5JUF6N3UO5WcBndakM5PCi2Z40aB0SzgBeCDuvdy2wSexKiD3UMOV9mnwadb55WxZ2J+iAxVIjh+P1/HbNQ7B0sXVdTDmjIbXU9OMW/hip2HRgPfZaXFHfQjkbu/fQQVLimnn1/J69mp2I0FI4QMWnBwO9D96eZboExZMa74KFo2TanO0Bfdi8xwmNkM1LV9o6SWeeg7brez7d7TjKMPfM8UN1PPHCpYYDTbi3PxxrKAnbClCPd/CN5IU9mIvHqQsWW5zAfqyLcfq8MWt1hT4H9c+nhB0/+HTA1TQ7P/LQ+lhiLiSexJXUANU4Is9pdvK2BYsui6XToKdpjw/AAob28E=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ExecLegacyContent defines a Msg to be in included in a MsgSubmitProposal\nto execute a legacy content-based proposal."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.gov.v1.Msg/ExecLegacyContent"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ExecLegacyContent defines a Msg to be in included in a MsgSubmitProposal
+to execute a legacy content-based proposal.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgExecLegacyContent is used to wrap the legacy content field into a message.\nThis ensures backwards compatibility with v1beta1.MsgSubmitProposal.","properties":{"authority":{"description":"authority must be the gov module address.","type":"string"},"content":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","description":"content is the proposal's content."}},"type":"object"}}},"description":"MsgExecLegacyContent is used to wrap the legacy content field into a message.\nThis ensures backwards compatibility with v1beta1.MsgSubmitProposal.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgExecLegacyContentResponse defines the Msg/ExecLegacyContent response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

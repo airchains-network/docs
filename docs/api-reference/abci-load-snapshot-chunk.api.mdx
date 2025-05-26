@@ -1,0 +1,71 @@
+---
+id: abci-load-snapshot-chunk
+title: "ABCI_LoadSnapshotChunk"
+description: "ABCI_LoadSnapshotChunk"
+sidebar_label: "ABCI_LoadSnapshotChunk"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1PGzEQ/SurObtJBFUPeyqgHqgqgQo9RVE1WU+yBq9t7DEQrfa/V+MkBMK26oFc4h3Nx3vPb9yDDxSRjXeXGmo4O7+4/P3Do75xGFLr+aLN7h4URHrIlPjc6w3UPTTeMTmWI4ZgTVNaTO+SdxJLTUsdyilEGcCGUikr3eoeVj52yFCDcfzlMyjgTaDtJ60pwqBeUv4ruSWzbt8m56PsxNG4NQyDAjZsJWQ96lRhlXZkq2bHdlfil3fUMAxSIwKYSBpqjplKIAXv0pbYyWwmf5pSE00QLUTMKuWmoZRW2Vb79Amoj1NvuWEaZ3hMYFCgaYXZ8ghOV2VHz4EaJl1RjD5+CFyv6fj6Tk9Gr08To7GlyjB15fCWggLU2shctNevxwzqaOzXbWH/TpWDLBgjbmRuRynhejR7TEMJ4jpBPS+LAgt1rOTf1qcjbr0sWPBJyATkFmqYMjlNsTOOJ7hszEQaTMcaiNg/Dzv47Rm7YOmVK2aHjZkd9uGFjwLjVr4Q3Zn/e3aNwK6uArmz60tQ8EgxbYk8ziankxMpE8Adlot22NGOZCUYqz3Iao/yjRovmjI98zRYNE4a5miLV4oCcxhTABS812ChoBXx6jn0/RIT/Yp2GCT8kCluoJ4vFDxiNLgUfvNFeRZQU4R63sM9baCGi62VP90KMkm3uRji2NaD2lecNQ0F/mfu4tX9Xl/d3IKC5e6d7MoOQMQneUPxCWoABb4oVNxaYj1YdOtcnAjbnvL7Ayvr7hI=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ABCI_LoadSnapshotChunk"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/tendermint.abci.ABCI/LoadSnapshotChunk"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ABCI_LoadSnapshotChunk
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"chunk":{"format":"int64","type":"integer"},"format":{"format":"int64","type":"integer"},"height":{"format":"uint64","type":"string"}},"title":"loads a snapshot chunk","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"chunk":{"format":"byte","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

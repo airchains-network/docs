@@ -1,0 +1,63 @@
+---
+id: service-status
+title: "Status queries for the node status."
+description: "Status queries for the node status."
+sidebar_label: "Status queries for the node status."
+hide_title: true
+hide_table_of_contents: true
+api: eJydVEtv2zAM/isCz17Tx7CDT+thGLrLinU7BUHAyEysVpY0kTYaBP7vA+0kjZcAK3aKI5Pfy6R2EBNlFBfDQwUlPFHunKXlk6C0DAVk4hQDE0O5g9vra/2piG12SZughHvDrbXEvG69OZRfQQE2BqEg2oEpeWcHmtkza9sO2NbU4DmeUtOPPY6paO0CsZGajuCGJbdW2kxmHfPwige9Jq4NmhCrgT9l9SZu1I4pLWvkWp/XMTcoUMJqKwQFiBNPUGqN0RrFUVTb5kxBzMpH+6J126RlLNmFDfQFEGbviGXJEjMta3KbWiYMrQvy6eMJx6FlBDVji8EOnceVJ+PC3lDMdInyPRwT3XuKS1jiGmLBJk3gKhT6oK9OECdi39ouYHboXYUS8z/TPlaOmaccO1dRZVbbMXz91IFbNjVhRfmcrD+exNUzWYG+17OK1th6uTCpwbSBXhNZocpQzjH/38BOJ8vGiiY+XZC72ze5LghtKMMgTdD5ocsJNcPD1EIBWFVOedE/ntL0fw/057Fxd5bKWyyYM26VtyFm3FysvpShHuKGoZwfLgRYFBfWtGXzu6XsiI+LqMu330aNtCGpo14sG1JvCaWGEmY2chN5tkKmmXbMupsVCd7M+HDvuLCOg9z9sHxrg1Vm8z1RuH98gAI6yjxq6a6v7q5u1WiKLA0OnytgQ+/WOfF2DEnoVWbJowuK3WY/fPzBwxxGD1CAuoACFFFVjU6ggL2XRQF1ZNGW3U5rf2Xf93qsmrZQzhe6Ndnp+uu/YcmHiS/nO3ihrY6utZQ0wQ59u7+qpgPaL07S/vrlJ/T9H1HPCfM=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Status queries for the node status."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/base/node/v1beta1/status"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Status queries for the node status.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"StateResponse defines the response structure for the status of a node.","properties":{"app_hash":{"format":"byte","title":"app hash of the current block","type":"string"},"earliest_store_height":{"format":"uint64","title":"earliest block height available in the store","type":"string"},"height":{"format":"uint64","title":"current block height","type":"string"},"timestamp":{"format":"date-time","title":"block height timestamp","type":"string"},"validator_hash":{"format":"byte","title":"validator hash provided by the consensus header","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

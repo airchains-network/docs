@@ -1,0 +1,71 @@
+---
+id: msg-clear-admin
+title: "ClearAdmin removes any admin stored for a smart contract"
+description: "ClearAdmin removes any admin stored for a smart contract"
+sidebar_label: "ClearAdmin removes any admin stored for a smart contract"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v2zAM/SsCz1rStTeflhU7dEDRou1OQTAwFuOosyWXpNMGgf/7IOU7zYZh9cUSQT6Sj49aQWyJUX0MNw4KuJXq53VNyCPX+AAWmF46Ev0a3RKKFZQxKAVNR2zb2pc5dPgsMSSblHNqMJ1aTsDqSbZhjGWOU681QQHXG5vxYnROBp1jEjFxlq/SIKvZBVrQZZvCRNmHCnoLQsERH0I+ZssOsNTIRueoRnwVyGVrQyJYkbxH7O0O6FaqPQuGqYkLEoNhaTBbRCOTM7PIBv9YaZw+U6nQJ+BEo2dyUCh3lA3SxiBrei4vLtLPkZTs28QoFDAy0pUlicy62mzdB2D/fQZnu3nYIBkm7TiIoabVpXGoeK703oKjGXa1nqkwmC7QW0ulkjPEHPn/Cj0Vi6P0n0VuUKEAH/Tqcl+cD0oVMeTSFH2do7xSkw/HLVhA53zKi/X9YZrenqT9sg5cvZNFv8uMzLhMeTciOud9jsNkxEqgGKdZwMSeEPkBrTWk85g2t42S7i3qHAoYPnehTOiDV5RmsPg8uJVqeLTZaQwP++3+9oZNW9Pxtm7b2i/bwf75MIuHMvu+SWnuWgqj+xuwsCCWdYuLi8HV4DKFpUIbzAoI2NDH2j/icTcMpTcdtjX6kBJ2XGeRZWbGcI4ZsAdFpPnME5vFGFarKQr94Lrvk/mlI15CMZ5YWCB7nKbGx5Pewpww8zNewS9abp43CvrpKZWU3OsuS+h0EXq7jRiVJbX6V9/JwcDv7x6fwMJ08zI3eWuA8TW92vgKBYCFmKnJ+s62FdQYqi5rF9aY6fsNqcQaxw==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ClearAdmin removes any admin stored for a smart contract"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.wasm.v1.Msg/ClearAdmin"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ClearAdmin removes any admin stored for a smart contract
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"contract":{"title":"Contract is the address of the smart contract","type":"string"},"sender":{"title":"Sender is the actor that signed the messages","type":"string"}},"title":"MsgClearAdmin removes any admin stored for a smart contract","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"title":"MsgClearAdminResponse returns empty data","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: query-payee
+title: "Payee returns the registered payee address for a specific channel given the relayer address"
+description: "Payee returns the registered payee address for a specific channel given the relayer address"
+sidebar_label: "Payee returns the registered payee address for a specific channel given the relayer address"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1v2zAM/SsCTxsg1P24+bQehqG7rCu2UxEUjETHbB1ZleisQeD/PtB20jQJBmzoTrYlfjw+ks8baCMlFG7DjYcSvneU1g+3uCYCCxETLkkoZSjvN+Apu8RRjaGELvBzR8bVGAI1hj0F4YopgQVWg4hSg4WAS4ISJrsH9mAh0XPHiTyUkjqykF1NS4RyA7KOap0lcVhA39vDtFKTSdTgmpJB7xPlbKQ1v2p2tdFLz+o879R+Z8HZJFpwFtKsJwFOQf8K3UyNc2xDpqz3l+fn+niL+NrkzjnKueoaszU/AwuuDUJB1ANjbNgNfSges7pt9tLGpF0SHpNE7c7DVNmAiqWhiZrh8piYiO6JxFRE2WBSM/am7QTsMeO7eMMwDLNwN6E2nioOlM3YhelQI5iqTcPpYG9SdK+h2/kjOYG+1+CeKuwaOUFTMF2gl0hOyBtKqU3vwZZrPemzatMSBUrgIFeXr+A4CC0owQBNkJvBi4WWea/jUwkW0HvWvNjc7qfp7UHaT6Pj8cj0u8yYEq4175JyxsVJ61Mc6iEudCXHDsHMHlA59YCkS2Hbq+3wH0yItg1NjuS4Yrfb5gWvKJgTuwYKV+pWxWJBMoiE1FBCwXNXYIy5qIiK1UUxhcrF5nX1+2IKl4vN9NYXcVIbDlW7P85fu+CGJf4WKVzf3oCFFaU8lrg6P7s6u1T2YptlicMMTJv8f8t/Q/WuY0IvUsQGOSimLjXjpio198Bz3QYlByxUQ7GrCx3piSKwUB7o48iSXrzq0kjUzELdZtG4m80cM/1MTd/r8fMwDeX9zMIKE+NcaVTd5qzvHsoKm0xHJew2Cz7cTdL30fxJ3k/WvJ3qsNbysOn0Cyw80fqt/A+a/i+Q3kf6/wH8tgX9rLdQE3pKA7Hj7bVzFGXP70ie9D+x25ovn39A3/8GmHSc+w==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Payee returns the registered payee address for a specific channel given the relayer address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/apps/fee/v1/channels/{channel_id}/relayers/{relayer}/payee"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Payee returns the registered payee address for a specific channel given the relayer address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"unique channel identifier","in":"path","name":"channel_id","required":true,"schema":{"type":"string"}},{"description":"the relayer address to which the distribution address is registered","in":"path","name":"relayer","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"payee_address":{"title":"the payee address to which packet fees are paid out","type":"string"}},"title":"QueryPayeeResponse defines the response type for the Payee rpc","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

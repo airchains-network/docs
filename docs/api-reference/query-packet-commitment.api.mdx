@@ -1,0 +1,71 @@
+---
+id: query-packet-commitment
+title: "PacketCommitment queries a stored packet commitment hash."
+description: "PacketCommitment queries a stored packet commitment hash."
+sidebar_label: "PacketCommitment queries a stored packet commitment hash."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk2P20YM/SvEnFpAXeej6MGnLIqiSQ9pGrSn9WJBjyiJWWlGO6S8cQ3994Jj+XPdNNj0ZFki+cg3j0NuXOwpoXIM70o3d38MlNZ3H9Dfk/4cu461o6CucD0m7EgpiZvfbFxJ4hP35ufmzjcYArUwBH4YCLikoFwxJVc4NoMetXGFC9jRwfyOS1e4RA8DJyrdXNNAhRPfUIduvnG67s1aNHGo3TgW57B9TPq1mGb77YCZFxB6GCh4uox09PVroQpXxdShurkbOOhPP7pxvDV36WMQEvN49eKF/ZwmdA0yeE8i1dDCzvzKFc7HoHZw843Dvm/Z5yOefRJz2xwl0icTgPIWxB+OfL45JLVcq5WjrC0daECR6BmVSnhkbUAbAquYRKFiaksxn1NOCwOM1Zeid5TuW4JsB7EC+syiE6GXo901xHWjT+l5bxBtu86pfaQVC8fwNhsDC3DwiaxYKgEVCH0D21Dw2HBLcE/Uc6gXYef7fuiWlHI4wY6u4G18pBUlkNgReGM/yCCAbR0Ta9MJdLgG38QoBBoXIZGQ5gATEgfwlBTtN4aSLXUBuqqvoMFUQhXTvRQgiko/dOgbDrQIy0R4z6EG66WaBN4FCyoEHoWkOKl4yvqsYomgDeoiTImYZDgMJKARlgRdDKwxsM8MZk8Ug6QVBUC5QOoi1KQCuUZXnGkrTaZHp3Wu+oMIjggybXGuDmo26F2gS3rYg4Rc83+D7BwyFxnEt0wh68MPKVHQdg2XwMZDoIOk0GiLF2krUREsxiJkLI/BaPax6zGZAmvkIAoYojaUYApaxa3e+iH1UUisJYa+RLWYGMpFqBLR31kLOfOjrovLT+T1JNV8wZ/f7x+nmwNKqjiQHPPwYA77uyWng7C9ARbhsWHfALYSrdJ2KMko2LYuhvJY51WKHWztcznZ5hHFWkIT04rKC4lb6iVVOLQX2vs6wBDoc0/e9EwpxfT/XIIlnQiHg75+dUiOg1JNyeXUFLnNXqzUydHVPpVQOCy3TY3th2OY8bw/3mwdn46hcY+MKeHacDsSwfqi9SUO7SXWNrm35+9uizMqzxWRj53zaYpGk+d06R8mBDQojdHckTbRlod62/U2Deduxks/8zHRbBr3s9XL3aPMNocdYJzZbJbZZhrR42wLdXeAktlmN1XHPHSrmEufNP3bELzVAb/3FK4/vHOFW1GSbWWrF1evr17lWRFFO8xHP43qb6n6hL/9MSh91lnfIgdDHFKb5ZUZuXG89FmVyUbZRIDl+vLw15p3frIfZXLs7WGDecqPfd/vHbeFa6KoIW42SxT6K7XjaK9zL7v5zW3hVpgYl0afbXMs9ly6eYWt0JPi9o3kvvs4rTTfw5eWvots7EQc1lY0toP9c4W7p/XpUpgXr+ek9K8L4TPy2dH9/GSeLIvPyGLvPd6OhWsISxtqN5vp87X31OuR45N7zvbIfYP++sufbhz/AacXOzw=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"PacketCommitment queries a stored packet commitment hash."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/channel/v1/channels/{channel_id}/ports/{port_id}/packet_commitments/{sequence}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+PacketCommitment queries a stored packet commitment hash.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"channel unique identifier","in":"path","name":"channel_id","required":true,"schema":{"type":"string"}},{"description":"port unique identifier","in":"path","name":"port_id","required":true,"schema":{"type":"string"}},{"description":"packet sequence","in":"path","name":"sequence","required":true,"schema":{"type":"string","format":"uint64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"commitment":{"format":"byte","title":"packet associated with the request fields","type":"string"},"proof":{"format":"byte","title":"merkle proof of existence","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"}},"title":"QueryPacketCommitmentResponse defines the client query response for a packet\nwhich also includes a proof and the height from which the proof was\nretrieved","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

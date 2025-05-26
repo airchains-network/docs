@@ -1,0 +1,71 @@
+---
+id: msg-register-interchain-account
+title: "RegisterInterchainAccount defines a rpc handler for MsgRegisterInterchainAccount."
+description: "RegisterInterchainAccount defines a rpc handler for MsgRegisterInterchainAccount."
+sidebar_label: "RegisterInterchainAccount defines a rpc handler for MsgRegisterInterchainAccount."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vk1v2zgQ/SvEnBUlTW86bbb1Al4gceA2JzcwxtRIYkuRKknZ0Rr674uh/CEn9rZb7PoimZrHN3zzZqQt2IYcBmXNNIcM7n25nFOpfCA3NYGcrFCZOyltawIk4Oh7Sz78bvMOsi1IawKZwLfYNFrJuNP1V28Nr3lZUY181zjmCYr8DmZIcuhS5bwQuoYgAx+cMiX0CViXU7zPtpBTga0OkMFs/nEyXz7MHibLp4dPj5MP0z+mk4+QQE5eOtXwjpDBlTgfmIm/yNmrNeqWRGGdkBUaQ1rs2b4Yscc+PcQrgxqU3yh4IdGIFYmctFqTo1woI9B0AzoRm0rJStTYiVwVBTlROFuLUNEQIJT5YoaYUFEnNuRIeDIhHbG+4UQ3JqQXlEF3THzc99yekACZtoZscVmzV+c8rOz/PycQVNBcl1kkyqlQhrxQhcCDdMqLHUBYJ8a7va3pxpA7W+01Oa8Gy7x61h+TuPflRWcecmNZGuy0xTxW+N6X13vU0cU7Erv6SjJAzyxsbOUohyy4luKCb6zxg2Fvb24GJ45tdid8KyV5X7Ra7MNTSH65KwZJL7VEY104/+wnRZrvUjwRa5/3v1GrT449+UYUI1pDLw3JwIZ1zrr/RBubE18L62rkUaBMeH97TE6ZQCU5iKkFVDqiVKDajwTbHSEBzHPFvKgfxzSs8gntbwPwreL9gRmdw455a/Iey7PR5zTkRSw9t+i9L7nbToX8sddRuEaKCk2uedoM9bsIY/FrCpXlMd9YzzI0GCrI4FqtZDqqhk/VAb3EAe5TrpyzWpNL1+/SsVXOvSi4oPPjy2LygnWj6czw36s0nvmXh9ZuhhxBh9Ex6hRlChvLsGuKP1sT+cSsIXP3OD2BrW/S9+nt0GA+1BhtaLCm/6kGJ1U+WCXQS7huNCrDmbROxxaI5VnAr5UHksv5s90q9kC2gO12hZ6enO57Xv7ekusgWzwnsEancMUSLp77BCrCnMVfbOEbdZDBh6GXrz7zGThct7EjXvd1n+wRd1JSE/4x9nlk08fZp8+QwGr3tVHHIQAON/wlghvIgC0RtYztGte2oNGUbWxFGPbk3982Lx23
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"RegisterInterchainAccount defines a rpc handler for MsgRegisterInterchainAccount."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.applications.interchain_accounts.controller.v1.Msg/RegisterInterchainAccount"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+RegisterInterchainAccount defines a rpc handler for MsgRegisterInterchainAccount.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"connection_id":{"type":"string"},"ordering":{"default":"ORDER_NONE_UNSPECIFIED","description":"- ORDER_NONE_UNSPECIFIED: zero-value for channel ordering\n - ORDER_UNORDERED: packets can be delivered in any order, which may differ from the order in\nwhich they were sent.\n - ORDER_ORDERED: packets are delivered exactly in the order which they were sent","enum":["ORDER_NONE_UNSPECIFIED","ORDER_UNORDERED","ORDER_ORDERED"],"title":"Order defines if a channel is ORDERED or UNORDERED","type":"string"},"owner":{"type":"string"},"version":{"type":"string"}},"title":"MsgRegisterInterchainAccount defines the payload for Msg/RegisterAccount","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"channel_id":{"type":"string"},"port_id":{"type":"string"}},"title":"MsgRegisterInterchainAccountResponse defines the response for Msg/RegisterAccount","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

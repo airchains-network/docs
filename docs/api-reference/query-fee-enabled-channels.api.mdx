@@ -1,0 +1,71 @@
+---
+id: query-fee-enabled-channels
+title: "FeeEnabledChannels returns a list of all fee enabled channels"
+description: "FeeEnabledChannels returns a list of all fee enabled channels"
+sidebar_label: "FeeEnabledChannels returns a list of all fee enabled channels"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV99v2zYQ/lcOfNiTZqdpsQcPBda13eC9NGvXpzowaOkksaGOKkklNQz978ORkizbSmKkxVBgeUki3pHf9/F+cSdMjVZ6ZWiZiYX4u0G7Xf+B+JbkRmP2upREqJ1IRC2trNCjdWLxaScydKlVNXuKhbjBLSgHEm6lbhAs+sYSZqAIrmSB79HVhhzOCL/6NRt7AxssFK3oCx+pqABfIvA61LJAqIzzgHmuUoXk9XYG70hvwRCCycHkuUMPxsINblfkStPoDDYIDv1MJEIxqLCzSATJCsVC1LJQFKjObpC/W/zSKIuZWORSO0yES0uspFjshN/W7OK8VVSIROTGVtKLhdhsPYq2TY4F6AAFDaip0Kq0B+lL6SGVxPAahxnclUjQKdaQvJVKs9izFS3DDhqd21Nnf4LGsUQ3+JAOEGVY0dk6RPcnStEo8r+8mBJDq0oFJnyl3nipWZMNWoZs0TXauxgBB5HC1nE1hADrkYPG3ANWtd+C8nCntIYMc8lG3gwBFzdjKTZbQJmWIOv6DAEC0u/OPzUN+XUkrlyA5Q142yDwH4oylUqPMTJGrNmwC2VFqW4yXJGEsBsrN6Wm8lg5GGIIcmNhz49V/bh0sxUdQTIcQxZdjanvI3IfwhylM4jBqAoydhS0K4qMzhB3dOZZEm+M0ShpSlGLt2gdHqup9uEkLd4TUrwTUsb5Y2yGdraiFX1QlOICUuMq43522Q1czF48f5xTB+Rb+Wy0SW+gRFWUHqSHu1KlJePvT56CEf5dR6dvjdlr9o9F2bHH5cUF/zpE+Qpck6boXN5o6M354lNDHsmzh6xrzdGsDM0/O3bbjYDUlvuLV/GQHHGNsbGs076zLHYiBPEIt9l8xpQpHrp3LmuVBVvlNRs3pL40CN0iqAzJq1yhFcmRDm0iamP9tD+vPOjcJoPLSX8EFkQqihXvyli/fAM/Qbe6fBPSUkKOCB3/Hq8YbauVC3k+Yeb2eKS1chu4DFF5enPjphsKccgMrDaYZTEzivdXr4c7hQqdkwU6TnNOpBK5ZNi4HlKHow2d7y2hlLFOdP09LIbMGiw+mGqPYbci6H8s1ii57Pwu7ZC/L+HZryObAwJhIHgJl2zQnoRFP1OcqjBMG10rGgYPqKVj7N4cwI/r3Ujy6Dyy7NpREDb0p3xFPujHxYgMVMb2td3NTqaIifCMtZIz5Shh90EylPD7+uq+F6j8gN2oHK/oToZKmoDyruuhYRrJMFdcOw0TuVNuAmabHOXpODXCAHk6Pw5XGfd3fdeLH3m7kCL89dQZbJ2K00P52G4UmChdBA3h166/obXGfo8KlpoMD+5HkX9+uQenyGOBVgRoXqpH6pvMMsXnSn01PqY9DvHfouNxYW9HdzGUhS79pqynNOSPsuCZPt6duE6OpJy6kNBiedbta5bU+r66VaEvDT8uijBq1tKXYiHmapPOZV27eY44v302HzWH0P9yM67SfzWUhonmXY306mopEsGNOCK8vZg9n13G+u58JcMVdk3zW9EfaDFI6vGrn9daKuJTGxuSNjL7JNSGw5W5cc4jp9Dts/jnwPA6EaVxns13u410+NHqtuXPsemHJ5Zy0bhv8EdYhhj+4Z5fkyqFEn36CguQxUKIMCWdTfkHfXCdx3x4dz2R/A/0wDqPcP/OeiLf/8uD6jwxD99VT5T0v3tRnUdq/7B6IqFHn1QP4Dh6We0RXPM/VjEEsfh03SaiRJmhDfU5+r5KU6zHXifzBO8yNME/3/4j2vZf2s3aQA==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"FeeEnabledChannels returns a list of all fee enabled channels"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/apps/fee/v1/fee_enabled"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+FeeEnabledChannels returns a list of all fee enabled channels
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"key is a value returned in PageResponse.next_key to begin\nquerying the next page most efficiently. Only one of offset or key\nshould be set.","in":"query","name":"pagination.key","required":false,"schema":{"type":"string","format":"byte"}},{"description":"offset is a numeric offset that can be used when key is unavailable.\nIt is less efficient than using key. Only one of offset or key should\nbe set.","in":"query","name":"pagination.offset","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"limit is the total number of results to be returned in the result page.\nIf left empty it will default to a value to be set by each app.","in":"query","name":"pagination.limit","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"count_total is set to true  to indicate that the result set should include\na count of the total number of items available for pagination in UIs.\ncount_total is only respected when offset is used. It is ignored when key\nis set.","in":"query","name":"pagination.count_total","required":false,"schema":{"type":"boolean"}},{"description":"reverse is set to true if results are to be returned in the descending order.\n\nSince: cosmos-sdk 0.43","in":"query","name":"pagination.reverse","required":false,"schema":{"type":"boolean"}},{"description":"block height at which to query","in":"query","name":"query_height","required":false,"schema":{"type":"string","format":"uint64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"fee_enabled_channels":{"items":{"type":"object","properties":{"channel_id":{"title":"unique channel identifier","type":"string"},"port_id":{"title":"unique port identifier","type":"string"}},"title":"FeeEnabledChannel contains the PortID & ChannelID for a fee enabled channel"},"title":"list of fee enabled channels","type":"array"},"pagination":{"description":"PageResponse is to be embedded in gRPC response messages where the\ncorresponding request message has used PageRequest.\n\n message SomeResponse {\n         repeated Bar results = 1;\n         PageResponse page = 2;\n }","properties":{"next_key":{"description":"next_key is the key to be passed to PageRequest.key to\nquery the next page most efficiently. It will be empty if\nthere are no more results.","format":"byte","type":"string"},"total":{"format":"uint64","title":"total is total number of results available if PageRequest.count_total\nwas set, its value is undefined otherwise","type":"string"}},"type":"object"}},"title":"QueryFeeEnabledChannelsResponse defines the response type for the FeeEnabledChannels rpc","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

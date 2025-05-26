@@ -1,0 +1,74 @@
+---
+id: msg-authorize-circuit-breaker
+title: "AuthorizeCircuitBreaker allows a super-admin to grant (or revoke) another
+account's circuit breaker permissions."
+description: "AuthorizeCircuitBreaker allows a super-admin to grant (or revoke) another"
+sidebar_label: "AuthorizeCircuitBreaker allows a super-admin to grant (or revoke) another
+account's circuit breaker permissions."
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVk2P4zYM/SsCL20Bb2Y6e/Op2dm0SJHMBPPRSxIEjMzY2rElryQnkw383wvK9k4+p2jRojnFNEU+vkdS3oEpyaJXRg8TiGHs0kW/8pmx6hvdKisr5T9ZwheyEIGlrxU5/8kkW4h3II32pD3/xbLMlQxxrr44o9nmZEYF8r+EnLSq5LdNjgspREIrpckJn5EYu/Tqkl8LRPhtST2IoLRchlfkOF1qUXui08ztC6GaDCilqbQX2GVJxEb5LLwrrVmrhBJRki2Uc8pox5k4I8TgvFU6hTpqY9pLyWyXrHs0q/Aom4LEsq1oL41AnYiicl5kuKaZHg3+GIwWj8+TwcOi/3k8vDuLYy/AKZaD6Jb+EoHP0O+hJmFJklqT6830U0aOxEbluTBrshurPAnUW0Gvynml0wPKRIP+7v5usHi+e5wMboe/DgefhUQ900sSriSpVooS4Y2wtDYvJDDPj2k/FDinNeWnVQZzx3fzYFYHdTXlhFw+U67rAM6Q0Aqr3EMM5xFDBKSrAuLpZYdWqfvxYDF+/O3xu6U/Gh0a9sSE+Rkxc1Uov2DzorL5GUGPHLjoynX9ewSDqw3+DS/Kece8jF0a5memnx9Ge5J3UyFRC29V2RNDz/FRC7LWWA5XORLHEDj1TGNHvM/IclB9DIfJVp6KUNVJ5a0BrcUt1G8Gs/xC0p+11NF/v2D4WVlKIPa2opoNrjTaNf14c319KlFfuEpKcm5V5aJz51j/+tp8aIP/jeraA+f3Z4t7T5+lMTmhPk9/vTc8JyRoUWl6LUny2DX984+4OEQoTRLW+8rYAnlmlfYfb97WotKeUrIQoHlUzQgdd11bQgSYJIrzYj7ZT1MfE/NLc/CkbeuTxo2gIOcwPet9jkM2Yup4vYxdykvhiMgLUmKem40TKFxVkv2ASaE0T2jYdOLHQDcv1Z8E6jCTM90O+A/uvSuAxSnIZ4a/CkrjmKYSfQYxXEnjCuN67ene+ufeO80GEbCaD2+fDoNXLMqcDm7qjpy9+/TNdHS1tdv/8ho+2Z7TLtaceVZ6ZYIsyjMK+L3SklkW9yXp/mQIEazJuob39XXvY+8mXLDG+QJDW2os6H/S5KArvreWp1d/VeaoNCOtbLgcG7mmcFYuiC7B597LWPB4CrvdEh0927yu2fy1IruFeDqPYI1W4ZL5m87rCDLChEWb7uCFthDDbTPYH54YILvnVRiP4yGvo+5EX0oq/bu+872enNw/PkEEy/ZbtAgbASxueFvjBmKACEwgKnRNsO0gR51WYS6hicm/PwEhMucg
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"AuthorizeCircuitBreaker allows a super-admin to grant (or revoke) another\naccount's circuit breaker permissions."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.circuit.v1.Msg/AuthorizeCircuitBreaker"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+AuthorizeCircuitBreaker allows a super-admin to grant (or revoke) another
+account's circuit breaker permissions.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgAuthorizeCircuitBreaker defines the Msg/AuthorizeCircuitBreaker request type.","properties":{"grantee":{"description":"grantee is the account authorized with the provided permissions.","type":"string"},"granter":{"description":"granter is the granter of the circuit breaker permissions and must have\nLEVEL_SUPER_ADMIN.","type":"string"},"permissions":{"description":"permissions are the circuit breaker permissions that the grantee receives.\nThese will overwrite any existing permissions. LEVEL_NONE_UNSPECIFIED can\nbe specified to revoke all permissions.","properties":{"level":{"description":"level is the level of permissions granted to this account.","default":"LEVEL_NONE_UNSPECIFIED","enum":["LEVEL_NONE_UNSPECIFIED","LEVEL_SOME_MSGS","LEVEL_ALL_MSGS","LEVEL_SUPER_ADMIN"],"type":"string"},"limit_type_urls":{"description":"limit_type_urls is used with LEVEL_SOME_MSGS to limit the lists of Msg type\nURLs that the account can trip. It is an error to use limit_type_urls with\na level other than LEVEL_SOME_MSGS.","items":{"type":"string"},"type":"array"}},"type":"object"}},"type":"object"}}},"description":"MsgAuthorizeCircuitBreaker defines the Msg/AuthorizeCircuitBreaker request type.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgAuthorizeCircuitBreakerResponse defines the Msg/AuthorizeCircuitBreaker response type.","properties":{"success":{"type":"boolean"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

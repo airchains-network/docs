@@ -1,0 +1,63 @@
+---
+id: reflection-service-get-query-services-descriptor
+title: "GetQueryServicesDescriptor returns the available gRPC queryable services of the application"
+description: "GetQueryServicesDescriptor returns the available gRPC queryable services of the application"
+sidebar_label: "GetQueryServicesDescriptor returns the available gRPC queryable services of the application"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VtuOGzcM/RWCL22B6XqzefNTg6QIUqDodts+7S4MjkTbSmRJlTiTNYz590Kai8eXDVCgfbJGFx7ykDz0AX3gSGK8+6RxiQ+8tqzy5x8cW6N49ZHl94bjfvhOHzipaIL4iBVGTsG7xAmXB7y7vc0/erhgvMMlvoPUKMUprRsL4/UbrFB5J+wkv6AQrFHFicXnlJ8dMKkt7yivQswuiulB/m44DksxYhmX4xaE6FujOYFxax93xR54B7JloJaMpdoy5Nv7skpDRFhdwdivpuPlAY3wrsfchwzp68+s5OLhurHW0Y7n3o17YFLxJEQvvm7WMB34dTkY8EDPCR7wkkTjNthVaNJq53VjTzCmzeFxnUnIVk2azJoEpKQha/fAL8En1lDvgRzM6P8uwWB9gq69t0wuY+9Ytl7/W0JWPZ2BZHvOy+xooievZUsCihzUDE12VHyftydXYuodgdYQCDvNcWecANXK3JRavUbceV6u5qRsfu+8TNn5YUxPj3lpuasmkwX713Lv2CWzlNCs+IYQ/HrcHRP15JwHL1uOpY6zi0Nha6g5GT29Lc6S03MOjgCZyCdXs6ImMRiBr76x2QRE1o3T5AS+mkI2wyYGBXHq/dEXnAU3JP/YZQTWJMkRnPgPY5VMTFGMtL8kahCUV5hSPu18+jHpL5cdO3frtFdLlU9+zWxcR7zq40lBz71+XQkfBl0b62nUOYgsTXR9p+WD103Aw/17vETP+JrX1Fi5oq0OGscvgZWwBo7Rx/9CYpXXpVN6Ec3y4uTt3dE544Q3HLG4JmTstxWBtDYZl+z9HKY714qf+oeHiwbrzrOUlSgl2ly9fY3DvEmbhMvHywGHz9UZrd9IUp/PdDZSNg/376/MlVE5ZtzjKKK4xA0XvSyyiIu+Vhc1JV4cG3HRvqlZ6M2CQlgdB8PibEJVmKVirm6/NK7v5N8Cu3f3n7DClmPqA2xvb97e3GUeg0+yo1INvT7+z8GfED3lTvhFFsGSKVOmibbUZCHmEXtisMJMTfnLMZKTY+rpyVV2QhBW50P8ucKtT5ItHg7Z1F/Rdl3eLhdx+fhcYUvR5CjyV1fhlklzxOXjAb/wPjecUhxy1lqyTSnI87bqnmcZ/vjzn9h1/wDNk2Bf
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"GetQueryServicesDescriptor returns the available gRPC queryable services of the application"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/base/reflection/v1beta1/app_descriptor/query_services"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+GetQueryServicesDescriptor returns the available gRPC queryable services of the application
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"queries":{"title":"queries provides information on the available queryable services","properties":{"query_services":{"items":{"type":"object","properties":{"fullname":{"title":"fullname is the protobuf fullname of the service descriptor","type":"string"},"is_module":{"title":"is_module describes if this service is actually exposed by an application's module","type":"boolean"},"methods":{"items":{"type":"object","properties":{"full_query_path":{"title":"full_query_path is the path that can be used to query\nthis method via tendermint abci.Query","type":"string"},"name":{"title":"name is the protobuf name (not fullname) of the method","type":"string"}},"title":"QueryMethodDescriptor describes a queryable method of a query service\nno other info is provided beside method name and tendermint queryable path\nbecause it would be redundant with the grpc reflection service"},"title":"methods provides a list of query service methods","type":"array"}},"title":"QueryServiceDescriptor describes a cosmos-sdk queryable service"},"title":"query_services is a list of cosmos-sdk QueryServiceDescriptor","type":"array"}},"type":"object"}},"title":"GetQueryServicesDescriptorResponse is the response returned by the GetQueryServicesDescriptor RPC","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

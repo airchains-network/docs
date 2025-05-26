@@ -1,0 +1,71 @@
+---
+id: query-validator-outstanding-rewards
+title: "ValidatorOutstandingRewards queries rewards of a validator address."
+description: "ValidatorOutstandingRewards queries rewards of a validator address."
+sidebar_label: "ValidatorOutstandingRewards queries rewards of a validator address."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVVFv4zYM/isCn+4Ar+n13vy04u4w3B7Wruj20gQFIzGxrrbkE+nmgsD/faDsZEljBMO2J8uURPL7PpLaQWwpofgYvjoo4feO0vb5T6y9Q4nprhMWDM6H9QNtMDmGAlpM2JBQYiifduCIbfKtuoASXvdXn9G5RMzG0coHYiMVmcOu2e9KNN81plnFdAUFeHXSolRQQMCGplxCAYm+dz6Rg1JSRwWwrahBKHcg21YvsSQf1tD3Cz3MbQxMrPs319f6Oc361nBnLTGvutrsj2s6NgahIHoD27b2NlM1+8Z6bXcU9tRfpvECiw9jCOMHXvYhjWavVKh1HrKb2QU/5uH+k2lIqug02zapmuIHpGlU7Cy7Sw4TtYmYgrCJf++ad134aeOlcgk34b0ZXc+DpopHsvpAP1oK7F9JpZWE9qUwWNdxw4Z909ZkGIOXrbEV2Re+mLYXavhI1Lj8RlageIPnM9lP0YdDpaGR+ELBaMIGjaMQGx+ycgaDyybrG6wNNrELcjUP8/Db3eOX0jxWNBrNylPtVCAM5jNZs6m8rUyG0GR+VDjbscRmlGAe2K8DSpdIiRwq1Cy3Zh3XsU1R4jnaIdhE4SrIEJupku6LvQlTwi0cGUaGpix9drnCrpaJBgimy9JZIWcopZj+XR+corPRkX5XMTUoUIIP8vEGDsn5ILSmNKAV9PVl2dE5r3Gxvj8O078l9efh4j9groCGmHE9eXqKQzXiWiff0OSweFuNl7pLR53PxTH8x9VJ94zzTQkfKgpKWJPkmSsVlDCzkZvIM+c1yWWXRXj9sCTBD7ODH57tzmZmPztq5+d0GOY+rGLG7qVWqL92weZGuWsp3N5/hQJeKfE43K+vPl7dKGttZGkwaz9O6f8H9gmVB0WEfsisrdEHjd2lOldapuQJBkr07hEpmvZAi64OxEAB5dRzMsXNooAqsmiI3W6JTH+kuu/VnB8sKJ8W6jp5XCpz+hJ61rWDcoU10xmaQxPBu4dxOrw3//XBnKRoX+RhO8Dv9A8KeKHt5IPaL/oCKkJHKSMZzt1aS60ceThrfX1dD5X6y5dH6Pu/AIx9/Bo=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ValidatorOutstandingRewards queries rewards of a validator address."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/distribution/v1beta1/validators/{validator_address}/outstanding_rewards"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ValidatorOutstandingRewards queries rewards of a validator address.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"validator_address defines the validator address to query for.","in":"path","name":"validator_address","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryValidatorOutstandingRewardsResponse is the response type for the\nQuery/ValidatorOutstandingRewards RPC method.","properties":{"rewards":{"description":"ValidatorOutstandingRewards represents outstanding (un-withdrawn) rewards\nfor a validator inexpensive to track, allows simple sanity checks.","properties":{"rewards":{"items":{"type":"object","description":"DecCoin defines a token with a denomination and a decimal amount.\n\nNOTE: The amount field is an Dec which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}}},"type":"array"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

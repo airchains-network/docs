@@ -1,0 +1,71 @@
+---
+id: query-code
+title: "Get Wasm code for given checksum"
+description: "Get Wasm code for given checksum"
+sidebar_label: "Get Wasm code for given checksum"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SsCTxsg1P24+bSiGIrusq7YsEMRDIxE22ptyZXorEHg/z5QTlInzWHoyTLFj/ceKW4g9BSRXfB3Fkr4MVBc/7kJlkBDjxE7YooJyscNWEomul58oQTTkHlOQ6dcUqgaelXkTbBkVeLofK1CpbghJTaVOESyZ6DBSWyP3IAGjx3NMoGGSC+Di2Sh5DiQhmQa6hDKDfC6F98pN4zjQpxTH3yiJPeX5+fyOcR4rdJgDKVUDa3auQsKEzyTZ4nAvm+dyQoUT0nCNrOyh/myOiLOwzaXkBeSu9xKYKoqxGzN7oX4q4f7G9URNyGL0EdRnd0E3SLnWlWIHTKUsFyzyH9MeW8JyycyDOMoNksVDi2fIO/V4Om1J8NkFcUY4sc0OEQr/TxA6zxfXb7BdZ6ppggZGqNrc5Rj6tKsj1sKGtBaJ3WxvZ+XGY9F+jIFvh+EN1kwRlxL3Y5Swvqk9ykNxYi1zPjUYFjoIylvidVvTN00zNLe2q3Iq9nkTs2FEmri/HS4gRIKtzRF6+qGTevIcyr+YuqK1UWxC03FZnccCzO9O+erkME7bgXrt8EbQaK+9+Sv7+9Aw4pimrCtzs+uzi6Fdh8Sd5ibt31Z/4H7gOheL6ZXLvoWnZfEQ2zzHGROj+CWBjTMWYEG4SW4LmSydtxAQzmrlektNDQhsSTabJaY6Fdsx1HML1n88nGhYYXR4VLIy95xSc4WygrbRO8w7wcZPj1s98dn9cH1dJL/br78WhhiO8gfaHim9Xx9jYtRQ0NoKWbc0/W1MdTzLPDdY5Ndth+f268/YRz/AYCq7nc=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Wasm code for given checksum"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/lightclients/wasm/v1/checksums/{checksum}/code"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Wasm code for given checksum
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"checksum is a hex encoded string of the code stored.","in":"path","name":"checksum","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryCodeResponse is the response type for the Query/Code RPC method.","properties":{"data":{"format":"byte","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

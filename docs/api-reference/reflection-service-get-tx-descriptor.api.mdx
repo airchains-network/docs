@@ -1,0 +1,63 @@
+---
+id: reflection-service-get-tx-descriptor
+title: "GetTxDescriptor returns information on the used transaction object and available msgs that can be used"
+description: "GetTxDescriptor returns information on the used transaction object and available msgs that can be used"
+sidebar_label: "GetTxDescriptor returns information on the used transaction object and available msgs that can be used"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VcFuGzcQ/RViTgmwlRznplODNghSNKjhOifbMEa7s1rGXJLlzMoShP33YkhJXklGT0Uu0nLJmff45s3sDkKkhGKD/9rAAm6pdVTr8m9Ka1vT0xeSu83vxHWyUUKCChJxDJ6JYbGD66sr/Wv2B2zwsIBPhoe6JuZ2cOZwfAYV1MELedEIjNHZOiPPf7CG7YDrjnrUp5iUl9gCIpv8a8URLEA2Jqawtg2xsb4Nqc9ZTPCm5xUb6VBMjd4sybQhvWBqqDESjHRkJrAPHl3wK7YNla26pih6NKFnzCookoTl0BrZRoLqjFg7OOexp0sJDjvGck5+zHPcCG3eSPhyAqg45l0bkrGeBX1dyMlmdrfJm+8fvBVN64OYntCL3o2HGEMSE4Pb9iHFznKfIc5Sc2VKdA7gIsySzKCPy+2DT0cHmNpZ8sJ6YvANJaXTGJt5b7PCHfrGkUHDkWrb2vryKtYb9FPZ1QdZzAWwJOtXMFaghVMRrVBfSl5OhOUPquVC955XT3riaUjuUvvprlHLofWlCnfbSN9v/1Rh0HDzPPvGqzf4jNXRbN949Wp+U3CWxAZNHbgP/As3z6YnZlzRifMacnZNiRrzYqUzOFUGJgDZss6y8KkJJ4od8rN5t+f8/pUzpoTbQvlEsuklznr4dt+RB28eOtQkkiH5bIS8cRZnbm9+g0scRWqoxcHJG6PAm8HTJlKtl6KUQvo/JkIdmtx0pfthAdbLx+tXctYLrShBpiZo3X+7C5vGKi66mynMeO67X0vg7sIw43k9KtgX7a3Tb2moL1Gb4P5yCMNjdSbreWVK5S7moRYxd/a0LQuo0V7GNVqHS0eXk1PDQG8hXdAvw4pyG6J0sIB5Mf98iUzz14kxX39YkuCHOcb41BzZzWUzWUEFynI60f8YfKH2VyT/6eYrVLCmxOWq66vZx9m1KhoDS4/ZF2Xo/jwZTtQ/FlRoI/Po0OaO3s+iItE9FImgAhUpfzYPMun1ilBqvROp1MEnYj1W0AUWTbjbaabvyY2jvv5noLSFxf1jBWtMVunraqygI2woweJ+B8+01SbMQ0Vh0Q3ZpOetNj5OSv3l8x2M47+vvOZQ
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"GetTxDescriptor returns information on the used transaction object and available msgs that can be used"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/base/reflection/v1beta1/app_descriptor/tx_descriptor"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+GetTxDescriptor returns information on the used transaction object and available msgs that can be used
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"tx":{"title":"tx provides information on msgs that can be forwarded to the application\nalongside the accepted transaction protobuf type","properties":{"fullname":{"description":"fullname is the protobuf fullname of the raw transaction type (for instance the tx.Tx type)\nit is not meant to support polymorphism of transaction types, it is supposed to be used by\nreflection clients to understand if they can handle a specific transaction type in an application.","type":"string"},"msgs":{"items":{"type":"object","properties":{"msg_type_url":{"description":"msg_type_url contains the TypeURL of a sdk.Msg.","type":"string"}},"title":"MsgDescriptor describes a cosmos-sdk message that can be delivered with a transaction"},"title":"msgs lists the accepted application messages (sdk.Msg)","type":"array"}},"type":"object"}},"title":"GetTxDescriptorResponse is the response returned by the GetTxDescriptor RPC","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

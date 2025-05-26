@@ -1,0 +1,71 @@
+---
+id: query-delegator-withdraw-address
+title: "DelegatorWithdrawAddress queries withdraw address of a delegator."
+description: "DelegatorWithdrawAddress queries withdraw address of a delegator."
+sidebar_label: "DelegatorWithdrawAddress queries withdraw address of a delegator."
+hide_title: true
+hide_table_of_contents: true
+api: eJytlEtv2zAMgP+KwNMGGHUfN58WbMPQXdYVG3bogoKx6FidLbkSnTYI/N8HyrGbxO5hj5MTis+Pjx24hjyycfZaQwZfW/Lb+w9U0RrZ+R+GS+3xaaG1pxAggQY91sTkA2R3O9AUcm8asYcM9GB3j72B0lQYS0FxSWp8VcMrO/UoAVXh/BkkYMRJg1xCAhZrmnMJCXh6bI0nDRn7lhIIeUk1QrYD3jZiFNgbu4auW4pyaJwNFOT98vxcPsdZL1Ro85xCKNpKDeqSTu4sk2WxwKapTB45pQ9BzHYHYY/9RYavIbzd+1emhzLEU5K6cBDpTxt9pK85Ubc371VNXDoteTZemsimr/FprzsCmyR4qvGHXTqFPErc6oFyhq4TmaYC24pncFvVWnpuKGfSirx3/u+oH5edO03yLZyvkSEDY/nq8iVdY5nW5CGmxmiqaGWY6nAwOfsSEkCtjcTF6uYwTHdK+11vOB29FyzoPW4lbk0h4HpWe46hCHEte9aPFCyTE5Svzof0y1BQQ6fHXrpC4UuLBXc/RpDBmjjuN5eQQZq7ULuQaiMprtrYgs3Fihgv0tE+pLvJfnbpZABlsQsXyzZcSZWfW5uLS/WlIbu4uYYENuRDX9Xm/Ozq7FKANS5wjbHt+3PwPyo+Yji2gumZ06ZCYyVy66s4YpHGHfQ0xPaAhyTdE4lOByaQQDZ3tSZYlgmULrD43+1WGOi7r7pOxHHdILtbJrBBb3Al0OTamiC/NWQFVoEmpYyrA29u9zfyrfrXozzLZxhtuxUKWLXyDxL4RdvZo90tuwRKQk0+VtLrLfKcGj7wMFl4ueDjhH76+A267jdlL2Mk
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"DelegatorWithdrawAddress queries withdraw address of a delegator."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/distribution/v1beta1/delegators/{delegator_address}/withdraw_address"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+DelegatorWithdrawAddress queries withdraw address of a delegator.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"delegator_address defines the delegator address to query for.","in":"path","name":"delegator_address","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryDelegatorWithdrawAddressResponse is the response type for the\nQuery/DelegatorWithdrawAddress RPC method.","properties":{"withdraw_address":{"description":"withdraw_address defines the delegator address to query for.","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

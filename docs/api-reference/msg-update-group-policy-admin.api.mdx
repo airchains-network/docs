@@ -1,0 +1,71 @@
+---
+id: msg-update-group-policy-admin
+title: "UpdateGroupPolicyAdmin updates a group policy admin."
+description: "UpdateGroupPolicyAdmin updates a group policy admin."
+sidebar_label: "UpdateGroupPolicyAdmin updates a group policy admin."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vdtu2zAM/RWDz17SpW9+WjYMQwcUDbr2KQgCRmYcdbak6pILDP/7QDlpbvZQFFteolAkD88hqdSgDVn0Uqu7HDK4d8X82eTo6YfVwUx0KcVunFdSQQqWXgM5/1XnO8hqEFp5Up6PaEwpRUwzfHFasc2JFVXIp5ycsNLwbQvRjZBIl/gVJfeuGPZ47CtI/M7QAFIwlsv3klysItZ5BYinyVEIHZRPMM8tOZfoZTQXjJRET87L+SED561UBTQpxPu5iaXM97HXSF1e7wJuQzqRFW3mPcTerg4YijZnCXsJNW8WvXgh4aFh0//rE/+WlnLIvA3UsMEZrVzbt9HNzTW5ceKCEOTcMpTJwZ1z/euxe9znfhetveuB15WIUcUlhtJ3MFJJULQ1JDzlCVmr7ceInU+90Dnx91LbCj1kIJW/HR2Lk8pTQRZiaR5lGaOkpyoezimkgHkuGRfLySlMc7lsX9rA+mq0jrOF1uKOcStyDotO7y4N2YiFg2zKXYPZ5WT2dCdEs0uwZwcq8ivNj5zRjpka9CvIYCi0q7QbxKDB+vOgfwAgBe7G4/Ed/L7FypR08vocqPW9Gcf7k80+2XepljoKJT3nhZ9BCeadPBhS48kdpLAm61ol1jeD28GIw5hThXFQFFb0cZXOpH7rl6etH5oSpWKwYMs4h1HAKXQICGkPPndzxfpnU6jrBTp6tmXTsPk1kN1BNp2lsEYrccH8p7MmhRVhThayaQ2/aQcZfGtX5dMTV8fuZYgDd7k2TXqIGAtBxv/Vd3YyIpOHX0+QwmL/V1fFHQOLG37McAMZQAo6qhS3IdpqKFEVIU46tDn58wdEzJ+W
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UpdateGroupPolicyAdmin updates a group policy admin."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.group.v1.Msg/UpdateGroupPolicyAdmin"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+UpdateGroupPolicyAdmin updates a group policy admin.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgUpdateGroupPolicyAdmin is the Msg/UpdateGroupPolicyAdmin request type.","properties":{"admin":{"description":"admin is the account address of the group admin.","type":"string"},"group_policy_address":{"description":"group_policy_address is the account address of the group policy.","type":"string"},"new_admin":{"description":"new_admin is the new group policy admin.","type":"string"}},"type":"object"}}},"description":"MsgUpdateGroupPolicyAdmin is the Msg/UpdateGroupPolicyAdmin request type.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgUpdateGroupPolicyAdminResponse is the Msg/UpdateGroupPolicyAdmin response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,74 @@
+---
+id: query-client-connections
+title: "ClientConnections queries the connection paths associated with a client
+state."
+description: "ClientConnections queries the connection paths associated with a client"
+sidebar_label: "ClientConnections queries the connection paths associated with a client
+state."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v4zYQ/SsDnlpAjXezRQ8+NQiKbnrYpkF7ioNgTI0lbqShwhk5cQ3/92Jo+VtAscCebJHz9d48Drl2saOEGiLflW7q/uoprZ5vm0Cst5GZvG2JK1yHCVtSSuKmj2tXkvgUOtt1U+ezA4SSWMMiUAIUiT6gUglvQWtA8PtwrnDBvDrU2hWOsaV9jOdQusIleu1DotJNNfVUOPE1teima6erzoxFU+DKbTZPZixdZCGx/esPH+zntLwbkN57Eln0DezMr1zhfGQlVvPArmuCz0xMvoq5rY/Sdsl40rBNcoDybBjkMqM0wRPEBWDTgNZ0hB6yyxhBmQArKyi1MoK22C1gSriy7y7FuDDLRUwtqpu6+UrJFU6DNmbZUnppCLKd1UPvQZTYZ5vz6NnquaZQ1XqJ6YulaJpVxvNAyyAh8udsDEEgsE/UEhsiVCD0NWxDwVsdGoIXoi5wNeOd75e+nVPK4QRbuoLP8Y2WlEBimxkTYukFsKliClq3Ai2uwNcxCoHGGScS0hxgyBQYPCVF+41chqxeoKvqCmpMJSxiepECRFHppxZ9HZhmPE+EL4Er8DVyRQJ3bEGFwKOQFCeIh6rPEEsErVFnPBRiygrck4BGmBO0kYNGDj4zmD1RLCUtiQFlhNQZV6QCGaMrziSYBtOjbu0l0AfWX34+EsERQaa1kNFBFSz1LtCYHvZJOGP+/yQ7h8zFVvfDZBDwfUrE2qxgLNnmEOggKTTa4ihtJSqCxZhxzuWRjWYf2w6TKbDCwKKAHLWmBEPQRdzqretTF4XEjkTflagWE7mc8SIR/Zu1kCuXQ6lx/pW8npSax+XFtHwYJoxB2LIyfFugXQkzzs6TC294uL+FlrSO5Uhuy17SAvtm5ITeMPRM7x15kySlFNP3GXclnfQ+sH66PhQXWKmi5HJpiqHJXudDbIBQOCy35xKb++M0m3OJ/7p1vJz5I3OwJRGsRq3HOLRFrOwm27bQPRVnVF625bWnFEi+bZrPOI8aI39o6dRV2+Nsl9/UTcLcT3xMNDnEnCw/Tobb8LAok/X+htzkG3QRM9xBin/0vC3oz4745v7OFW5JSbZolh+uPl1d5xEfRVvM7R7u3e+P9ITJfUOU3nXSNRjY6uhTk4WWWXh0Ye6zPhNtZXp4KSw/2soFG65w08OL4alwdRS1SOv1HIX+Sc1mY8uvub3Tx6fCLTEFnBtZ9n4JYv9LN11gI3RR9P6ouB8ehsfIj/DNz5xR6Dvt8srgYdPblyvcC61OnkGbp03hasLSJu/jeti/8Z46PfK8OMn2JtqL7fff/nabzX/kookW
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ClientConnections queries the connection paths associated with a client\nstate."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/connection/v1/client_connections/{client_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ClientConnections queries the connection paths associated with a client
+state.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"client identifier associated with a connection","in":"path","name":"client_id","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"connection_paths":{"description":"slice of all the connection paths associated with a client.","items":{"type":"string"},"type":"array"},"proof":{"format":"byte","title":"merkle proof of existence","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"}},"title":"QueryClientConnectionsResponse is the response type for the\nQuery/ClientConnections RPC method","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

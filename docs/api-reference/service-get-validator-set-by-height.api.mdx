@@ -1,0 +1,71 @@
+---
+id: service-get-validator-set-by-height
+title: "GetValidatorSetByHeight queries validator-set at a given height."
+description: "GetValidatorSetByHeight queries validator-set at a given height."
+sidebar_label: "GetValidatorSetByHeight queries validator-set at a given height."
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV01v3DYQ/SsDnlpA2XWcoAcVAZoURepe4sZNL1nD4EojibFEKuRoncVC/70YUtJK+5EoblAEqC+2xdHovcfHGc5OmBqtJGX0VSpicYN2oxK8e430tyxVKsnYG6RX299R5QWJSNTSygoJrRPx+51QWsSillSISGhZoYhF0Yda/Ngoi6mIyTYYCZcUWEkR7wRta450ZJXORSQyYytJIhZK00/PRdtGO5GiS6yqGZqIxT1uQTmQsJFlg2CRGqsxBaXhWub4Fl1ttMOFxk90x8FkYI250iv9sUG7VToHKhB4HWqZI1TGEWCWqUShpnK7gDe63ILRCCYDk2UOCYyFe9yutCtMU6awRnBICxEF3j7znngtc6W9lot73E4EyGTp5imw3hKeEqAD5DXQTYVWJT1IKiRBIjXDaxym8FCghk6xRsuNVKVcl7hY6SufoUTn9tT5fQ2NY4nu8XM6QJBhpWfrEF5/pBTNWTeUqlKeCW8pGZIla7JGy5AtuqYkFxwwcQpHh1VvAdYjgxIzAqxq2oIieFBlCSlmkoPIDIYLyViK9RZQJgXIup4hgEf6zfknptF0F4gr52GRAT5lwH8onapEEgZnjFhzYGdlpZOySXGlJfhsrNwpNRVh5WDwEGTGwp4fq/ruyi1W+gCSYQ9ZdDUm1Dtyb2F26QKCGVWujR2ZdqUDoxnijr45S+K1MSVKfUpRixu0Dg/VVHs7SYtnLMWZUKd8foxN0S5WeqVvlE4whsS4yrgnLr2Hi8XzZ1/m1AH5Sj63HB5KoOOAy4sL/jXl+BJckyToXNaU0IezzInRhJr4DVnXJXtHGb384Pi13ei703xnmkRfi/vz2X8JGLX3Dz/9kxVYnkkBb69/hQqpMCnjqy13KVKB27o0yf1d12Xi3WHziA4OVBuN5D0mMe4eHrHfYqzWmKZhi3MGM5Co0DmZo2O/siMKZO/bsO49wPuGjvpIKGQwfNeo/KK3yBBxY6o9ht1KQ/9jsUbJ5+eVtIMRX8DTn0cxEwK+s72ASw5oj5Trm+OxCkPb7PZs6KBQS8fYyUzgh/Wut36xsV51ddUL6wttttLk9eNTpQ1UxvZFyi2O2uGJLQ2Hfrz7zbD9ikoOHmrRuQaxL2oqm7Ab1ZWVfpC+JESgyHXNwLfVFDPFRcAwkQflTsBshydm/QETYuCb3u5+R3x1HZ3oLi462J7hjAw9b3yUhpRPurI53XWZphadO241bYg0Du1dbZWxirYzD1Sz7n0k01QxSllej7/aHqL4JSQ5wnBSI0NK53e1eUA7B9AoibRWbk9l9UFdYz9RGjU0Gj913QqtNfZxFXJKOjEpHhJ4drknoDRhjlZ4aCRV+XlT/Gutj3SKRFeDZu1MEJFkznf/flYQt4duPVfUuVgodFO/giSQkKsNagg1nfUOtV/EIscwdFAhYrEM3XS5lg6XhDpFWylNy83TNZJ8utyfLSS33IV0re+5mfEMu9LwR6MTf315U6N+eX0lIsFdN8DfXCyeLS69zY2jSvod7hr1N6A20WoQnfATLetSKs0fbqyvbYH2exFoi0gwcXbPQJ2BB/JiXFqQODrueuRtJArjiDPtdpzinS3blh+HawjPcalyXAn3l40DmMMB+O4msZMC+uJ0PJB5yCIWwl8AZ1P+TmevecyHEeyR5L+jWWse4X7keiTf/8tsNU/M6Yj1SEn/u+FqHqn9jLUndMv/WMWMvrIg/vC2G9R+hHMI+qarJ0WoR9aV6fa2jUSBMuVLz/tdt/gySbAe2/no/sHQh375+re/RNv+AyPe/Yg=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"GetValidatorSetByHeight queries validator-set at a given height."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/base/tendermint/v1beta1/validatorsets/{height}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+GetValidatorSetByHeight queries validator-set at a given height.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"height","required":true,"schema":{"type":"string","format":"int64"}},{"description":"key is a value returned in PageResponse.next_key to begin\nquerying the next page most efficiently. Only one of offset or key\nshould be set.","in":"query","name":"pagination.key","required":false,"schema":{"type":"string","format":"byte"}},{"description":"offset is a numeric offset that can be used when key is unavailable.\nIt is less efficient than using key. Only one of offset or key should\nbe set.","in":"query","name":"pagination.offset","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"limit is the total number of results to be returned in the result page.\nIf left empty it will default to a value to be set by each app.","in":"query","name":"pagination.limit","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"count_total is set to true  to indicate that the result set should include\na count of the total number of items available for pagination in UIs.\ncount_total is only respected when offset is used. It is ignored when key\nis set.","in":"query","name":"pagination.count_total","required":false,"schema":{"type":"boolean"}},{"description":"reverse is set to true if results are to be returned in the descending order.\n\nSince: cosmos-sdk 0.43","in":"query","name":"pagination.reverse","required":false,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"GetValidatorSetByHeightResponse is the response type for the Query/GetValidatorSetByHeight RPC method.","properties":{"block_height":{"format":"int64","type":"string"},"pagination":{"description":"PageResponse is to be embedded in gRPC response messages where the\ncorresponding request message has used PageRequest.\n\n message SomeResponse {\n         repeated Bar results = 1;\n         PageResponse page = 2;\n }","properties":{"next_key":{"description":"next_key is the key to be passed to PageRequest.key to\nquery the next page most efficiently. It will be empty if\nthere are no more results.","format":"byte","type":"string"},"total":{"format":"uint64","title":"total is total number of results available if PageRequest.count_total\nwas set, its value is undefined otherwise","type":"string"}},"type":"object"},"validators":{"items":{"type":"object","description":"Validator is the type for the validator-set.","properties":{"address":{"type":"string"},"proposer_priority":{"format":"int64","type":"string"},"pub_key":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object"},"voting_power":{"format":"int64","type":"string"}}},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

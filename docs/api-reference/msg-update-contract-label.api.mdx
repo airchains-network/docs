@@ -1,0 +1,71 @@
+---
+id: msg-update-contract-label
+title: "UpdateContractLabel sets a new label for a smart contract"
+description: "Since: 0.43"
+sidebar_label: "UpdateContractLabel sets a new label for a smart contract"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVUtv2zAM/isCz16StTv5tG7YocO6Fn2cgqJgbMZRZ0uqSCcNDP/3gUrSJqlXDFsuZmg+PpIf6Q5K4iLaINY7yOHGuoJyMxl9OoUMfKCI+ua8hBwuuHq4CyUKffVOIhbyA2dUQwaRnlpi+eLLNeQdFN4JOVERQ6htkWKMH1lTdMDFghpUKUTNIJZ456ZRVRYrNUEOu0zGspEFGSzLSMzGz9NfbjCKeXHMQNZB3ViidRX0GThaPdQJ5l7Un7RK0M3Gzog3MzJMgxGYXElx3/0maXaQZIFisBAfNyLbylGZXjXEjBXx27B99hLtgquBrioaNmgcrUzCb+Y+GvxjxX72SIVAr5F1HDZSCbnElpKCg3e8afPJZKKPw7mfGW6LgpjnbW125iPI/n6W75dzvQ1pIkkbHRtqgqxNiYJDNfQZlDTHtpYBqM60jp4DFUKloRh9/DfEx+wrSZ9zHxsUyME6OT15BWedUEUREjRBWycvK9Qk4bCEDLAsrebF+mo/TZ8dpf28cezeEKR/yYwx4lrzbuk0ZD3UQ1VixZBPdShwrwFk4XWVg2cFGVAWkMP4sXWFgh2tkJvR8uPogqvx8KprG69f1/3bMzahpsP13cE62L5X5W6h9nbMurnfJ9H3LSBzGcidXZ1DBkuKvCHAcjI6HZ2om5bRYBqrw0Yd/2eTDmi2d8WOjuK20ULPMg41WqdI2pgOzKahUxhqKGRD6HQsC51GPoWumyHTXaz7XtVPLcU15NP7DJYYLc60NdP7PoMFYergtINftN6eSXLy4VaxqXndJuYc87/Pdh5nRUFB3rXdJ8zV5c0tZDDbXvgmLQtEXOn1xxXkkD4X6p1onXQd1OiqNlEWNjH19xtClj6y
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UpdateContractLabel sets a new label for a smart contract"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.wasm.v1.Msg/UpdateContractLabel"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: 0.43
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"contract":{"title":"Contract is the address of the smart contract","type":"string"},"new_label":{"title":"NewLabel string to be set","type":"string"},"sender":{"title":"Sender is the that actor that signed the messages","type":"string"}},"title":"MsgUpdateContractLabel sets a new label for a smart contract","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"title":"MsgUpdateContractLabelResponse returns empty data","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

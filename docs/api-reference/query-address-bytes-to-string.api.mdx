@@ -1,0 +1,71 @@
+---
+id: query-address-bytes-to-string
+title: "AddressBytesToString converts Account Address bytes to string"
+description: "Since: cosmos-sdk 0.46"
+sidebar_label: "AddressBytesToString converts Account Address bytes to string"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMFuGjEQ/RVrTq3ksgSqHvZUKlVVemmapCeCIuMdWCe7tmPPoqCV/72a3YVAgB56WrDmed578zwtFBh1MJ6Ms5DDnbEac6FdrF38FItnMR59/gISnMeguOi6gBx+Nxi2j7OiCBjjty1hvHd3FIxdgwSvgqqRMETI5y0YvtcrKkGCVTVCDqoHPi4ZCRICvjQmYAE5hQYlRF1irSBvgbaeAXF398qFWhHkwFBIacHg6J2NGLl+Mh7z51jUTMRGa4xx1VRiVz4CCdpZQkuMUN5XRncKs6fIsPaAxrv7zui+Ha4VJgoqcd9GsAKxckEMqL5cBK9FjVS6YvRgH+xF331g58n08nbGDX6cGJSS3J245RNqgpT4rMCVaio6I8WKxuKrR01YCAzBhf9z6JindgXydz8uY2k6gT05YwnXGKCjRspUHcoQ1vFA1CBBsmzDfVV1c9gmvbfnaw88deXNFhWC2nLfGmNU67PV5zzkQ7XmRPfhhwVfwfODHNZIXe6phByyfoiZaqjMNldLJHWVLVGX00nWHiU/gQRjV67jYKjilj8bq1mq+OXRzm6uQcIGQ+yntRmPpqMJs/cuUq26GQxv6lwohXZ2g4GimGntGku7EIquvyAn9i/rKBft2+Avr4TBJMJXynyljGViTai6OHRezKFH8QibbgEMfoCE3hGQkB9vg4WE0kVicNsuVcQ/oUqJj1863/P5QsJGBaOWbNi8hcJE/l1AvlJVxH9I+XA7LJqP4hL/XUzsltmqquF/IOEZtyeLKy2ShBJVgaEj0tfMtEZPB+iTh5MOs/Pj+z2k9BcKu+rm
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"AddressBytesToString converts Account Address bytes to string"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/auth/v1beta1/bech32/{address_bytes}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: cosmos-sdk 0.46
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"address_bytes","required":true,"schema":{"type":"string","format":"byte"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"AddressBytesToStringResponse is the response type for AddressString rpc method.\n\nSince: cosmos-sdk 0.46","properties":{"address_string":{"type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

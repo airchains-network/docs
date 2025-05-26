@@ -1,0 +1,71 @@
+---
+id: msg-update-client-params
+title: "UpdateClientParams defines a rpc handler method for MsgUpdateParams."
+description: "UpdateClientParams defines a rpc handler method for MsgUpdateParams."
+sidebar_label: "UpdateClientParams defines a rpc handler method for MsgUpdateParams."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VcFu20gM/ZUBz1olm9502mzRQxboJuimJyco6BlKmnY0M52h7BiG/n3BUdzYltHDouuLZYp8JB8f6T2ESAnZBn9noIGPufvyORpkeu8seX7AhEOGChJ9Hynzn8HsoNmDDp7JszxijM7qAnH1NQcvtqx7GlCeDGWdbJS3M/yMPuMqQ631lBX3pLL5Vn/MneJdJMVBjcWxvNKlFhUliJhSrqGCmKR0tpQlT5wLXWSMy0QLtLds9ZN/8n/fP35o1K1zxy7DmFmtSeVR2iWzrACdC1syX2b4C6WcOZzU5GxmFVr16nOoMXOhYBcpq21vda80eilDJ0Im8+TRG2U9U0LNZNTWcl+ru1bhAaLQabNKNIQNGdWmMJSUp6lyKaFSY8aOnnxoFfc2H0C21jlJa2zGtSOjRs/WKcuCjMaQUdih9cLkoR1hyDLNQ5EqoIHMyfoOpupgwJRwB9ObIay/kmbxyLbzlEqwZVeii0XyJcoiyjPUJYqY/j8Fyk7YRAYaTiNNYsgx+Dzr4eb6eqmBW5VHrSnndnTq4C5Yv2ahPr0inrR13vIhbemzhgukFdZaHB1f6MCr0dNLpKI3Simk/9bI6fboYEi+25AGZGjAen5381acaLyjBKU0RutK1Lm+XluoAI2xkhfdw3Ga6Xxp/5gDFwKdFhKtYKAsy3HJ+xKHYsQuQ7OSKcHzuRKXZ/bH1FClqFWP3jhKaiDug1FtSOejFL7nt3LpQpbOI3IPDVzZta51SFTP0q03v4u2ry4edxnOp7cD/+EFh+jo9Kwuztvq0P7z0bIebbj1bTje3r9Gr6V1dR/J3z7cQQUbSnkmY3Ndv6tvJEzaGLBoxeNAv46oE/Z/jJDpha+iQ+sl+Zjc3LVwuILLHEJ1oSSZby8TaFaw368x0+fkpknM30dKO2hWzxVsMFk5oPJrqqAnNMLaag/faAcNvJ+X57dHKU7c3VgkeL5IU3WIuNWaIv/U9/lIJA/3/zxCBevXv/GhbB0k3Mo5wy00ABWEQlKZerHtwaHvxqJ9mDHl8y8SKunT
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UpdateClientParams defines a rpc handler method for MsgUpdateParams."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.client.v1.Msg/UpdateClientParams"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+UpdateClientParams defines a rpc handler method for MsgUpdateParams.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgUpdateParams defines the sdk.Msg type to update the client parameters.","properties":{"params":{"description":"params defines the client parameters to update.\n\nNOTE: All parameters must be supplied.","properties":{"allowed_clients":{"description":"allowed_clients defines the list of allowed client state types which can be created\nand interacted with. If a client type is removed from the allowed clients list, usage\nof this client will be disabled until it is added again to the list.","items":{"type":"string"},"type":"array"}},"type":"object"},"signer":{"title":"signer address","type":"string"}},"type":"object"}}},"description":"MsgUpdateParams defines the sdk.Msg type to update the client parameters.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgUpdateParamsResponse defines the MsgUpdateParams response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

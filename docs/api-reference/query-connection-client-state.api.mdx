@@ -1,0 +1,74 @@
+---
+id: query-connection-client-state
+title: "ConnectionClientState queries the client state associated with the
+connection."
+description: "ConnectionClientState queries the client state associated with the"
+sidebar_label: "ConnectionClientState queries the client state associated with the
+connection."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v40YM/SvEnFpAtbPZogefGgRFNz1s07Q9xUFAjyhpNhJHGY6cdQ3/9wVH8odsLVqge7IlcR7Jx0cOt8a3FDA6z3e5WZg/Ogqb51vPTFZf3taOOP4ZMZLJTIsBG4oUxCwetyYnscG1amcWxh4OgcuJoyscBZMZpx9bjJXJDGNDI9Nnl5vMBHrtXKDcLGLoKDNiK2rQLLYmblo9IDE4Ls1u96TG0noWEv1+fXWlP+NIbkA6a0mk6GrYm89Mpn4jcdQT2La1synx+SfRY9sTt21QWqLrnRzSyZ9t4uNZEiEan4t1yii9h/QeUMRbh5FyeHOxglgR2AqZqTbZWax3B+wTqiGnwjEJIIyAExoyYJ47PY/18H3JR8qhcFTnmu44iyF0l0/EPSrYGeeZOU/66P7+1MPu3OPPPdJlFQ8+/OoT2ag+J3icMOxd+EJBCx8ajGZhVpskzj1EQ+GlJkh24Augz04isaWp1JLVc0WurOKlkD6qi7repAo+0NqJ8/whGYMTcGwDNcRaaIxAaCvooeCtcjXBC1HruFzy/uzHrllRSHCCDc3gg3+jNQUQ3xBY1SlLJ4B16YOLVSPQ4AZs5b0QRL/kQEIxAQyeHIOlEFF/PfeFEaBZOYMKQw6FDy+S9Yz+0KCtHNOSV4HwxXGZdFmSwB0rqBBYFJJslPEQ9VnG4iFWGJc8BKLN5bgjgehhRdB4dtGzs4nBdBJFXdKaGFAmSF1ySVEg5Xih3zCYnlTrIIHOcfzpxxMRnBCkTeNSdlA6db0HmtLDwQmnnP/dyf5A4qLv9KGlBGwXAnGsNzDlbHcEOkoKlTY/SVuOEUExlpx8WWSl2fqmxaAKLNGxRED2saIAA2jhe721XWi9kGhLdG2OUTGR8yUXgeifpIUUuZiLrjsJNV0Qk/fDwzBoNY2emeFZwfZhLDkBzCcR4OH+FhqKlc8nYtAociqwqyc69YahY/rcklVpUgg+fIvJb31OIw04ju+vj8E5jlRSMCm0iK7u74tIjZzMvcOU+9+D8zgQMQTcqN+GRLD8T2N215MYsdT7uy+leTq/kaZL89pRcCSnCv/qZbfk4wWv5A8lXZiyb2vdBRZm7lZ2bn2g+dF6vn538iTz7WhT2M1HN5GuFoU/vc1+67hfQH5viW/u70xm1hSkz2t9NXs/u05D30tsMBV+WEi+fc4jTg+lifQ5ztsaHWscXaiT5BIfj8atbFJqoF6wA5om8W70Rjt0cb5Djah5ykzlJSrqdrtCob9Dvdvp69dU9MXjU2bWGByulDjd5Zzo/9wsCqyFLhI4NJD57mHY1r6Hr618k9nuhcsbzQjrTp9MZl5oc7ES7p52makIcx3Bj9vB5sZaauPJ6YtW1v3woLZff/nL7HZfALNL5Xw=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ConnectionClientState queries the client state associated with the\nconnection."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/connection/v1/connections/{connection_id}/client_state"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ConnectionClientState queries the client state associated with the
+connection.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"connection identifier","in":"path","name":"connection_id","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"identified_client_state":{"title":"client state associated with the channel","description":"IdentifiedClientState defines a client state with an additional client\nidentifier field.","properties":{"client_id":{"title":"client identifier","type":"string"},"client_state":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","title":"client state"}},"type":"object"},"proof":{"format":"byte","title":"merkle proof of existence","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"}},"title":"QueryConnectionClientStateResponse is the response type for the\nQuery/ConnectionClientState RPC method","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

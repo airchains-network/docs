@@ -1,0 +1,63 @@
+---
+id: query-upgraded-client-state
+title: "UpgradedClientState queries an Upgraded IBC light client."
+description: "UpgradedClientState queries an Upgraded IBC light client."
+sidebar_label: "UpgradedClientState queries an Upgraded IBC light client."
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v2zAM/SsCz0bdj5tP64ph6C7ruvWUBQUjM7Y6W1JFOmsQ+L8PlNO0zXwY1pMMWo987/HZOwiREooL/rqGCr4NlLb3d7FJWFN91Tny8l1QCApIxDF4JoZqB+enp3rUxDa5qHio4NLwYC0xr4fOPF8/gQJs8EJeFIExds7mieUDK2wHbFvq8e9+mc0Mmdt9a+PYSEuHUUa2kcw6JK3+9BlezuDN7c2V6UnaUCu7mNQEcZOyYX//3mbAPWf5yryunRLD7uY1YDxu8EFZ6MN0AktyvoFxLJ4rYfVAVqAAcdJpYRpl8iiDzME6FKrNbyftXuHjQCzG1eTFrR2lmX7jqLWa1jh0MrMdbwZPT5GstqaUQvq/Jb2Va0Od1a5D6lGgAufl4hwO5JwXapSvUhN0XUY5oZ5fmXSw5N0uv9iCKeFW5/bEjM0/7WScTBRsGKrFlEBYFkdWzmXqcaDkiA168/zaXH+8Mp1rWjHThtXmKXdQQUOqN6K0UEHpVra0IVE53Sw3Z+VsEhkKcH4dsph9fL4M3ioz8zWSv7y5hgI2lHjiujk9uTg5VxtiYOkxL9NjT+/U8caRg7FCT1LGDp3XiUPqcmCyxgW4lc05S/o7mTop1TMo5r86VufbwKLg3W6FTHepG0ctP+bNVItlARtMDlfqxGI5FtAS1pSgWuzgF201+NZSzJOwG3IwjuM9Ll/t5fOnHzCOfwAEtMw+
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UpgradedClientState queries an Upgraded IBC light client."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/client/v1/upgraded_client_states"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+UpgradedClientState queries an Upgraded IBC light client.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryUpgradedClientStateResponse is the response type for the\nQuery/UpgradedClientState RPC method.","properties":{"upgraded_client_state":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","title":"client state associated with the request identifier"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

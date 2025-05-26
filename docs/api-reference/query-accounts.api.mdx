@@ -1,0 +1,74 @@
+---
+id: query-accounts
+title: "Accounts returns all the existing accounts."
+description: "When called from another module, this query might consume a high amount of"
+sidebar_label: "Accounts returns all the existing accounts."
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV01v3DYQ/SsDntVdxwl62CJA3aIo3EvcpEEPkRFwpZHEmBoq5Mj2YrH/vRhSWu1Xkq1bFAbqi21qSM57fPOGXKsSQ+FNx8aRWqg/GyQotLVYQuVdC5ocN+ihdWVvMQNuTIDPPfoVtKZuGApHoW8RNDSmbkC3ricGV+VU6wCmAm4QOl0b0rIHVAZtCSaAocJ5jwXbFQTkWU45vTNU4AIKF1oXvgvlHVzMXr1UmXId+jj/ulQL9bvs//GqKGSvoDLVaa9bZPRBLT6sDzDd4Ur203CvbY/gkXtPWIIhuNE1vsXQOQo4I3zkjxLMDpZYG8opAjVURxDyXZAgtC4wYFWZwiCxXc3gDdkVOEJwFbiqCsjgPNzhKqfQuN6WsMSIUmXKSFJxZZUp0i2qhZoImt2hjHv83BuPpVpU2gbMVCgabLVarBWvOpkS2BuqVaYq51vNaqGWK0a12WSHBAwJRQ6ob9GbYkySG81QaJL0+oAlPIgABsZ60vfaWL20OMvpOq5gMYQJuswn6INQdIdf4wESDTmdzUOa/kQqekP8/atTZFjTmohEjpQdayucLNFLyh5DbzkkBewpRaLT1ygB4aMCixUDth2vwDA8GGuhxEpLELut4NJiQsVyBaiLBnTXnUFAzPRfxx9r5mMCbkJMix2w7xHkD0OlKTRjUsYOagkcpGyosH2JOWkohmo/yaZhbANsNQSV87tOYAjeX4dZTgcpOdGQx9BhwaMiJwmLSmeQxGhqcn5HtDklRGeQu7PnWRQvnbOo6RSjHu/RBzxk00xy0h6/IClZCamU+nG+RP91F/wGpiGRv4nnVsKTBQYJuLy4kF/7GK8g9EWBIVS9hTFcaC4cMRLLDN11VrRjHM0/BZm23tl3f73o4KOBjw48VuW4PkiuUTUyGqfMxznw9uZnaJEbV36ds85L72CTwOmxZyzWKsozDpalkby0vdkN3hxO/jFxd1h2m002jrjlJyxYyYBhKyPjhkkDDQI+msBy3npqX8Ns7b1eyeTpTI+Z221ZkbCoK2yXWJZJV7VQs+WwxRB0jUGKJKWQp8Yr36PwRCwYeIyERqcqG7pj/Bg53ka8c+2UwzonGH88dqilaH/Sfqv+1/Dih52YPQCxnb6GSwnYHJ3W2JGPWdj26kEy27YNnQ6SO7u99NP3oaF/s5tfD2YeiY3uXuXEkT85RnLQOj86Y5gd9eDsUCGZSk6zWB9Z9CSVrQF+qStNTmqqPXQ7ZpbTg44+lIHhMHSg2MtLrIw4T7zPPZhwIs1jIZ8YkbGhy53wCYKe8HGwbvTe+afZxb4QClfiHnmG+OXlBMAQY41exdRYG7tf4PsQsn9e8Jvjmh1q4yx7SCSyruW6mrxQ3coSYmdqoep47+k0N2qh5snT5rrnZn7/YomsX8x3zMNQ5eKug4x+66mI/fVNh3R1c60yJW0hnc/9xezl7DJ6jAvc6sj60Em21pqaVABt7WnLkpPcO/f1dLDP9gkxnAHjI887qw0JC72PRZmo/qDSLFFIz40Ql+iWgZHw20w1LrBEr9dLHfC9t5uNDKfGHN8fJkiZTu33i2Q9t7fJSZKiAx8/UWLKaqFUvBKdDfmZvkbOQ759lDwR/DN6fZwHeHyEPBHv/+W1cR6Z+4+OJ1L63z03zgM1vTomQLfyjzeCSC0+3G4y1aAu0Ud3TCtcFQV2u8o6ug9sdlvir7/8oTabvwDV6Zlq
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Accounts returns all the existing accounts."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/auth/v1beta1/accounts"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+When called from another module, this query might consume a high amount of
+gas if the pagination field is incorrectly set.
+
+Since: cosmos-sdk 0.43
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"key is a value returned in PageResponse.next_key to begin\nquerying the next page most efficiently. Only one of offset or key\nshould be set.","in":"query","name":"pagination.key","required":false,"schema":{"type":"string","format":"byte"}},{"description":"offset is a numeric offset that can be used when key is unavailable.\nIt is less efficient than using key. Only one of offset or key should\nbe set.","in":"query","name":"pagination.offset","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"limit is the total number of results to be returned in the result page.\nIf left empty it will default to a value to be set by each app.","in":"query","name":"pagination.limit","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"count_total is set to true  to indicate that the result set should include\na count of the total number of items available for pagination in UIs.\ncount_total is only respected when offset is used. It is ignored when key\nis set.","in":"query","name":"pagination.count_total","required":false,"schema":{"type":"boolean"}},{"description":"reverse is set to true if results are to be returned in the descending order.\n\nSince: cosmos-sdk 0.43","in":"query","name":"pagination.reverse","required":false,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryAccountsResponse is the response type for the Query/Accounts RPC method.\n\nSince: cosmos-sdk 0.43","properties":{"accounts":{"items":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object"},"title":"accounts are the existing accounts","type":"array"},"pagination":{"description":"PageResponse is to be embedded in gRPC response messages where the\ncorresponding request message has used PageRequest.\n\n message SomeResponse {\n         repeated Bar results = 1;\n         PageResponse page = 2;\n }","properties":{"next_key":{"description":"next_key is the key to be passed to PageRequest.key to\nquery the next page most efficiently. It will be empty if\nthere are no more results.","format":"byte","type":"string"},"total":{"format":"uint64","title":"total is total number of results available if PageRequest.count_total\nwas set, its value is undefined otherwise","type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

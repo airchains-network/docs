@@ -1,0 +1,74 @@
+---
+id: msg-instantiate-contract
+title: "InstantiateContract creates a new smart contract instance for the given
+ code id."
+description: "InstantiateContract creates a new smart contract instance for the given"
+sidebar_label: "InstantiateContract creates a new smart contract instance for the given
+ code id."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vk1v3EYM/SvEnNV1ahc96FTXSQEXdW3ELnpYGwF3REnjSBxlhvJ6Yex/DzjSfnnVwAGaPWk5I36890jqxfiOAorzfFmY3FzF6tMlR0EWh0IXniWgFZOZQF96ivK7L1YmfzHWsxCLPmLXNc4mHyeP0bPaoq2pRX0qKNrgOj0d/E+4BxsIhQCBaQmxxSBgN2cu3bcEpQ8gNUHlnojv2fqCwBUzk5kuaBXiKKZ8italJMRJQyY352oAFwEZfMoEG8CiCBQjSI0CFhnomWwvBK2rBkCiyYysOvUQJTiuzDozGvWTK9R96UOLYnLTO5Zff9HbY8ALX9Dle42o+QYqKZBWID4ZovhABfx7fnsF6m8qTtlzkapxQm08BvLCO4aCSscUAUH8Z2JYOqkBoSD2reNUBCAXWje2vmeZ3fM9/3199yGHu5pGI5SOmmLE55IFlrWzNbi2a6gllqEK20fxLbQktS/uObqKUfpAEVQZTgtarKDyle+CFz9BSwqWeHldbEp44mS9BcYvHsmK3t1g/IcCBNY7HjnEQCABOZYUNJsR7K2OPI9SUukpiFvnGAKu1HeDC2qOsf5LzYrPVjwtCRYoijsstoSO8B8pdzZFcBurAxEtVkJ7ErqKFWgzASWhF9BSjFjRGLHDGL+rxl3gSFxQ2O+P22TZyHUA00rqNhRQpjVUTZscJhrjmKl14vXH9/5GfSaX0NNaDbHzHAfRnb57d8znOcTeWoqx7BvYXFdfbx5qrwdOGiUTgcYZMyK7IFufnW4njy+TVct+m2RUcd/SzHtVpLpCbQo9jKqQQNIHpbAMvj3QyzSPOwVO0PVxhGv0eig3BbNvBFKiE4pIkiixb2QCK4ae6bkjK1QAheDD/8FNmq/7mDmWs9Ndco6FKgrDFBJ0zeHQPSwhU6rdMANu9sOsXw+734YXjyfa+njqjF31pvk3gChYRZPPlSLz8LrN/rvH4vc1Gex12TD2TW46HxWHDqU2uTl57Nlq3NkSYzt7+nl2FauT6Q8IZerj7iPiwzPqgtlb2Juy95bszjTuw/luj+zOxvWxhe1hO8l3d9K43f3dDMG97nJc+v2p+OdYGlx3xOc3lyYzTxTiAPLTu9nZ7FRfU0BaTBpkbOlHEXDA8VYoQs9y0jXoWFPpQ1peAzdzM8WNyabSUxHVSmw+Ny8vC4z0T2jWazV/6SmsTD5/yMwTBocLxWb+sM5MTZggnL+Yz7RKnySpQ3+609z0etMnnb/u1nW2eePcWurkm3cf9rR3c317ZzKzGD9B29TaJuBS1wAuTW5MZoYdnZow2V5Mg1z1qcHM4FN/XwFmvt2y
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"InstantiateContract creates a new smart contract instance for the given\n code id."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.wasm.v1.Msg/InstantiateContract"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+InstantiateContract creates a new smart contract instance for the given
+ code id.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgInstantiateContract create a new smart contract instance for the given\ncode id.","properties":{"admin":{"title":"Admin is an optional address that can execute migrations","type":"string"},"code_id":{"format":"uint64","title":"CodeID is the reference to the stored WASM code","type":"string"},"funds":{"items":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object"},"title":"Funds coins that are transferred to the contract on instantiation","type":"array"},"label":{"description":"Label is optional metadata to be stored with a contract instance.","type":"string"},"msg":{"format":"byte","title":"Msg json encoded message to be passed to the contract on instantiation","type":"string"},"sender":{"title":"Sender is the that actor that signed the messages","type":"string"}},"type":"object"}}},"description":"MsgInstantiateContract create a new smart contract instance for the given\ncode id.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"address":{"description":"Address is the bech32 address of the new contract instance.","type":"string"},"data":{"format":"byte","title":"Data contains bytes to returned from the contract","type":"string"}},"title":"MsgInstantiateContractResponse return instantiation result data","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: query-denom-metadata
+title: "DenomMetadata queries the client metadata of a given coin denomination."
+description: "DenomMetadata queries the client metadata of a given coin denomination."
+sidebar_label: "DenomMetadata queries the client metadata of a given coin denomination."
+hide_title: true
+hide_table_of_contents: true
+api: eJytV1Fv20YM/ivEvSQBVNtJujwIKLCgG7YMKNqlyVOdBbSOsq6R7pS7kxvD0H8feCfJiq3sodiTZepIfiQ/8qidMDVZ9MroGylS8XdDdvv4G2lTfSKPEj2KRNRosSJP1on0205IcplVNSuJVEg+DMqBLwgyozREiTfwzNaCvOqMQW7sTCRCsWaNvhCJ0FhRb0ckwtJzoyxJkXrbUCJcVlCFIt0Jv635oPNW6bVo2wc+7GqjHTl+f7FY8M9reNfgmiwj5/KmhP44Q8iM9qQ9a2BdlyoLWZh/d6y2G7l9bS9k6FWCbjujfQ56J8B4OeAgDXrzV4pw++XjUlfkCyMZUW25GF7FaPqUHUMYkhnFK3KAWkJtzUZJ/lOWsRilIu1B6dzYKkQ3oOEkk/MkwZsn0sfeV+jo2DNLwVJtyZH2MdwgiyU/dYVpSgkrCm9CsPdaefihfAH0UhvNgD7A4ow9HtQziRR4bLTyAYPyVLlR4c3qO2VeJAeg9m5GyBCct03mwRfox4mCtdqQXurgS+mYFnYJJu/jUdlbacFSYce2Q3T7MLzyJUu6w8wLhFK54CIeg/5dX5CACvoe6EyitbgdEnNcjpj1g3p0Drir+pBGxmOopzRbQ4PeVNOF6Et17HIo4shrbX6QZV/ni32RQ96NJqga55faonI08OVxGBFKg7GSLD/Tc4PlCPBQ2BMXwS/1eRfFBzhf/DP42ptcag5tFgmHY18mjwEnAVSGGjJL6AlwxFOTwwkfOgkGlnpE2asEfNG4FM6BT0QEV6MkxiYTqVDaX73fZ1VpT2uyom1H1Bgx/bB+PVHG0TNLOuaGETtJkVGZJkgplatL3E6QKL4ApSXPQOpY1KzXcUB0peJyDu291J0WSa5gHDRukkpxuh86/ap0RilkxlXGvXPyCRaz95din6BAX0m50h2gMZ9Dc8IprVP4GCzANVdhyr3bVitTHgOI8n5kR4OdrHENluWWo/2hwWigl6xAvSYXXV7fff50NoO7Qjnm0VJ3484xQowGu/TMlnqp3471EGxj1THS+9sbbg4EabKmYjKeGm4aMHn+LitQ6bNYHb7QUGkHKKViZSzHs38Gn+sofRvV1RuoHgt0xSS0P9EVccC5Ai9+uQI+yXUa4a0N94CE1Rbub29mcMOUbly4fGBDVuXbEMFSh9T1alJJfeIh5v4n0bfJweUxJWlD++TYlBMD75pvB3qpKeMQyFpjf26NeH2RZEaGthhPjcuLianB0Dyq8r9vxH3Jv4zdtIf3169R8XiXao8nSkXO4Xry9FQOWYhr3hDjjiQeJi/qYfnh5VB1zd1tKsNiE/izH3cwvqw56XFnEqlYkw/7qS9EKuaRDvMV6qf55nxFHs/nQdU99qbnuyBoww6amxBcN3L+anQWtoHPNenrLzciERuyLmLfLGaXswtOS22crzAUt9tc/7+4poe4pxc/r0tUOrZjGGcx5m8ixiwSwVEz5Bi36JaGfeQiEWncIx4SURjnWXu34yvy3pZty+KwsIv020MiNmgVrjgxvPErx89SpDmWjo6ADk0gTm+79f0MfurDYDLknpl6ywFi2fA/kYgn2g4fDu1Dm4iCUJINkOO76yyj2o+0jnqUvyIGOv3x+51o238BxxyTzQ==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"DenomMetadata queries the client metadata of a given coin denomination."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/bank/v1beta1/denoms_metadata/{denom}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+DenomMetadata queries the client metadata of a given coin denomination.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"denom is the coin denom to query the metadata for.","in":"path","name":"denom","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryDenomMetadataResponse is the response type for the Query/DenomMetadata RPC\nmethod.","properties":{"metadata":{"description":"metadata describes and provides all the client information for the requested token.","properties":{"base":{"description":"base represents the base denom (should be the DenomUnit with exponent = 0).","type":"string"},"denom_units":{"items":{"type":"object","description":"DenomUnit represents a struct that describes a given\ndenomination unit of the basic token.","properties":{"aliases":{"items":{"type":"string"},"title":"aliases is a list of string aliases for the given denom","type":"array"},"denom":{"description":"denom represents the string name of the given denom unit (e.g uatom).","type":"string"},"exponent":{"description":"exponent represents power of 10 exponent that one must\nraise the base_denom to in order to equal the given DenomUnit's denom\n1 denom = 10^exponent base_denom\n(e.g. with a base_denom of uatom, one can create a DenomUnit of 'atom' with\nexponent = 6, thus: 1 atom = 10^6 uatom).","format":"int64","type":"integer"}}},"title":"denom_units represents the list of DenomUnit's for a given coin","type":"array"},"description":{"type":"string"},"display":{"description":"display indicates the suggested denom that should be\ndisplayed in clients.","type":"string"},"name":{"description":"Since: cosmos-sdk 0.43","title":"name defines the name of the token (eg: Cosmos Atom)","type":"string"},"symbol":{"description":"symbol is the token symbol usually shown on exchanges (eg: ATOM). This can\nbe the same as the display.\n\nSince: cosmos-sdk 0.43","type":"string"},"uri":{"description":"URI to a document (on or off-chain) that contains additional information. Optional.\n\nSince: cosmos-sdk 0.46","type":"string"},"uri_hash":{"description":"URIHash is a sha256 hash of a document pointed by URI. It's used to verify that\nthe document didn't change. Optional.\n\nSince: cosmos-sdk 0.46","type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: query-get-rollup-staked-amount
+title: "Queries a list of GetRollupStakedAmount items."
+description: "Queries a list of GetRollupStakedAmount items."
+sidebar_label: "Queries a list of GetRollupStakedAmount items."
+hide_title: true
+hide_table_of_contents: true
+api: eJytlMFu2zAMhl/F4GkDtKZohx18Wg5D0V3WddspCALWYmIlsqRKVNfA8LsPlJM0bbLDgJ0sS6So79dP9eADRWTj3a2GGr5nitvFDfG9tzaHH4wb0tPOZ8egIGDEjphignrWg3FQQ0BuQYHDjqCGWNJuNSiI9JhNJA01x0wKUtNSh1D3wNsgsYmjcSsYhrkEp+BdoiTrV5eX8tGUmmiCnA1qmFYpNw2ltMy22odfgILGOybHkoEhWNMUmsk6SVp/VDZEYWUzFsECNQLK/9LHDhlqyMbxp4+g3h5TgSbnu3MAh1j/sKaGYRiGEr7EbPkMiquyo+dADZOuKEYf/wdR4zW9IjGOr69eQIxjWlEcSRiNLVmGqUtHUDsEBai1kbpo747LDOpN2c9j4qkqL7JgjLiVuh2lhKuz0ec0lElcidlGY8JcvZFSpg2lCitrEld+WZ31blUoRduOuPXi9BWNjuYWapigiU2LxqUPjvi3j5vJOrumyD5aerIiXozDRSo7L0YHTfq95wdQYNzSFzrDVmC+7napvgVy07tbUPBEMY2Hf7q8uL64El2CT9xhud1dI/0z2CtdDvIyPfMkWDROyuRoi20K9AxOoEHBHlsauFQDBX9DBwX1oeHnClqfWPbt+wdM9CvaYZDpx3J19Wyu4AmjwQdRZtaDNknGGuol2kQnCIc2gHf3u7fkffVi59doe6e5rUiMNssfKNjQ9vhZGuaDgpZQUyxnGJenTUOBjxJP2k7eqIN1br78hGH4A/mQ09Y=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Queries a list of GetRollupStakedAmount items."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/airchains-network/junction/rollup/get_rollup_staked_amount/{rollupId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Queries a list of GetRollupStakedAmount items.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"rollupId","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"amountStaked":{"format":"uint64","type":"string"},"denom":{"type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

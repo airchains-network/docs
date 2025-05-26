@@ -1,0 +1,71 @@
+---
+id: msg-init-rollup
+title: "Msg_InitRollup"
+description: "Msg_InitRollup"
+sidebar_label: "Msg_InitRollup"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVl1rGzsQ/SvLPN3C3k2aXsplS6FuKCWFtKHp7YsxZawdr5VqJVUaJTFm//tFWju7cRVTSv3i9ZkPaWbOnPUWjCWHLI2+aKCGS99+u9CSPxulgoUSHP0I5PmtaTZQb0EYzaQ5PqK1SooUenLjjY6YF2vqMD5ZFxOzJJ98hTo3mh0KnjWNI59QlqwIahDGd8ZXS/RU3T5fEuPz6txIXbSkyUt/HaxVm6J4XfxbzP9qTWusM2wqHZTCpaJnxetihcrT4hWUwBsbk3p2UrfQl4Be5A4/dBNrlKkJOZsjZOOytga/JChnIm26j9jlrS0y3eHmV+72nTbJIJm6vMcOQOdwkyI6/5WcXElyxxJ3RsvvlC/MkcINudn1+bEMO6/3x3x8GuCjAlbGdchQQ5CaX/6Tm9thSbxa07t7EoHNkZrGQLO8IcHQ9/1AY+mogZpdoAR4a7Qf6Hl2ehq/GvLCSRsZDTXMCh+EIO9XQRV79wrK390Bl1bqCYJ5Rg7TcpbGKEKdrydRa4VBcebaugia7i0JpqYg54z7E7cXpqFHc5OaX5yNY5OaqSU3sJ5RqixfdyWUgE0j47morqbH9OXBsW84v1t9hh8deY9t1jvXwwhi66GeR9WDRXnQyJ+ksCNemyiS1vhYg0VeQw0nN0GLGFMNE64ufXvyKDD29vOoo+/usbOKntLF/a3zwjVaH/RqAu1laoT26jRBRlEawae0aPQYJGi+BxZ5iRn9H5RlhDKC8pPxfca0l4/p4VkxmCyU1Cszfcd82A2p+GRJz64uoIRbcn4Y9e1p9aI6i2FxtB2mTdBDiy59W8RpFg/jfESTB64x3fOJVSh1zBOcSjuUKDKHDEWghAlJFiWsI6vqOWy38UX4n1N9H+EfgVysfVHCLToZ33fxV1/CmrCJDZ5v43CghvNhtf9OE4/uKqQFOVzzvtxHzIQgy0d9FxPiX326/gIlLHd/BrqkCeDwLs4P76AGKMGkzgySF7EtKNRtSJsJQ874+R/e4PRf
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Msg_InitRollup"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.rollup.Msg/InitRollup"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Msg_InitRollup
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"aclContractAddress":{"title":"cosmos.base.v1beta1.Coin genesisSupply  = 8 [(gogoproto.nullable) = false];","type":"string"},"ascContractAddress":{"type":"string"},"chainId":{"type":"string"},"creator":{"type":"string"},"daType":{"type":"string"},"denomName":{"type":"string"},"gatewayContractAddress":{"type":"string"},"keys":{"items":{"type":"string"},"type":"array"},"kmsVerifierAddress":{"type":"string"},"moniker":{"type":"string"},"relayerASCAddress":{"type":"string"},"relayerGAddress":{"type":"string"},"supply":{"items":{"format":"uint64","type":"string"},"type":"array"},"tfheExecutorAddress":{"type":"string"}},"type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"rollupId":{"type":"string"},"status":{"type":"boolean"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: query-subspaces
+title: "Subspaces queries for all registered subspaces and all keys for a subspace."
+description: "Since: cosmos-sdk 0.46"
+sidebar_label: "Subspaces queries for all registered subspaces and all keys for a subspace."
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1vGjEQ/SvWnLdAkqqHPTWHqkovTZv2BKgavAM42bVdzywKQvvfq/HChhBStTmB7fl48+a93UFFbJOL4oKHEu6ct1QaG7gJ/I6rBzMZvf8ABYRICTXopoISvrWUtr/u2gVHtMRQQCKOwTMxlDu4nEz053npa8OttcS8bGtzCB9BATZ4IS+agTHWzuY+43vWtB2wXVODL+tlDAOE7/uCpqKl88RG1jR0MbKNxGYZkvmtWc6v8gHreuYTrRwLJaoMH6oZ9JW+mgfa9nk4PI5mfuZf5SkmZUpcT8RQUA9OqMl/FA2UEBb3ZAWK0xXsc4ZJ0ERM2JBQGkAYjw0NKHXWjFTWKIYeHYuCnnl9eAtuLXYOMktyfgVdcbjAlHCr50OXM8Hdi/Cniz0HXQ6qaIltLWek403r6TGSFaoMpRTS2xT0fEobqox3GVKDAiU4L1eXMIBzXmhFCTI0QVf/fY1YVU77Yn173KY7Jfdjn/gPPBXQEDOuzkaf41AvccVQTnt7wFxLyDqoaVekKCPKGkoY9xIYZ2nxeHOxIMGLMR9Z2vllyI2d1NrnS+utzme+RvLXtzdQwIYS9yvaTEZXo0uFHANLg5l4FemRojm7z+2dqML9b++dumX3tPvXv117noQeZRxrdF5htqnOish0TKHPyvwoITpbTwkURy6eF7AOLJqw2y2Q6Wequ06v83cFyum8gA0mhwulbDrvClgTVpSgnGZbqZqtpair2GDd5m2farY7XtvnTz+g6/4AvZz54Q==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Subspaces queries for all registered subspaces and all keys for a subspace."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/params/v1beta1/subspaces"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: cosmos-sdk 0.46
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QuerySubspacesResponse defines the response types for querying for all\nregistered subspaces and all keys for a subspace.\n\nSince: cosmos-sdk 0.46","properties":{"subspaces":{"items":{"type":"object","description":"Subspace defines a parameter subspace name and all the keys that exist for\nthe subspace.\n\nSince: cosmos-sdk 0.46","properties":{"keys":{"items":{"type":"string"},"type":"array"},"subspace":{"type":"string"}}},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

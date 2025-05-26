@@ -1,0 +1,73 @@
+---
+id: msg-unpin-codes
+title: "UnpinCodes defines a governance operation for unpinning a set of
+code ids in the wasmvm cache. The authority is defined in the keeper."
+description: "Since: 0.40"
+sidebar_label: "UnpinCodes defines a governance operation for unpinning a set of
+code ids in the wasmvm cache. The authority is defined in the keeper."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v2zAM/SsCz56TtcUOPi37OHRA0KLtsENSFIpEO2ptydVHmsDwfx+o2K2dGjsMzUmhSPHx8ZFuQKITVtVeGQ0Z3CotMGPz9GIOCZgaLaebSwkZLF3x8FvXSn83Eh0kYPE5oPPfjDxA1oAw2qP2dOR1XSoRQ2ePjl5uwIktVpxO45RLV7y9ypRjfotsbOwSMX+oMV3rtR7DrC0B9QpdzB381ljlD+9TLfqrPg2X0qJzzOTxb2F2aDXXAhkXwgTtU0iAskIGzlulC2gTEEbig5Ixm/JYxUNubMU9ZBCU9l8upuK88iVZqKjLH1RWjha1wCOYP4vbJRMdt10wt5YfoG1fDWbziMJDS6aP5pGulUUJmbcBWzK42mh35PVsPp9glLkgBDqXh5L17kTaR4jhpnuPScyV7ljqkzDnbRA+WGS5sQz3KIJXumB8rcdVV+gcL6YKfsdpJDXnofQTpWoWNO5rFB4lQ2uN/b+Kx3Klho/0o7Q/P3sDp7THAi1EaJ6rciy7cQkJcCkV5eXl9TBNezolX4+BzalKB1LrtJdAR+CU9xSHZOSFg2xF7YR7esBvDa2Q2jgCWXO/hQxmj0ELApu+cFelu8/p0hWz0Yoh9m7e1szPPa/qEk/GvIcznMxVb7xvE1A6NxF9N4C/urzsqka9uL6EBHZo3bHPu3l6np5R3YS24rF7mlcUOFBVr0k+3BqvCzNqMpC3jppkDj0z+VoTQqakY0pHOVPlu4oJLraYsjvaScMldcwie+8nxBotqW2kzcHuhUmFe9z7WV1ypamuYMuow9iFFUx1AZJBrdTCLXUuW0HTbLjD37ZsWzI/B7QHyFb3Cey4VXxD/K6I8y1yiRayVQNPeIhbL0L8dEeQyL0MUWWns9ImfcRCCKz9P32H4rq+ur2DBDbd56iKgwWWv9Bq4y+QQfykUXQcgWhroOS6CFHecHyTfn8BTfZ4mA==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UnpinCodes defines a governance operation for unpinning a set of\ncode ids in the wasmvm cache. The authority is defined in the keeper."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.wasm.v1.Msg/UnpinCodes"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: 0.40
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgUnpinCodes is the MsgUnpinCodes request type.\n\nSince: 0.40","properties":{"authority":{"description":"Authority is the address of the governance account.","type":"string"},"code_ids":{"items":{"format":"uint64","type":"string"},"title":"CodeIDs references the WASM codes","type":"array"}},"type":"object"}}},"description":"MsgUnpinCodes is the MsgUnpinCodes request type.\n\nSince: 0.40","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgUnpinCodesResponse defines the response structure for executing a\nMsgUnpinCodes message.\n\nSince: 0.40","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

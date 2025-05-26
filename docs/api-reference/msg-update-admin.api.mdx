@@ -1,0 +1,71 @@
+---
+id: msg-update-admin
+title: "UpdateAdmin sets a new admin for a smart contract"
+description: "UpdateAdmin sets a new admin for a smart contract"
+sidebar_label: "UpdateAdmin sets a new admin for a smart contract"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVU1v2zAM/SsCz1rStTeflg07dEDXoh+nIBgYi3HU2ZIq0kmDwP99kPJRJ/WGob5YokXy8fFR3oIPFFGsd9cGCrjh6tdTMCg0MY11oCHSS0ssX73ZQLGF0jshJ2mJIdS2zL7jZ/Yu2bhcUoNpFWKKLJb44BaxzH5ipSYo4NvepiwrWZJCYyIxK7/IW24wijo6apBNSG4s0boKOg2O1r8ww+xF/UnrDP0YTryak2IaDMHkDMW+/0O2HDDJEkVhKT7ulmwrRyZ/aogZK+L3YTt9jHbDVY/OhIIVKkdrlYGrhY8K/1qqnz9TKdCliKkPNpKBQmJL2cDBO97xe3lxkV6GuIw2pJZAARPFbVkS86Kt1eH4CPT/N3G4jPt9KBVJ2uhYURNkowwKDmHvNBhaYFvLAESnWkevgUohoyhGHz+G9FxuhtJ74WODAgVYJ1eXb+CsE6ooQoYmaOvsZYWavDgtQQMaY1NerO/6aTp9lvbLznH7ThDdMTPGiJuUdy+fodNDHCYjVgzFNDUDZvqMyI+orCFZ+jT1wXPaB5QlFDB+bl2Zwo7WyM1o9Xl0w9X49FZIDbh/uxm+v2ITajqd9ENBJ4P6ZjyMXm8arVv4vux+7IGo20BucncNGlYUeVfx6mJ0NbpMbgl+g1kQDhv6IBsnfB6bIvQq41CjdSlTG+sstkzUFIaIAt3Pnhq1TOwWU9hu58j0FOuuS+aXluIGiulMwwqjxXkqeTrrNCwJMzPTLfymzf6mJCefHhOmdLxus5bOJ6LTB49JWVKQf56d9QRwd/vwCBrm+0u+yeMDEdfpB4BrKAA0+MxNFnq2baFGV7VZxLCLmZ4/SqEz0Q==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UpdateAdmin sets a new admin for a smart contract"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.wasm.v1.Msg/UpdateAdmin"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+UpdateAdmin sets a new admin for a smart contract
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"contract":{"title":"Contract is the address of the smart contract","type":"string"},"new_admin":{"title":"NewAdmin address to be set","type":"string"},"sender":{"title":"Sender is the that actor that signed the messages","type":"string"}},"title":"MsgUpdateAdmin sets a new admin for a smart contract","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"title":"MsgUpdateAdminResponse returns empty data","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,74 @@
+---
+id: msg-undelegate
+title: "Undelegate defines a method for performing an undelegation from a
+delegate and a validator."
+description: "Undelegate defines a method for performing an undelegation from a"
+sidebar_label: "Undelegate defines a method for performing an undelegation from a
+delegate and a validator."
+hide_title: true
+hide_table_of_contents: true
+api: eJztVk1v3EYM/SsDnpW149x0qtvk4BapjcQ5rQ2DO0NJE0scZYayvVjovxcc7ae9NYIiQS7dk0Dx4/HxkdoVhJ4iig984aCEj6m++8KOWqpRCAqI9G2gJL8Ht4RyBTawEIs+Yt+33ubQk68psNqSbahDfXKUbPS9vp3S7rIaR5VnSgbN5/d/mY5SwppMFaLpKVYhdp5rg2yGTYgPbKoYOoM3uyzIzqB5wNY7lBBnUEAftRvxlDLALgwT1EMwfwTPexgk3BObRy+NQeOIQ+d5KpkrsJnyzG74hv++vP5QmuuG1kZTeWqd8Un9LljMY+NtY3zXt9QRSzLSkLFDktCZjqQJ7oaTrxlliJSMsusjObNYmjrUoY9BwmudyLInKCFJ9FzDWEAGfOTNWGwsYfGVrEy+mboQ79C5SCkdzbhl9BWvl9nHnP8XzHxDIZQSBxrVkPrAaWLu7PT0pQDOTRqspZSqoTUbd831I9T9aZ1v27Eq4GOqT/bI2NQ0SuL/wn1dWgWIl1YNa+iRZIg8IVybQrUTDjljg+ekRWzQhpSTO/EdaTnVGgqU4FDoTbYW3yPvDLnCoT0ymHPVLT31ZLU6xRjif9PVIXs2uEPInuXd2Q6uZ6Ga4sSmoG9zlBfq9nd2SyM657Uutlf7ZcbnQ/ttCnw5mR0tGCMute56kb/zRGQj1gnKuS4N3D6/GUcPxiS/H3ErpkxQQh+SMtKjNFDCiQ2pC2mWBO8917OHtwsSfDs73FooQAf2afdB/PCEKq9DoW+eNkRslX6g/ReHeOd+5P7uhXquQmZ7vRN/Dmxz/5c98fnVhSagmCY6H05n72ZnGqYNd5jVxqiL8LOpPpjrVhxCT3LSt+hZQQ2xzaLPU5jDv08Bij24qppG51fOYbVaYKIvsR1HNX8bKC6hnN8qi9HjQima344FNISOIpTzFdzTMt/SvJJvrhVYJn3Iwn6+nmOxiTi3lnp51fd2T2JXl5+voYDF+o9Tl3cZIj7qNwsfoQQoIGSC8tZl2wpa5HrIGwVTTv39A/WMbBE=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Undelegate defines a method for performing an undelegation from a\ndelegate and a validator."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.staking.v1beta1.Msg/Undelegate"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Undelegate defines a method for performing an undelegation from a
+delegate and a validator.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgUndelegate defines a SDK message for performing an undelegation from a\ndelegate and a validator.","properties":{"amount":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object"},"delegator_address":{"type":"string"},"validator_address":{"type":"string"}},"type":"object"}}},"description":"MsgUndelegate defines a SDK message for performing an undelegation from a\ndelegate and a validator.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgUndelegateResponse defines the Msg/Undelegate response type.","properties":{"amount":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object","title":"amount returns the amount of undelegated coins"},"completion_time":{"format":"date-time","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

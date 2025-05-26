@@ -1,0 +1,71 @@
+---
+id: msg-execute-contract
+title: "Execute submits the given message data to a smart contract"
+description: "Execute submits the given message data to a smart contract"
+sidebar_label: "Execute submits the given message data to a smart contract"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk1v40YM/SsEz6qTZm86NW1TIAXSBLvpyTEWtIaWJytxtDNUEsPwfy84svyZbhdbnUbUDPn4+MjRGkPHkdQHuXVY4l2qP9+8cdUr/xZEI1WKBUb+2nPSX4NbYbnGKoiyqC2p6xpf5fMXzymI2VK15JZs1UXzrp7TeCw7LNeoXhvGEscg4BPokoGci5wShEV+TS1FhWqPRFedHUsavdS4KXDRi8vevXKbF45TFX1nkHIAL+B44YUTEGj4wgKvXpdA4FhC6yWjBxIHJEBt6EUnT/Ikf90/3pTwaKiyERaeG2dISeBWFF6XvlqCb7uGWxYdMqj6pKGFlnUZ3JMkXwtpHzmBsegjO5ivoA516GLQMMHihKYhWCbpNNkM+J0vmx0xYf7MldrekeE/jCCoghfDRwoUGTSSpAVHQ6NhwD1WIghwVoARuHNMMdLK/LapNgSLEFtSLHG+UsZ9uLtUgwkBWKrg2EHLKVHNFmbO0FFK5zHfK2xicRwPtfIpW0alDLlUGuKwNKLN85LHkOnc7eYI6InQIfXz1m/LWPsXlh14R2raAfpXRY7EW4ix0Fhq7DkbUhckDfW9urw8l+k1pL6qOKVF38C43bTx3b127O88u49bpxBZ+yhpX2SL1zeakzyXo1m/VfDfjRpDSaYw+5iMqSEKO1jE0P5Hsc/lm2l0vKC+0XfIEuiF3zqulB1wjCH+GGen88nxUaZe9MPVHq4X5Zrj0IhKvjmeO8cpFEjOeYtLzcNhmM0pwb8MB8+bevNO8w16/K4RMJCoVCcspyYInBUnRG4l8mPCHyYcltiFZO8d6RJLvHjupTL/k1dK7eTl58ldqi/O7xSrxsf9vXLzRjZHj++JMbvdmJ/ux+P+23Yq7qiYbYfUfsc4Sw7Gi5dFOBwuf25Rw33Hcv1wiwW+cEwDTy+Xkw+TKztmubaUZSTU8v/l8Kgcu5oqv+lF15AXC9nHJms10zvF9+jFAk8JnhW4tLqUU1yv55T479hsNmb+2nNcYTmdFfhC0dPc8p/ONgUumTJN0zV+4dX2dmbRnx4Nl21v+izH06baFOOJ66riTr+5d3YgnYf7T49Y4Hz7Y9HmDsRIr/bTQa9YIhYYMj+5V7JtjQ1J3ec+wMGnPf8Apg8XXg==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Execute submits the given message data to a smart contract"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.wasm.v1.Msg/ExecuteContract"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Execute submits the given message data to a smart contract
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"contract":{"title":"Contract is the address of the smart contract","type":"string"},"funds":{"items":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object"},"title":"Funds coins that are transferred to the contract on execution","type":"array"},"msg":{"format":"byte","title":"Msg json encoded message to be passed to the contract","type":"string"},"sender":{"title":"Sender is the that actor that signed the messages","type":"string"}},"title":"MsgExecuteContract submits the given message data to a smart contract","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgExecuteContractResponse returns execution result data.","properties":{"data":{"format":"byte","title":"Data contains bytes to returned from the contract","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

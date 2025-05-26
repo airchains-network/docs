@@ -1,0 +1,71 @@
+---
+id: abci-list-snapshots
+title: "ABCI_ListSnapshots"
+description: "ABCI_ListSnapshots"
+sidebar_label: "ABCI_ListSnapshots"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVcFu2zAM/RWBZzcp2mEHn9YWO3QY1mLtTkEwMDITq5UlV6KTGoH/faCcJk5mdD0sl8gE+cj39ExvwdcUkI13twXkcHV9c/v7u4n84LCOpecIGQR6aSjytS9ayLegvWNyLEesa2t0Kp8+Re8kFnVJFcqJDVuCHKyJHBWu0VhcWFJxgM1tLSl+8USaoeu6vp0JVEDOoaEUiLV3kaKAXpyfy19BUQdTS2cZW8VGa4px2Vj1lj6B7OOz1kGEYNM3OUyYb8EwVelwPGt2UqPLxj2n09KHChlyMI4/fxKSOyF+NNWCgvJL1Scr4xSXB0EOehjHtKIAXbZHewf3sSQ1oHcWa9JmafQeWO1Kx/BLjOUR+qJlGoBfhYXhgKE9oElJpuilQau8s60yS2UKcmw02kOTyMG4VepBZlUec2jGSPR5ClltSqPLI3HUBqNifCY31qEixgIZP8ZkIJbaV/6FKmbchTAEbGEQOBi2y6CgJTaWR3zpVOPotSbNVCgKwYf/YU/tCzo1xOXF6O0WxGjs+z7GojDSF+39sE136vAvfeH23zrJfcSIq9HsMQ0liKsI+SytIJhnp0qOLaaKuPSytmof0wuJXEIOUyZXUKiM4wkutJlI8fS0WET+edhsX1+xqsUmwtu4pR9usG+N08ksdzW5q/tbyGBNIfajrc8nl5MLIS1jVJiuzmFFu7GVdFbD1kfU9gIxvfK0tmicYDXBpotPlGYwRgkyOCY1z6AUJfIZbLcLjPQr2K6T8EtDoYV8Ns9gjcHIGpan9GpiQQHy2RaeqYUcbnpPnj3KVJJum3Szp/7ssreKK62p5ndz54PLur97eIQMFrvPSZXMDAE38qnBDeQAGfikTrJdim3Bols1yVLQY8rvD7NyVmo=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ABCI_ListSnapshots"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/tendermint.abci.ABCI/ListSnapshots"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ABCI_ListSnapshots
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"title":"lists available snapshots","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"snapshots":{"items":{"type":"object","properties":{"chunks":{"format":"int64","title":"Number of chunks in the snapshot","type":"integer"},"format":{"format":"int64","title":"The application-specific snapshot format","type":"integer"},"hash":{"format":"byte","title":"Arbitrary snapshot hash, equal only if identical","type":"string"},"height":{"format":"uint64","title":"The height at which the snapshot was taken","type":"string"},"metadata":{"format":"byte","title":"Arbitrary application metadata","type":"string"}}},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

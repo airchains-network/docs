@@ -1,0 +1,74 @@
+---
+id: query-unreceived-acks
+title: "UnreceivedAcks returns all the unreceived IBC acknowledgements associated
+with a channel and sequences."
+description: "UnreceivedAcks returns all the unreceived IBC acknowledgements associated"
+sidebar_label: "UnreceivedAcks returns all the unreceived IBC acknowledgements associated
+with a channel and sequences."
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vktv40YM/iuDObWAaiXZogefmi6KbnrYpkH3FAcBPaKlWUscZUg56xr67wXHcvzSbrdp0ZMtieRHfnxubGgxgvhAN4Wd2t87jOvHDxTRoV9hce2WbDPbQoQGBSPb6f3GFsgu+la17NS6CoiwNh35pw6NL5DELzxGm1mvAi1IZTNL0OBe/NEXNrMRnzofsbBTiR1mll2FDdjpxsq6VWmW6Km0fZ+dwrYhytdiquy/Bqw9iwkLA25J4bnGosQGSQzjU4fkkD+DDW6J8ghu+XgoeeaIrOuE75u2RjviGcQIa8UQbFjfL0JsQOzUdp7kh+9tdhpDZhtPN1vxy75/UFRuAzEm/auLC/05jvLacOccMi+62uzEJzazLpAgiWpA29beparJP7KqbQ7cbaPWlPgtSIW+rOQc5706X9drIxWaO1x59oHeJWHj2XhyMdGLhQExCK4yW1PmufI1miVi66mc0U73fdfMMSZzDA1OzLvwjCuMhkODxmkYxB0bqMsQvVQNmwbWxlUhMBoJM4rIKMnAgOTJOIwC+huo8Oo6G5yUE1NBLMwixCVnhgUEv2vAVZ5wRvOIsPRUGq30EtnckBplNA4YOTuKePD6JGIORiqQGQ2OKPeeOmQjwczRNIG8BPIuMZg0gRUSV0gGeITUGZUobFKM2tFHSYqD6OM+WyPF5SVV6AFBz14qn6IzpVfonaGxWnwBoRTz34PsFBIXCcTVXjvOs3FdjEhSr80YWL83tC8pUNrCKG0FCBi1MaOE5YCUZheaFqJWYAmeWAxQkAqjGYwuwrbe2i62gZF1OnRtAaI2gYoZLSLin6kWkue8dzXMP6IT5WU/Faabf9TcuxB3g6l7GdtfnFFH4+SQqjT8j2f/3TAAlL9tSoZnNbKLf0ZJMz9WNXe3b02DUoXiPOpecQtcQFePzIZrMh3hpxadNgPGGOJ/MYpcKPCIWk/y5mrvnCfBEqNNrgn4+jgjxyFkFortRID69hCmP22uH7eK5xumP81FZhtkhnJUeoxDfQmlLuVt8uxDdkLlSU4iShdJh2Cd8nlQMjc/vT0tGzbAHJwHwWJG2uwGzG7dAxX7stKsDLme2nI7YXQLTm3u5y53IWI+KOary91fzjf7a6DPdUtzvhmWdZ8Pm9OFpvGS/Mk3Y9u0z/dh6JftIl6ExOJQ27925JQS81uLdH17YzO7wshbklYXkzeTK+W/DSwNpCoa1vf/SOBR5l4KQPCT5G0NntTBLtapsBO599bPXeqHqBfDYFhDu9w/KhvTo6Mr8axv92fROdXp+/jpcsr2Q2arwKL+bDZzYPwQ677X10+pKKf3D5ldQfQw11zoAelZ/xd2uoCa8Sz0lwa339wNd9K35kt35ihXu+YivZpWUHf6ZDO7xPXxHZpuvde49Nkb9BX+7JLxame+5j59jV9jRdA/9JmtEArd4/ebQfTaOWzlwMjZdNYb9GVO/PLzH7bv/wJO4nEy
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UnreceivedAcks returns all the unreceived IBC acknowledgements associated\nwith a channel and sequences."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/channel/v1/channels/{channel_id}/ports/{port_id}/packet_commitments/{packet_ack_sequences}/unreceived_acks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+UnreceivedAcks returns all the unreceived IBC acknowledgements associated
+with a channel and sequences.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"channel unique identifier","in":"path","name":"channel_id","required":true,"schema":{"type":"string"}},{"description":"port unique identifier","in":"path","name":"port_id","required":true,"schema":{"type":"string"}},{"description":"list of acknowledgement sequences","in":"path","name":"packet_ack_sequences","required":true,"style":"simple","schema":{"type":"array","items":{"format":"uint64","type":"string"},"minItems":1}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"},"sequences":{"items":{"format":"uint64","type":"string"},"title":"list of unreceived acknowledgement sequences","type":"array"}},"title":"QueryUnreceivedAcksResponse is the response type for the\nQuery/UnreceivedAcks RPC method","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

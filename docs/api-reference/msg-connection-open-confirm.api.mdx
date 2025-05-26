@@ -1,0 +1,74 @@
+---
+id: msg-connection-open-confirm
+title: "ConnectionOpenConfirm defines a rpc handler method for
+MsgConnectionOpenConfirm."
+description: "ConnectionOpenConfirm defines a rpc handler method for"
+sidebar_label: "ConnectionOpenConfirm defines a rpc handler method for
+MsgConnectionOpenConfirm."
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVk1v20YQ/SuDPdNy6hQ96FDUMQLEBWIbrnuSDGe0HJEbkbPMzlKyKui/B7OkLFmiG6BogepEDWfn482bt9wY31DA6Dxf52ZsPkvxdOWZyarptiG+8jx3oTaZCfStJYkffL42442xniNx1EdsmsrZFOX8q3hWm9iSatSnnMQG1+jbLsNgAshp7pgEEGopQIgjzNaAcE8VrilA9HBVomP4ANFPGe2C/aqivCCIJYEtkQsCPwf7Eh4kYiQ9eXv38QY89xEuRyYzTdDWoyPpu+kPPblcDXHdkBkbicFxYbbJ38+f0C707dyHGqMZm9k6kslMdLFS9+QEcx+Oakr/juva1zOGL9c31w9w9muq9ItGHM5fkivKeArrjRZUVeuU6Z6WTpznT8kZnIBjG6gmjpQDRiC0JXShYFW6imBB1Dguprw7e9PWM+raEKxpBJ/8ipYUQHydehFiaQWwKnxwsawFalyDLb0XShMKJBRTgD6TY7AUonZsPedOSxegUTGCEkOusC0k68A5q9GWjmnKs0C4cFz0aApcswYVAotCkr3quK/6qGPxEEuMU+4LUeo6bkmUGjOC2rOLnp1NCKaTKJqSlsSAMgDqlAuKAqnHEzKF3vVgWi+EaR3HX34+oMwBQCsXS5e6g8Jp6l2gIT68JOHU84+T7A4kLDpGVk7XzAnYNgTiWK1hKNl2H2hPKVTY/CBsOUYEjTHllMsiK8zW1w0GZWCBjiUCso8lBeiD7tamaUPjhUQXp21yjBoTOZ/yPBD9lbiQKpd9qX72lWxUXMQV3MEx0MVrZzX9T9VJxdYFys04hpbSuKXRpUsEu3j37lQCLkFaa0lk3lawc9dY/7JS3/ehXzDRBj9LcT7onXSg81f0R6cj68cwx7YaELZLhpbpuSGrm0wh+PDPmjvW+5xerYzj+P5iX5zjSAUFk0qL6Kp0ykWq5YBafQuZwbyTM6zuDtNsj5Xht+7gKTf35MQQcK15axLBYtB7CEM1YiFmPNHJmcdjav+I16GxUCLnFQWoKZY+CfKU36KBgt/56b3nJckgxtKMzbmb2ZH1gUZ7to+WP43eJInJjA7sfv+F8fEZ66aigat5h8KrG/nYuBfeEy3eu54o6IG67lTkwOR47tMwein8veVuj7WRy7trk5klBenQXr4bvR9dpHvbS6wxkZGxpv9oEq9m/UKYSM/xvKnQsVbShiotQhrSxLw9JJMN16ikKnXS44nZbGYo9Geotls1f2sprM148piZJQaHM4Vo8rjNTEmYK5KTjVnQumtfN/bsQWtU96pNvD/e3m22O3FpLTXxb30fD8h4d/vHg8nMrP9QrdOqm4ArnTmuzNiYzPiEVXddq21jKuSiTQtnupj6+w5utvew
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ConnectionOpenConfirm defines a rpc handler method for\nMsgConnectionOpenConfirm."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.connection.v1.Msg/ConnectionOpenConfirm"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ConnectionOpenConfirm defines a rpc handler method for
+MsgConnectionOpenConfirm.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgConnectionOpenConfirm defines a msg sent by a Relayer to Chain B to\nacknowledge the change of connection state to OPEN on Chain A.","properties":{"connection_id":{"type":"string"},"proof_ack":{"format":"byte","title":"proof for the change of the connection state on Chain A: `INIT -> OPEN`","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"},"signer":{"type":"string"}},"type":"object"}}},"description":"MsgConnectionOpenConfirm defines a msg sent by a Relayer to Chain B to\nacknowledge the change of connection state to OPEN on Chain A.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgConnectionOpenConfirmResponse defines the Msg/ConnectionOpenConfirm\nresponse type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

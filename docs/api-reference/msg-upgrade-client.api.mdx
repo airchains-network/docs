@@ -1,0 +1,71 @@
+---
+id: msg-upgrade-client
+title: "UpgradeClient defines a rpc handler method for MsgUpgradeClient."
+description: "UpgradeClient defines a rpc handler method for MsgUpgradeClient."
+sidebar_label: "UpgradeClient defines a rpc handler method for MsgUpgradeClient."
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vk1v2zgQ/SvEnLVKNr3p1DToIQsEDfpxcoOAJscSW4lUOEMnhqH/Xgxlxbbs7hbbxfpiezSc9+bjDbWF0GPU7IK/tVDBHdWPX/o6aos3rUPPUEDEp4TE74LdQLUFEzzLg2oLuu9bZ/Lpi28UvNjINNhp+dVHic0OKR/L4R6dlT/suEWodkaVvHtKqJxFz27lMEIBvOnFgzg6X8NQTAGINWMGt9YJsm7vD4GGYgb8doy0nUccXjHC8hsayXSilcYKWLXjN2IKh+AJPSX6n2lMsCOTQgXfbsTK2nlS6EOqG+X8KsQud0NxUIRxjUqT0l/9UpMjFVaKYyJWzqvUW82o2lA7AyPZsHrcIT6OeQvbMSRUsNwwHnDL/oobzSq0VplGO69M6DrHjFbwPT7v6neumzO807r+JvBxxc4xIFd7jIfTOFqUtjYi0emZYc/ijuojmSiLK+eRlPaK7PfyjmqhsstPrLfvbqZx4qD0QXm++hnH3SAMAijicxEtVBwTZgP1klweqqvLS/mySCa6XjoPFVwrSsYg0Sq1anIvofh15R7Hm+f6cRfyNWduUN1RfXFckQlZSVblueyGAiyudGr5TBJeJY8vPRrpKsYY4r/LZbaFgj2eLuf5zdWenPOMNUbI1Fi7Np9yjB0daPdVqb8t/r36dYx6I7gdEun6l1bFMBaRdU1QLaRR8FDMCvmTMVWxN6rR3rYYVYfcBKtWIap5s6XW42PRXiDJutfcQAUXbmlKEyKW4xyX6z/LkzGAAqQnH/d3yPsX3fUtzu6EKcnTPf/29CY43RanTucX2h7mHxbQ3nHaEwexZdMeLo6/kjd57X7o0V/f30IBa4w0NmB9Wb4przKlQNzpPJ9ed/jfNOeo268jw/jCF32rnRfgFNsshdy3BZzvGxTHdGSUGml4tYDtdqkJv8R2GMT8lDBuoFo8FLDW0emlVGHxMBTQoLZSrMUWvuMGKrgZdfrHZ+El7m3K0z7X7FBMJ66NwZ7/1vfhYCbvP3z6DAUsd28nXRY4RP0sby76GSqAAkKuT5Zitm2h1b5OWWYwxpTPDxnjM8k=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UpgradeClient defines a rpc handler method for MsgUpgradeClient."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.client.v1.Msg/UpgradeClient"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+UpgradeClient defines a rpc handler method for MsgUpgradeClient.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"client_id":{"title":"client unique identifier","type":"string"},"client_state":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","title":"upgraded client state"},"consensus_state":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","title":"upgraded consensus state, only contains enough information to serve as a\nbasis of trust in update logic"},"proof_upgrade_client":{"format":"byte","title":"proof that old chain committed to new client","type":"string"},"proof_upgrade_consensus_state":{"format":"byte","title":"proof that old chain committed to new consensus state","type":"string"},"signer":{"title":"signer address","type":"string"}},"title":"MsgUpgradeClient defines an sdk.Msg to upgrade an IBC client to a new client\nstate","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgUpgradeClientResponse defines the Msg/UpgradeClient response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

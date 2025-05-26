@@ -1,0 +1,74 @@
+---
+id: msg-fund-community-pool
+title: "FundCommunityPool defines a method to allow an account to directly
+fund the community pool."
+description: "FundCommunityPool defines a method to allow an account to directly"
+sidebar_label: "FundCommunityPool defines a method to allow an account to directly
+fund the community pool."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1v2zgQ/SvEnFUnTW86bbZogRRoE3SzJ8dY0ORYYivNqOQwjmHovy+GivNhG9lF0OgiYjQcvvfmDbUFHjBaCUwXHmr4mpp/PmfyH7nvMwXZXDF3UEHEXxmT/Ml+A/UWHJMgiS7tMHTBlQonPxKTxpJrsbe68phcDIN+naofFDe263idjCVjneNMYoSNDxGddJsbWmXyRlo0brfLDMzdDCoYooKXgKkA6XWzroJgX0KyGRBq4OUPdALVHpqPHMh4XAXCZKwR/olk1kFaY41H4j5QoWUs+QKvHDC7oRv6dnn9qTbXLd4HzSpg500oNC5IzLoNrjWhHzrskSRNDHIS7k2P0rK/oRQaspIjJqPyhojeLDem4YaHyMIvUbxnliQGamBUasT9kS/jWO1CNka7mXIHTkE4Hsuv9lQrFd60jTvyUEvMOGogDUxp4nx2enpopHOTsnOY0ip3ZpeutX6jMb/fl32wiKL/mpqTQ+47BEalUxgHEhYNVzZ3coQMmUx4N6AT9AZj5Pg6Ts/N4tijvlcceytQQyD5cPYILpBgg3EyhNjQpRdnx3of9FzbXT09Ztz36B/Txv9lxB5Tss3R7GMaatA2Ceq5NgwW+748bMzjdE9Dp54sRn2NT6cSUMPASRUZrLRQw4nj1HOa+aDgl1nBzG7fL1Hs+9lRv0AF2rzvj3fqpzurV8XTGZ8/LneqPEz5g0yLZ8P85DoItOIiaxAtC18yuXKXXQ5I51cXUMEtxjTpdns6+zA7023KrLfFVmR7fHtNnzXwwQWCd3IydDaQgsqxK+4ucs/hP+SG6hCzWqXVptVz2G6XNuHfsRtHDf/KGDdQzxcV3NoY7FLlmi/GClq0HmNpxE/clP9FmcN31wpS07tc3Lw/k2O123HuHA7yYu7iia+uLv+6hgqW9z/ZvgwwRLvWS9KuoQaogItYZdRKbAudpSaXMYKppj7/AlLBywM=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"FundCommunityPool defines a method to allow an account to directly\nfund the community pool."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.distribution.v1beta1.Msg/FundCommunityPool"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+FundCommunityPool defines a method to allow an account to directly
+fund the community pool.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgFundCommunityPool allows an account to directly\nfund the community pool.","properties":{"amount":{"items":{"type":"object","description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}}},"type":"array"},"depositor":{"type":"string"}},"type":"object"}}},"description":"MsgFundCommunityPool allows an account to directly\nfund the community pool.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgFundCommunityPoolResponse defines the Msg/FundCommunityPool response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: abci-extend-vote
+title: "ABCI_ExtendVote"
+description: "ABCI_ExtendVote"
+sidebar_label: "ABCI_ExtendVote"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV21v2kgQ/iur/dRKBAht2p5PlY7QtOVCSXShPeloZC32YG9j77q74wSE+O+nWQO2waTpqR+PL9jjmdnZZ5952RXXGRiBUqthyD3ePx8M/YsFggq/aATe4ga+52DxXIdL7q14oBWCQnoUWZbIwNl2vlmtSGaDGFJBT5khzyjB0lssbEz/c21Sgdzjs6XzjhIT4B7HGBjpMD1n9DxLdHDHMBbIMJaW3WsEloolmwEzMAdjpIoYanKxzMiDRRLxdYvHIKMYa6tJha9e7i/n1LYLgtszhG6lJq+ptDOIxb3UhlxLhNTtbKOoZ98gQN7a3/ePY5mUsTzEoFw0ej4HZYHpIMiNgbApIJQp1ByHAuHESevOA20M2Eyr0GEmU6CFDDx9JY0i8e81ShX5mX4A8/iGSJ0V6sypb0G+F4kMBWrDLCCTigXCFmEQ71iFUCzUYL8qpZFZ1AZYLOlfBuR568W2v6oYMbNepxNJjPNZO9Bpxx2kSaXC6qO0NgfbeXn25rRxj06w4iHMRZ7Qtj6PL8dXf495i4PKU+5NK5J3n69Hw0F/cuF/uZpc8BYfDT98nPiD0fBiPPH7k0l/cMlvG5bZxX6YIiIMDVj7WJbQac6lsch6XUbfLCF787HfO3v1LMtniQzYHSyfN21wd24h2MDIjFDeuKweFW8dP9jrfHYJS5blM/8Oluwt67Hps0hHOjMadVvlSSJmCTx/OxeJhdvfD8PYAV3mS3VvjoyOpSVO64qRMEYsaTMKFuiXPPCPlpcDFIzOtIXQT4RFP9BpKvHwKIzOVbjP8Re90qFUCBEYd6IaC6MnVgRX2XwZ+vNERHXGnY+uBpf+8J3/ftT/4Jdsq5/YCWvU85hUIWUPWCYUA2O0YQElPdl9VWzfrn9+czGeeEViUnl9EJZRwhkIQN5D2GAzuPr0aTjxnH7I5trsF+utrZOn4ps2EpcNjsbDUdWLkkklz47h0BT/gbgI8UA8Ho5cQm7Ydk4hD8P3iYgquD3EMohZ8e2d24KVkRKYG2DSUqRNnPo/p+uMb8jYQ51dKhq/AlJ9H5sP2+5RgrGVaCMjqUTCtr5q40O7uu9jBeFJXVSquf4Vkwku6pXix9EdoLiJqBjRLBOb1JUYV9vniVQEM4QsFCh44wnRYCep43tocnACGhJswdxet3t4IH1m8yAAa+d5wrbqBPN/nAopdt9NXlYWmj9ApIlr61ZZQg8CVixXsMgKLIqa+AviDnQIT2wPIaCQyeMNQoRFkRbJdXWZ9X7r+GM7pOyj0tAhU7BWRI3aTRiSUESWqi+NYlQq95A8uBikgLGmO0OmrWtzAmPu8crM1RazQLbJslOzJHj/Kq8VFwuRZgmU14RtqOUoX0pqY/h01aBRZDTvdXsvT7qvT3q/TU7PvLNTr/em3X19+g9vnmcr9gU4Zdup1fddsSoN9jys17fHBpSKzZE5ZDN5dHdzxfRgYjjaHn8+zsYq/FNILhxlNhbkj0qlI92mUP2Zq8AN9FcZqP71kOIEU6Q7v++2X7R7RSezmAqXdEq4Vd2NoKAN2/CmxsgdrxEW2MkSIRU5yk3i8tWRccqbyMhbvELH2xaPicDelK9WM2Hhs0nWaxJ/z8EsuTe9JWiNpDZIb+6GKUIo+HcHS+7xQVFHTiYUkjuJ3GXjfk1Zt7YW/SCADB/Vva3k2PXVDc00s80tPHUFiBvxQDd08cA9zltcO2iKCZZkK54IFeWuDPDCJ/3+BVM0bWs=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ABCI_ExtendVote"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/tendermint.abci.ABCI/ExtendVote"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ABCI_ExtendVote
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"hash":{"format":"byte","title":"the hash of the block that this vote may be referring to","type":"string"},"height":{"format":"int64","title":"the height of the extended vote","type":"string"},"misbehavior":{"items":{"type":"object","properties":{"height":{"format":"int64","title":"The height when the offense occurred","type":"string"},"time":{"format":"date-time","title":"The corresponding time where the offense occurred","type":"string"},"total_voting_power":{"format":"int64","title":"Total voting power of the validator set in case the ABCI application does\nnot store historical validators.\nhttps://github.com/tendermint/tendermint/issues/4581","type":"string"},"type":{"default":"UNKNOWN","enum":["UNKNOWN","DUPLICATE_VOTE","LIGHT_CLIENT_ATTACK"],"type":"string"},"validator":{"properties":{"address":{"format":"byte","title":"The first 20 bytes of SHA256(public key)","type":"string"},"power":{"description":"The voting power","format":"int64","title":"PubKey pub_key = 2 [(gogoproto.nullable)=false];","type":"string"}},"type":"object","title":"The offending validator"}}},"type":"array"},"next_validators_hash":{"format":"byte","type":"string"},"proposed_last_commit":{"properties":{"round":{"format":"int32","type":"integer"},"votes":{"items":{"type":"object","properties":{"block_id_flag":{"default":"BLOCK_ID_FLAG_UNKNOWN","description":"- BLOCK_ID_FLAG_UNKNOWN: indicates an error condition\n - BLOCK_ID_FLAG_ABSENT: the vote was not received\n - BLOCK_ID_FLAG_COMMIT: voted for the block that received the majority\n - BLOCK_ID_FLAG_NIL: voted for nil","enum":["BLOCK_ID_FLAG_UNKNOWN","BLOCK_ID_FLAG_ABSENT","BLOCK_ID_FLAG_COMMIT","BLOCK_ID_FLAG_NIL"],"title":"BlockIdFlag indicates which BlockID the signature is for","type":"string"},"validator":{"properties":{"address":{"format":"byte","title":"The first 20 bytes of SHA256(public key)","type":"string"},"power":{"description":"The voting power","format":"int64","title":"PubKey pub_key = 2 [(gogoproto.nullable)=false];","type":"string"}},"type":"object"}}},"type":"array"}},"type":"object"},"proposer_address":{"description":"address of the public key of the original proposer of the block.","format":"byte","type":"string"},"time":{"format":"date-time","title":"info of the block that this vote may be referring to","type":"string"},"txs":{"items":{"format":"byte","type":"string"},"type":"array"}},"title":"Extends a vote with application-injected data","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"vote_extension":{"format":"byte","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

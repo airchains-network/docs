@@ -1,0 +1,71 @@
+---
+id: query-signing-info
+title: "SigningInfo queries the signing info of given cons address"
+description: "SigningInfo queries the signing info of given cons address"
+sidebar_label: "SigningInfo queries the signing info of given cons address"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v40YM/SvEXJoAip3NFj341KAo2vSyaZq2hzgwaA1lTSJxtDOUHMPQf19Qkm3549TtydbMcPjeI4fk1viKAorz/GDNzPxZU9gs/nIrdrx64MybxFQYsCShEM3sZWssxTS4Sk3MzKSe4wKtDRQjuAiSE+w+xcNXvQ9ifx84zjz4zCTGqW2FkpvEMJZ0cpNJTKCvtQtkzUxCTYmJaU4lmtnWyKbS81GC45Vp21c9HCvPkaLu393e6s8xznuIdZpSjFldwO74xCTqVohFLbCqCpd2YkzfopptR26roFKJ6500WCwGWgul1QFzUiiy072dLicygFKkKGShwQKUPxz4H8P/BwtnUXwYhQYsZY4pAqp9v/1DPPaS+QClZydexVIULsy5cA2xRghTcY2TjQpxzG8H5FxvDZ6lj4XPskhyrvSD7sI6d2muxB2ngUpipUmNZoO4ksaY9dTSsyULjgFhWfj0HZDtnBclbhaQY9OLRxYQqkA3qS9LJ+ADsJcJPOedI5XwreZUgcDaSa5859xbLrpr42Lt2Po1dEkNVtO67ETUAHXE9CL9KF2MZAc0SyclVipT5kOJYmbGsfz0o0nO5XlDV5Bd1CyuOJfn2ZUUBcsKugODUOrwSJD+ErA16TPaB8z6Nat+R0gsCt3o6iU0PY0d+9TXLBQuvY9hSxNzoH5VD9pd9yrECTyIgqt1Vzxg452Fmpn0ZWHYzDkQ2vjdEkbBIIuc3CrvMuzcYnhqv3dHAGXQ8aDhGiNkLkQBhBTZ6jLBl6duo+abXuBLzsWXyyietfacyvRvTpKrSF3mHWVxjhGWRAwHe7h6d4WG0deiuu4PzzmSXO/kjCTgOaWTLOiTPAIyaC1sfF+a1Lc+a+QNeAUz59Rz5lZ1IKuSLynHxvkwOZBbel8Qsmnb/ZJfvlEq/cogZlf8RwXmaSiTu/q1K5ugV3QYdLWzmo7r0tPjL3MuSXI/0nfvTz1ayrAuLhSPe4aa6aOitKsXIfjwf1Tr1Fs6zaPPdwdwjoVWFEwHTdAVnZUTKscVcKCQaHF06heLx7Gb9rSI/twbnresQxgwBNx071Rf0Ori6Usa6iKutCP3YTOvpy1jHBFtw44ud6GV1pbT7jNEb2ZWJN0IILmZmWnqY+njNBYYc8erafNpSYKfpuNuF6fbcStvu25/3CD/2BXpLxXx/eODSUxDIfa4m9vJ58mdSlL5KCV2gR1mhO/idCTPXmWhD5lWBTpWl3XoSnbP98X0fE1idowVac9ZF8esTWJmRyPMa2JyH0Wv2W6XGOnvULStLndDkZm9vCamweBwqaLoZOWi/rdmlmER6QzxPvnN1dMwHV3DfxzALrLf5SRvlCcWtX6ZxLzT5nRAa1/bxOSEVpvJy3Y4cp+mVMnI+OyR6rS2T67ffn02bfsNMn68FA==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SigningInfo queries the signing info of given cons address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/slashing/v1beta1/signing_infos/{cons_address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+SigningInfo queries the signing info of given cons address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"cons_address is the address to query signing info of","in":"path","name":"cons_address","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"val_signing_info":{"title":"val_signing_info is the signing info of requested val cons address","description":"ValidatorSigningInfo defines a validator's signing info for monitoring their\nliveness activity.","properties":{"address":{"type":"string"},"index_offset":{"description":"Index which is incremented every time a validator is bonded in a block and\n_may_ have signed a pre-commit or not. This in conjunction with the\nsigned_blocks_window param determines the index in the missed block bitmap.","format":"int64","type":"string"},"jailed_until":{"description":"Timestamp until which the validator is jailed due to liveness downtime.","format":"date-time","type":"string"},"missed_blocks_counter":{"description":"A counter of missed (unsigned) blocks. It is used to avoid unnecessary\nreads in the missed block bitmap.","format":"int64","type":"string"},"start_height":{"format":"int64","title":"Height at which validator was first a candidate OR was un-jailed","type":"string"},"tombstoned":{"description":"Whether or not a validator has been tombstoned (killed out of validator\nset). It is set once the validator commits an equivocation or for any other\nconfigured misbehavior.","type":"boolean"}},"type":"object"}},"title":"QuerySigningInfoResponse is the response type for the Query/SigningInfo RPC\nmethod","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

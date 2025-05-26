@@ -1,0 +1,73 @@
+---
+id: msg-update-params
+title: "UpdateParams defines a (governance) operation for updating the x/auth module
+parameters. The authority defaults to the x/gov module account."
+description: "Since: cosmos-sdk 0.47"
+sidebar_label: "UpdateParams defines a (governance) operation for updating the x/auth module
+parameters. The authority defaults to the x/gov module account."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vt9v2zYQ/leIe2oBVU7cpsP0tGzoQwdkCdr0yQkMmjzLbCRSJY+OPUP/+3CUHUv+sXXFpifhdMe7+/h9d9qAxqC8acg4CwV8NlZhIZQLtQtvgn4SF/m7nyAD16CX7PRRQwE3oZx+abQkvJNe1gEy8PgtYqBfnV5DsQHlLKElfpVNUxmVgkdfA6fZQFALrCW/DfPfhLJ/rjBB0ALFTShHA/s2m6B1g/mDfbBnC288l04GQ6ol0sJ5Q+vj1C+fdkml1h4Dv0sS3I93VfeldjpWKF5pnMtYURDkxGpUuqWItuIQt0T/7A0R2tc5ZMBlQgGBvLEltBk0HWxHRXR2oXFuLHbJViOuTKQvSOhTtpjASJ3/cXv/oRDXVdV3qWMgMUMRIoOPOj9CoparaY21m6qF9FJxFJvnzteSoIBoLL1/d6r2YMrpEr2Zr6fKBZqiHl9dXf78g9EBVTO+ev90+Z3xtJryEZWpDf2bkD+xy9egn87WhN8V275Y3OwrKjppabP/ncTsaTxqKMhHbNkQGmdDd5Xji4tjJl2LEJXCEOaxEjt3psF/o8xP2xMHVN2lEYF8VBQ9irnzAleoIhlbCvlgD8GpMQRZ/kP/R5AnzJP4TnRuRbS4alARaoHeO/9jAAwFo5weksZYejveF2csYYkeUmkkTZWiDGGn82ELGUitDeeV1V0/TXuo01+6wM0RNfdMlN7LNefdYnnK+xSGbJRlgGLCtwuPfAAtHA/4xgUuspG0gAJG3Y3kPIjy5eUMSV7mh3SGDBjCT/s98GEl66bCg7m7q6k/BE8Oo73j2Ylz3qU3VvZOw9lxYD8eEH30jJ27hKsh7gh+j1bx9YnbBu313UfIYIk+dAxcXuRv83Ga8y5QLROvrKw5cED+nXikeFXyzrDSKnwtXpZtkk+a9aye3jboNtCD3Y/8XNzzznpZYv3d1AXyftpuLqmUi5ZYDQPt9Pb2+V+BLZEIVzRqKmksNxp9lSSTCDOBM4SBbNA/U27BTCsmsNnMZMAvvmpbNn+L6NdQTB4zWEpv5IxRnzy2GSxQavRQTDbwhMyn37qS39xzXexexaSKQ2232S7iWils6G99+2K4u/18DxnMtr82dRoE4OUzT2b5DAWkHySOTmxOtg1U0pYxyRG6M/n5C0a0UlI=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UpdateParams defines a (governance) operation for updating the x/auth module\nparameters. The authority defaults to the x/gov module account."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.auth.v1beta1.Msg/UpdateParams"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: cosmos-sdk 0.47
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgUpdateParams is the Msg/UpdateParams request type.\n\nSince: cosmos-sdk 0.47","properties":{"authority":{"description":"authority is the address that controls the module (defaults to x/gov unless overwritten).","type":"string"},"params":{"description":"params defines the x/auth parameters to update.\n\nNOTE: All parameters must be supplied.","properties":{"max_memo_characters":{"format":"uint64","type":"string"},"sig_verify_cost_ed25519":{"format":"uint64","type":"string"},"sig_verify_cost_secp256k1":{"format":"uint64","type":"string"},"tx_sig_limit":{"format":"uint64","type":"string"},"tx_size_cost_per_byte":{"format":"uint64","type":"string"}},"type":"object"}},"type":"object"}}},"description":"MsgUpdateParams is the Msg/UpdateParams request type.\n\nSince: cosmos-sdk 0.47","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgUpdateParamsResponse defines the response structure for executing a\nMsgUpdateParams message.\n\nSince: cosmos-sdk 0.47","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

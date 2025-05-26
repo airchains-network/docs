@@ -1,0 +1,71 @@
+---
+id: msg-deposit
+title: "Deposit defines a method to add deposit on a specific proposal."
+description: "Deposit defines a method to add deposit on a specific proposal."
+sidebar_label: "Deposit defines a method to add deposit on a specific proposal."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1v2zgQ/SvEnFUnTYsedNq020MW6CboZk+OEdDiSGIrcRQO6cQw9N8XQ0m2FXuLxe7WF9PD4Xy892a8A+rQ62DJ3RjI4QtXj79iR2wDZODxKSKHj2S2kO+gIBfQBTnqrmtskd5dfGNyYuOixlbLySAX3nZyO8QcQyqDpXXISqsWmXWFKpDiuG5tUFqZ0SuQ0k7hi+VgXaU6Tx2xbhaQgZzRB4ucqmgpDvXMMw52ibPGKSoatd5OP8hLMBuwTXHCtkPIgdbfsJC+59E+kXVHlQf6jk4921Cnkh211iUglHZGCh+yLx7cg/v99v5zru5rHI2qtNgYZVn8blxQz7UtamXbrsEWXWAValRF5ECtajHUZB4c28rpED2yEkKsH1qpqKLOU6Af4TJ2xsFbV0EvrTlqz9z0fTaZtPd6O/iOYJ0ivL/aAyOFTwRqYzwyI6vSU5uuJhJZqj2parp9tOY019HlLFt09imiskZROcshKUryrQ6QQ7QufHh/mvTQ70h7guDnKXeiDvLgI/Zi4I4cD4xdXV6eNn6tOBYFMpexUZO7xPrPg/h1DDbD8wtXF1O7UzYlGB1RdsAqgVXq2JyZv2unosOXDgsZO/Se/L+rfy7rggzK955b68K7q0Nx1gWs0A/SDdo26dXfTrk2xkpe3dwdp+lfT9Mvw8N/NDKjOM55n8NQjLpiyJdCDqxeC/Cc+mQpJKEZs9edLB/FHRa2tMVMdoO/TBGxNN3pUEMOFwVxS7yoaLPYvF1j0G8XR/xDBkLG18P+//yiZUkdb5fl4Th1ud8v+7ZXszVy8JtN/NEmsK6khJ4Nkg1+i65Iy/W2Q3d9dwMZbNDzAM/mcvFucZUWCHFodVKP0y3+L9DNqNjzGfAlXHSNtk7yRt8knSZUl3AeVcimaoThWojIl7DbrTXjn77pezE/RfRbyJerDDbaW72W9perPoMatUGf8P6O2/SHlMbnzb1UJO5NTCJ8PUp9Nr24Lgrswg99V0daubv94x4yWI//+22aO/D6WfaYfoYcIANKyKQJSbYdNNpVMakfhpjy+QvkxvPy
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Deposit defines a method to add deposit on a specific proposal."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.gov.v1beta1.Msg/Deposit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Deposit defines a method to add deposit on a specific proposal.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgDeposit defines a message to submit a deposit to an existing proposal.","properties":{"amount":{"description":"amount to be deposited by depositor.","items":{"type":"object","description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}}},"type":"array"},"depositor":{"description":"depositor defines the deposit addresses from the proposals.","type":"string"},"proposal_id":{"description":"proposal_id defines the unique id of the proposal.","format":"uint64","type":"string"}},"type":"object"}}},"description":"MsgDeposit defines a message to submit a deposit to an existing proposal.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgDepositResponse defines the Msg/Deposit response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

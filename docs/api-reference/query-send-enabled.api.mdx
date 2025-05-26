@@ -1,0 +1,75 @@
+---
+id: query-send-enabled
+title: "SendEnabled queries for SendEnabled entries."
+description: "This query only returns denominations that have specific SendEnabled settings."
+sidebar_label: "SendEnabled queries for SendEnabled entries."
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV9tuGzcQ/ZUBn1pgKztO0AIqAtQtgsJFgbi5PGUNg9qdlRhxhxty1rYg6N+LISlpdXGiGkERIH6xzR2Sc84czmWpagyVNx0bR2qs3s1MgE89+gU4sgvwyL2nADWSaw1pMQvAM80w03cIocPKNKaCt0j1K9ITizUEZDY0DaOSLmmxszdtrR0GIJfP0NtT8k64N9ZCHxB4hlBjo3vLJXXa6zaM8v+3Aam+xXRnAZrqtE3OnWD2HGuYLIA3qEYllfTWUIVjqFxoXfgp1HM4H734RRXKdeijm1e1Gqt/ZMPtAJgqVHQBGX1Q4w/LPfIi0AAmRLc3oPLywvVwr4nBOjeHvhvB3yjwse14AexgigzaWkBibzCMVKGMHBsdV4Ui3eLmFlUoj59647FW40bbgIXCh866GtWYfY+FCtUMW63GS8WLTnZq77UcZBjbMFgP7A1N1Wq1KvYhzXEheDTcadsPSDUE13qKbzB0jgKOCB/4VozZwQSnhkqKbkswhQz5Dp2eIrQuMGDTmMogsV2M4LUIzRGCa8A1TUAG52GOi5LCzPW2lnAG5McI6fQ0q2s0x8UxYg6YyIgL1TjfalZjNVkwqiMEZIciB9S36E21djJKudIk7vUBa7ifIUFmrCd9p40V3YxKuoonWAxhC132E/RBKJrj53iARENJJ/OQtj+Rit4Q//ziGBnWtIbX+mbH2gonE/TissfQWw5JATtKEev0NUpA+GjAYsNZ+4bTy80PW05YCy4dJlRMFoC6moHuuhMIiJ5+dfyV64lvE3ATolvsQF4byB+GalNpxqSMAWoxzFI2VNm+xpI0xNOEuWNsxjcKGw1B4zxs8Qmr768kwe65lJO25B5eK3IrYVHpCJIYzZScH4i2pIToBHIHd55E8cQ5i5qOMerxDn3AfTbNVk7a4yOSkpOQank/ztfoH8/tz7+MKTvyH/HciHlKgTGhXpyfy69djJcQ+qrCEJrewtpcaK4cMRLLDt11VrRjHJ19DLJtObh397xYlwZlaZ2E5f0YwvQ631z/sblL9KQHFfqUUth5KYZsEq4tUYfuDOtAzA0xWNhOsK5TsKY7zrQYgp5iEOX5WOFFxT59j9GUCGDgtSXMdJJuLjnxY/R+Y/HWtVsfliXB+sdjh1pewu/abyT1Ep79OrDZARBr1Eu4EIPVAQ/rMnfIwqYA5uy4qYXQ6SC+s9txP33PVfKLJfIqZ8jJul0wTUkc+ZP3QQ5a59fpJnYOu4Wt2C/1hUrPd7w8yHuFYsNWjDdZ5bFUv01PptlBN8gQJd3r+LgLMBxyWo8FMsm1BidA7k044uZqs+ImH7FicXzY9on/+91Mtiz2AjRsUFvdBaicodSbpYIzPBcCa+4D/HA/Q/EOdLY0oSQxFKsfRwf6iEZHOqtCDRw+yCJblKlDOwI7GuX6eCTDEPSEDznpo/fOPy3R7KKpYjM5UIghfn6xjZIhxil6FV1jbWz4bDx0XRu5V9vr4TWrfRJ/SxuPtad7PBUqJ4Bj1sc4lEU9ld49ZVF1I0fwzEm/P40dU6d5psbqLKXEs4mm+dndswmyfna2Iz0pKY2LN+f38ldPVazOrzuky+srVSgpKilGd+ej56ML8blzgVsdmc91aKhNSQgGQyz4w/XBVLAT/OU2ut/59JbDzfjAZ53VhoTs3ttUwCSqH1TapQolcZX4pMiqvbRyU6iZCyw7lsuJDvje29VKllMHEWc/E/KTzn3Co2H5+nPhUaixLm3Hw5hp1Vip2HWd7Oy3NvF9BurB4PdEyN/ojHca8s2o90Tw39BMdxrg9Wj3RLzfywx3Gpm7o9wTKf3/hrjTQG1nuS2gG/nHG0Gkxh9uVoWaoa7Rx1SeTrisKuyGyjrolVbDduHPV+/UavUvHPuDsQ==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SendEnabled queries for SendEnabled entries."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/bank/v1beta1/send_enabled"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This query only returns denominations that have specific SendEnabled settings.
+Any denomination that does not have a specific setting will use the default
+params.default_send_enabled, and will not be returned by this query.
+
+Since: cosmos-sdk 0.47
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"denoms is the specific denoms you want look up. Leave empty to get all entries.","in":"query","name":"denoms","required":false,"explode":true,"schema":{"type":"array","items":{"type":"string"}}},{"description":"key is a value returned in PageResponse.next_key to begin\nquerying the next page most efficiently. Only one of offset or key\nshould be set.","in":"query","name":"pagination.key","required":false,"schema":{"type":"string","format":"byte"}},{"description":"offset is a numeric offset that can be used when key is unavailable.\nIt is less efficient than using key. Only one of offset or key should\nbe set.","in":"query","name":"pagination.offset","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"limit is the total number of results to be returned in the result page.\nIf left empty it will default to a value to be set by each app.","in":"query","name":"pagination.limit","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"count_total is set to true  to indicate that the result set should include\na count of the total number of items available for pagination in UIs.\ncount_total is only respected when offset is used. It is ignored when key\nis set.","in":"query","name":"pagination.count_total","required":false,"schema":{"type":"boolean"}},{"description":"reverse is set to true if results are to be returned in the descending order.\n\nSince: cosmos-sdk 0.43","in":"query","name":"pagination.reverse","required":false,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QuerySendEnabledResponse defines the RPC response of a SendEnable query.\n\nSince: cosmos-sdk 0.47","properties":{"pagination":{"description":"PageResponse is to be embedded in gRPC response messages where the\ncorresponding request message has used PageRequest.\n\n message SomeResponse {\n         repeated Bar results = 1;\n         PageResponse page = 2;\n }","properties":{"next_key":{"description":"next_key is the key to be passed to PageRequest.key to\nquery the next page most efficiently. It will be empty if\nthere are no more results.","format":"byte","type":"string"},"total":{"format":"uint64","title":"total is total number of results available if PageRequest.count_total\nwas set, its value is undefined otherwise","type":"string"}},"type":"object"},"send_enabled":{"items":{"type":"object","description":"SendEnabled maps coin denom to a send_enabled status (whether a denom is\nsendable).","properties":{"denom":{"type":"string"},"enabled":{"type":"boolean"}}},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,73 @@
+---
+id: msg-cancel-unbonding-delegation
+title: "CancelUnbondingDelegation defines a method for performing canceling the unbonding delegation
+and delegate back to previous validator."
+description: "Since: cosmos-sdk 0.46"
+sidebar_label: "CancelUnbondingDelegation defines a method for performing canceling the unbonding delegation
+and delegate back to previous validator."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVstu2zoQ/ZXBrFUnTYsutGr6WORe5CZo0pUTBGNyLLGmSIWk4hiG/r0Yyq84ThoU1xtL1DzPnDnSEjVHFUybjHdY4pVxiktQPjY+vot6Bsejj5+wQN9yIDE601jieazuvpJTbH+6iXfauOobW66yBRYY+L7jmL54vcByicq7xC7JJbWtNSrbHf2KknOJUdXckFy9sZg2SDnJcMwhG98NwZ+6f/XGgeapcRyBIPkZO5ibVAOBZucb43IdQE4DORjijG7cjfvv4vp7Cdc1rw5hathqMFHszlyCeW1UDaZpLTfsUoRUM6guJt9Aw6n2+sZFUzlKXeAIgocJrGGygMpXvg0++dErnaRFy1hiTMG4CvsCc8EHnvTF+sRPfrFKWGAyycrBqnQp2s5pEcFylELJgQ/A9x1ZSB669QRBb0YI7FJYwISsDFnyq8D5yV3NpqoPoL1nIGkFk9XdgJccbNMl72fQWlIsSEx9aChhicalTx+xOARBLs+HO9I6cIwHgXoga/QfrPotSOexepHIG/JI3Vff/oWGY6SKYeoDtBykZGmEQOUQh6EU403puD+uvs+dvYn2axZhmULHvRzE1rs4kOfk+Pj5VE4hdkpxjNPOwtpc4P6/V/IteP5Y5T8EQkZhSp09QK1TB53jx5ZVYg0cgg9/18vTbVNes/zvMu/DybY44xJXHAbqJTI2e5nEzS6nNmtHWhvJS/ZyN02/v+SfB8fnpNyuMoVAC8m7Itxb9r4fQExURSzHMge8lQCiRVhi66MU2VKqscSjYYCjmGhmXDV6eD/hRO9H57E6ek3XBdIfW23//kiigE+la321LnWjXTtL+kxNdo2fbfn24YHl3olq3NRnqFZc/KdzKq/gRcvu9PJMAnCIA6kejkcfRifiJtA0lKniqBHHPysCrVR+XwoGIcjq9kTrtnpw4+R1s7pnmJCaiQq3gR+M7yJsWhzhnjDsvEdf2cOBFIkf01FryTjpsAs20z8Pf4wvDx+Ll3sXOtXConKMy+WEIv8Mtu/l+L7jsMByfCsTCoYmAv/4ti+wZtIcsBwvccaL/FLOLby7ljrzQLvM+P297Yu1x6lS3KZXbXeJfnlxdY0FTlafHk1ecgw0FwGlOZaYv2bEO69jPluiJVd1edVwiCm/30ANNy0=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"CancelUnbondingDelegation defines a method for performing canceling the unbonding delegation\nand delegate back to previous validator."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.staking.v1beta1.Msg/CancelUnbondingDelegation"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: cosmos-sdk 0.46
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"Since: cosmos-sdk 0.46","properties":{"amount":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object","title":"amount is always less than or equal to unbonding delegation entry balance"},"creation_height":{"description":"creation_height is the height which the unbonding took place.","format":"int64","type":"string"},"delegator_address":{"type":"string"},"validator_address":{"type":"string"}},"title":"MsgCancelUnbondingDelegation defines the SDK message for performing a cancel unbonding delegation for delegator","type":"object"}}},"description":"Since: cosmos-sdk 0.46","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"Since: cosmos-sdk 0.46","title":"MsgCancelUnbondingDelegationResponse","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

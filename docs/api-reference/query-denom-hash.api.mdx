@@ -1,0 +1,71 @@
+---
+id: query-denom-hash
+title: "DenomHash queries a denomination hash information."
+description: "DenomHash queries a denomination hash information."
+sidebar_label: "DenomHash queries a denomination hash information."
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v2zAM/SsCTy1qxP24+bRiG7busq7oTlkQMDITq7MlVaKDBoH++0A5dZM0p+5kW+Yj33ukuAXnKSAbZ+9qqOBXT2Ez/0LWdd8xNlCAx4AdMYUI1XQLNUUdjBcAVPDYkKol2NicQ3FATeps6l3gualn5VQ3aC218nF+UU5z9AwKMIL3yFLDYkdQQQZDAYGeexOohopDTwVE3VCHUG2BN14CIwdjV5kcMwXJNLmAlGaCjd7ZSFHCry8v5XHI+VbFXmuKcdm36jV8AgVoZ5ksCwK9b43OksqnKLDtHovDfNmy0bGHXUJlouKGxgJKqKulC/k0Y8oRpB7uP/+xHXHjamHig3SFzaCikUa8Kyun6sxY1dCL5O2Qz5Vb5vQnWmLsEGOclQqHRqY0nrjFE2mGlOSspiX2LZ/w0Kre0osnzVQrCsGFj1l5qFS7muQ5UIUKjOWb6ze6xjKtKECmxmjajDJMXdybjp2EArCujdTF9n6/TDo2+NMAPB6vtGcLhoAbqdtRjLg6GX3KQznElVydYU5gVhxZ+TYEzz0FQ1HhYf9yo4/aN4wKVLAiHq5BAxWUZqFL9D6WHNDGJYVyfVXmZHPJQrHc5mlI+f4tXVZhuBXSP3qrc72fnuzt/R0UsKYQB5Lry8nN5Fr0exe5w9zF3a39kIADD0YrmV649C0aK6X60OYRyeKmYBZaeup9lIHYCRSWVznfm0goZHHIKpkV0LjIgt5uFxjpd2hTkuPn3IxqOitgjcHgQjyQ9WaivNdQLbGN9I7oONhw9rDbUufqP7bgSeGvM2c3Ig/bXr6ggL+0GbdkmqUCGsKaQiY+/LvVmjzvod7dPtmR4/R8+/oIKf0D5bMXyQ==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"DenomHash queries a denomination hash information."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/apps/transfer/v1/denom_hashes/{trace}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+DenomHash queries a denomination hash information.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The denomination trace ([port_id]/[channel_id])+/[denom]","in":"path","name":"trace","required":true,"schema":{"type":"string","pattern":".+"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryDenomHashResponse is the response type for the Query/DenomHash RPC\nmethod.","properties":{"hash":{"description":"hash (in hex format) of the denomination trace information.","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

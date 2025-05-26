@@ -1,0 +1,71 @@
+---
+id: query-client-status
+title: "Status queries the status of an IBC client."
+description: "Status queries the status of an IBC client."
+sidebar_label: "Status queries the status of an IBC client."
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SsCTxsgxP24+bSuGIbssq7bTl1QKDIdq7Mlh6KCBoH/+0A5dZI2GLCdZFP8eO+R4g5Cj2TYBT+voIRvCWn7eNs69PydDacIGnpDpkNGilA+7KDCaMn1EgMl2OyrknfrhMpV6NnVDgk0OLnvDTegwZsOJ+9HV4EGwnVyhBWUTAk1RNtgZ6DcAW97cY5Mzq9gGBbiHPvgI0a5v7q4kOMUyI2KyVqMsU6tenGfgQYbPKNniTB93zqb6RZPUcJ2R2VP82UpjpW43+dULipucKqhBK6qA2VrDiuO49T93e0v3yE3oZqpOStCTuTHJDYRiX5xdA11ts4/3qpRKiHQkzSJ3Uh+9Dwnk36xhOUTWoZhEFuFtUktnxHMq+TxuUfLWCkkCvR/up3is6FCOetAnWEowXm+voIJnPOMKyTI0Ni4Nkc5xu6Y1J6CBlNVTuqa9u64zPBalg9j4FtVDrIYIrOVuh3GaFZnvc9pKEazkuEfhwIW+pWU+0avE5LDsbGHhhr/qp/jKEAJK+T8vLiBEgq3tIUNhMXoWWwu91+PY65iN72eIb+uOmQGjlsB/CV5K3DU1x79zd0cNGyQ4ghwczG7nl0J9z5E7kzu4P5N/hv4E+KTfozPXPStcV5qJGrzXGRiD+CWNo8ToRw5k4C7nP72BEFDeVgQCw1NiCwJdrulifiT2mEQ8zo3oXxYaNgYcmYp/GUxuSjfFZS1aSO+wToNNLy73++e9+ov++sst5dZ8lvhYNokf6DhN25P9tuwGDQ0aCqkDG68v7EWez6KfPOyZNlNA/L50w8Yhj/e2fdG
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Status queries the status of an IBC client."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/client/v1/client_status/{client_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Status queries the status of an IBC client.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"client unique identifier","in":"path","name":"client_id","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryClientStatusResponse is the response type for the Query/ClientStatus RPC\nmethod. It returns the current status of the IBC client.","properties":{"status":{"type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

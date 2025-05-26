@@ -1,0 +1,74 @@
+---
+id: msg-submit-evidence
+title: "SubmitEvidence submits an arbitrary Evidence of misbehavior such as equivocation or
+counterfactual signing."
+description: "SubmitEvidence submits an arbitrary Evidence of misbehavior such as equivocation or"
+sidebar_label: "SubmitEvidence submits an arbitrary Evidence of misbehavior such as equivocation or
+counterfactual signing."
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1v2zAM/SsCz17adTef1g07bECxYu1OaTHQMmNrsyVVpLMGgf/7QDlJm2TfGwYslxi0+Eg+vqdkDSFSQnHBv66hhAtuPlwNVe/k1dLV5C1BAYnuBmJ5EeoVlGuwwQt50UeMsXM2p5985OA1xralHvWpJrbJRX07Qe8jm0QxEZMXNmh6YsaGjLQohocYQxI2nDPE+cZgqpwkTKsbv0MIC9M7rqjFpQvJ8GBbg2zobnDLMPVlQjI2DF4oLdDKgJ1h13jnmxkUEJPOL45YG6btzDpaXTvNx+7y8ZnxMOe5rGJOmL6BJTnfwDgW20ioPpIVKA742BYzNS2cJzbSkqGvTzaDsYANF5SOud29Mm7C0REpGbR5dIN1nYhZUbcVdPoftTxq6D/YogrUJaqhlDTQqAGOwfO0obPT02PGzrWMJebF0JntccX6W+p+t8HcW+8FNydH9G3OKfXHkmyR2+NqGt0DzoGw2NOQgi1C6lGghGol9HMbzytf4NDJV1jzZvB0H8kK1YZSCun3yNsf0oY6W2jXrfPy7OyhXeeFGkqQWxN0Xc5yQj0/ct7OZ39s3QdaMCVcad2NsH/G6ONEomDDUM5VGXB7aKMDEUwGYYP+wSDmF/1x479tkJ6kDXq/x8DKUERpoYQTG7gPPNspZvm0IsGns2OdQgG6xXcPPwWv7rGPHR3em88P6Nm7tx5FnV+EzKYTBYE3g7d5kreR/PnlayhgSYknupans2ezM03TAXrMavLY07+ncm+POzEI3ctJ7NB5bXJIXRZ5ZnkO32EZioP+VSqtLqmcw3pdIdP71I2jhu8GSiso57cFLDE5rJS3+e1YQEtYK73zNXyiFZTwcvLhk2vtTo93Q1bzoSfHYptxbi1F+e7Z20c6unx7dQ0FVJu/BH02MCT8rLcxfoYSoICQWcpWy7E1dOibIdsIJkz9fAFnPAx4
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SubmitEvidence submits an arbitrary Evidence of misbehavior such as equivocation or\ncounterfactual signing."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.evidence.v1beta1.Msg/SubmitEvidence"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+SubmitEvidence submits an arbitrary Evidence of misbehavior such as equivocation or
+counterfactual signing.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgSubmitEvidence represents a message that supports submitting arbitrary\nEvidence of misbehavior such as equivocation or counterfactual signing.","properties":{"evidence":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","description":"evidence defines the evidence of misbehavior."},"submitter":{"description":"submitter is the signer account address of evidence.","type":"string"}},"type":"object"}}},"description":"MsgSubmitEvidence represents a message that supports submitting arbitrary\nEvidence of misbehavior such as equivocation or counterfactual signing.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgSubmitEvidenceResponse defines the Msg/SubmitEvidence response type.","properties":{"hash":{"description":"hash defines the hash of the evidence.","format":"byte","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

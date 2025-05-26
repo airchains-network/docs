@@ -1,0 +1,71 @@
+---
+id: msg-channel-open-ack
+title: "ChannelOpenAck defines a rpc handler method for MsgChannelOpenAck."
+description: "ChannelOpenAck defines a rpc handler method for MsgChannelOpenAck."
+sidebar_label: "ChannelOpenAck defines a rpc handler method for MsgChannelOpenAck."
+hide_title: true
+hide_table_of_contents: true
+api: eJztV9tu20YQ/ZXBPjNymhR90FOdIGhcILbhOCgKyzBGyxG50XKW2R1KVgz9ezBL6mLJTm95rJ8ocq5nzpldP5jQUkRxgc9KMzYfUnX3tkZm8hct8amdm8JE+tJRkjehXJnxg7GBhVj0EdvWO5vdTz6nwPou2Zoa1KeSko2u1a996MeRoaSZY0qA0KQKErHAdAUIV+RxRREkwNsaHcOpPqKdc1h6KiuasNQEtkauCMIsPzF5SIJCant99efF5btzCDxEeDOa8B+nV+dn57+NAbcOXVtFLAk+fPp4DecX1+DYiUPvvhIgbz/PQgSpXdr4TdgxaAkJG4KpD3YOmIDuyXbiuOqNG0oJtUCpKS5douxiQ8dCscUoK1g67yc8JXBsscWpz+2ElthxNTKFaaPORxyljHyf/s6V+ktWLZmxSRIdV2ZdmP3Qd//EdkExuX56R4ZtiPJckDaGMLuryVW1HA/8PMQGvV/ltq9o4TTH+2wMLmnLkRpioRJQgNDW0IeCZe08wZyodVxNeON73jVTpcUA/AjehyUtKEIKjQLLiTh1CdBXITqpmwQNrsDWISj4YcKREkkOMGRyDJaiKEVs4NJp6QloVI2gxljq5Oep6In1okFbO6YJTyPhXOfcUzDBWaZDIrCYKBWPOh6qPug4BZAaZcJDISoqxx0lpe+UoAnsJLCzGcHsiUlT0oJYyXYM6oQrkgS5xyPqxMF0b1oznY+Ysekcyy8/m8KIE68T3gNo6aQeyF45Tb0JpOaHfNgm4dzzXyfZOGQsenl4p3tAtdbFSCx+BU8lW+8C7SiFClt4ErYSBUFj6O5AAYusMNvQtBiVgRU6TgLIWa4wBO2VT9B2sQ2Jksqza0vMKkcuJzyLRF8zF3LlaVdqmH4mKzudSFw9QmS6EnoKxeQq7sF7oufHofXV/1v2P29ZPeBcpNKMJXaUiZxaXSdZOq9evjxebqeQOmsppVnnYWOusX7U6Xg1xNzOT9v6kKqTg/Fucmdyj47ZN3Bkhp1/YkefMnRM9y1ZXUoUY4j/rpuDgyqU9IjrjuX1q11xjoUqiiaXJuh89nJCTdrj/dBCYbDsNzP6y/0068Ml92vveCycnXIwRlxp3oE3f1Nm+SVWyYxvdFTm9lB3z4outhZq5NJThIakDvlQgaN5K9r9dzM2bUh5haPUZmxO3NSObIg0GpQxWvw0OqaCKYzO5Wp3W3t3j03r6fDqsOn0OzeGZ0y2F4Xd9+39YO/VwbXg6OzZmR6dGEe3i7w1dw6b5bhn53gW8hiH8+D3jq1OBTIul2emMLu6Fy9Hr0ev+otNkgYzjRkb+lEzfESLLbeE7uWk9ehYU3fRZ83k8d6YZ8ZrioOKlHW1MmN8Yx4eppjoU/Trtb7+0pHidHNbmAVGpztOf60LUxOWCtjNg5mTQvm2l/SLa61MzX2XhXEo73Wx8Ti1llr5ru3tHnkvLz5em8JMh38XmrwLTMSlzhuXZmxMYUJGqL+a6LsH45GrLivS9DH17xsMTX7A
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ChannelOpenAck defines a rpc handler method for MsgChannelOpenAck."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.channel.v1.Msg/ChannelOpenAck"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ChannelOpenAck defines a rpc handler method for MsgChannelOpenAck.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgChannelOpenAck defines a msg sent by a Relayer to Chain A to acknowledge\nthe change of channel state to TRYOPEN on Chain B.\nWARNING: a channel upgrade MUST NOT initialize an upgrade for this channel\nin the same block as executing this message otherwise the counterparty will\nbe incapable of opening.","properties":{"channel_id":{"type":"string"},"counterparty_channel_id":{"type":"string"},"counterparty_version":{"type":"string"},"port_id":{"type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"},"proof_try":{"format":"byte","type":"string"},"signer":{"type":"string"}},"type":"object"}}},"description":"MsgChannelOpenAck defines a msg sent by a Relayer to Chain A to acknowledge\nthe change of channel state to TRYOPEN on Chain B.\nWARNING: a channel upgrade MUST NOT initialize an upgrade for this channel\nin the same block as executing this message otherwise the counterparty will\nbe incapable of opening.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgChannelOpenAckResponse defines the Msg/ChannelOpenAck response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

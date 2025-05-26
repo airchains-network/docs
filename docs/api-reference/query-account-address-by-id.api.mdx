@@ -1,0 +1,71 @@
+---
+id: query-account-address-by-id
+title: "AccountAddressByID returns account address based on account number."
+description: "Since: cosmos-sdk 0.46.2"
+sidebar_label: "AccountAddressByID returns account address based on account number."
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVUuP2zYQ/iuDOSWAam82QQroVBcpiu2laZqesosFRY4sZilSIYduDEP/vRg91lrbLZIAOfVkWOLH7zEPHdBQ0tF2bIPHEv+0XlMJOqQ2pB+SeYCr1avXq2ssMHQUlRy7MVjiH5ni/n6jdcieN8ZESunn/c0bLLBTUbXEFBOWHw4nBG+oi6QVkykgJwI13nBvDVifmJS59bde/iXg5vE9+NxWFCHU49OREDhARfApU7RkVvC+sQlqS87c+tSE7Aw0akdQEXlQHrL1/PoVPHP2gUA5d3J7el6A8gb+ts5BRbc+d0aUCs0EtR4U1JlzJNhRTDb4R02Zm0HKfoUFWjHbKW6wQK9awhKtwQIjfco2ksGSY6YCk26oVVgekPednEocrd9igXWIrWLBCTP2fXGa5TK7r09Lcr5Y7h9n+YOZo/4j3RMftXLpy4zk2cmd4FMXfKIkiOurK/l56m4DKWtNKdXZwXxcotXBM3kWhOo6Z/XQleuPSWCHhZAvbu0uSnOzHdXMPqfYzi31fYFs2dE8B+dj8G7SOxdm1g9yE9QhwjkGYqehJW6CBDxRhuojaca+F1JDtcqOL2TlIXv63JGWdqUYQ/y2yJ4moYMh+V224svrozjrmbYUcZDGyroBZZnaZWqThQKVMVZ4lXu7pOlPC/DTCDyPvX9kVjGqvfC2lJLaXjx9KUN5qLaymMbK4Z1cMURe4pZ4WF/cYInrsVHWMtbr3YuKWL1YTy1xX+3vrVkfrOmHWanDwD+1xG/Za7EJv3fkN29vsMBpVWCJu6vVy9W1KO9C4lYN+U8DdqkliHP06XGw51GuVCIDwZ9MvNT6SWccjqX/rwGYgmL6zOvOKetFYI5uaIkhjw844qSMedhqUyZjXY+pYIGlNZJrExIL8HAQtX9F1/fyeNwqw5fBJlW5xQ75V+nfcdNdtP5A+9OFt1Muy0GU7bVT0Yr0r7Tx7N20NZ/D/+U7eDHeeYj9fhnsHLs12N/1BTakDMUh4vHFRmvqeAE522X9cpx//eU99v0/YE8VfA==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"AccountAddressByID returns account address based on account number."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/auth/v1beta1/address_by_id/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: cosmos-sdk 0.46.2
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"Deprecated, use account_id instead\n\nid is the account number of the address to be queried. This field\nshould have been an uint64 (like all account numbers), and will be\nupdated to uint64 in a future version of the auth query.","in":"path","name":"id","required":true,"schema":{"type":"string","format":"int64"}},{"description":"account_id is the account number of the address to be queried.\n\nSince: cosmos-sdk 0.47","in":"query","name":"account_id","required":false,"schema":{"type":"string","format":"uint64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"Since: cosmos-sdk 0.46.2","properties":{"account_address":{"type":"string"}},"title":"QueryAccountAddressByIDResponse is the response type for AccountAddressByID rpc method","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

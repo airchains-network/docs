@@ -1,0 +1,71 @@
+---
+id: query-checksums
+title: "Get all Wasm checksums"
+description: "Get all Wasm checksums"
+sidebar_label: "Get all Wasm checksums"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVk1v3DYQ/SsDntVdxw56UBGgaVAE7iVu0qCHrBFwqZHEmBoq5Mj2YrH/vRhKK+1Xmq1RFAbqi21ySL739OZjrXyLQbP1dF2oXP3eYVh9flOjuYtdE1WmWh10g4whqvzTWhUYTbCtHFC5usMV2Aga7rXrEAJyFwgLsAQ3usL3GFtPEWeEj/xZgtnDEitLC/oqL1mqgGsE2YdWVwiNjwxYltZYJHarGbwjtwJPCL4EX5YRGXyAO1wtKNa+cwUsESLyTGXKCqh0s8oU6QZVrlpdWUoMZ3co6wG/djZgofJSu4iZiqbGRqt8rXjVypHIwVKlMlX60GhWuVquGNVmkx0KMABKGlDXYLBmC5JrzWA0CbwuYgEPNRIMinWk77V1eulwtqDrdIPDGCfqcp6giyLRHf6dDtDLsKCzdeiPP1GKzhL/+PKUGM42NjGRT8qetRNNlhgEcsDYOY69A/acItH9brKA6FGCw5IBm5ZXYBkerHNQYKkliP1ouP4ykWK5AtSmBt22ZwiQkP7r/I3viD/3xG1MsNgDhw5B/rBUWKMZe2fssJbAwcqWjOsKXJCGdJsod0pNy9hEGD0EpQ8w8RNVP17H2YIOIHnxUMDYouGtIycLi0tn0JvRVuTDjmkX1DM6Q9ydN8+SeOm9Q02nFA14jyHioZp2spMO+A1LyU1IheSPDwWG2YIW9MGSwRyMj42PP8TiDi5mL6++z2kA8g/53Ep4XwKjBFxeXMivfY6vIXbGYIxl52AbLjIbT4zEckK3rRPvWE/zL1GOrXfe3b8vlfCxgm9L8DYttw+AgE22kdV0Zj4egvc3b6BBrn0hQNogTYJtT8KMzeHo6XGrL4jOxtHANT4CkvEFFjCF+RK0c/CgYwOyFyGy2C65TCx+nImbbLugQ9Ar+X/6TseQdttQ0iB5BZslFkXvlUrIjrI0GKOuMIrxxVo1ShKFfj+ZSQyAkbeRUOs+c4aOlzaT18aID76ZMKwXBNufgC1qScRfdBgd/Qpe/LQTs0cgtchXcCkBm6Mvs+2yxyqM/XdwwdiKodVRsLPfg9/vD036ux36eijQSdhUscsFcdJP0pM8ND5sq12cHfXV7MQnTtUjXx+V3UyxZSfBY1H7VqeZqqMt99jtFKgFPehUWzKwHIeukvpzgaWVauKFyIONJ2BOVvTLL2j45IqsDZ3rRO4TdISPQznGEHx4Wgk4SFFf4J54lvjqciJgibHCoBI01talU4cJN1DIlC4KK+9qd7P7zObQfz/3B48ydnMiZ4fcOBV9SkNZ1JWMoH19U7fZgZRvkVMt+TPVkp0Btq9jKldVGnlazbXK1dwuzdzZqmbjxMdxLkVofv9ivnvWUukTxMFzv3VkUoN91yK9vrlWmZK+0CO4v5hdzS5TQfKRG50+0dBKvoluj8SoBeMjz1unLcl1XUip0CP/pOzSqEztYleZEvSC5oW4Zrz/NlO1jyyn1uuljvgxuM1GlvtWlyZ6GyVJpoZ2AGn04LOb9k+Klerf8dCfIKtcqTRknE35mc735zEfx/wnkn9G8/x5hLdj/RP5/l/m9/PE3B/jnyjpfzfAn0dqmuMnQrfyT7DCSOWfbjeZqlEXGFJ17G94bQy2u8466sZyy9hp3v76h9ps/gJDDx7n
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all Wasm checksums"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/lightclients/wasm/v1/checksums"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all Wasm checksums
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"key is a value returned in PageResponse.next_key to begin\nquerying the next page most efficiently. Only one of offset or key\nshould be set.","in":"query","name":"pagination.key","required":false,"schema":{"type":"string","format":"byte"}},{"description":"offset is a numeric offset that can be used when key is unavailable.\nIt is less efficient than using key. Only one of offset or key should\nbe set.","in":"query","name":"pagination.offset","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"limit is the total number of results to be returned in the result page.\nIf left empty it will default to a value to be set by each app.","in":"query","name":"pagination.limit","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"count_total is set to true  to indicate that the result set should include\na count of the total number of items available for pagination in UIs.\ncount_total is only respected when offset is used. It is ignored when key\nis set.","in":"query","name":"pagination.count_total","required":false,"schema":{"type":"boolean"}},{"description":"reverse is set to true if results are to be returned in the descending order.\n\nSince: cosmos-sdk 0.43","in":"query","name":"pagination.reverse","required":false,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryChecksumsResponse is the response type for the Query/Checksums RPC method.","properties":{"checksums":{"description":"checksums is a list of the hex encoded checksums of all wasm codes stored.","items":{"type":"string"},"type":"array"},"pagination":{"description":"PageResponse is to be embedded in gRPC response messages where the\ncorresponding request message has used PageRequest.\n\n message SomeResponse {\n         repeated Bar results = 1;\n         PageResponse page = 2;\n }","properties":{"next_key":{"description":"next_key is the key to be passed to PageRequest.key to\nquery the next page most efficiently. It will be empty if\nthere are no more results.","format":"byte","type":"string"},"total":{"format":"uint64","title":"total is total number of results available if PageRequest.count_total\nwas set, its value is undefined otherwise","type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

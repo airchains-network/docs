@@ -1,0 +1,77 @@
+---
+id: msg-exec
+title: "Exec attempts to execute the provided messages using
+authorizations granted to the grantee. Each message should have only
+one signer corresponding to the granter of the authorization."
+description: "Exec attempts to execute the provided messages using"
+sidebar_label: "Exec attempts to execute the provided messages using
+authorizations granted to the grantee. Each message should have only
+one signer corresponding to the granter of the authorization."
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVsFu4zYQ/RViTl1AlbPZm05Nixy2aLBBmj05RjEmxxK3FMklR461hv69GMrOxnHaAi162OpEjciZN/PeDLWHECkh2+DfG2jgJre/Xe9IQwWJPg+U+cdgRmj2oINn8ixLjNFZXQ4tPuXgxZZ1Rz3KylDWyUb5OjsUfwqZqY+cFQdFO9IDk+KOVExhaw0Z1VPO2FJWQ7a+ffA4cBeS/VLCZNUm9ExGjsux+ZVqdY26O55VuQuDM6rDLang3fjggyeVbespKR1SohyDN9a3p36SCpvyehK0hgpikvqwpSypHaLKksdI0EDmZH0LUwV9bvN5+teHVG9yWz/4+47UbiFBvqhH65ziNAqSjfVG4QxG9ci6E4jf9bmtZ/B5ebGqjklX4u1+jPTx7hfZ8+bNg+dkoyOF3qgtOmuQSVmWDCxTn58hDutPpBkqQGOsoER3+zzJ6WXSP8wHz1KepupowpRwhGeGQ5Cy53+lB2kKm8hAw2mgSQziIs+lury4OJfAlcqD1pTzZnDquF18/buOujt4UoY21lMueG9yu3j5/RhSCTfnmk6UB8dl+SSVTUg9MjSwHpmgOhf73/NeiN/g4PiVing1eNpF0sIgpRTSPyvMaSY6GDpBbz2/u/wK33qmlhIUaIzWnSb93/dHBQdhvrb7tRqKEWWsLIV1WL1spm+5k3riLsiVE0OWckfkDhpY6JD7kOsyJOvt2zUxvq1F14drSVRw9/Vqut5hHx2dTOdjUY9DeflE0lO5V1MF1m9CYcKyOICfB68FnfoQyV/dvocKtpTyXOrtRf2uvhQOBW+PRYkee/rGaTgR1JMqmXa8iA6tl4yH5Eq3FYaW8GcMQVUqITLthNNmCfv9GjN9TG6axPx5oDRCs1xVsMVkcS11XwoXHaGhVKj6nUZo4Kd5Bnwv95wQgW4onfRyHkzV8cSV1hT5L/eunsnu9sOv91DB+vB705fhAQkfZcrjIzQAFYRSmHlOim0PDn07lBaG2ac8fwDk4U+I
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Exec attempts to execute the provided messages using\nauthorizations granted to the grantee. Each message should have only\none signer corresponding to the granter of the authorization."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.authz.v1beta1.Msg/Exec"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Exec attempts to execute the provided messages using
+authorizations granted to the grantee. Each message should have only
+one signer corresponding to the granter of the authorization.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgExec attempts to execute the provided messages using\nauthorizations granted to the grantee. Each message should have only\none signer corresponding to the granter of the authorization.","properties":{"grantee":{"type":"string"},"msgs":{"description":"Execute Msg.\nThe x/authz will try to find a grant matching (msg.signers[0], grantee, MsgTypeURL(msg))\ntriple and validate it.","items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"}},"type":"object"}}},"description":"MsgExec attempts to execute the provided messages using\nauthorizations granted to the grantee. Each message should have only\none signer corresponding to the granter of the authorization.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgExecResponse defines the Msg/MsgExecResponse response type.","properties":{"results":{"items":{"format":"byte","type":"string"},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: query-next-sequence-receive
+title: "NextSequenceReceive returns the next receive sequence for a given channel."
+description: "NextSequenceReceive returns the next receive sequence for a given channel."
+sidebar_label: "NextSequenceReceive returns the next receive sequence for a given channel."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVktv40YM/ivEnFpAjbPZogefGhRFNz2kadqe4iCgR7Q0G4mjDClvXEP/fcGx/EqcPhZ7sS2Z5Ed+fK5d7CihhshXpZu633tKq4dretY/6Kkn9nRLnsKSXOE6TNiSUhI3vVu7ksSn0JmqmzpfIzM10HN46glCSaxhESi5wgUT6FBrVzjGlvbiD6F0hUv01IdEpZtq6qlw4mtq0U3XTledSYumwJUbhuIlbBeT/ldMk/2/gPcmLF1kIbH/L87P7evYiUuQ3nsSWfQNbMXPXOF8ZCVW08Cua4LPRE8+iqmtD2C7ZGnQsAFhetYHGfl/SGMCpmu3iKlFdVPXB9YfvneF06CNOWwqsFWBUQW4b+eZjRdhFQYYF0cm5yulA4MtpceGIMtBXAA9B1Ez/qa1h5pCVetreq4NomlWoDXBLS2DhMgfsjAEgcA+UUusVAIqEPoaNqbgUx0agkeiLnA1463udQ4rmxNs6Qw+xE+0pAQSWwJv7LP0AthUMQWtW4EWV+DrGIVA44wTCWk2MCIFBk9J0b4jl8FcF6Cz6gxqTCUsYnqUAkRR6bsWfR2YZjxPhI+BK7Byrkjgis2oEHgUkuIo4tHrFxFLBK1RZzw6YiUTuCcBjTAnaCMHjRx8ZjBrohgkLYkB5QSpM65IBXKMrnhRW2kUPcjW21V1QNCnoHXI0UEVDHpr6FQ97EDGAvxXkK1C5iKD+CYQ5/rwfUrE2qzgFNiwN7QvKTTa4knaSlQEszHjjOWRjWYf2w6TVWCFgUUBOWpNCUaji7ipt65PXRQSa4m+K1HNJnI540Ui+jvXQvZc9q7G+UfyeuRqHrP7CbuZGOb5hozx2fS3yDPOOpP8eWI+74zc3vwELWkdyxMemA8lLbBvTvTpJUPP9NyRt8KklGL6GtPMx/J4eAXW9xd75wIrVZRcdk0xNFkrKLVyMJHHEAqH5aY7sbk5hBleFvqPG8XXI33YIWNKuDLclkSwOil9ikN7iZVtwU0i3X3xcuS9ThAk0j7xJsV5XG+n9G5sW6pxbK9xQRrvYzanrtr0sy21qZuEuZ/4mGgyik6W77Y/ZbLeL9hhYotPJutx/w2To/2Sd+Ui5tjH6vy1Z2+BwG8d8eXNlSvckpJsQluen70/u8hTP4q2mHM/btivGvYRo7vEKD3rpGswsLnQpyYXXKbkzoW5z3WaLKrRlDn/bv9ofTk9uj4yO/Z2fx8cE3RfuDqKGsB6PUehv1IzDPb6KWd/endfuCWmgHOjz06jIPa7dNMFNkKvYtl1kvvmdjxFvoV/uqBOBr+tYl5ZjNj09uQK90ir4wsrn01f4tKb19UX+LNld7gfClcTlrYX7tbjv5feU6cHeq8mjJ1iu0745ec/3TB8Blnrz6A=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NextSequenceReceive returns the next receive sequence for a given channel."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/channel/v1/channels/{channel_id}/ports/{port_id}/next_sequence"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+NextSequenceReceive returns the next receive sequence for a given channel.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"channel unique identifier","in":"path","name":"channel_id","required":true,"schema":{"type":"string"}},{"description":"port unique identifier","in":"path","name":"port_id","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"next_sequence_receive":{"format":"uint64","title":"next sequence receive number","type":"string"},"proof":{"format":"byte","title":"merkle proof of existence","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"}},"title":"QuerySequenceResponse is the response type for the\nQuery/QueryNextSequenceReceiveResponse RPC method","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

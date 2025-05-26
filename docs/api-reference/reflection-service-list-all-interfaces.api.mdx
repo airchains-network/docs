@@ -1,0 +1,66 @@
+---
+id: reflection-service-list-all-interfaces
+title: "ListAllInterfaces lists all the interfaces registered in the interface
+registry."
+description: "ListAllInterfaces lists all the interfaces registered in the interface"
+sidebar_label: "ListAllInterfaces lists all the interfaces registered in the interface
+registry."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VMFu2zAM/RWBZ6Pu2ptPK4Zh6DBgRbedsqBgZDpRJ0uaSAcNAv/7QLlxm6TAgAE7CaZIPr73KO8hJsooLobbFhq4p86T1c9vlLfO0sMXx3Lj/W0Qyh1aYqggE6cYmBiaPVxdXurREtvskpZCAzeGB2uJuRu8OaRfQAU2BqEgWoEpeWcLdv3IWrYHthvq8bzf2RT3zz2NYyMbmjGM7BKZ2JXgWZW5v/ugU6SstMVNDNzh/iFgP4WO0U8SFBODwZxxp1Do/fMMa8dCmVozV7DCOaG+tNXhoAGW7MIaxuoQKK1gfAnE1SNZgXHUWEsdDl7eUDmYIdBTIivUGso55n8T+1gPG1vSs4u5R5n4X1/BPJySW1OGMpqg85OKJySfKVSAbesUF/3da5jx1Ib3U+GZSuOZThX0xIzrN7Pf0lCDuGZoFucbDsvqb8tmvGPh2ecXc48tP778GabLvFMrepJN1Be2JtUkoWyggdpG7iPXK2Sq8zxZvX23IsF3tXv96lzoYiHsxCu/z0Mo2eZronBzdwsVbCnzxGF7eXF9caVSpcjSYzFct/c/8TtScDZF6Enq5NEFnWTIvixb4b6AiTtUoOzLX+XAX5lMChTaswbLCjaRRYv3e636kf04avj3QHkHzWJZwRazw5UqtFiOFWwIW8rQLPbwi3b6aKylpB5s0Q9lqU6fxrh85denj99hHP8A7yXSQg==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ListAllInterfaces lists all the interfaces registered in the interface\nregistry."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/base/reflection/v1beta1/interfaces"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ListAllInterfaces lists all the interfaces registered in the interface
+registry.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"ListAllInterfacesResponse is the response type of the ListAllInterfaces RPC.","properties":{"interface_names":{"description":"interface_names is an array of all the registered interfaces.","items":{"type":"string"},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

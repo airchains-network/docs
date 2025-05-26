@@ -10,7 +10,7 @@ const ApiReference = ({ children }) => {
     const apiOptions = [
         { value: 'rpc', label: 'RPC', path: '/api-reference/rpc' },
         { value: 'rest', label: 'REST API', path: '/api-reference/rest' },
-        { value: 'junction', label: 'Junction API', path: '/api-reference/junction' },
+        { value: 'junction', label: 'Junction API', path: '/api-reference/rpc' },
         { value: 'wasm', label: 'WASM API', path: '/api-reference/wasm' }
     ];
 

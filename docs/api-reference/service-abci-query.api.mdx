@@ -1,0 +1,75 @@
+---
+id: service-abci-query
+title: "ABCIQuery defines a query handler that supports ABCI queries directly to the
+application, bypassing Tendermint completely. The ABCI query must contain
+a valid and supported path, including app, custom, p2p, and store."
+description: "Since: cosmos-sdk 0.46"
+sidebar_label: "ABCIQuery defines a query handler that supports ABCI queries directly to the
+application, bypassing Tendermint completely. The ABCI query must contain
+a valid and supported path, including app, custom, p2p, and store."
+hide_title: true
+hide_table_of_contents: true
+api: eJydVk1vGzcQ/SsEz6zkOEEOOtUJisIF2ripe7IMY5YcaRlzSYacFbwQ9r8Xw9WuZFt2ZZ8ELd/MkPPefGylwayTjWSDlwv5j/UaF0KH3IT8Szb34mz26bNUMkRMwKBLwzBMG6vx7uLL18u/W0ydVDJCggYJU5aLm6207O7n7sxDg3IhDRBIJRP+bG1CIxcrcBmVzLrGBuRiK6mLDMyUrF9LJVchNUByIauOUPa9Ou44AtVvcfyioxrtuqZ33tF6+vzplUumsMGTXFchOAQv+/6W4TkGnzEz4PzsjH8ek3Yhcqs15rxqnRjhM6mkDp7QE1tAjM7qwuD8R2az7UHcJ/5GVr/vfAmDK+sxC6pxCiAypVZTm1CsQipHk6FYf7/6Ksr7Z0u/9H8FwoW4rm0W/ERhswBh2uFKKMKqmI/hBhcxBQoDfAhvhPVLf43eYGqsJ35hTCxMskN2dDDIv08YUWNerSdcY5K9KtAcQeMRcahRBq+42mOtN/hwKnQVSjxLjk988IYrprHeZrL6mM09do+cl0I4gnNh/VbXMYWwugsxP5fAFR99i5mZ+hPTvUNR0BMVVVcoczYT0zfi38D2FOIo0eI1nndXtoRNPuAvVD9Qc/EefcskYvBi6maizWiKfjU43Tog69fji1MINBPXNQpuXEKH1pmlr1BAqiwlSJ0YaFH8ho01bOuRK5HPihG7xgdookPhWVVVaFPBBYNLX0Ou356zd6SstN5TdHSq3oYPzxvrdCQhJejkwYcdP72SG3AtnhDmuW0JYHAFraMjncuL1uNDRE1oBKYU0vsa4v/3lY/nR/uKQQLrXpcnGGM5LrirwzD9U85+PTnHSjYsuvVR9LEc8kdY86QeZ7m8ZSdUB57va6Qy0amWCzkftoF5BRnnNGlsvvlQIcGHOVTa3o2z7mmL+6P1uhTat4j+4upSKrnBlAe6Nmezj7Pz0opCpgYKCbtpuZ8lU90OA0XU4I1DnjhAIrcxhkS5zJ4CsJiFsQk1uU5wldS49AdsK1F1EXLmItxXjNCBa5TQdUPJT/460bSZzz0BDyAQG3DWCPBmjI5GcK6UsF67trQBiFEJ3WYKjRLxPKoBTyEVIT6S7Xavy5cXsB2HhA80jw6s57S1yRW1FqJu5GAllWSq2GZ6Hqd9oIv1tyfsVsk6ZGLj7Zat/k2u7/nzcM6bnLEZKnewr5QWMS5zu1KWkteeF6C79ewU6LSAneR3t1Htsbf8J1kGy8XNbRnlYDCVhwxGF1pjPIzwrBP0h6Xw+2/Xsu//A/4+3HA=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ABCIQuery defines a query handler that supports ABCI queries directly to the\napplication, bypassing Tendermint completely. The ABCI query must contain\na valid and supported path, including app, custom, p2p, and store."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/base/tendermint/v1beta1/abci_query"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: cosmos-sdk 0.46
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"query","name":"data","required":false,"schema":{"type":"string","format":"byte"}},{"in":"query","name":"path","required":false,"schema":{"type":"string"}},{"in":"query","name":"height","required":false,"schema":{"type":"string","format":"int64"}},{"in":"query","name":"prove","required":false,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"ABCIQueryResponse defines the response structure for the ABCIQuery gRPC query.\n\nNote: This type is a duplicate of the ResponseQuery proto type defined in\nTendermint.","properties":{"code":{"format":"int64","type":"integer"},"codespace":{"type":"string"},"height":{"format":"int64","type":"string"},"index":{"format":"int64","type":"string"},"info":{"title":"nondeterministic","type":"string"},"key":{"format":"byte","type":"string"},"log":{"title":"nondeterministic","type":"string"},"proof_ops":{"description":"ProofOps is Merkle proof defined by the list of ProofOps.\n\nNote: This type is a duplicate of the ProofOps proto type defined in Tendermint.","properties":{"ops":{"items":{"type":"object","description":"ProofOp defines an operation used for calculating Merkle root. The data could\nbe arbitrary format, providing necessary data for example neighbouring node\nhash.\n\nNote: This type is a duplicate of the ProofOp proto type defined in Tendermint.","properties":{"data":{"format":"byte","type":"string"},"key":{"format":"byte","type":"string"},"type":{"type":"string"}}},"type":"array"}},"type":"object"},"value":{"format":"byte","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

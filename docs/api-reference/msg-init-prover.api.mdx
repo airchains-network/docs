@@ -1,0 +1,71 @@
+---
+id: msg-init-prover
+title: "Msg_InitProver"
+description: "Msg_InitProver"
+sidebar_label: "Msg_InitProver"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1v2zAM/SsBz1pStDef1g09dEPRYOt2CYKBsRlHnSypFJ02CPzfB8pp43x0h2G+WKD58d4Tn7cQIjGKDf62ggLuUv3r1luZclgTgwGmp5aSfArVBootlMELedEjxuhsmUsnjyl4jaVyRQ3qKbI2FksplzGhBNajbCJBAUnY+ho6o5lr4htfxWD7zu+kPOTwu59/EtvlDtBXymiXgRsUKGCxEQJzWsnBuTYq85O23Vt6WDxSKdBpSOWwTBUUwi3lQIrBp57m5cWFvipKJduoQKCA61Fqy5JSWrZu9Jo+BvOvWiZBadMA8SIER+jPQ+4MVLTE1skZZH7UenqJVApVI2IO/D8AlqGiA/Wtl6vLvfzWC9XEkKEJWperrFAzZLWjYACryupcdNPhmP7eB2M/yvn9GMiCzLjRuQ2lhPXZ7HMaahDrBMVMDQJzcyTkiWsaklVQP8WQlENEWUEBk8fWl1oz7hdvfJfqyUGhavttb7mbF2yiowMLvUI9dc7xl4cDau/6ZJ+wt8PAI9YvQxbKiiKBLzsOo/tI/np6CwbWxKlXYn0xvhpfZlOGJA3mRfHYUK/SSMmO3tgeqPh2FUIvMokOrdc+Lbu8YlnBGZxREAwMNJwbWKnoxQy22wUm+sGu6zT81BJvoJjNDayRLS6UzmzeGVgRVsRQzLbwOyvyud/8D1lBTXdt3p9jF3TmteK6LCnKX3Png72Y3n9/AAOL3W+1yZYBxme9BXyGAsBAyMrk5c6xLTj0dZsXF/qe+vwBl6MD6A==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Msg_InitProver"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.rollup.Msg/InitProver"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Msg_InitProver
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"creator":{"type":"string"},"proverEndpoint":{"type":"string"},"proverType":{"type":"string"},"proverVerificationKey":{"format":"byte","type":"string"},"rollupId":{"type":"string"}},"type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"status":{"type":"boolean"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

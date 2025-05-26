@@ -1,0 +1,71 @@
+---
+id: query-account
+title: "Account returns account details based on address."
+description: "Account returns account details based on address."
+sidebar_label: "Account returns account details based on address."
+hide_title: true
+hide_table_of_contents: true
+api: eJylVEtv2zAM/isCTxtgxH3cfFowFEN3WRZspyIYFImO1dmSKlFBA8P/faBs59H2sHUn2zRJfQ+KPTiPQZJx9l5DBd8ThsOvpVIuWYICvAyyQ8IQoXroQWNUwXhOhwqk1gFjFBprYzEKalDMMXLiiXuJ2oUFFGC4wEtqoAArOzyVQwEBn5IJqKGikLCAqBrsJFQ90MFzaqRg7A6GYcPJ0TsbMfL/m6srflziWoqYlMIY69SKOZ1BKGcJLXGF9L41KhMvHyOX9WfHXvbLokyarKd2wox85/aCkTLZHM0V5VQi1qvPokNqnGYQPrDkZEYCcpKaX7U2fKJsV+cpw8uST6Mor8Up5ojbPqJi+174NeG58GuKuTp/KhdGRtrY3Wzm4o3ew8AxjbVMLb1hgRXJ4rNHRagFhuDC+5y4pK6czsxrFzpJUIGxdHsDR3DGEu4wQIZG0rS5yhB28Uywozz/rfhJFhmCPPC5HcYod3/lzzCKSHLHt2scM9i8dG2eooCUgo3i5GImKLYyohbOntxiEDxtUMEOx1tMDVRQKhc7F0uZqCn311skeV1O7WLZT/VDvq21ywwMtQz4a7KK4YhvHu1ydQ8F7DHEEeD+anG7uGHu3kXqZHZwuuPvAX9B/6gi4TOVvpXG8kkptHk6MrEHGImxoylvmIkcByZ6UEA1L5xNAY2LxIV9zwh+hnYYOJxXFlQPmwL2Mhi5Zfa890zkdw1VLduIrzAexxk+rKdd9lH8y3p8k+Q8WvbAlGSb+AsK+I2Hs/U5bIYCGpQaQ8Y6/l0qhZ7O6l5dM96lxzn5cvcDhuEPNkIdog==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Account returns account details based on address."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/auth/v1beta1/accounts/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Account returns account details based on address.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"address defines the address to query for.","in":"path","name":"address","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryAccountResponse is the response type for the Query/Account RPC method.","properties":{"account":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","description":"account defines the account of the corresponding address."}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

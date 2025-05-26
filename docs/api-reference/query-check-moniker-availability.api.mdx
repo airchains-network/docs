@@ -1,0 +1,71 @@
+---
+id: query-check-moniker-availability
+title: "Queries a list of CheckMonikerAvailability items."
+description: "Queries a list of CheckMonikerAvailability items."
+sidebar_label: "Queries a list of CheckMonikerAvailability items."
+hide_title: true
+hide_table_of_contents: true
+api: eJytlMFu2zAMhl/F4GkDtCZIbz4tGIahA4Z1w3YKgoKRmViNLKkSnTUw9O4D5SRNm/Yy7GSbFsX/o35qAB8oIhvvbhqo4UdPcX/3qSW9/ead2VKc79BYXBlreA8KAkbsiCkmqBcDGAc1BOQWFDjsCGroxjxQEOmhN5EaqDn2pCDpljqEegDeB1maOBq3gZyXsjgF7xIl+T+bTuXRUNLRBFEHNcyr1GtNKa17Wx2XX4EC7R2TY8nAEKzRhWdynyRtOCsbotCyGYuYdIcjnKUzUSvvLaGDnNUx5Ff3pBlyllhDa+wtv6LPVb2jx0CaqakoRh//h0ztmyJv7WOHDDUYx9czOIkzjmlDEYo0RmNHOKYunVEdEBRg0xipi/b2vExWL8p+HBMvz+qpLRgj7qVuRynh5tXVr/VQgrgRA41+g6V60UoJG0oVVtYkrvy6esuSVQGV9nbErRcPb4iLUbmFGiZoom7RuPTBEf/xcTu5750unY/e2j5MtGx9d7Dt0RJl88lwiGZQYNzaF0LD4hf4etim+h7IzW9vQMGOYhoBdtOr66uZ9Cb4xB2WEz4MyL/APWvPqctMjzwJFo2TSn20xT0FfAEX4KDgiC7DWeDFlm/ig4L6OM1LBa1PLBsPwwoT/Y42Zwk/lCOsF0sFO4xmnKbFAI1J8t5AvUab6ILhNA7w7ufhonhfPdn6OdvRcU5E7dD28gUKtrQ/u3LyMitoCRuKRcL4d641BT7Lu5g+uX9O9vny+Rfk/BdHrsjk
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Queries a list of CheckMonikerAvailability items."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/airchains-network/junction/rollup/check_moniker_availability/{moniker}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Queries a list of CheckMonikerAvailability items.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"moniker","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"is_available":{"type":"boolean"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

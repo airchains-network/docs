@@ -1,0 +1,71 @@
+---
+id: query-packet-acknowledgement
+title: "PacketAcknowledgement queries a stored packet acknowledgement hash."
+description: "PacketAcknowledgement queries a stored packet acknowledgement hash."
+sidebar_label: "PacketAcknowledgement queries a stored packet acknowledgement hash."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v40YM/SuDObWAGmezRQ86NYeimx62adCe4iCgR5Q0a4mjDCl7XUP/veBY/oy6XaR7siyRfOSbxyG3NnQYQXygu8Lm9o8e4+b5HtwS5dYtKawbLCpskcRmtoMILQpGtvnj1hbILvpOnW1uXQ1E2Jie/EuPxhdI4kuP0WbWq0EHUtvMErR4NH/2hc1sxJfeRyxsLrHHzLKrsQWbb61sOrVmiZ4qOwzZJWwXonwtptr+f8BEjmF86ZEcTiOdfP1aqMyWIbYgNre9J/npRzsMT+rOXSBGVo+b62v9OU/o1nDvHDKXfWP25lc2sy6Q6MHlWwtd13iXznn2idVte5JIF1UF4ncgcHHu+faY2WIjWpN4afDIBTAH50GwMGsvtZEajZaNLKb02BSsPufEZooayi9FbzEuGzTJzoTS4GfPMrI6He25Rl/V8pqjjwrRNJuU2gOuPPtAH5Kx8Ww8uZiKxcKAGARXm10os659g2aJ2Hmq5rT3/di3C4wpHEOLV+ZDWOMKo+HQonF6BMQ9G2iqEL3ULZsWNsbVITAaCXOKyCgpwIjkyTiMAvobqPCaOhu8qq5MDbEwZYhLzgwLCP7Qgqs94ZwWEWHpqTLaUBWyuSMNymgcMHJ2VvGY9UXFHIzUIHMaE1HdeOqRjQSzQNMG8hLIu8Rg8gRWSFwhGeAJUudUobBJNdrsQmBxND05rUvpH0VwQpBqy6fqTOUVeh9oSg8HEEo1/zfI3iFxkUBc45GSPlwfI5I0GzMFNhwDHSUFSluYpK0AAaMx5pSwHJDS7ELbQVQFVuCJxQAFqTGaMWgZdnrr+tgFRtaW6LsCRGMCFXMqI+LfSQsp85OuC4tP6OQs1XTVT970D+MdYgosPSGfkvGiXodbJuUEcxrvgXXtXW2g4aDlNn2BysOuf4GKU7GXMbSjvdQ4p53RGlQzEj2usJjIXvMvsIS+mejxWzI94ecOnYoaYwzxW1yHLhR4ph5P8v7mmJwnwQqjTakJ+CZ5ecGWTy75sYTMQrHrbGjuT2GGyyb5eef4eiANB2SIETaK2yIzVJPWUxzqS6h0hu9EYJ+yCyonZZHO3qcjZQkq1P31f2FXA9dKeItSB90qqt0loBMytzO/cDMXIs7GFWC2erd/5Nn2uBcMM53XPNuOY3uY7fCewS15tt2P2CFN4DKk6kdt/9aT01LM7x3S7f2dzewKI++KW11fvb+6STMjsLSQTn+c29+m8DMyD2ci+FlmXQOeFLuPTdJaIuXR+oVLEo063EYONOt3x7/azvnZ2pT40bfHxeaEIv1w2EOeMlsHFoXabhfA+FdshkFfp462+eNTZlcQPSyUQd3uPOtzYfMSGsZXVR3ayX73MK4435svLYGTNOylTButFppe/9nMLnFzviSmRewtKf3rgviGfPY8vz2ZV8vjG7I4eA9PQ2ZrhELn2+N2/HzrHHZy4vjqttO98tCcv/7ypx2GfwCxn0L9
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"PacketAcknowledgement queries a stored packet acknowledgement hash."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/channel/v1/channels/{channel_id}/ports/{port_id}/packet_acks/{sequence}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+PacketAcknowledgement queries a stored packet acknowledgement hash.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"channel unique identifier","in":"path","name":"channel_id","required":true,"schema":{"type":"string"}},{"description":"port unique identifier","in":"path","name":"port_id","required":true,"schema":{"type":"string"}},{"description":"packet sequence","in":"path","name":"sequence","required":true,"schema":{"type":"string","format":"uint64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"acknowledgement":{"format":"byte","title":"packet associated with the request fields","type":"string"},"proof":{"format":"byte","title":"merkle proof of existence","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"}},"title":"QueryPacketAcknowledgementResponse defines the client query response for a\npacket which also includes a proof and the height from which the\nproof was retrieved","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

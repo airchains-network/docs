@@ -1,0 +1,71 @@
+---
+id: query-delegation-rewards
+title: "DelegationRewards queries the total rewards accrued by a delegation."
+description: "DelegationRewards queries the total rewards accrued by a delegation."
+sidebar_label: "DelegationRewards queries the total rewards accrued by a delegation."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVcFu3DgM/RWBp13AiNP05tMGTbHoHrbZIHtKBgVH4thqZcmV6KSDgf99QdkezMQu0KZ78gwlko+PT+QBQkcR2Qb/wUAF//QU959uyFGdjXf0jNEkKKDDiC0xxQTVwwEMJR1tJ3egAjM6hPgJjYmUkjK0s56S4obU8VTNpxzUV8mkdiFeQAFWgnTIDRTgsaW1kFBApK+9jWSg4thTAUk31CJUB+B9J06Jo/U1DEPxEuETOmu+i/B4+jMIFyF/CuFGLqcu+ERJzq8uL+VzjvpapV5rSmnXOzVfFzg6eCbP4oFd56zO3So/J3E7nKQ9j5fbu+ju3RRY2ZGNOZESzEKAWB99di4X3uru9p1qiZtgBFkXRVFsx6ripJ8FkungrAuzDbWOPRm13SucxWODz21gatMJnWH7mTRD8SL6Del3wfpjdFQcvpBXz5abHNOH1vocVaE32aRti05hG3rPF4/+0f/98f59pe4bmoxqZ8kZIQm9uiGtnhurG2XbzlFLnscidJ84tBMhjz7Z2iP3kZKatSF11aEOXQwclpSNyVYkI0X60K6JaShmE8aIezgxTAwN+ZKhHfaOV4TmVe/pW0eaySiKMcTX6e28Fh0MyXcXYosMFVjPb6/gCM56ppriWBujddnru01GY6zkRXd7mmZ4SeEfo+MP8FRASylhvXp7jUMxYi0zcHxMsFlq7+UDkUFiJ41zYHQ/ovRRQFBBTZzHLzdQQalDakMqjRWU2z534enNlhjflMeRmcrDYnwO5ZS0PCwG15AH3C5kEiw7qfmv3uv8Pj525K9vP0ABTxTTNE0vL95eXAl9XUjcYhbBNBb/p/rPSD32hukbl51D6yV5H13WXObmAUZuxPeEHcE98pODzgxBAdX6ipkXXrWc75sCmpBYch0OW0z0b3TDIOa8K6B62BTwhNHiVjiUNWmT/DZQ7dAlWpR1fFfw2900Hn5Xv7pNV7made/3wgi6Xv5BAV9ov7pt8wp9Dfpf3bSvQL/s1LAZCmgIDcXch/HetdbU8UmExSyTtXx8eX++v4dh+A+IMz6J
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"DelegationRewards queries the total rewards accrued by a delegation."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/distribution/v1beta1/delegators/{delegator_address}/rewards/{validator_address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+DelegationRewards queries the total rewards accrued by a delegation.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"delegator_address defines the delegator address to query for.","in":"path","name":"delegator_address","required":true,"schema":{"type":"string"}},{"description":"validator_address defines the validator address to query for.","in":"path","name":"validator_address","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryDelegationRewardsResponse is the response type for the\nQuery/DelegationRewards RPC method.","properties":{"rewards":{"description":"rewards defines the rewards accrued by a delegation.","items":{"type":"object","description":"DecCoin defines a token with a denomination and a decimal amount.\n\nNOTE: The amount field is an Dec which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}}},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,74 @@
+---
+id: query-packet-receipt
+title: "PacketReceipt queries if a given packet sequence has been received on the
+queried chain"
+description: "PacketReceipt queries if a given packet sequence has been received on the"
+sidebar_label: "PacketReceipt queries if a given packet sequence has been received on the
+queried chain"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vktv40YM/ivEnFpAjfdR9ODT5lB0t4ftNmhPcRDQI1riRppRhpSzrqH/XnAkP+O2i7Q9WZaG/D5+w9fWxY4SKsfwoXRz92tPaXP/Cf0D6Q154k5d4TpM2JJSEje/3bqSxCfuzMjNna8xBGqgD/zYE3BJQXnFlFzh2A50qLUrXMCWDsfvuXSFS/TYc6LSzTX1VDjxNbXo5lunm85OiyYOlRuG4hy2i0m/FtPO/nvALAoIPfYUPF1GOvr6tVCFW8XUorq56znoD9+7Ybgzc+liEBKzePPqlf2cEroG6b0nkVXfwO74lSucj0EpqFlg1zXs8/3OPouZbY+IdMluX3kE6VKMK3vY81lu1CJR1sYIt5QeGoJ8DuIK6AuLTtGeyVeM3u5r4qrW59w/GkTTbEBrghtas3AM7/NhYAEOPlFLQakEVCD0NYyu4KnmhuCBqONQLcLO9mPfLilld4ItXcH7+ERrSiCxJfAmTZBeAJsqJta6FWhxA76OUQg0LkIiIc0OJiQO4Ckp2m8MJRt1AbqqrqDGVMIqpgcpQBSVvmvR1xxoEZaJ8IFDBZboFQl8COZUCDwKSXES8cT6LGKJoDXqIkxE7D459CSgEZYEbQysMbDPCmZLFIOkNQVAuSDqIlSkAjlGV5xdfJqOHt3WeUoekuBIoCfWmnN0ULFB7xxdyoc9SMgx/zPIziBrkUF8wxRyfvg+JQrabOAS2HBwdEgpNNniRdlKVATzsQgZy2MwmX1sO0yWgRVyEAUMUWtKMDldxTHfuj51UUisJPquRDWfGMpFWCWiP3IuZOZyoBqXn8nrqIsnXlub2O5ZT3UNqwarDMMrSGM3HovuyNMyxoYwnESdu/hJE7+Z2gOUtOJAcqzno53eN5CMhzB2O6uKEfapZl8DNhJNuaYvySTNRV5YsMeFs0qxnQyyPrlfPKGYN01MFu0zJQYLoKQV9s2FfnEdoA/0pSNvBUIpxfRftDwfSzrJRA769s2BHAelipLL1BS5yVas1MpRI59CKByWY5fA5tMxzHBecO9Gw+dDZ9gjY0q4MdyWRLC6ePqShvYSK5vTYxa4u+JMypO8yJfPJJZhOFXx2aCDGgWWlMt7TFXIRUmLMBqX1urY6rAlraOtEdXYZWw0zt2Ml37mY6LZNPtn69e7R5ltDwvBMLNBLbPtNK+H2UjlfkpCmW13pIY8flfxuGp+7oO3GOGXjsL1pw+ucGtKMka9fnX19upNHkxRtMWcFtPQ/h8VOZF+f4NKX3TWNXZkKFyfmpyZWa1bx0ufEzrZWJ3EsVBeH/5a+c9PFqksnL09rDpn2tnH/XZyV7g6ihrcdrtEod9TMwz2OjcDN7+9K9waE+PSpLWdj8WeSzdfYSP0LLJ9AbpvbqbF51v4u9XwohS75A8bixib3v65wj3Q5nR1zOvZSyj95dr4Aj47rV9O5tlK+QIWe+vhbihcTVjadL3dTp+vvae8xO8Mn/VH2zb3lfvTj7+5YfgTL0tGhg==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"PacketReceipt queries if a given packet sequence has been received on the\nqueried chain"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/channel/v1/channels/{channel_id}/ports/{port_id}/packet_receipts/{sequence}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+PacketReceipt queries if a given packet sequence has been received on the
+queried chain
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"channel unique identifier","in":"path","name":"channel_id","required":true,"schema":{"type":"string"}},{"description":"port unique identifier","in":"path","name":"port_id","required":true,"schema":{"type":"string"}},{"description":"packet sequence","in":"path","name":"sequence","required":true,"schema":{"type":"string","format":"uint64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"proof":{"format":"byte","title":"merkle proof of existence","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"},"received":{"title":"success flag for if receipt exists","type":"boolean"}},"title":"QueryPacketReceiptResponse defines the client query response for a packet\nreceipt which also includes a proof, and the height from which the proof was\nretrieved","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

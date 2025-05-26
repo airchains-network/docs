@@ -1,0 +1,71 @@
+---
+id: query-group-info
+title: "GroupInfo queries group info based on group id."
+description: "GroupInfo queries group info based on group id."
+sidebar_label: "GroupInfo queries group info based on group id."
+hide_title: true
+hide_table_of_contents: true
+api: eJydVt9v4zYM/lcE7uE2wJe0vcMG+GkFNhy6l90OG/bQFgUjMbGutuRKVNIg8P9+oGwnTuOH215ah+KPjx9JUQfwLQVk692dgRL+ShT2T5+CT+2dW3sooMWADTGFCOX9AQxFHWwrBlDCRhSfrFE2Kq5IJWdfEqm735RfZ0FWWEABVtRb5AoKcNjQxBgKCPSSbCADJYdEBURdUYNQHoD3rehGDtZtoIC1Dw0ylJCs458/Qtc9inlsvYsUxeLm6kr+nQO9VTFpTTGuU61GdcGlvWNyLBbYtrXVmYvl1yhmhwmQc3+ZpyNNXwaHIw35dHk8PgZUko1EbYPQzrZHbIXpixAiHR2eXL3l9dwTmsa6S1dZPPpCrX1yrNCYQDGeeXwXVdYVz+fMdwXoQMhknpAvI5zOJAwqtg1FxqZVsSVt13vrNmpXkVPYR1I7jGqwWkzrapDpvZjPQbBmhqfv6L63XTPjuiFGg9w3neVaTkdZzsntFYaV5YBhr44n7BUyo67IyPcp6oOT70DaNw05Q0b1IEZsU9/s1YrU2idnVEWBSlUxt7FcLo3XcaF9bHxcOOKdD8/L7dXi4y/LxptUU1zmaD/kv++v5xJjz1g/7chuqpnCTU9HHmNqzhhUDTUrCvGd6vXibHtsKUTbT80M3QOjg5JESnGgLKB+VrpCt6FMBR57cYhb2VZFDklzCqS4Qn5wO59qo1aB8FnRq40sDSbD4CPWcaH+rcjRlkKu2+BHndLsw5niwfmpSi60kWL5oAI1fisYKxvVBLh1OlBDjskodEbtbF0/OI0p0gmBWqHk553ytaEw2g/jZuPALHu1Rltf8tkdJX71lTTPSkRmaI2pnqnsrVPJ0WtLWoBSCDml/3HznV8x2hs6q7F1/OHmlIB1TBsKkKEx2rq/4piaOLnPhxQKQGOsxMX68zRM9/Zm+7U3fLsQugktGALu+1GOETez2nMcihA3st76ax0eizdUnq7fl0TB0li9fEUfCz3I8nXWEFdeFuqGOC9RrqCEZT/J/cwut9fLYQW6tV8exnXY5W3Zb4RxbP5ITgsW9WdL7vbzHUzGDbZXiw+LG0m89ZEbzOUbdux/R36W+ZFApldetjVaJ3FSqHNj5Kzuoc8Kin6jC7br8UfODQooj8v+sYDKRxa7w0EQ/BPqrhPxSya/vH8sYIvB4kpSlyeHjfJtoFxjHekC4rGR4ccvwzviJ/X9L5PZDMeWcntJB+skv6CAZ9pPXy7dY1dARWgoZKj98a3W1PLE8GK+5NFybJFPv/8NXfcNgNVZCw==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"GroupInfo queries group info based on group id."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/group/v1/group_info/{group_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+GroupInfo queries group info based on group id.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"group_id is the unique ID of the group.","in":"path","name":"group_id","required":true,"schema":{"type":"string","format":"uint64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryGroupInfoResponse is the Query/GroupInfo response type.","properties":{"info":{"description":"info is the GroupInfo of the group.","properties":{"admin":{"description":"admin is the account address of the group's admin.","type":"string"},"created_at":{"description":"created_at is a timestamp specifying when a group was created.","format":"date-time","type":"string"},"id":{"description":"id is the unique ID of the group.","format":"uint64","type":"string"},"metadata":{"title":"metadata is any arbitrary metadata to attached to the group.\nthe recommended format of the metadata is to be found here: https://docs.cosmos.network/v0.47/modules/group#group-1","type":"string"},"total_weight":{"description":"total_weight is the sum of the group members' weights.","type":"string"},"version":{"format":"uint64","title":"version is used to track changes to a group's membership structure that\nwould break existing proposals. Whenever any members weight is changed,\nor any member is added or removed this version is incremented and will\ncause proposals based on older versions of this group to fail","type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

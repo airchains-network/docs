@@ -1,0 +1,71 @@
+---
+id: query-total-timeout-fees
+title: "TotalTimeoutFees returns the total timeout fees for a packet given its identifier"
+description: "TotalTimeoutFees returns the total timeout fees for a packet given its identifier"
+sidebar_label: "TotalTimeoutFees returns the total timeout fees for a packet given its identifier"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVMFu1EAM/RXL52hTWsQhJyoEUjnQgnqj1Wo6cRK3iWc642mpVvl3NEkWuttFgOAUxeM3z2M/vw06T8EoOzmrscLPicLT+tKp6S95IJf0A1HEAr0JZiClELH6usGaog3sMw4rtJ0RoR6S8H0i4JpEuWEKWCDnBG+0wwLFDDT92TvSNderBbjmGgsMdJ84UI2VhkQFRtvRYLDaoD75jIsaWFocx+JXBXgX9C/oc/o/c8/XQaT7RGLpd5zP8v6UtMDGhcEoVphY9M1rHMfrDI/eSaSYEcdHR/mzW9opxGQtxdikHrbpKyzQOlESzQjjfc92UkB5GzNs86wQH7I+lGcSnSWxbmj+Z6UhvqR951igpoaFIhhQd0cCj6wdGKhJ3MAy8YGRGoyAGVwSXV3JlXw6v3xfwWVHSxAapr4GjjnvTBQeO7Yd8OB7Gkg0gnYENkV1AwyknauvJHIrRlOgCNsWw80TtK51Pjh1uQO7D5vJDoy7wKngg0LYRtzNLVnNucra50iuSfMOwSKOpXHQzMu0AE0I5mm+aQFO67e/fV+Wwf1oab5+O03Id0HjwhTdh0LwFl8UOo7TuxqTej0gGoEk9M2TVaqBQnDhf2jHupry94eUWfTk+GdxLEothbnlarjfVdjuEwo0dc2Z1/QXz2nG/cm+nYEvxzfuj6HAgWI07cHsQz3MQdNmP5znhtfFXitfjoM0BZknOAvkuTKmMZqtZlp+IAHWuGtos8ixwpZ08mXtsMKSb2xpvI9lQ1Q+vCoXR4zl5pDbjmW2vp3DxQvHcmtQO6fb4FhOZa93nCA7XuNmg5h1/DGJnTb83JOcXpxhgQ8U4tyVh6PVyeoYx/E7S0xOtw==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TotalTimeoutFees returns the total timeout fees for a packet given its identifier"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/apps/fee/v1/channels/{packet_id.channel_id}/ports/{packet_id.port_id}/sequences/{packet_id.sequence}/total_timeout_fees"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+TotalTimeoutFees returns the total timeout fees for a packet given its identifier
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"channel unique identifier","in":"path","name":"packet_id.channel_id","required":true,"schema":{"type":"string"}},{"description":"channel port identifier","in":"path","name":"packet_id.port_id","required":true,"schema":{"type":"string"}},{"description":"packet sequence","in":"path","name":"packet_id.sequence","required":true,"schema":{"type":"string","format":"uint64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"timeout_fees":{"items":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object"},"title":"the total packet timeout fees","type":"array"}},"title":"QueryTotalTimeoutFeesResponse defines the response type for the TotalTimeoutFees rpc","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

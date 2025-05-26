@@ -1,0 +1,71 @@
+---
+id: msg-module-query-safe
+title: "ModuleQuerySafe defines a rpc handler for MsgModuleQuerySafe."
+description: "ModuleQuerySafe defines a rpc handler for MsgModuleQuerySafe."
+sidebar_label: "ModuleQuerySafe defines a rpc handler for MsgModuleQuerySafe."
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVktv3DYQ/isEc9VKjlP0oFPcxyEFjLhOctosghE5kphIpEIObQuL/e/BUPuSvA2aIqfuZcUROY9vvm+orXQDeiDj7BstS3kbmk+3TscO/47ox3dQo8ykx68RA/3m9CjLrVTOElriRxiGzqh0vvgcnGVbUC32wE+DZ+9kMPBq7yU9awzKm4HPyfL4RmisjcUgqEXRpzREgBrF14jesN0JfEIVCXOZSUPYJ280DihL6arPqEhmC++pkvspxCzCAB56JPRB1M4LYAMZFTvwKeIo9ol9tNUowApjCb1qwVgBSrloidOYV6mBUu218z2QLGU1EmNIhjpOkt8vshg7B1q4Oi1ngQUcMNGiGsXNH/erq+uX+UfbEg2hLIrGUBurXLm+UC70Luz/VkF/KarOVUUPxhbaqVCAV60hVBQ9FqA9u1oN3pGrYr1KcVdoldPGNnmvX6gYyPX7Fx4bE2hiygqsXnkXydiGK5vQD+R5vcvkANSmtuxL5vWiZGr/N/XudkcTeA8jIxBMY9GfYzBZBGjtMYQLXk4MuQ3NQoIX+cKUvQ1N8VyuczmkBBlf41HLknzEZAiDs2Hi7PXV1XNR3ogQlcIQ6tiJw3bm+3+Uf4umaWkmjWgs/frLmTimPQJIPLZGtaneY6biEf1hFOhLvJvVdBwOz4S4PHak6Z4aIpEC9VlkxhpBtRNb5bLh323e/d7LrIkH1z/SxR0PthpiRxeaZUW0+DSgItQCvXf+Z/SMcZhhaCy9uj4lxwOxQS9TagSmm0O/nMugteG40N2dh9ktZ+jr6eD230itxxCgubj7EoZshCbIcs2tkpvlZfFPygPhByVasLpDf+jaYjMD3SO1jm/SwQUueZqFsjCVys+QD/npLvm0v0tC3rpA+cPL/DIhuFn3p5v4zyfohw7nN+v6cAEdUDhmcEBlc5pOZxowtnbn4+qvaBXnKd4OaG/u3shMPqAPE0YPV/mr/DpNeheoh0QhCz3+BPxm3Ti2lPCJiqEDYzlq9F2iaipsLX8UWpkts2Qa8Ab2tt1WEPCD73Y7Nk+CL9ebTD6AN1AxPOvNLpMtgmYU11v5BUdZyt8nja3ec868vYuJqUu97bLDiRulcKDv7t2cUeru7bv3MpPV/jOsT+KUHh75Ew0eZSllJl3CbvrgYttWdmCbmCQiJ5/8+wbKeomJ
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ModuleQuerySafe defines a rpc handler for MsgModuleQuerySafe."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.applications.interchain_accounts.host.v1.Msg/ModuleQuerySafe"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ModuleQuerySafe defines a rpc handler for MsgModuleQuerySafe.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"requests":{"description":"requests defines the module safe queries to execute.","items":{"type":"object","description":"QueryRequest defines the parameters for a particular query request\nby an interchain account.","properties":{"data":{"format":"byte","title":"data defines the payload of the query request as defined by ADR-021.\nhttps://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-021-protobuf-query-encoding.md#custom-query-registration-and-routing","type":"string"},"path":{"title":"path defines the path of the query request as defined by ADR-021.\nhttps://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-021-protobuf-query-encoding.md#custom-query-registration-and-routing","type":"string"}}},"type":"array"},"signer":{"title":"signer address","type":"string"}},"title":"MsgModuleQuerySafe defines the payload for Msg/ModuleQuerySafe","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"height":{"format":"uint64","title":"height at which the responses were queried","type":"string"},"responses":{"items":{"format":"byte","type":"string"},"title":"protobuf encoded responses for each query","type":"array"}},"title":"MsgModuleQuerySafeResponse defines the response for Msg/ModuleQuerySafe","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

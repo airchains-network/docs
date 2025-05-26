@@ -1,0 +1,71 @@
+---
+id: query-counterparty-payee
+title: "CounterpartyPayee returns the registered counterparty payee for forward relaying"
+description: "CounterpartyPayee returns the registered counterparty payee for forward relaying"
+sidebar_label: "CounterpartyPayee returns the registered counterparty payee for forward relaying"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1v2zAM/SsCTxsg1P24+bRiGIbusq7YTkVQKBIdq7NllaLTGob/+0DHSfNhDFi3nSxLpB75+Ej10EQkw74JNw5y+NYidQ8fmzYwUjTE3a3pEEFDNGRqZKQE+X0PDpMlH8URcmiDf2pR2dKEgJXyDgP7wiOBBi8G0XAJGoKpEXKY7B68Aw2ET60ndJAztagh2RJrA3kP3EWxTkw+rGAY9DEsl6gIK9MhKeMcYUqKG/VcelsqObR7iSifFOHKJ0ZBmw1suuyPolqIcYpNSJjk/PL8XD6HkV6r1FqLKRVtpbbmZ6DBNoExsHiYGCtvx1pkj0nc+j3YSFIp9huQ/cQe4lgiCc1zhRMvB6mPFjuK2oROeLJNHTEkw6iKhp4NuQ2bkpc+ZX93/SiSE43cTVkph4UPmNSmOtOm3CYo4+6Jr6JoXyGb5SNahmEQUIeFaSueoTSoNuBLRMvoFBI19G+YdSOXRUO1YcjBB766fA3OB8YVEoyhsfHV6OUZ67SnjikFDcY5L7imut2HGfQR7IeN46m8hh2yITKd4NaYklnNWs9xKJtmJW27qRws9BGVM/VAbilsa7htmjlRSU1n1FMjl41MlBXyOD24hBwyv7SZiTFlBWK2vsimSZCy/nUmDNnUhinrp9WQzQheOrho9nX/pQ1WUlJfI4br2xvQsEZKmyTX52dXZ5fCX2wS12ZUwdT3/4GAA4Z3hWJ84SxWxgcJpKVqFOBIzj34pTSB0AMaijHD9YUoeSIJNORHo3PDkxy8jq4ZqhYayiaxgPT90iT8QdUwyPbTqIj8fqFhbcibpRAp890nWTvIC1MlPMln113w7m4ale/V756BWQK2yg6d5GqqVv5Aw0/sDp+Jcfa/JaS/eyLeEPS2DsNi0FCicUgjoZvTa2sx8p7fyWiS92TXPJ8/fYdh+AUbHLU3
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"CounterpartyPayee returns the registered counterparty payee for forward relaying"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/apps/fee/v1/channels/{channel_id}/relayers/{relayer}/counterparty_payee"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+CounterpartyPayee returns the registered counterparty payee for forward relaying
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"unique channel identifier","in":"path","name":"channel_id","required":true,"schema":{"type":"string"}},{"description":"the relayer address to which the counterparty is registered","in":"path","name":"relayer","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"counterparty_payee":{"title":"the counterparty payee address used to compensate forward relaying","type":"string"}},"title":"QueryCounterpartyPayeeResponse defines the response type for the CounterpartyPayee rpc","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

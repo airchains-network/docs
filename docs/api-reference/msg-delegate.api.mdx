@@ -1,0 +1,74 @@
+---
+id: msg-delegate
+title: "Delegate defines a method for performing a delegation of coins
+from a delegator to a validator."
+description: "Delegate defines a method for performing a delegation of coins"
+sidebar_label: "Delegate defines a method for performing a delegation of coins
+from a delegator to a validator."
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVU1v1EAM/Ssjn8O2tLecKB+HgqAVlNO2Qt6Mk0ybeMKM03a1yn9Hnuxnd6kQINjLJh772fP87CzAdxRQnOdzCzl8jNW3t9RQhUKQQaDvPUV57e0c8gUUnoVY9BG7rnFFCjy6jZ7VFouaWtQnS7EIrtPTEXSFaSyVjikaNF/efjAtxYgVmdIH01EofWgdVwaNHf2dZ+NLU3jH8ZrL4NvNmQ9GvEFzj42z+jqBDLqg9xFHMRXZ+n4sd7egN97xViXi74jNg5M6obNvHY+5ka1BNiPO5Jqv+dPF1bvcXNW0NJrSUWONi+p3zmIealfUxrVdQy2xRCM1maKP4lvTktTeXnN0FaP0gaJRhl0ga2ZzU/nKd8GLf+4mMu8IcogSHFcwZJAKPnAyZCuLn91SIaPvkrpvaG2gGA8irhl9xmsffUj4/6nvKxohl9DToIbYeY4jeyfHx/siODOxLwqKsewbs3JXrD9X+ecl2vrWqoGPsTpa07HKZ5RETbpHZmKzxL45oN8zNj3TY0eFkDUUgg+/d4NdkRXekv5rO1AgB8dyerIpzrFQRWEUkqBrUpQTarcVsrxCBmit07zYXG6nGZ5q+9UYuC+xjcYwBJxr3qVwflGQyYhVhHyq7YGbpwo9IM9xRv+eMkc8yKHzUVnpUGrI4ajwsfVxEgXvHFeT+5czEnw52VYJZKAt+7xZwu8eURfL7kZYPa2oWK+EnSWxN/gb9wPzvhXquPSJbyeaGd73XCQaLjris8tzBaAQR0LvjyenkxMN0+u2mPTG2NK/IXunu2uJCD3KUdegYy2sD02SfurDFH7eB8jWJatyau1fPoXFYoaRvoZmGNT8vacwh3x6ozwGhzMlaXozZFATWgqQTxdwR/P02Ulj+eJKy0q090ncT0d0yFYRZ0VBnTzre7MlscuLL1eQwWz5uW7TPEPAB92Q+AA5QAY+0ZMmL9kW0CBXfZoqGDH19wMC4tvP
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delegate defines a method for performing a delegation of coins\nfrom a delegator to a validator."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.staking.v1beta1.Msg/Delegate"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delegate defines a method for performing a delegation of coins
+from a delegator to a validator.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgDelegate defines a SDK message for performing a delegation of coins\nfrom a delegator to a validator.","properties":{"amount":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object"},"delegator_address":{"type":"string"},"validator_address":{"type":"string"}},"type":"object"}}},"description":"MsgDelegate defines a SDK message for performing a delegation of coins\nfrom a delegator to a validator.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgDelegateResponse defines the Msg/Delegate response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

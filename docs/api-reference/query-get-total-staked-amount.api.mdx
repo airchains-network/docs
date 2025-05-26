@@ -1,0 +1,63 @@
+---
+id: query-get-total-staked-amount
+title: "Queries a list of GetTotalStakedAmount items."
+description: "Queries a list of GetTotalStakedAmount items."
+sidebar_label: "Queries a list of GetTotalStakedAmount items."
+hide_title: true
+hide_table_of_contents: true
+api: eJytU81u2zAMfhWDZy0J0mEHn5bDUHSXdVh3CgKDkRhbiSxpEp01CPzug+SkzVKv6IadTNAi+f2QR3CeArJ29k5BCV87CofqlvjBMZpvjDtSi9Z1lkFAoOidjRShPMJ8NksfRVEG7VMDKGFRxE5KinHTmeL8fAICpLNMllMFem+0zCOn25jKjhBlQy2myIcEiPUwRAZCdiHHmqnNAR88QQluvSWZYI2WVKhUoHhZEDloW0MvIDhjOv83XTFrUMUsSEpsXGiRoQRt+cN7EC+HKLKufWV8pdXI375/aoUh4GEsI4CTOyc01YDtLaCeO51o9rm7og12hkfstEVn6dGTZFIFheDCf3HVKbqGezN/hqstU01hEJFRm9edQqV0movm/nJMf+3hx6HwDZILaClGrEdfj2mYklhHKJfDBcFKXEmZ0ppigYXRkQu3KcaOrMgkk7QtcePSRdaUtxG5gRKmqINsUNv4zhL/dGE33XZWZtWHrZrWxNXYegjQduMyIc0m4f98qiy+eLKL+zsQsKcQB7z72eRmMk9SeBe5xWyoxZb+gctvSjwJyvTIU29Q2zSlCyYvSua5hBc8QcCZKZwvCAT8ie1KQOMip1bH4xojfQ+m71P6R/anXK4E7DFoXCctlqteQEOoKEC5PMKODmn9pSSflNuj6fJ6XC95v7pw6vbTA/T9L2Aw3hs=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Queries a list of GetTotalStakedAmount items."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/airchains-network/junction/rollup/get_total_staked_amount"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Queries a list of GetTotalStakedAmount items.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"creators":{"items":{"type":"object","properties":{"creator_address":{"type":"string"},"rollups":{"items":{"type":"object","properties":{"amount_staked":{"format":"int64","type":"string"},"denom":{"type":"string"},"rollup_id":{"type":"string"}}},"type":"array"}}},"type":"array"},"total_staked_amount":{"format":"int64","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

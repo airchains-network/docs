@@ -1,0 +1,71 @@
+---
+id: msg-update-instantiate-config
+title: "UpdateInstantiateConfig updates instantiate config for a smart contract"
+description: "UpdateInstantiateConfig updates instantiate config for a smart contract"
+sidebar_label: "UpdateInstantiateConfig updates instantiate config for a smart contract"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt+P4jYQ/lesec6x272qD3kqBzmJSixo2W21ogiZeBK8TWyf7cBGiP+9GgeWQOCuqi5PzsTz65tvZrIDbdByL7UaCYhh7PLlixHc40g5z5WX3ONAq0zmEIHFbxU6/0WLGuIdpFp5VJ6O3JhCpsHO3ZvTimQuXWPJ6WQsefESXaMmcCkFHTNtS+4hhkoq/9uvEIGXvkCIYaAFjobMYoYWVYqO+TUy57VFwf7qz8aMzJBCbei+81aqHPYRKNwu5Sn4pUFbSudkE9TR/iNuWxlOP+4w2XhSuGU8TdE5RmlaXUAEAl1qpfHBFvTD5waci7uMoupBdJE5F8Kic82L9FiGQyeDg4Bby2t6P89AYMargkDrDwbJbLZ8fp0my5fH2TQZjL6OkmEn0E/sxs2YNTk81wZflDOYykyiYKbgKa51IdCyTFuGpfE12/Ciwr8VOzf3OPkyGb62LT3qlRY1Ka6kEKg6KsmfydPrpVayQVsHxUpZJDBSj6Kj2398XU6+LvvD4VMymyWztom+qidZ/4gx40Wht4yrmuks1PQEfwSoqhLi+Xcw7CZ5IfxI40J+GSIsTrQ+BctOVQ1scV0un6igV2+YeuKCQyXQtpk8C5Ijb/2ae8ZTr21zdDJXKMKnEp3j+S1HB2tjl9/of1YFuWOt5iK+0yciCWeu5NY3LcBTD53oyQ+NEGlRQOxthUHgjFaHnni4v28oftZnzFUBtqwq2PE6Ndd/nj8/Tu7pYJZZ9JVV7kB5wT2/lsc+OrVhJ1zFKoXvBom/DK3V9v9F3Z2aZyNTKv/54RScVB5ztBBC81wWV4fMIYWIRpEkv7yYtt3sL0fW741iZ0rtr8ypA8Gu3b6GIQl57qgLxy6nLjkH8ufxsES/1rTejHb0brhfQwx3b5VKyVlvy13Z2/zSG7v87vb6oxI9nVZg8s5LU+DZSjtm/KM11NoE86PO4nzS3xxNrSnQWhpSZbrN9T8OubGJQdWfjiCCDdqD6c1973PvIewW7XzJQ0yKl/hTYT8r5wcnPL77O1Nwqch/ZYvA9VCROVyrCES3YiLI1lTSeA673Yo7fLHFfk/ibxXaGuL5IoINt5KvCJT5Yh/BGnnAbr6Df7AOvxqhIT/RVCaUaM0RrS+bcx8dNWiKG//du4sW66aT2TNEsDr8NpWhk8HyLf1S8S3EABHogFPouSDbQcFVXoV+gsYmPf8Ct6dhFQ==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UpdateInstantiateConfig updates instantiate config for a smart contract"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.wasm.v1.Msg/UpdateInstantiateConfig"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+UpdateInstantiateConfig updates instantiate config for a smart contract
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"code_id":{"format":"uint64","title":"CodeID references the stored WASM code","type":"string"},"new_instantiate_permission":{"title":"NewInstantiatePermission is the new access control","description":"AccessConfig access control type.","properties":{"addresses":{"items":{"type":"string"},"type":"array"},"permission":{"default":"ACCESS_TYPE_UNSPECIFIED","description":"- ACCESS_TYPE_UNSPECIFIED: AccessTypeUnspecified placeholder for empty value\n - ACCESS_TYPE_NOBODY: AccessTypeNobody forbidden\n - ACCESS_TYPE_EVERYBODY: AccessTypeEverybody unrestricted\n - ACCESS_TYPE_ANY_OF_ADDRESSES: AccessTypeAnyOfAddresses allow any of the addresses","enum":["ACCESS_TYPE_UNSPECIFIED","ACCESS_TYPE_NOBODY","ACCESS_TYPE_EVERYBODY","ACCESS_TYPE_ANY_OF_ADDRESSES"],"title":"AccessType permission types","type":"string"}},"type":"object"},"sender":{"title":"Sender is the that actor that signed the messages","type":"string"}},"title":"MsgUpdateInstantiateConfig updates instantiate config for a smart contract","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"title":"MsgUpdateInstantiateConfigResponse returns empty data","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

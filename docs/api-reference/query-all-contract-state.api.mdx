@@ -1,0 +1,71 @@
+---
+id: query-all-contract-state
+title: "AllContractState gets all raw store data for a single contract"
+description: "AllContractState gets all raw store data for a single contract"
+sidebar_label: "AllContractState gets all raw store data for a single contract"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlWFFv2zYQ/isHPq2Aaqdp0QcPBZYVw5ANQ7N23UsdFLR4sthQpEqekhiG//twJGVZttu6WTEUWF5iWTzyvo/ffUd6LVyLXpJ29lKJmfizQ796f2HMS2fJy5LekCQUhWillw0S+iBm79ZCYSi9bjlOzIRUymMIoANQjdA/uio+lnkqUQjNo1tJtSiElQ0OsaIQHj922qMSM/IdFiKUNTZSzNaCVi0PDeS1XYrNpthP4AZXvLiEW2k6BI/UeYsKtIUrucTXGFpnA04s3tN7HkwOFrjUdm4/MmJtlzFVfg+tXCI0LhBgVelSoyWzmsAra1bgLDIsV1UBCZyHG1zNbahdZxQsEALSpMcZZx6AtnKpbWR6coOrEd5KmvAZwIWonG8kiZlYrAiPEZATihzYrkGvyz5JqiVBKS2n1wVUcFejhcxYZ+Wt1EYuDE7m9jLOYHjvttA53kIXmKIb/BwPkGiY25N5SOEPpKLTlp4/O0aG0Y2mXozkSBrmZIGeU/YYOkMhKWCkFB6d3kYJMB8VGKwIsGlpBZrgThsDCivJg8htBZcmYyoWK0BZ1iDb9gQCYqbfHH/pOkvvE3AdYlrkgIsK+IO2SpeSMCljBzUPzFLWtjSdwrmVEGfra3mfTU3YBNhqCCrnYcDHrL69DJO53UvJsYY8hhZL6hU5SJhVOoEkRr20zu+Idm4TohPI3VnzJIoXzhmU9hijHm/RB9xnUw9ykh4/ISmeCa3i+nFeoZ/M7dy+0bbEGZQuNC48DuoGzibPnn4ZU07kK/Fc8/BkgYEHnJ+d8b8xxgsIXVliCFVnoB/ONLN/oyWOkG1rWDva2emHwGHrnXVbz82EdFqkcQpN/BRFspOYW3zA2A7GAeyKs/We1xWCNBmOqvH+MdrSKYTs4B6l4qpcIBF6+IFqHXuQqwgtyFBq/YgnGHePQsSa/dxSCxnw+bN+NS/vUpkfzrUZYv5guMmAA/muzMZbO6P4u9//hlZqz8vnOaT3csXPw/Yebspu94qOFiWGzQKVShJbvr56ud0uaDAEucTA9cKKrJFrz6f3UYOsGwzUj4RapoLLjTK+jBLdjnjjmiGH9dxC/+exRcn1+7P020J4AU9+3BkzAhA76ws45wGbg/3vm/MhC9u2nT1928GhlYFzJzdKP73Pvf2Ljf0y+3okNhp9NbcU+eOqtg4a53uTDJODdnxEYcl0dhWW3XrQy9YLP9WgBlPV1Qjdjq/N7Z2MllSAppCbUWzrCivNJuQYyJ0OnxDvqCB35RwPgvvnwJESU99IzzxP9P4ouBg73Q8GFmqDVDslDlfmtXNjPWJNFjqL97lboPfOfwuH4uoebZK29PR8SE5bwiXGmlVIUn/BzaRSmteV5mp3mc2+zn9KgYfH2iPekGvw6CH4CIf8pVzyET1toLgu9qnc35UlstaMiTYXiJWuJMm4mxL42GdGR/i8gzOxjCe3eJifiemHzpaR9DsZmuntk2kfMl3nE/5mGvJdQtvKRURZa7/lWHjVor24uhSF4C6XEr49mzydnEefdIEaGXc0N8Z/DWbEzZZiwnuatkZqy8t2PlZyAvpO9EBFIRgq5/okSzBPOhuuNAnxdSFqF4ij12vuLW+92Wz469To44VKB671oZ3vpbaV+Hd31zlKWrTxwytP7rxCxCPWyZC/09vNaci3l5wHgv+ObjOnAe4vNQ/E+3+5vZxG5vgS80BK/7vry2mghlvMAOiaH7xmRF9piD+8zlehR3DyD1FH8+ybrx1ZVZ9/7+qb600hapQKfUw0vb0oS2x3VX9wEGGE2+b56y9/ic3mH1dx2zg=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"AllContractState gets all raw store data for a single contract"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/junction/wasm/v1/contract/{address}/state"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+AllContractState gets all raw store data for a single contract
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"address is the address of the contract","in":"path","name":"address","required":true,"schema":{"type":"string"}},{"description":"key is a value returned in PageResponse.next_key to begin\nquerying the next page most efficiently. Only one of offset or key\nshould be set.","in":"query","name":"pagination.key","required":false,"schema":{"type":"string","format":"byte"}},{"description":"offset is a numeric offset that can be used when key is unavailable.\nIt is less efficient than using key. Only one of offset or key should\nbe set.","in":"query","name":"pagination.offset","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"limit is the total number of results to be returned in the result page.\nIf left empty it will default to a value to be set by each app.","in":"query","name":"pagination.limit","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"count_total is set to true  to indicate that the result set should include\na count of the total number of items available for pagination in UIs.\ncount_total is only respected when offset is used. It is ignored when key\nis set.","in":"query","name":"pagination.count_total","required":false,"schema":{"type":"boolean"}},{"description":"reverse is set to true if results are to be returned in the descending order.\n\nSince: cosmos-sdk 0.43","in":"query","name":"pagination.reverse","required":false,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"models":{"items":{"type":"object","properties":{"key":{"format":"byte","title":"hex-encode key to read it better (this is often ascii)","type":"string"},"value":{"format":"byte","title":"base64-encode raw value","type":"string"}},"title":"Model is a struct that holds a KV pair"},"type":"array"},"pagination":{"description":"PageResponse is to be embedded in gRPC response messages where the\ncorresponding request message has used PageRequest.\n\n message SomeResponse {\n         repeated Bar results = 1;\n         PageResponse page = 2;\n }","properties":{"next_key":{"description":"next_key is the key to be passed to PageRequest.key to\nquery the next page most efficiently. It will be empty if\nthere are no more results.","format":"byte","type":"string"},"total":{"format":"uint64","title":"total is total number of results available if PageRequest.count_total\nwas set, its value is undefined otherwise","type":"string"}},"type":"object"}},"title":"QueryAllContractStateResponse is the response type for the\nQuery/AllContractState RPC method","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

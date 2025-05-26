@@ -1,0 +1,71 @@
+---
+id: abci-listener-service-listen-commit
+title: "ListenCommit is the corresponding endpoint for ABCIListener.ListenCommit"
+description: "ListenCommit is the corresponding endpoint for ABCIListener.ListenCommit"
+sidebar_label: "ListenCommit is the corresponding endpoint for ABCIListener.ListenCommit"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk1vGzcQ/SuDObXARjbsoIc91XZzcFIggpXmoggGRY52GXPJDcm1LQj678WQK+3qA0aa6iRSw5l5782HNuha8iJqZ+8Vlnhze3f/tw6RLPkZ+Wct6TGf71zT6IgFevrRUYi3Tq2x3KB0NpKN/FW0rdEyObv4HpzluyBragR/az2HipoCn5bGyafHmnRVp7cr5xsRsURt4x/vscCooyEskV7ZqY5mDa0IAbSF9BbyWxABHii0zgbKKYJyFMC6CJya0BZirfndyrHbdcteQ/TaVrgtUNbCVvQYKKWhIzUpv97OLb+TZNSKgvS6ZWxY4kxbSSVIFxoX3gX1BJeT99dYHIFUZChSctejib4j0FYxTRRAQDaBvQoFrIQJhzaB4mAwYFg6Z0hYBvFE6wMSl+tI58CG6Dw99tb7nGqC9AM80RpWzgPffPo6S3eJvFZoD87rStuU08q75pz/Z2E6+olMtoO+Kcqnr1OOoBntLnB/1wVSKSmTylDbCqKDEEUkyNoF+G1GMYCwCv5KdIbfv9l75owJE8asQVtpOkUhQcshR1h3yNj5Ljx7E3CbOYaVESmu0oGtOh1qWFJ8IbKwC/7N9tGZiR6w8F6s+exzRRzWhyeuzze74JS3g8IcMznu04fcpMwoA+x7FvjxHvXYHh6md9BQrJ3C0xjb3PXak8KSSzgDSk2XgFxdXuZ6HzfJDYROSgph1RnYmU+w+PmRcR5ZdjRA68+/im3Lzb0SnYlnIFjoLL22JCMpIO+d/zUkh7pLp+hY7uurITltI1XkMaUWhTbhzdkklNK50qfjMNvjcfRnfrg5qaoz9dpQCKI6a32OQ74UVcByfm6F4OJ4gB7o0yspnc/cKu5Dsqp12sYk6djn5Ggf9cqW2LrA51bEGku8yMN5kibbJERPotG2moil1JMzOV4cuWUNH4ZV9+FVNK2h09W14+Vwk8yH4c/90k/owXY0iIfLfnrumV7sx8bRoBhrkfbaqFc+dlYyyfC5JXszvWe/5EOm/flycj25Yn2ZrEakKrWiOW6y/ynJgdb7Aor0Gi9aI3RaWZ03qTGSWnP8j2phcZAvF1jN8pdz3GyWItA/3my3fP2jI7/Gcr5gfr0WS2ZpvtgWWJNQ5JNWWYi73M3vvnC+gxwnnb0tdi9upKQ2vmm7GFXo9PPsCxa47P86NWkMoBcv/LdKvGCJWGDeWll2vtugEbbqUjNi9smffwHHEWzE
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ListenCommit is the corresponding endpoint for ABCIListener.ListenCommit"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.store.streaming.abci.ABCIListenerService/ListenCommit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ListenCommit is the corresponding endpoint for ABCIListener.ListenCommit
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"block_height":{"format":"int64","title":"explicitly pass in block height as ResponseCommit does not contain this info","type":"string"},"change_set":{"items":{"type":"object","description":"Since: cosmos-sdk 0.43","properties":{"delete":{"title":"true indicates a delete operation, false indicates a set operation","type":"boolean"},"key":{"format":"byte","type":"string"},"store_key":{"title":"the store key for the KVStore this pair originates from","type":"string"},"value":{"format":"byte","type":"string"}},"title":"StoreKVPair is a KVStore KVPair used for listening to state changes (Sets and Deletes)\nIt optionally includes the StoreKey for the originating KVStore and a Boolean flag to distinguish between Sets and\nDeletes"},"type":"array"},"res":{"properties":{"retain_height":{"format":"int64","type":"string"}},"type":"object"}},"title":"ListenCommitRequest is the request type for the ListenCommit RPC method","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"title":"ListenCommitResponse is the response type for the ListenCommit RPC method","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

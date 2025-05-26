@@ -1,0 +1,71 @@
+---
+id: service-get-latest-validator-set
+title: "GetLatestValidatorSet queries latest validator-set."
+description: "GetLatestValidatorSet queries latest validator-set."
+sidebar_label: "GetLatestValidatorSet queries latest validator-set."
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV01v3DYQ/SsDnpVdxwl62KJAk6JIXRSIGze9eA2DkkYSY2mokKN1Fov978WQklb7kWTrFkWA+mJbGo7ee3wzQ26UbdFpNpaucrVQN+hWJsP7N8i/aUbPf+ra5Jqtu0FWiWq10w0yOq8WtxuVo8+caWW5WqgHXIPxoGGl6w7BIXeOMAdDcK1LfIe+teRxRviJ7yWYLaRYGlrSxw7d2lAJXCHIe2h1idBYz4BFYTKDxPV6Bm+pXoMlBFuALQqPDNbBA66X5Cvb1TmkCB55phJlBFTIrBJFukG1UK0uDQW+sweU5w4/dsZhrhaFrj0mymcVNlotNorXrSzx7AyVKlGFdY1mtVDpmlFtt8mhAD2goAF1DTqTDSC50gyZJoHXeczhsUKCXrGO9EqbWqc1zpZ0FTLU6P2Ouqwn6LxI9IBf0gGiDEs6W4e4/IlSdIb4u5enxKhNYwIT2VK2rGvRJEUnkB36rmYfHbDnFImOb4MFRI8CaiwYsGl5DYbh0dQ15FhoCWI7Gi4mEynSNaDOKtBte4YAAem/zj+zHfF9JG58gMUW2HUI8oeh3GSaMTpjwloCeysbyuouxyVpCNlEuVNqGsbGw+ghKKyDHT9R9f2Vny3pAJIVDzn0LWY8OHJnYXHpDKIZTUnWTUy7pMjoDHEn3zxL4tTaGjWdUtThCp3HQzXNzk7a4WcsJZmQcqkf63J0syUt6cZQhgvIrG+sf+bzB7iYvXzxdU49kL/J507CYwv0EnB5cSG/9jm+At9lGXpfdDUM4SJzZomRWFbotq3FO8bS/IOXZZvJd/fznWzkQyceqnP4Dgjm4B55+rvwn7/BvaWv17+gKSuGd9c/QYNc2VzQtU7mCJvILK1t9nBfhUD5f6yWWCzJQTltk4m4xxSmsyMgDhuMTYp5Hje4FDAjiQa91yV6cav4oUJxvovvgwNk19DzEAmVjnbvx1R4GQwyRtzYZodhsyQYfhy2qKV6Xms32vAHeP79JGaPQJhrP8ClBGyPlBtG47EK49Ds92ycn9BqL9jZ7sGP7/vJ+tWxetV31SBsaLPFkjjoJzVFFhrrhhblZ0fD8MSWxpKf7n43br/hWoLHTvS58bBraabYYzfpKkt61KEhJGDY96MgDNUcCyMtwAqRR+NPwNyOT2z6ATMW4KvB7mFHQm+d1HMflxxsz1gj48SbltKY8lnfNPd3Xee5Q++PB802RlqP7r51xjrD6zMLqksHH+k8N4JS19fTr24PUfwYkxxhOKmRZUPlfWsf0Z0DaJJEO6fXp7KGoH6sn2iMBB3hp35WoXPWPa0/7pPObI6HBF5c7ggYYizRqQCNtam/bIp/rPWRTonqe9BZOxNFZF3K+Xw4zau7Q7eenAogrcKghzq8OjZtbPdqocr+LsCVWqh5HJ/zVHucM1KOrjHE89XzFFk/n+/KCdnPY+4wYgsbKPW94NeOsnBaedsivbq+UomSIRvxri5mL2aXwdfWc6PDlvZz+Wlc9vQYhWX8xPO21obkW50L/SvyvFWRp0qUMBWHjFwFa2Srpu0DWaJ7xneJqqxnSbTZSIb3rt5u5XE8Z4TrlPHS7HaniQOUo8e/uavWSf1C/zm+cQXIaqFUOOGdTfkbvVydx3y8Yz2R/Dd0mTqP8HCneiLf/8vl6Twx9+9QT5T0v7s9nUdqd4naEbqTf5wRRmpxe7dNVIU6lyPG7abP8CrLsJ0662jaS5ZxVL35+Q+13f4FAnuuPA==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"GetLatestValidatorSet queries latest validator-set."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/base/tendermint/v1beta1/validatorsets/latest"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+GetLatestValidatorSet queries latest validator-set.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"key is a value returned in PageResponse.next_key to begin\nquerying the next page most efficiently. Only one of offset or key\nshould be set.","in":"query","name":"pagination.key","required":false,"schema":{"type":"string","format":"byte"}},{"description":"offset is a numeric offset that can be used when key is unavailable.\nIt is less efficient than using key. Only one of offset or key should\nbe set.","in":"query","name":"pagination.offset","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"limit is the total number of results to be returned in the result page.\nIf left empty it will default to a value to be set by each app.","in":"query","name":"pagination.limit","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"count_total is set to true  to indicate that the result set should include\na count of the total number of items available for pagination in UIs.\ncount_total is only respected when offset is used. It is ignored when key\nis set.","in":"query","name":"pagination.count_total","required":false,"schema":{"type":"boolean"}},{"description":"reverse is set to true if results are to be returned in the descending order.\n\nSince: cosmos-sdk 0.43","in":"query","name":"pagination.reverse","required":false,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"GetLatestValidatorSetResponse is the response type for the Query/GetValidatorSetByHeight RPC method.","properties":{"block_height":{"format":"int64","type":"string"},"pagination":{"description":"PageResponse is to be embedded in gRPC response messages where the\ncorresponding request message has used PageRequest.\n\n message SomeResponse {\n         repeated Bar results = 1;\n         PageResponse page = 2;\n }","properties":{"next_key":{"description":"next_key is the key to be passed to PageRequest.key to\nquery the next page most efficiently. It will be empty if\nthere are no more results.","format":"byte","type":"string"},"total":{"format":"uint64","title":"total is total number of results available if PageRequest.count_total\nwas set, its value is undefined otherwise","type":"string"}},"type":"object"},"validators":{"items":{"type":"object","description":"Validator is the type for the validator-set.","properties":{"address":{"type":"string"},"proposer_priority":{"format":"int64","type":"string"},"pub_key":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object"},"voting_power":{"format":"int64","type":"string"}}},"type":"array"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

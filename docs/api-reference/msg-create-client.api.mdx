@@ -1,0 +1,71 @@
+---
+id: msg-create-client
+title: "CreateClient defines a rpc handler method for MsgCreateClient."
+description: "CreateClient defines a rpc handler method for MsgCreateClient."
+sidebar_label: "CreateClient defines a rpc handler method for MsgCreateClient."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1v2zAM/SsCz57TtTef2hU7dEDRYutOWTAwMmNrsyVPpNMGgf/7QDlpEy8bhn3k4oAmxfceH+UthI4iigv+poQCbrn6fB0Jha4bR14gg0jfemJ5E8oNFFuwwYu+KLaAXdc4m4pnXzh4jbGtqUX910U9WhxxKkvHfWZBoVRblk4Lsbk/zBuySd2lbLpUMD6BJTpfwTBk+0hYfiGrQMVJo4HGVbWYsaEZGw6Z4mby3PN/xVAS2+g6PRWKl54jDIPMwToUKs2jk9pITXucUqMYG2Ik7oIv2UgwaCq3Jv/J16SUcqXBrvIUE5gd3TFisCwjMUN2CuUu9Zarw+GaklbOExs0LTFjRdrVpgyD3ty8ud7BgynTQY9VZ7hIJRQSe0oBBc+jaudnZ/o4VuTKcG8tMa/6xuzTc8h+31bH500Yvd+d+MxMFb7lanZEe9/XKKf8FLdBJ7nCvpETFLzpPT11ZHWOFGOIf8ZksiChTB5bhdiiQAHOy8X5CzjnhSqKkKAJuiZVOaGWD6z5bMS/9vaLuTFG3GjfnUl+ZxOGUUTBiqGY65hgMd2On1gxdtbU6MuGomlJ6lCaVYhmMmlVenwLBXSBlXOHUkMBM7e0uQ2R8tG8+fp1PvUAZKADef9yt719wrZr6NRddTlhe/Iy+TFpv6oHIedX4XB33/XeqhrmriN/dX8DGawp8qjP+iy/yM+1TPm1mOzjsaV/od3RKJ7nKfQks65B57VtH5vk0yTrHE7LCtkRGB1zreMo5rDdLpHpY2yGQcPfeoobKOaLDNYYHS5VgvliyKAmLFWp+Ra+0kbpjTv06kFhaXrTJydO92nI9hVX1lInv8xdHDjm/u7DA2Sw3H3U2rR8EPFRP3j4CAVABiHJk9YkxbbQoK/6tAIwnqm/7/CxjcA=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"CreateClient defines a rpc handler method for MsgCreateClient."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.client.v1.Msg/CreateClient"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+CreateClient defines a rpc handler method for MsgCreateClient.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"client_state":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","title":"light client state"},"consensus_state":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","description":"consensus state associated with the client that corresponds to a given\nheight."},"signer":{"title":"signer address","type":"string"}},"title":"MsgCreateClient defines a message to create an IBC client","type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgCreateClientResponse defines the Msg/CreateClient response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

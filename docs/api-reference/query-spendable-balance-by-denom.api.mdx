@@ -1,0 +1,76 @@
+---
+id: query-spendable-balance-by-denom
+title: "SpendableBalanceByDenom queries the spendable balance of a single denom for
+a single account."
+description: "When called from another module, this query might consume a high amount of"
+sidebar_label: "SpendableBalanceByDenom queries the spendable balance of a single denom for
+a single account."
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVVFv20YM/isEX7YBmp2mAwboaWlXDNnDmqUZ9tAEAX2ipGsknnpHpTUM/ffiTpLtxE6A9KlPhqkj+fHjR3KDBQfjbafWCeb4f80ChpqGCyi9a4HEac0eWlf0DWegtQ3wuWe/htZWtYJxEvqWgaC2VQ3Uul4UXHktFQWwJWjN0FFlhWIOKC03BdgAVozzno02awisi2u5lg9WDOdgXGhd+DUUd3Cy+O13zNB17JP/eYE5/hvz337oWApaNfyGGhLDb9Z/srgWM+zIU8vKPmD+cfOoRCoKzyFECBHa/FfdVNZqjBagdH6BGdro1JHWmKFQy7sQmKHnz731XGCuvucMg6m5Jcw3qOsuPg3qrVQ4DNljHEUEO6MwzgqMlueBpE87JMVU8Q5HSU14FshNfB06J4FD/H56chJ/HoI7g9AbwyGUfQPz8wjCOFEWjR7UdY01qSvLTyG6bfbSPoyXOvZEwy6n8FBwaYVHQqrLi7fbxBDU90Z7z5GLa0kkWKmABMiYqLifAoQ5/MxcfAwU7caW1oz8Pq+zzkelqR2pmeIclvN2bNcIl0DdHQt8sVoDjVlmtZMUCWSaipT6n/dX73K4isobR2U7ECRwLgpfamtqsG3XcMuikz76oK6FlrV2xbUEWwlFPgLMnYfVGipXuc47dYuDUsZkR/SQTRo6JtnZ4laf2OhRy5AClNQ3ekRFAr3w146NcgHsvfPfJ6aHtRhXpJ6UzrekmKMVfX2KW3BWlCv2Y21KtkleVrkNe2VOJWRxmm3MS83FfprhMYV/jI6HPO1oIe9pHfO2HAJVR18f4zAaqYrbapwUvIkhYq8xx4o17TStMcflqNnliuRuef9qxUqvllvl3847Y7mZdtSwXK1v5y1hpXQJktUmIvi7F5Nk+r5jObs4xwzv2Yexefcni9eL01hM54K2lFoyrZ0nJjktLjtN8OE4ujJOo5Wq4WnXpWne2qZRjsp4oKPNTig/7IGaeqr8VZddQ1Yicb1vknpT6z7i6IUZxuZFrsf2YYaHDcQM892Z2fbwJsPaBY3RNpsVBf7PN8MQzeNhSOfOhhhqdwueJPPFJ+holXe83rtE99T08Q3GQ3NP3kYsL8T18+W01H6Bl17rowjn6ZT1PsAZ+UzzcDNkWDMV7BPe8euZMdzpnt/Bphr2h/Wvd1c4DN8AlzxImw==
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SpendableBalanceByDenom queries the spendable balance of a single denom for\na single account."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/bank/v1beta1/spendable_balances/{address}/by_denom"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+When called from another module, this query might consume a high amount of
+gas if the pagination field is incorrectly set.
+
+Since: cosmos-sdk 0.47
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"address is the address to query balances for.","in":"path","name":"address","required":true,"schema":{"type":"string"}},{"description":"denom is the coin denom to query balances for.","in":"query","name":"denom","required":false,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QuerySpendableBalanceByDenomResponse defines the gRPC response structure for\nquerying an account's spendable balance for a specific denom.\n\nSince: cosmos-sdk 0.47","properties":{"balance":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: abci-query
+title: "ABCI_Query"
+description: "ABCI_Query"
+sidebar_label: "ABCI_Query"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VlFv2zgM/isCn72k6A734GHAumEPPeDQ3q17SoKClphYmyxpEt01CPzfB8pJkzVZkRtwfrIpUuL38SPlDYRICdkGf22ghqv3H67v/+kpraGCRN96yvw+mDXUG9DBM3mWV4zRWV3Cpl9y8GLLuqUO5S0m2ZQtZfkyyMW6DKlDhhqaNRNUwOtIUEPmZP0KhgpasquWf3K1nv/845RvRG7F83ghhQc6WGlCcIQehuFpl9B8Ic0wiEkg2kQGak49FUOOwecx9cuLi4KAsk42ClqhSOVea8p52Tu1c59A9bv86GDoJdDWM60oCThxzRE1nYT+X/iz3tDjua7LUM6z7GTFB2+IKXXW28xWn4r5SuuzSu7C6phgcc5KZKPeqss3ajpVfSY1hwd0Pc1BWZ+Z0Ezmfu7PySamEJb3IeZj8rdGy9TlA1K3Eql+V8rn4h8NR7WUlS3bt5L7TVSGltZTVujVU8cKLUYtQ1Iane4dsvUr9Telr45UCoHn/q6lkUkdemdUQwpTYzlhWqsxu0pJy1gjoZ5yJi1rEjP3sjU9YhcdKS/qakKfimMwpFrM7R4EYEq4PpV7Vjbvsiql2IIxqlkrbkk5m1mFpdr5w1GrVmPtz+D0VJsPFRhaYu/4RDd71Xt6jKSZjKKUQvq/mvr15cmmNsRo3csyRGOsnIvu9vCY4blA3/1KUEdlqqCjnHH1K/kdcShGXGWoZ+WSgEX1nMnDq6MjboNcKDHk0kdlXsOUyZvSrDzBRtuJBE13QULqv/s75+OovH3j7RLcj7q9ZXvA/nu8B7ZT/fkM+6v3unTQTSR/dXsNFTxQyiOQh4vJ68llGRwhc4el0B472oJUu3x/wv/EItMjT6ND62WLPrmijpLeDE7hhwrGHRcVtEJXPYPNpsFMn5MbBjF/K+v1bCGNkCw2gmK2KEMfDSWoZ5tx6MCHUbCv7iSbp745Fu9Q7SKutKbIL/ouDip6e/PpDipotn8FXVE6JPwufwz4HWqACkJhpWiy2Dbg0K/6ojcY95TnB3ba7AQ=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ABCI_Query"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/tendermint.abci.ABCI/Query"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ABCI_Query
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"data":{"format":"byte","type":"string"},"height":{"format":"int64","type":"string"},"path":{"type":"string"},"prove":{"type":"boolean"}},"type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int64","type":"integer"},"codespace":{"type":"string"},"height":{"format":"int64","type":"string"},"index":{"format":"int64","type":"string"},"info":{"title":"nondeterministic","type":"string"},"key":{"format":"byte","type":"string"},"log":{"description":"bytes data = 2; // use \"value\" instead.\n\nnondeterministic","type":"string"},"proof_ops":{"properties":{"ops":{"items":{"type":"object","properties":{"data":{"format":"byte","type":"string"},"key":{"format":"byte","type":"string"},"type":{"type":"string"}},"title":"ProofOp defines an operation used for calculating Merkle root\nThe data could be arbitrary format, providing nessecary data\nfor example neighbouring node hash"},"type":"array"}},"title":"ProofOps is Merkle proof defined by the list of ProofOps","type":"object"},"value":{"format":"byte","type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

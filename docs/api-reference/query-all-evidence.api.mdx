@@ -1,0 +1,71 @@
+---
+id: query-all-evidence
+title: "AllEvidence queries all evidence."
+description: "AllEvidence queries all evidence."
+sidebar_label: "AllEvidence queries all evidence."
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV1Fv2zYQ/isHPmtOmhZ70FBgWVEM2Uuzdn2qgoKWTjYb6qiSp6SG4f8+HClZku2uXjYMBZaXJOSRvO/jd/dRW+Va9JqNo5tK5er3Dv3m47W1rx9MhVSiylSrvW6Q0QeVf9iqCkPpTStLVK7ucQMmgIYHbTsEj9x5wgoMwa1e4VsMraOAC8Iv/FGC2cESV4YK+ixnGVoBrxFkHlq9QmhcYMC6NqVBYrtZwBuyG3CE4GpwdR2QwXm4x01BYe06W8ESISAvVKaMJBV3Vpki3aDKVatXhiLGxT3KuMfPnfFYqbzWNmCmQrnGRqt8q3jTypLA3tBKZap2vtGscrXcMKrdLjskoE8ockBdg96UQ5K81gylJkmvC1jB4xoJesY60g/aWL20uCjoJu5gMYQRuqwn6IJQdI9/xQMkGgo6m4e0/IlUdIb4xxenyLCmMRGJXCk71lY4WaKXlD2GznJICpgpRaLTbJSA8FGDxZoBm5Y3YBgejbVQYa0liN1ecGkzoWK5AdTlGnTbnkFAzPRfx1+6jvhjAm5CTIsdsO8Q5A9DlSk1Y1LGBLUE9lI2VNquwoI0xN2EuVNsGsYmwF5DUDsPIz5h9f1NWBR0kJITDXkMLZY8KHKUsKh0AUmMZkXOT0RbUEJ0BrmTM8+ieOmcRU2nGPX4gD7gIZtmlJP2+BVJyU5IldSP8xX6RUEFvTNUYg6lC40LP4TqHi4XL55/G1OfyN/EcyfhqQUGCbi6vJRfc4zXELqyxBDqzsIQLjSXjhiJZYVuWyvaMY4uPgVZtp2cO98vNvFJDx+a8FCYwxEg6UbhyGhcdTFZBm9vXxXUIK9dJdm0XryCTUKCg0EcHT/M9PcRQFsLw2CI8hHtRlRVZWSVtrfTzXeHh/2ciD2syd0uG0bc8hOWrMYB7b3eyP/jHR6nOrWoyE7UETZLrKqko9Xb21cjYQ2GoFcYpChEdmuUAvNpPgpNxIGBh0hY61RVvRvGyajDfcQ714w5bAuC4cdji1qK9Bft92p/Cc9+msTMAET7fAlXErA7urDBgY9Z2Htzr4+9TUOrg+TObpZ+mu8N/JvufdM370hs7OZ1QRz5k9IlB43zQyeM8ph7bnZ46ZlKnSXfHrXkTLFhK8H7hvc1Fxo7p6ln6CbNq6BHHftOBoZD7zjRuyusjXQaJ0AeTTiR5rE2T4zIWO9qJ/oCQUf4pW/V6L3zT2sPcyGUrsIZeYb4+dUIwBDjCr2KqbE2Nq7a1+wcQvbPa/hEzfa1cVbFJxJZr+R5mnqfussOqZy0NZGtwXlbEjpTp1O5WsWXUat5rXJ1kZziYoi8eHi2RNbP9gPROmoXc+3F91tHZXThNy3S9e2NypSYR0rl4XLxfHEVO5ML3Oh4V73fnJPmDNieH8YvfNFabUh27nwsjwThg0oQVKYmOfcwpoN3mVq7wLJiu13qgO+93e1kONlifP2bIEUzmt9BOntNfndfBieJiv3w+AMhpqxypeKD5GzI3+m3wHnI958ETwT/Hb39zwM8fAI8Ee//5a1/HpnzJ/8TKf3vHvvngRrf/COgO/nHG0Gk8g93u0ytUVfoY3dMO1yXJbZTZR25s+yyt5tfX/+hdrs/ASVjMCU=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"AllEvidence queries all evidence."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/evidence/v1beta1/evidence"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+AllEvidence queries all evidence.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"key is a value returned in PageResponse.next_key to begin\nquerying the next page most efficiently. Only one of offset or key\nshould be set.","in":"query","name":"pagination.key","required":false,"schema":{"type":"string","format":"byte"}},{"description":"offset is a numeric offset that can be used when key is unavailable.\nIt is less efficient than using key. Only one of offset or key should\nbe set.","in":"query","name":"pagination.offset","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"limit is the total number of results to be returned in the result page.\nIf left empty it will default to a value to be set by each app.","in":"query","name":"pagination.limit","required":false,"schema":{"type":"string","format":"uint64"}},{"description":"count_total is set to true  to indicate that the result set should include\na count of the total number of items available for pagination in UIs.\ncount_total is only respected when offset is used. It is ignored when key\nis set.","in":"query","name":"pagination.count_total","required":false,"schema":{"type":"boolean"}},{"description":"reverse is set to true if results are to be returned in the descending order.\n\nSince: cosmos-sdk 0.43","in":"query","name":"pagination.reverse","required":false,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryAllEvidenceResponse is the response type for the Query/AllEvidence RPC\nmethod.","properties":{"evidence":{"description":"evidence returns all evidences.","items":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object"},"type":"array"},"pagination":{"description":"PageResponse is to be embedded in gRPC response messages where the\ncorresponding request message has used PageRequest.\n\n message SomeResponse {\n         repeated Bar results = 1;\n         PageResponse page = 2;\n }","properties":{"next_key":{"description":"next_key is the key to be passed to PageRequest.key to\nquery the next page most efficiently. It will be empty if\nthere are no more results.","format":"byte","type":"string"},"total":{"format":"uint64","title":"total is total number of results available if PageRequest.count_total\nwas set, its value is undefined otherwise","type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

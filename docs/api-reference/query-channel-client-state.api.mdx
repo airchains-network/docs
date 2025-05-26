@@ -1,0 +1,74 @@
+---
+id: query-channel-client-state
+title: "ChannelClientState queries for the client state for the channel associated
+with the provided channel identifiers."
+description: "ChannelClientState queries for the client state for the channel associated"
+sidebar_label: "ChannelClientState queries for the client state for the channel associated
+with the provided channel identifiers."
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVktv40YM/ivEnFpAjfdR9OBTg6DopodtmranOAjoESXNRuIow5GzrqH/XnAkW7ajbbfbAj1JGvH58eOQO+NbChid5+vcLM0vHYXtw1WFzFRf1Y44/hoxkslMiwEbihTELO92JiexwbWqaZbGDhrQsXvqCFxOHF3hKJjMOBVoMVYmM4wNTeIPLjeZCfTUuUC5WcbQUWbEVtSgWe5M3LYqLTE4Lk3fZ+duWx/i5/pU2X/q8F6FpfUsJPr/zatX+jgN4hKks5ZEiq6GvfiFyYz1HImjamDb1s4mnBcfRNV2R27boFWIbnBySCR/sKkCD5JKoPG5WCf80jmkc0ARbx1GyuHZxQpiRTACbLKzWK8Pto+KCzkVjkkA4cRwsoYMmOdO9bEe/694AhsKR3Wu6Z5mMYbu8pm4T0p1hnlmzpOe3N8ce+jPPX4/WJqhzf7Erz+QjepzBscZwcGFL9Ro4UOD0SzNepvaYW+iofBYEyQ58AXQRyeR2NJcaknqoSJXVvElkd6ri7repgre0saJ8/wuCYMTcGwDNcRaaIxAaCsYTMFz5WqCR6LWcbnive77rllTSOYEG7qAd/6ZNhRAfENglacsnQDWpQ8uVo1Ag1uwlfdCEP2KAwnFZGD05BgshYj69DwURoAuyguoMORQ+PAo2YDoNw3ayjGteB0IHx2XiZclCVyzGhUCi0KSnWQ8Rn2WsXiIFcYVj4FocznuSCB6WBM0nl307GxCMGmiqEvaEAPKDKgrLikKpBxf8DeMokfVOlCgcxy/+/aIBEcAadO4lB2UTl3vDc3x4eCEU85/72SvkLAYOn1sKQHbhUAc6y3MOesnQxOlUGHzs7DlGBHUxoqTL4usMFvftBiUgSU6lgjIPlYUYDRa+IFvbRdaLyTaEl2bY1SbyPmKi0D0R+JCilzMi647CjXNo5fj6Ha8ZTWHoa7jt1rax7DipL34hA24vbmChmLl85kQNIicCuzqmUa9ZOiYPrZklZkUgg//xcVvfU4nFHAc376ZgnMcqaRgUmgRXT2Mi0iNHF17h0vuX9+b032IIeBW/TYkguVn3bL9AGLEUheGoZLm/nwgzdTlqaPgSA5UOplJh8Nx4ZiG34oP068NfuNyyg9S08ARrc9Y9aUph8bXPWFpFm5tF9YHWoxqi83r/assdtPO0i90l5DFblwp+sXJyNLto/DHY++njq3mCz+3xJc31yYzGwoyILB5dfH24k2aDl5ig4ki487yv6BzUqBDnSN9jIu2RscaahfqxN+E3J1xa5toHzT7affYvJ4+tc+XJ3tfAlFPp83sBMf7zFReotrf7dYo9Huo+16PnxKXlnf3mdlgcLhWlHUndaLvuVkWWAu9SOXQl+ar23EH/Br+anWdzX3fE7zVFLHu9Mtk5pG2p6tt2le/JKRPrrVfEM8e3P6+z0xFmOuYuduNfy+tpTYe6b24r3QHPvTLjz/8Zvr+Tyr9WRA=
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ChannelClientState queries for the client state for the channel associated\nwith the provided channel identifiers."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/core/channel/v1/channels/{channel_id}/ports/{port_id}/client_state"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+ChannelClientState queries for the client state for the channel associated
+with the provided channel identifiers.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"channel unique identifier","in":"path","name":"channel_id","required":true,"schema":{"type":"string"}},{"description":"port unique identifier","in":"path","name":"port_id","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"identified_client_state":{"title":"client state associated with the channel","description":"IdentifiedClientState defines a client state with an additional client\nidentifier field.","properties":{"client_id":{"title":"client identifier","type":"string"},"client_state":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","title":"client state"}},"type":"object"},"proof":{"format":"byte","title":"merkle proof of existence","type":"string"},"proof_height":{"description":"Normally the RevisionHeight is incremented at each height while keeping\nRevisionNumber the same. However some consensus algorithms may choose to\nreset the height in certain conditions e.g. hard forks, state-machine\nbreaking changes In these cases, the RevisionNumber is incremented so that\nheight continues to be monitonically increasing even as the RevisionHeight\ngets reset","properties":{"revision_height":{"format":"uint64","title":"the height within the given revision","type":"string"},"revision_number":{"format":"uint64","title":"the revision that the client is currently on","type":"string"}},"title":"Height is a monotonically increasing data type\nthat can be compared against another Height for the purposes of updating and\nfreezing clients","type":"object"}},"title":"QueryChannelClientStateResponse is the Response type for the\nQuery/QueryChannelClientState RPC method","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

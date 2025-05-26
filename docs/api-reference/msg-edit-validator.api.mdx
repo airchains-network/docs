@@ -1,0 +1,71 @@
+---
+id: msg-edit-validator
+title: "EditValidator defines a method for editing an existing validator."
+description: "EditValidator defines a method for editing an existing validator."
+sidebar_label: "EditValidator defines a method for editing an existing validator."
+hide_title: true
+hide_table_of_contents: true
+api: eJytVlFv2zYQ/isH7mEboCpp8jBAT8vWDMiKokHabg9OYJzFk8SGIlWSiuMa/u/FUbIlW+rQAcmTfEd+x7v77rtshW3IYVDW3EiRiXe+XF5LFf5BrSQG60QiHH1pyYc/rNyIbCtyawKZwJ/YNFrl8fbZZ28N23xeUY38JcnnTjXs7ZCPgEFSoQx5QPjw5i3U5D2WBIV1QFIFZUpAA/SsfPx+2t9LRSIax68Oinz3oLpW3itrlg4DsSmooElk4l+CBj3HcFSQI5MTBAuhIjC0huEm8E1AI6FWBjzpAiRpKmNugP7eqPCzB2MD1GjiQzaM1DYSA6VwU0Rf91MmMYIkT06hVl9JdvhrpTWs6N58JWdhrUIFxsIaI5TsMm2Vr0AVnHyHBmv0oLjmkmR6b+6u/8rgp4vL3y5FIsKm4Tx9cMqUYpccF/20B2+GX6PyP41acvBPyywpoNJ+ito7ekSwoSIHNnpRQ+9N5x6rJJmgwmaKufcMzzQD5MHpVWkwtI7gF3pO4dOtdQGsg7e0WaGnX2eD1taoR3LTmL1jVJmqrdG8coQSV5rAYN0RlLt7RMhJEE9561TYLHlaMA/TaKcnZjOlGpWOIffHoT8+G3VNK6+6CTgO1jtmY+x9WpnHGdTdwWJXnykPsYTKLHlGlsOMxKk7fc+hRkuU0pH3M6em+LtTGr+odrCaKUdSZMG1tGODb6zxHckvzs+n1bsC3+Y5eV+0GvbHGeuFpPCuhzykxfx658uz46T3kYHrNerUULdYuAJbPcO3KwOtoeeG8kASyLkR4v/K5VR8ZeRbYV2NgSfXhMuL4XEsXCW5TpoOAqIC1WMy9CkkAiX3j3l5Ow6zOxWj37uLUzYNdELncBPZ2tHjB7kXjVh6kS24UeLhlIzfY2JNobLyx0jYnRWZaKzntBsMlcjEWW59bX3qAz4qU6ZPr1cU8HU64YJIBDfmbtjM189YN5pm9+E+35nt0HdkODFI8mA7KOZgmurb4Duo0Fh05xRjuDIjFOM1YQo73up/tyaPO+x9Q+bq9oYByPkO8+k8vUwv+BrXtsaYKCv3C7XupIQ9fwI9h7NGozIcuXU6Tkrs6kJ8v6siOX4Ts61iSmQLsd3yDvvk9G7H5i8tuY3IFg9cLad4IfGvXSIqQsndWWzFI3Hj/uxG+dVHflssbhsH4nSsd8n+xlWeUxP+8+zDiLW37z98FIlY9f8R1lEDhMM16yuuRSZEIroFE6c12rZCoynbOImiw+S/b3GWuxs=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"EditValidator defines a method for editing an existing validator."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.staking.v1beta1.Msg/EditValidator"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+EditValidator defines a method for editing an existing validator.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgEditValidator defines a SDK message for editing an existing validator.","properties":{"commission_rate":{"title":"We pass a reference to the new commission rate and min self delegation as\nit's not mandatory to update. If not updated, the deserialized rate will be\nzero with no way to distinguish if an update was intended.\nREF: #2373","type":"string"},"description":{"description":"Description defines a validator description.","properties":{"details":{"description":"details define other optional details.","type":"string"},"identity":{"description":"identity defines an optional identity signature (ex. UPort or Keybase).","type":"string"},"moniker":{"description":"moniker defines a human-readable name for the validator.","type":"string"},"security_contact":{"description":"security_contact defines an optional email for security contact.","type":"string"},"website":{"description":"website defines an optional website link.","type":"string"}},"type":"object"},"min_self_delegation":{"type":"string"},"validator_address":{"type":"string"}},"type":"object"}}},"description":"MsgEditValidator defines a SDK message for editing an existing validator.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgEditValidatorResponse defines the Msg/EditValidator response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: msg-submit-batch
+title: "Msg_SubmitBatch"
+description: "Msg_SubmitBatch"
+sidebar_label: "Msg_SubmitBatch"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlFFP2zAQx79KdM9ei2DaQ54G06QxiVEB0x6qaro419bg2MY+F7oq332yQ0kK2YSm5SXO+e589/P9swPryCMra85rKOEirH5ex6pRfIYs1yDA032kwGe23kK5A2kNk+G0ROe0kjl2ehusSbYg19RgWjmfMrOikL6qlO2bTcul9Q0ylBCV4Q/vQQBvHUEJgb0yK2gFSE/I1ifvV3sN+TtNV9byFwzrURfnaaNsDBdvcI2VVvKHYkMhHFRXbZnGavNW6+gSrJF0v+5m3trlGxK1zxZb3ZJkaJMpwVaeaijZR8qG4KwJHcTjo6P0qilIr1ziDiWcFiFKSSEsoy727hMQ/3pTgZFjGHRXWasJzXjJrYCalhg1j1Rmimjo0ZFkqgvy3vr/UaC0NR0AVoZPjnvCyjCtyEMujVHpHKWYmmFXTy0IwLpW6VzUs+ExeYyGx37sAl9d+gALeo/bbkZDwNWo9xjDZMRVgHKe9AcL8QLka1E2xGub9OpsSE045DWUML2NRqagSTelk4uwmh5GJrpXvaQ/P2LjNB1IdF/sQIe96aX8+p0/qW7gcSi2fqPXVG97ltJAXsos8y+EFaea4etTu8WlI3M6OwcBG/Kho7Y5mpxMjrPIbeAG81AZbKgjWnRcij2YA+TP98b0yFOnUZmUKHqd5zHTnsMIbRAw5L0QsE43VM5ht6sw0Hev2zaZ7yP5LZTzhYANeoVVami+aAWsCWvyUM53cEdbKOFTp5N3N6mk5K5jnraXmmnFPuJUSnL8V9/FYIhml9c3IKB6+sU3WWDg8SFdDT5ACSDAZjRZCtm2A41mFfOYQ5czPb8BwlUygA==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Msg_SubmitBatch"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/junction.rollup.Msg/SubmitBatch"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Msg_SubmitBatch
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"batchNo":{"format":"uint64","type":"string"},"creator":{"type":"string"},"merkleRootHash":{"type":"string"},"previousMerkleRootHash":{"type":"string"},"publicWitness":{"format":"byte","type":"string"},"rollupId":{"type":"string"},"zkProof":{"format":"byte","type":"string"}},"type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"properties":{"status":{"type":"boolean"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: msg-recover-client
+title: "RecoverClient defines a rpc handler method for MsgRecoverClient."
+description: "RecoverClient defines a rpc handler method for MsgRecoverClient."
+sidebar_label: "RecoverClient defines a rpc handler method for MsgRecoverClient."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VUtv2zAM/isCz17StTef1hU7dEDRoutOWVAwEh2rkyVVkvNY4P8+UE6aR90NGLpcIvDNjx/pDThPAZN29lpBCTdx/nhP0i0oXBlNNkEBgZ5biumzU2soNyCdTawoN4DeGy2z9/gpOsuyKGtqkF+Kogzas7aPfBRYKKq0pShSTaKhGHFOoo2kRHIi9JYCRRXcL7LCBUErrwMpIbP7CArwgYtPmmJOrOeWAr+SToag3EoEKhUoRiggrX2Wp6DtHLoCYjt7Ipke+5iPWh26c2G9QmhFNulKUxCVC+JAk5yYkWi9wkRK6CrruDAX0QiPMdJbmWPSqU30dvK9zd/rWNZa1mKpjRGBvEFJYhuCG/xh5W6aJ5V0LxKXLaFj0X8fHXOKRVCm0FLHguidjf0oz8/OXhPoUsRWSoqxarnH3pxjvRMh77chj7q7ifPxce+7zIJhG8EAfBm/CluTBpqworW08iSZLhSCC//WyzH3pVPE/5ULDSYoQdt0cb4vTttEcwqQS0uoTfbSiZr8OG6hAFRKc140d4dputOV+9Q7bl6Ras8qDAHXnHfLkyHrIQxZiPMI5YQHBdNTTg4TEkXwUtRolaEgGkq1U3lTTofNWPdqKMG7yF17TDWUMNYzOZIu0GhL18XH0SsaQAE8k/v9afyywsYbOrxEuw4H78yRcuAUHNwKbSt3eBu+tlYyDOLWk728u4YCFhRiD8zibHQxOmc3bqvBzBuLDb0PaEdTeBllolUae4PacuI2mEzRjOcEhvGE4rgcHnHNgygnsNnMMNL3YLqOxc8thTWUk2kBCwwaZ4zCZNoVUBMqRnqygZ+0hhKu+v358MB1sblpMwtPd6krdh6XUpJPf7SdHnDl7vbbAxQw234Mm7x4EHDJRw2XUAIU4DI+eUWybAMG7bzN9Ic+Jv9+A7yMpjU=
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"RecoverClient defines a rpc handler method for MsgRecoverClient."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.client.v1.Msg/RecoverClient"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+RecoverClient defines a rpc handler method for MsgRecoverClient.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgRecoverClient defines the message used to recover a frozen or expired client.","properties":{"signer":{"title":"signer address","type":"string"},"subject_client_id":{"title":"the client identifier for the client to be updated if the proposal passes","type":"string"},"substitute_client_id":{"title":"the substitute client identifier for the client which will replace the subject\nclient","type":"string"}},"type":"object"}}},"description":"MsgRecoverClient defines the message used to recover a frozen or expired client.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgRecoverClientResponse defines the Msg/RecoverClient response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

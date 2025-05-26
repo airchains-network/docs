@@ -1,0 +1,71 @@
+---
+id: msg-update-client
+title: "UpdateClient defines a rpc handler method for MsgUpdateClient."
+description: "UpdateClient defines a rpc handler method for MsgUpdateClient."
+sidebar_label: "UpdateClient defines a rpc handler method for MsgUpdateClient."
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1v2zAM/SsCz57TtTef+oEdOqBo0bWnLCgUibHVypKqj7SB4f8+UE5a1wmGYSuWU0JSJN/jI9OBdeh5VNZcSqjgKtQP907yiBdaoYlQgMfnhCGeW7mBqgNhTSRH1QF3TiuRH88egzVkC6LBltM3iUF45cg7JB7nZRJXymBg3LAgn8qrULNoWcohjLPL8wsmhsgQyZSCMvVPExtktVqj2XlbDIHXWEIBzhOWqDDkPrP/QUn6EVXUCNXWyJJRzwmZkmiiWin0UEDcOIoI0StTQ1/sEmwLZLxSKoLD9c24VD8tfTrk6qY5+7cqdvmIgsidNLYtNqKCAGtVN3ELmDoLqjbox7gGC+NSegxhH81e5Z5M/31CJCXlUUIVfcKeDMFZEwbajo+O9nVzxkISAkNYJc124ZTrc3R4u834hpbavwr17AMVu7qMSCzhAJmZzRVPOh6AYFgy+OpQRJQMvbf+75BMBG5lFtnK+pZHqECZeHL83pwyEWv0kFuLXOn8SkVsw0ibb0r8Z3G/a4x7zzdUd7Q7fyDIbOR1gGpOY4LFVKGH5cm8E6zhRmr0rMXYWMlW1rPJpInpwQsVOBsIs+OxgQpmailKYT2Wg2TL9ddyqgEogAZy+34Mv73y1mmc3JodwkP343Tvxuw2eWRSZmXHq/09GUH42bVDc3ZzCQWs0YeBkfVReVIe0zNC1PIsGMNb/Ay2PpD/NsGIr3HmNFeGyiavszIzkXM4TCQUH5qhwTY0gGoOXbfkAe+97nsyPyf0G6jmiwLW3Cu+JArmi76ABrkkpuYdPOEGKrgYtubLHbVF4Tpl7U03qC92L86EQBd/G7sYaeTm+scdFLDc/u+1ed3A8xc6ZPwFKoACbKYnL0a2daC5qVMeOAw56fMLadOZUg==
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"UpdateClient defines a rpc handler method for MsgUpdateClient."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/ibc.core.client.v1.Msg/UpdateClient"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+UpdateClient defines a rpc handler method for MsgUpdateClient.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgUpdateClient defines an sdk.Msg to update a IBC client state using\nthe given client message.","properties":{"client_id":{"title":"client unique identifier","type":"string"},"client_message":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","title":"client message to update the light client"},"signer":{"title":"signer address","type":"string"}},"type":"object"}}},"description":"MsgUpdateClient defines an sdk.Msg to update a IBC client state using\nthe given client message.","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgUpdateClientResponse defines the Msg/UpdateClient response type.","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

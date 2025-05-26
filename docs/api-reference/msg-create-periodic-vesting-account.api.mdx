@@ -1,0 +1,73 @@
+---
+id: msg-create-periodic-vesting-account
+title: "CreatePeriodicVestingAccount defines a method that enables creating a
+periodic vesting account."
+description: "Since: cosmos-sdk 0.46"
+sidebar_label: "CreatePeriodicVestingAccount defines a method that enables creating a
+periodic vesting account."
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VsFu2zgQ/RViTruA6qRp0YNOzRY9ZIFsgja7FzsIaHIssZGGKjmKYxj698VQcmVbibdYLNYniR5y3rx586gtWIwmuIadJ8jhqyODuTI+1j6+ifZRnc/ef4AMfINBS9CVhRyuY/HwKaBmvMXgvHXmL4zsqLg0xrfEkEHA7y1G/s3bDeRbMJ4YieVRN03lTDrs7FuUtFuIpsRay9MhnutY9HkOz1cWV44wKq1qjFEXqLjUrJD0ssKojOxxVCitnvqNC9L91tmCFvRqmU2QQtlhFCyr4OsHbW3AmN550yDkEDk4KqDLILIO/MCuxin09J/yqx0CpaNqyT0rCVe/OFIRjScbf51BBisfas2QgyP+8B6yaS72J6EMWR6a1JAU4xjr/WC//IZGenMItG/hHqUVUsGlQE9QNVml60S7XynjHcWe7bWrqlTdbMJcH38A4jDpJ+9oLyX7RyS1dlwqrSySrx0lhfTZaQCQmvfHzd3nXN2VuEO1clhZ5aLEXRGrdelMqVzdVFgjsaBFZdrIvlY1cuntgqIrSHMbMCpRqgto1XKjCl/4Jnj2p0qacJ8Av/BPlx1RPy7oEPRG3nuypwTtutL2Y6dGvfyMXLpJpimWrjtWwv89bTvmIefQYicLsfEUe8Ivzs+ntFyq2BqDMa7aSu3ChZH/1mC+DCf/KF0kdB2Ls1Out6AdICVUn6590ozUjZVuK36halIt4XODhtEqDMGHf1f8oaSNt8m49tX07mIE54ixwNBLnLWrTtuKttZJXl3d7qfpjifpY79xOi4vjMcguJ8arp5E1kWEfC6dhXs5QAYecmh8FJCNlmmDs74js0Gws6e3S2T9dvZPPYYMhNUv4+32+VmL00zvix3Sw2tiXN039HF14uPz0Xr2HscNg/n84OV+9JRxrcvA0conGh0LWvi9JZOc5aZBury9SrlD7AX3dD57N7uQBghttU4yIp0KOEXPgVUI8a85xYKa4YDxfhws4/iC2vt4eP37ZJAC4zOfNZV2JNjbUCXRp5bP4fWWQ3ayKtFRKfLJ57DdLnXEP0PVdbL8vcWwgXx+n8GTDk7KlLcugxK1xZCa9oibdOWlKt7cCVQJr9ok9eOB7bLdjktjsOGTsfsKv735egcZLIdPrjpNNwS9FqvVa8ghfcjJ7jSHaW0LlaaiTTMG/Zny+xvN/pE4
+sidebar_class_name: "post api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"CreatePeriodicVestingAccount defines a method that enables creating a\nperiodic vesting account."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cosmos.vesting.v1beta1.Msg/CreatePeriodicVestingAccount"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Since: cosmos-sdk 0.46
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"MsgCreateVestingAccount defines a message that enables creating a vesting\naccount.\n\nSince: cosmos-sdk 0.46","properties":{"from_address":{"type":"string"},"start_time":{"description":"start of vesting as unix time (in seconds).","format":"int64","type":"string"},"to_address":{"type":"string"},"vesting_periods":{"items":{"type":"object","description":"Period defines a length of time and amount of coins that will vest.","properties":{"amount":{"items":{"description":"Coin defines a token with a denomination and an amount.\n\nNOTE: The amount field is an Int which implements the custom method\nsignatures required by gogoproto.","properties":{"amount":{"type":"string"},"denom":{"type":"string"}},"type":"object"},"type":"array"},"length":{"description":"Period duration in seconds.","format":"int64","type":"string"}}},"type":"array"}},"type":"object"}}},"description":"MsgCreateVestingAccount defines a message that enables creating a vesting\naccount.\n\nSince: cosmos-sdk 0.46","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"MsgCreateVestingAccountResponse defines the Msg/CreatePeriodicVestingAccount\nresponse type.\n\nSince: cosmos-sdk 0.46","type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

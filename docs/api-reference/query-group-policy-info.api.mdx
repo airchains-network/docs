@@ -1,0 +1,71 @@
+---
+id: query-group-policy-info
+title: "GroupPolicyInfo queries group policy info based on account address of group policy."
+description: "GroupPolicyInfo queries group policy info based on account address of group policy."
+sidebar_label: "GroupPolicyInfo queries group policy info based on account address of group policy."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vk1v4zYQ/SvE9LAtoFhJdrEFdGqAFov00nTRnhLDGJMjixuJVMhhsoah/16MPhzbcrHBFj1Z5sebmTfvkdyBbykgW+9uDRTwZ6KwXX0KPrV3vrZ6e+tKDxm0GLAhphChuN+BoaiDbWUbFIDGBIpR2ai4IoVa++RYTcO+7Ic3AqraHnUBGVjZ2iJXkIHDhl6BIINAT8kGMlBwSJRB1BU1CMUOeNvK0sjBug103VIWx9a7SFHmry8v5ec4wxsVk9YUY5lqNS2XJLR3TI5lB7ZtbXVPRf4lyrbdQdhjvJ6mE5Y+j7ATDf2a/GTRPriSOiSDNkgH2A7ZW6F7Fk5GJ9hTwH9h9xh2InaG/O3WnQKf8J8Bmsa6c8iNdW+SRL/yLLQOhExmhTzHf52TIKjYNhQZm1bFlrQtt9Zt1EtFTuFRDeoFoxo3S9DSh0bwwSDThaCcy8SQttF6txpARk6t5IL13SHX3Sn3vwxgc+Xuw/j1F9IM2UmFJzHHuizFWcPfRTUt3neqy6BfsrJmTt40M/UnOfuUSN3+etSZI3qSdfzxwzluGmI0yIM7LdcyO431vXFbhWFtOWDYqv0MMqOuyCj2cwU/OBkKpH3TkDNk1JDIlN8hPnu1JlX65IyqKFDx4CrmNhZ5bryOC+1j4+PCEb/48Jg/Xy4+/Jw33qSaYt5H/WFi72IIf3F1rs5nCtH6M1IfJySXFMeCAupHpSt0G+ozHEX4Ls4MHDkkzSmQ4gr5wb34VJtRoQqVsWVJgRzL0ZFqVl4UHZJzInCRmo9Yv6lVM8WdG+l6tZeY6jOmu3EqOfrakmYyikLw4fuO02OLaG96h+wrsI7fX78WYB3ThsJgREZbD2clUxMPjLW30X925istGAJuB5HHiJs3+bgbSGTcyGU53BWwPHX3qQyeEgXx9tFZ1R/8axRRSdu/fTo3xJWXi3xD3F/bXEEB+WCBQez589XwMZ4rKwmS70bQrr+Zh0toMvPvyWnJWv3Rkru5u4UDL8Dz5eL94looan3kBvtGj/f5/1PjEY/7djB95byt0TrJJYW6l1lf/z0M9cN4JEr+V9OfQxYgg2K6KpcZVD6y7N7tJL2/Q911MvzUN7S4X2bwjMHiWkiSR5GN8m2gKLGONEt0bw748fP4vPlJfd/b6WzNk2TdVgrEOsk/yOCRtgdvq27ZZVARGgp91sPsjdbU8sG+mX3lobVX16ff/oKu+wcCdqA5
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"GroupPolicyInfo queries group policy info based on account address of group policy."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/cosmos/group/v1/group_policy_info/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+GroupPolicyInfo queries group policy info based on account address of group policy.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"address is the account address of the group policy.","in":"path","name":"address","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryGroupPolicyInfoResponse is the Query/GroupPolicyInfo response type.","properties":{"info":{"description":"info is the GroupPolicyInfo of the group policy.","properties":{"address":{"description":"address is the account address of group policy.","type":"string"},"admin":{"description":"admin is the account address of the group admin.","type":"string"},"created_at":{"description":"created_at is a timestamp specifying when a group policy was created.","format":"date-time","type":"string"},"decision_policy":{"additionalProperties":{},"properties":{"@type":{"type":"string"}},"type":"object","description":"decision_policy specifies the group policy's decision policy."},"group_id":{"description":"group_id is the unique ID of the group.","format":"uint64","type":"string"},"metadata":{"title":"metadata is any arbitrary metadata attached to the group policy.\nthe recommended format of the metadata is to be found here:\nhttps://docs.cosmos.network/v0.47/modules/group#decision-policy-1","type":"string"},"version":{"description":"version is used to track changes to a group's GroupPolicyInfo structure that\nwould create a different result on a running proposal.","format":"uint64","type":"string"}},"type":"object"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

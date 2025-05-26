@@ -1,0 +1,71 @@
+---
+id: query-interchain-account
+title: "InterchainAccount returns the interchain account address for a given owner address on a given connection"
+description: "InterchainAccount returns the interchain account address for a given owner address on a given connection"
+sidebar_label: "InterchainAccount returns the interchain account address for a given owner address on a given connection"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9lEtv2zAMgP+KwdMGCHUfN58WDMPQXdYV2ykICkVmYnW2pFJ01sDwfx8oO07c5LIdenJCiq+Pjw58QNJsvbsvoYAfLdL+6d4xkqm0dQtjfOsYFARNukFGilAsO7AOCgiaK1DgdINQgP/jkEAB4UtrCUsomFpUEE2FjYaiA94HeRiZrNtC36uLfox3Do2k9GTLf/K3kscxeBcxiv72+lo+JUZDNohHKGCRxdYYjHHT1tnh+RUoicvoWCx0CLU1CUv+HMWsOwk795eQnRF7HB1nXOEUJZOEs42nJE2G+Zll9vjwOWuQK19KVoGkQ2yHinRZEsZ4EeZB4tfPaBj6XmQlbnRb8wUMLmsdvgY0jGWGRJ7+j8Y8QeNLlO/GU6MZCrCO725hSs46xi0SpNRY2zpZWcbmtKixBCX1Womr64fTMP1bLp8Gw3MqRyyaSO8lboMx6u3F15cYilBvZeqHVsNKvUF53kJCbsnF1GY7aTM9qscupknQ2dbu0GVpeyaNd5PiuA4guctcQAFbHJaSKyggt2uT6xBifgz2NAaLuXSSfF0j5bubPMWJeZe+fX70HvNutnk9KLBu4xMny7Vg+da6pM6+B3SLh3tQsEOKA4bd9dXd1a0QDj5yo9OcjDv9johmvZlazPjKeai1dZJgS3Ua3YRvCXZtZNZCiKnmM4TjOgwQpeYbUMO5E1VxOHwnLEU8v2MrBZWPLOG6bq0j/qK670X8kqaqWK4U7DRZvRbUyw5KG+V3CcVG1xHPKps2FD48jifyY3bctHnFhyVwe8lf1638AwW/cT+dbrnH7xh0zqdf9Qoq1CVSqn54szAGA59Yn90iOfrTVnz98hP6/i9KHGVW
+sidebar_class_name: "get api-method"
+info_path: api-reference/junction-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"InterchainAccount returns the interchain account address for a given owner address on a given connection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/ibc/apps/interchain_accounts/controller/v1/owners/{owner}/connections/{connection_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+InterchainAccount returns the interchain account address for a given owner address on a given connection
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"owner","required":true,"schema":{"type":"string"}},{"in":"path","name":"connection_id","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A successful response.","content":{"application/json":{"schema":{"description":"QueryInterchainAccountResponse the response type for the Query/InterchainAccount RPC method.","properties":{"address":{"type":"string"}},"type":"object"}}}},"default":{"description":"An unexpected error response.","content":{"application/json":{"schema":{"properties":{"code":{"format":"int32","type":"integer"},"details":{"items":{"type":"object","additionalProperties":{},"properties":{"@type":{"type":"string"}}},"type":"array"},"message":{"type":"string"}},"type":"object"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
