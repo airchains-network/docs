@@ -5,7 +5,6 @@ description: Quick start guide for the network framework.
 sidebar_position: 13
 ---
 
-# Quick Start
+import QuickStart from '@site/src/components/docs/rollups/quick-start.js';
 
-
-
+<QuickStart />

@@ -21,6 +21,8 @@ This guide will help you deploy a rollup with custom configuration and parameter
 
 ## Deploying a rollup
 
+This section provides a comprehensive, step-by-step guide to deploying your rollup with advanced configurations and custom parameters. It covers the entire deployment lifecycle, starting from configuring access to the Junction Network and deploying the Application-Specific Contract (ASC), to generating and provisioning cryptographic keys for the FHE smart contract, setting up the ZK FHE Prover, and finally configuring and initializing the Operator, Gateway, Data Availability (DA) layer, and Sequencer components. Follow these instructions to ensure a successful and customized rollup deployment.
+
 ### Step 1: Configure Access to the Junction Network
 
 Set up your environment by downloading the junctiond binary, making it executable, and generating the necessary keys that will be used to manage your rollup deployments.
@@ -753,7 +755,7 @@ endpoint = "http://localhost:4317"
 
 :::
 
-2. 1. Setup `default.toml` file
+2. Setup `default.toml` file
 
 ```toml
 
@@ -978,4 +980,82 @@ Securely store the private key for the `Avail wallet`. This private key is essen
   </TabItem>
 </Tabs>
 
+### Step 12: Config and Initialize the Sequencer
 
+###### 1. Download the Sequencer binary and make it executable
+
+```bash
+wget https://github.com/airchains-network/trusted-sequencer/releases/download/v0.0.1-beta/trusted-sequencer -O path/to/your/sequencer
+chmod +x path/to/your/sequencer
+```
+
+###### 2. Setup the Sequencer
+
+```bash
+./path/to/your/sequencer init \
+--da.auth-token <da-auth-token> \
+--da.namespace <da-namespace> \
+--da.node-addr <da-node-addr> \
+--da.type <da-type> \
+--junction.account_name <junction-account-name> \
+--junction.node_api_address <junction-node-api-address> \
+--junction.node_rpc_address <junction-node-rpc-address> \
+--prover.url <prover-url> \
+--rollup.id <rollup-id>
+
+```
+
+:::info
+
+- **`<da-auth-token>`**: The authentication token for the Data Availability (DA) layer, generated in [**Step 11**](#step-11-config-and-initialize-the-da).
+- **`<da-type>`**: Specifies the type of Data Availability provider. Examples include `celestia` for Celestia and `avail` for Avail.
+- **`<da-namespace>`**: The designated namespace for the Data Availability provider. For instance, `airchains` is used for Celestia, and `36` is used for Avail.
+- **`<da-node-addr>`**: The network address of the Data Availability node. Examples include `http://127.0.0.1:26658` for Celestia and `https://turing-rpc.avail.so/rpc/` for Avail.
+- **`<junction-account-name>`**: The registered account name for the Junction Network.
+- **`<junction-node-api-address>`**: The API endpoint address for the Junction Network node.
+- **`<junction-node-rpc-address>`**: The RPC endpoint address for the Junction Network node.
+- **`<prover-url>`**: The endpoint URL for the prover (e.g., `http://127.0.0.1:8080`).
+- **`<rollup-id>`**: The unique identifier of the rollup, generated in [**Step 7**](#step-7-deploy-the-rollup-into-junction-network).
+
+:::
+
+###### 3. Setup operator genesis
+
+location of the genesis file is `~/.trusted-sequencer/genesis.json`
+
+```json
+{
+  "config": {
+    "chainId": <operator-chain-id>,
+    "homesteadBlock": 0,
+    "eip150Block": 0,
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0,
+    "istanbulBlock": 0,
+    "muirGlacierBlock": 0,
+    "berlinBlock": 0,
+    "londonBlock": 0,
+    "arrowGlacierBlock": 0,
+    "grayGlacierBlock": 0,
+    "clique": {
+      "period": <block-time>,
+      "epoch": 3000,
+    }
+  },
+  "extradata": 0x0000000000000000000000000000000000000000000000000000000000000000<Operator-validator-address>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+  "alloc": {
+    "<Operator-account-address>": {
+      "balance": <amount>aether
+    },
+  },
+}
+```
+
+###### 4. Start the Sequencer
+
+```bash
+./path/to/your/sequencer start
+```
