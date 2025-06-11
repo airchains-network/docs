@@ -33,6 +33,60 @@
   padding-right: 10px;
 }
 
+.menu__list-item .api-method {
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 2px 0;
+  transition: background-color 0.2s ease;
+}
+
+/* handle the api-method class for the menu__list-item */
+/* no hover background color for text in the api-method class */
+.menu__list-item .api-method:hover {
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: none !important;
+}
+
+.menu__list-item .api-method::before {
+  content: attr(data-method);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  min-width: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+.menu__list-item .api-method.get::before {
+  content: "GET";
+  background-color: #0f6c47;
+  color: white;
+}
+
+.menu__list-item .api-method.post::before {
+  content: "POST";
+  background-color: #9333ea;
+  color: white;
+}
+
+.menu__list-item .api-method:hover {
+  background-color: rgba(88, 79, 249, 0.1);
+}
+
 .sidebar-heading {
   font-size: 14px;
   font-weight: 700;
