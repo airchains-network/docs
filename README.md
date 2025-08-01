@@ -45,4 +45,4 @@ If you have any feedback or encounter any issues, feel free to:
 - Reach out to us at support@airchains.network.
 
 ## 📜 License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://opensource.org/license/MIT).
